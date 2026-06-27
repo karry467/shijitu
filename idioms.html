@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>典故探源 — 史迹图</title>
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="common.css?v=2" />
+  <style>
+
+
+  .idiom-card { border-left: 4px solid var(--accent); transition: all 0.3s; }
+  .idiom-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(44,36,22,0.1); }
+  .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+        <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-5 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--ink)] font-medium">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-5xl mx-auto px-6 py-8">
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl font-bold serif mb-2">典故探源</h1>
+    <p class="text-sm text-[var(--muted)]">从《史记》中走出的成语与典故，至今仍在使用</p>
+  </div>
+
+  <!-- Search -->
+  <div class="max-w-md mx-auto mb-6 relative">
+    <input type="text" id="idiomSearch" placeholder="搜索典故、人物、释义..." autocomplete="off" class="w-full px-5 py-3 pl-12 rounded-xl bg-[var(--bg2)] border border-[var(--rule)] text-[var(--ink)] placeholder-[var(--muted)] focus:outline-none focus:border-[var(--accent)] transition text-sm">
+    <svg class="w-5 h-5 text-[var(--muted)] absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <span id="searchCount" class="absolute right-4 top-3.5 text-xs text-[var(--muted)] hidden"></span>
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-2 mb-8" id="filterTags">
+    <button class="filter-btn active px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="all">全部</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="五帝本纪">五帝本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="夏本纪">夏本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="殷本纪">殷本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="周本纪">周本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="秦始皇本纪">秦始皇本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="项羽本纪">项羽本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="高祖本纪">高祖本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吕太后本纪">吕太后本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孔子世家">孔子世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="陈涉世家">陈涉世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="刺客列传">刺客列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="廉颇蔺相如列传">廉颇蔺相如列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="鲁周公世家">鲁周公世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="晋世家">晋世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="楚世家">楚世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="赵世家">赵世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="越王勾践世家">越王勾践世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="商君列传">商君列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="魏公子列传">魏公子列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="李将军列传">李将军列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="齐太公世家">齐太公世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="管晏列传">管晏列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="留侯世家">留侯世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="淮阴侯列传">淮阴侯列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孙子吴起列传">孙子吴起列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="白起王翦列传">白起王翦列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="苏秦列传">苏秦列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="张仪列传">张仪列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孟子荀卿列传">孟子荀卿列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="匈奴列传">匈奴列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="李斯列传">李斯列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="蒙恬列传">蒙恬列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="魏世家">魏世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="韩世家">韩世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="燕世家">燕世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="田敬仲完世家">田敬仲完世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吴太伯世家">吴太伯世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="郑世家">郑世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="宋微子世家">宋微子世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="卫康叔世家">卫康叔世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="范雎蔡泽列传">范雎蔡泽列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="乐毅列传">乐毅列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="屈原贾生列传">屈原贾生列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吕不韦列传">吕不韦列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="秦本纪">秦本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="蔡世家">蔡世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="曹世家">曹世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="陈杞世家">陈杞世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="外戚世家">外戚世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="穰侯列传">穰侯列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孟尝君列传">孟尝君列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="平原君虞卿列传">平原君虞卿列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="春申君列传">春申君列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="田单列传">田单列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="鲁仲连邹阳列传">鲁仲连邹阳列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="郦生陆贾列传">郦生陆贾列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="张丞相列传">张丞相列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="刘敬叔孙通列传">刘敬叔孙通列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="袁盎晁错列传">袁盎晁错列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孝文本纪">孝文本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孝景本纪">孝景本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孝武本纪">孝武本纪</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="梁孝王世家">梁孝王世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="五宗世家">五宗世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="三王世家">三王世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="季布栾布列传">季布栾布列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="冯唐列传">冯唐列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="万石张叔列传">万石张叔列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="田叔列传">田叔列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="扁鹊仓公列传">扁鹊仓公列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吴王濞列传">吴王濞列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="魏其武安侯列传">魏其武安侯列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="韩长孺列传">韩长孺列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="卫将军骠骑列传">卫将军骠骑列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="平津侯主父列传">平津侯主父列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="南越列传">南越列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="东越列传">东越列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="朝鲜列传">朝鲜列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="西南夷列传">西南夷列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="萧相国世家">萧相国世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="曹相国世家">曹相国世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="淮南衡山济北王列传">淮南衡山济北王列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="循吏列传">循吏列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="酷吏列传">酷吏列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="大宛列传">大宛列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="游侠列传">游侠列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="佞幸列传">佞幸列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="滑稽列传">滑稽列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="日者列传">日者列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="龟策列传">龟策列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="货殖列传">货殖列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孙子吴起列传-重复">孙子吴起列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="伍子胥列传">伍子胥列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="仲尼弟子列传">仲尼弟子列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="商君列传-重复">商君列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="苏秦列传-重复">苏秦列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="张仪列传-重复">张仪列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="樗里子甘茂列传">樗里子甘茂列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="穰侯列传-重复">穰侯列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="白起王翦列传-重复">白起王翦列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="孟尝君列传-重复">孟尝君列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="平原君虞卿列传-重复">平原君虞卿列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="春申君列传-重复">春申君列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="范雎蔡泽列传-重复">范雎蔡泽列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="乐毅列传-重复">乐毅列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="廉颇蔺相如列传-重复">廉颇蔺相如列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="田单列传-重复">田单列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="鲁仲连邹阳列传-重复">鲁仲连邹阳列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="李斯列传-重复">李斯列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="梁/齐世家">梁/齐世家</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="屈原贾生列传-重复">屈原贾生列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吕不韦列传-重复">吕不韦列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="刺客列传-重复">刺客列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="李斯列传-重复2">李斯列传-重复2</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="蒙恬列传-重复">蒙恬列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="彭越列传">彭越列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="英布列传">英布列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="淮阴侯列传-重复">淮阴侯列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="新齐列传">新齐列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="越王勾践世家-重复">越王勾践世家-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="郑世家-重复">郑世家-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="袁盎晁错列传-重复">袁盎晁错列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="班/袁列传">班/袁列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="吴王濞列传-重复">吴王濞列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="魏其武安侯列传-重复">魏其武安侯列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="李牧廉颇列传">李牧廉颇列传</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="货殖列传-重复">货殖列传-重复</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="太史公自序">太史公自序</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="河渠书">河渠书</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="平准书">平准书</button>
+    <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-[var(--rule)] transition" data-filter="封禅书">封禅书</button>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6" id="idiomsList"></div>
+</div>
+
+<footer class="bg-[var(--footer-bg)] text-white/70 py-10 px-6 mt-12">
+  <div class="max-w-5xl mx-auto text-center text-sm">
+    <p class="serif text-white text-lg mb-2">史迹图</p>
+    <p>TRAE AI 创造力大赛 · 社区公益 - 古籍活化工具</p>
+  </div>
+</footer>
+
+<script>
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+let allIdioms = [];
+let currentFilter = 'all';
+let searchQuery = '';
+
+function showError(msg) {
+  document.getElementById('idiomsList').innerHTML = '<div class="text-center text-[var(--accent)] py-12 col-span-2">' + msg + '</div>';
+}
+
+async function loadData() {
+  try {
+    allIdioms = await fetch('data/idioms.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); });
+    render('all');
+  } catch (e) {
+    console.error(e);
+    showError('数据加载失败，请刷新页面重试');
+  }
+}
+
+function getFilteredIdioms() {
+  let list = currentFilter === 'all' ? allIdioms : allIdioms.filter(i => i.source.includes(currentFilter));
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    list = list.filter(i =>
+      i.idiom.includes(q) ||
+      (i.meaning && i.meaning.toLowerCase().includes(q)) ||
+      (i.story && i.story.toLowerCase().includes(q)) ||
+      (i.source && i.source.toLowerCase().includes(q)) ||
+      (i.characters && i.characters.some(c => c.includes(q))) ||
+      (i.modernUsage && i.modernUsage.toLowerCase().includes(q))
+    );
+  }
+  return list;
+}
+
+function render(filter) {
+  currentFilter = filter;
+  const list = getFilteredIdioms();
+
+  const countEl = document.getElementById('searchCount');
+  if (searchQuery) {
+    countEl.textContent = `${list.length} 条`;
+    countEl.classList.remove('hidden');
+  } else {
+    countEl.classList.add('hidden');
+  }
+
+  document.getElementById('idiomsList').innerHTML = list.length ? list.map((item, idx) => `
+    <div class="idiom-card panel p-6 scroll-unfold ${idx < 4 ? 'visible' : ''}" style="transition-delay:${idx * 0.05}s">
+      <div class="flex items-start justify-between mb-3">
+        <div>
+          <h3 class="text-2xl font-bold serif text-[var(--accent)]">${esc(item.idiom)}</h3>
+          <p class="text-xs text-[var(--muted)] mt-1">${item.pinyin} · 出自《${item.source}》</p>
+        </div>
+        <span class="text-3xl opacity-20">📜</span>
+      </div>
+      <div class="space-y-3 text-sm">
+        <div><strong class="text-[var(--muted)]">释义</strong><p>${esc(item.meaning)}</p></div>
+        <div><strong class="text-[var(--muted)]">典故</strong><p class="leading-relaxed">${esc(item.story)}</p></div>
+        ${item.quote ? `<div class="p-3 bg-[var(--bg2)] rounded-lg border-l-4 border-[var(--accent)]">
+          <strong class="text-[var(--muted)] text-xs">史记原文</strong>
+          <p class="italic text-[var(--accent)] mt-1 serif vertical-text" style="max-height:200px;overflow:hidden">"${esc(item.quote)}"</p>
+        </div>` : ''}
+        <div><strong class="text-[var(--muted)]">现代用法</strong><p class="text-[var(--muted)]">${esc(item.modernUsage)}</p></div>
+        ${item.characters.length ? `<div class="flex flex-wrap gap-2 pt-2">
+          ${item.characters.map(c => `<span class="text-xs px-2 py-1 rounded bg-[var(--accent)]/10 text-[var(--accent)]">${esc(c)}</span>`).join('')}
+        </div>` : ''}
+      </div>
+    </div>
+  `).join('') : '<div class="text-center text-[var(--muted)] py-12 col-span-2">未找到匹配的典故</div>';
+
+  // Re-init scroll observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  document.querySelectorAll('.scroll-unfold').forEach(el => observer.observe(el));
+}
+
+document.getElementById('filterTags').addEventListener('click', e => {
+  if (e.target.classList.contains('filter-btn')) {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active');
+      b.style.background = ''; b.style.color = ''; b.style.borderColor = '';
+    });
+    e.target.classList.add('active');
+    e.target.style.background = 'var(--accent)';
+    e.target.style.color = '#fff';
+    e.target.style.borderColor = 'var(--accent)';
+    render(e.target.dataset.filter);
+  }
+});
+
+// Set initial active style
+document.querySelector('.filter-btn.active').style.background = 'var(--accent)';
+document.querySelector('.filter-btn.active').style.color = '#fff';
+document.querySelector('.filter-btn.active').style.borderColor = 'var(--accent)';
+
+// Filter out "-重复" filter buttons from UI
+document.querySelectorAll('#filterTags .filter-btn').forEach(function(btn) {
+  var filter = btn.dataset.filter;
+  if (filter && filter.endsWith('-重复')) {
+    btn.style.display = 'none';
+  }
+});
+
+// Search
+const idiomSearchInput = document.getElementById('idiomSearch');
+let searchDebounce;
+idiomSearchInput.addEventListener('input', e => {
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(() => {
+    searchQuery = e.target.value.trim();
+    render(currentFilter);
+  }, 200);
+});
+
+loadData();
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>

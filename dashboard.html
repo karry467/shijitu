@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据总览 — 史迹图</title>
+<link rel="stylesheet" href="common.css?v=2" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="lib/echarts.min.js"></script>
+<link rel="stylesheet" href="lib/leaflet.css" />
+<script src="lib/leaflet.js"></script>
+<style>
+
+
+  #dashMap { width: 100%; height: 400px; border-radius: 8px; }
+  .leaflet-popup-content-wrapper { border-radius: 8px; font-family: "Noto Sans CJK SC", sans-serif; }
+  .leaflet-popup-content { margin: 12px 16px; line-height: 1.6; }
+  [data-theme="dark"] .leaflet-popup-content-wrapper { background: var(--bg2); color: var(--ink); }
+  [data-theme="dark"] .leaflet-popup-tip { background: var(--bg2); }
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0" style="z-index:1000;">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+        <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-5 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--ink)] font-medium">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-6 py-8">
+  <div class="mb-8">
+    <h1 class="text-2xl font-bold serif">数据总览</h1>
+    <p class="text-sm text-[var(--muted)] mt-1">《史记》MVP 数据全景统计</p>
+  </div>
+
+  <!-- Stats Row -->
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8" id="statsRow"></div>
+
+  <!-- Charts Grid -->
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="panel p-6">
+      <h3 class="font-bold serif mb-4">各篇章人物数量</h3>
+      <div id="charByChapter" style="width:100%;height:300px;"></div>
+    </div>
+    <div class="panel p-6">
+      <h3 class="font-bold serif mb-4">关系类型分布</h3>
+      <div id="relTypePie" style="width:100%;height:300px;"></div>
+    </div>
+  </div>
+
+  <!-- Period Distribution Donut + Location Map -->
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+    <div class="panel p-6">
+      <h3 class="font-bold serif mb-4">时代分布</h3>
+      <div id="periodPie" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="panel p-6">
+      <h3 class="font-bold serif mb-4">地域分布</h3>
+      <p class="text-sm text-[var(--muted)] mb-3">标记大小根据关联事件数量缩放，点击可查看地点详情</p>
+      <div id="dashMap" class="map-dark-filter" style="position:relative;z-index:1;"></div>
+    </div>
+  </div>
+
+  <!-- Character Ranking -->
+  <div class="panel p-6 mb-8">
+    <h3 class="font-bold serif mb-4">人物关系数量排行</h3>
+    <p class="text-sm text-[var(--muted)] mb-4">关系越多，说明该人物在历史事件中越核心</p>
+    <div id="charRanking" class="space-y-3" style="max-height:400px;overflow-y:auto;"></div>
+  </div>
+
+  <!-- Event Table -->
+  <div class="panel p-6">
+    <h3 class="font-bold serif mb-4">全部事件一览</h3>
+    <div class="overflow-x-auto" style="max-height:500px;overflow-y:auto;">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[var(--rule)]">
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">时间</th>
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">事件</th>
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">篇章</th>
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">地点</th>
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">涉及人物</th>
+            <th class="text-left py-3 px-4 font-medium text-[var(--muted)]">历史意义</th>
+          </tr>
+        </thead>
+        <tbody id="eventTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-[var(--footer-bg)] text-white/70 py-10 px-6 mt-12">
+  <div class="max-w-5xl mx-auto text-center text-sm">
+    <p class="serif text-white text-lg mb-2">史迹图</p>
+    <p>TRAE AI 创造力大赛 · 社区公益 - 古籍活化工具</p>
+  </div>
+</footer>
+
+<script>
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+let allData = {};
+
+function showError(msg) {
+  const statsRow = document.getElementById('statsRow');
+  if (statsRow) statsRow.innerHTML = '<div class="col-span-full text-center text-[var(--accent)] py-8">' + msg + '</div>';
+}
+
+async function loadData() {
+  try {
+    const [chapters, characters, events, locations, relationships] = await Promise.all([
+      fetch('data/chapters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/characters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/events.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/locations.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/relationships.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; })
+    ]);
+    allData = { chapters, characters, events, locations, relationships };
+    // Filter out "-重复" chapters from display data
+    var dupIds = new Set();
+    allData.chapters.forEach(function(ch) {
+      if (ch.title && ch.title.endsWith('-重复')) dupIds.add(ch.id);
+    });
+    if (dupIds.size > 0) {
+      allData.characters = allData.characters.filter(function(c) { return !dupIds.has(c.chapter); });
+      allData.events = allData.events.filter(function(e) { return !dupIds.has(e.chapter); });
+      allData.locations = allData.locations.filter(function(l) { return !dupIds.has(l.chapter); });
+      allData.chapters = allData.chapters.filter(function(ch) { return !dupIds.has(ch.id); });
+    }
+    renderStats();
+    renderCharts();
+    renderPeriodDonut();
+    renderDashMap();
+    renderRanking();
+    renderEventTable();
+  } catch (e) {
+    console.error(e);
+    showError('数据加载失败，请刷新页面重试');
+  }
+}
+
+function renderStats() {
+  const stats = [
+    { label: '篇章', value: allData.chapters.length, color: 'var(--ink)', icon: '📖' },
+    { label: '人物', value: allData.characters.length, color: 'var(--accent)', icon: '👤' },
+    { label: '事件', value: allData.events.length, color: 'var(--accent2)', icon: '⚔️' },
+    { label: '地点', value: allData.locations.length, color: 'var(--gold)', icon: '📍' },
+    { label: '关系', value: allData.relationships.length, color: '#7A6A8E', icon: '🔗' }
+  ];
+  document.getElementById('statsRow').innerHTML = stats.map(s => `
+    <div class="stat-card panel p-5 text-center">
+      <div class="text-2xl mb-1">${s.icon}</div>
+      <div class="text-3xl font-bold serif" style="color:${s.color}">${s.value}</div>
+      <div class="text-xs text-[var(--muted)] mt-1">${s.label}</div>
+    </div>
+  `).join('');
+}
+
+const dashChapterNames = { wudi: '五帝本纪', xia: '夏本纪', yin: '殷本纪', zhou: '周本纪', qinshi: '秦始皇本纪', xiangyu: '项羽本纪', gaozu: '高祖本纪', lvhou: '吕太后本纪', kongzi: '孔子世家', cheshe: '陈涉世家', cike: '刺客列传', lianpo: '廉颇蔺相如列传', wuyue: '越王勾践世家', shangjun: '商君列传', weigongzi: '魏公子列传', liguang: '李将军列传', qitaigong: '齐太公世家', guanyan: '管晏列传', liuhou: '留侯世家', huaiyinhou: '淮阴侯列传', lu: '鲁周公世家', jin: '晋世家', chu: '楚世家', zhao: '赵世家', sunwuzi: '孙子吴起列传', baiqiwangjian: '白起王翦列传', suqin: '苏秦列传', zhangyi: '张仪列传', mengzi_xunzi: '孟子荀卿列传', xiongnu: '匈奴列传', lisi: '李斯列传', mengtian: '蒙恬列传', wei: '魏世家', han: '韩世家', yan: '燕世家', tianqi: '田敬仲完世家', wutaibo: '吴太伯世家', zheng: '郑世家', song: '宋微子世家', wei_kangshu: '卫康叔世家', fanju_caize: '范雎蔡泽列传', yueyi: '乐毅列传', quyuan_jiasheng: '屈原贾生列传', lvbuwei: '吕不韦列传', qin_benji: '秦本纪', cai: '蔡世家', cao: '曹世家', chenqi: '陈杞世家', waiqi: '外戚世家', ranghou: '穰侯列传', mengchangjun: '孟尝君列传', pingyuanjun: '平原君虞卿列传', chunshenjun: '春申君列传', tiandan: '田单列传', luzhonglian: '鲁仲连邹阳列传', lisheng_lujia: '郦生陆贾列传', zhangchengxiang: '张丞相列传', liujing_shusuntong: '刘敬叔孙通列传', yuanang_chaocuo: '袁盎晁错列传' , xiaowen: '孝文本纪', xiaojing: '孝景本纪', xiaowu: '孝武本纪', liangxiaowang: '梁孝王世家', wuzong: '五宗世家', sanwang: '三王世家', jibu_luanbu: '季布栾布列传', fengtang: '冯唐列传', wanshi: '万石张叔列传', tianshu: '田叔列传', bianque: '扁鹊仓公列传', wuwangbi: '吴王濞列传', weiqi_wuanhou: '魏其武安侯列传', hanchangru: '韩长孺列传', weijiangjun: '卫将军骠骑列传', pingjinhou: '平津侯主父列传', nanyue: '南越列传', dongyue: '东越列传', chaoxian: '朝鲜列传', xinanyi: '西南夷列传', xiaochu: '萧相国世家', caoxiangguo: '曹相国世家', huainan_hengshan_jishan: '淮南衡山济北王列传', qianhouchushu: '循吏列传', lihai_zhichun: '酷吏列传', dayuanyoushi: '大宛列传', youyu: '游侠列传', hongyan: '佞幸列传', shiji_jingzhong: '滑稽列传', rizhualie: '日者列传', guice_lielie: '龟策列传', huozhilie: '货殖列传', sunzi_wuqi: '孙子吴起列传-重复', wuzilie: '伍子胥列传', zhonglishu: '仲尼弟子列传', shangjunlie: '商君列传-重复', suqinlie: '苏秦列传-重复', zhangyilie: '张仪列传-重复', meigeng: '樗里子甘茂列传', ranghoulielie: '穰侯列传-重复', heiqi_juliang_lie: '白起王翦列传-重复', mengchang_lie: '孟尝君列传-重复', pingyuan_lie: '平原君虞卿列传-重复', chunshen_lie: '春申君列传-重复', fan_ju_lie: '范雎蔡泽列传-重复', yueyi_lie: '乐毅列传-重复', lian_po_lin_xiangru_lie: '廉颇蔺相如列传-重复', tian_dan_lie: '田单列传-重复', lu_zhonglian_lie: '鲁仲连邹阳列传-重复', li_jia_shu: '郦生陆贾列传-重复', liang_qi_lie: '刘敬叔孙通列传-重复', quyuan_jiasheng_lie: '屈原贾生列传-重复', lv_buwei_lie: '吕不韦列传-重复', ci_ke_lie: '刺客列传-重复', li_silie: '李斯列传-重复', meng_tian_lie: '蒙恬列传-重复', peng_yue_lie: '彭越列传', ying_bu_lie: '英布列传', huaiyin_hou_lie: '淮阴侯列传-重复', xin_qi_lie: '信陵君列传-重复', yue_wang_goujian_lie: '越王勾践世家-重复', zheng_shi_lie: '郑世家-重复', yuan_ang_chao_cuo_lie: '袁盎晁错列传-重复', banyuan_lie: '扁鹊仓公列传-重复', wu_wang_bi_lie: '吴王濞列传-重复', weiqi_wuanhou_lie: '魏其武安侯列传-重复', li_ji_lian_po_lie: '李将军列传-重复', huo_zhi_lie: '货殖列传-重复', tai_shi_gong: '太史公自序', he_shu: '河渠书', pingzhun_shu: '平准书', fengshan_shu: '封禅书'
+};
+const dashChapterColors = { wudi: '#8B6914', xia: '#B8860B', yin: '#CD7F32', zhou: '#2E8B57', kongzi: '#20B2AA', cike: '#3CB371', lianpo: '#228B22', qinshi: '#4a4a4a', cheshe: '#696969', xiangyu: '#B4462A', gaozu: '#4169E1', lvhou: '#6A5ACD', wuyue: '#8B4513', shangjun: '#4A6741', weigongzi: '#6B4226', liguang: '#4A6FA5', qitaigong: '#2F4F4F', guanyan: '#556B2F', liuhou: '#4682B4', huaiyinhou: '#8B008B', lu: '#8B0000', jin: '#800080', chu: '#006400', zhao: '#FF8C00', sunwuzi: '#8B5A2B', baiqiwangjian: '#A0522D', suqin: '#CD853F', zhangyi: '#DAA520', mengzi_xunzi: '#6B8E23', xiongnu: '#708090', lisi: '#5F9EA0', mengtian: '#008B8B', wei: '#8B4513', han: '#A52A2A', yan: '#483D8B', tianqi: '#008080', wutaibo: '#800000', zheng: '#D2691E', song: '#B22222', wei_kangshu: '#9932CC', fanju_caize: '#6495ED', yueyi: '#DC143C', quyuan_jiasheng: '#1E90FF', lvbuwei: '#FF6347', qin_benji: '#4B0082', cai: '#9400D3', cao: '#FF1493', chenqi: '#00CED1', waiqi: '#FF4500', ranghou: '#7FFFD4', mengchangjun: '#F0E68C', pingyuanjun: '#DDA0DD', chunshenjun: '#98FB98', tiandan: '#F4A460', luzhonglian: '#87CEEB', lisheng_lujia: '#FFB6C1', zhangchengxiang: '#B0C4DE', liujing_shusuntong: '#FFD700', yuanang_chaocuo: '#FF69B4' , xiaowen: '#556B2F', xiaojing: '#8FBC8F', xiaowu: '#CD5C5C', liangxiaowang: '#DEB887', wuzong: '#D2B48C', sanwang: '#BC8F8F', jibu_luanbu: '#778899', fengtang: '#708090', wanshi: '#BDB76B', tianshu: '#8B8378', bianque: '#20B2AA', wuwangbi: '#CD5C5C', weiqi_wuanhou: '#9370DB', hanchangru: '#6B8E23', weijiangjun: '#B22222', pingjinhou: '#A0522D', nanyue: '#2E8B57', dongyue: '#3CB371', chaoxian: '#4682B4', xinanyi: '#5F9EA0', xiaochu: '#2F4F4F', caoxiangguo: '#556B2F', huainan_hengshan_jishan: '#8B008B', qianhouchushu: '#698B22', lihai_zhichun: '#8B0000', dayuanyoushi: '#B8860B', youyu: '#A52A2A', hongyan: '#CD5C5C', shiji_jingzhong: '#20B2AA', rizhualie: '#778899', guice_lielie: '#BDB76B', huozhilie: '#DAA520', sunzi_wuqi: '#8B5A2B', wuzilie: '#4169E1', zhonglishu: '#228B22', shangjunlie: '#4A6741', suqinlie: '#CD853F', zhangyilie: '#DAA520', meigeng: '#708090', ranghoulielie: '#6495ED', heiqi_juliang_lie: '#455A64', mengchang_lie: '#E65100', pingyuan_lie: '#1B5E20', chunshen_lie: '#006064', fan_ju_lie: '#455A64', yueyi_lie: '#AD1457', lian_po_lin_xiangru_lie: '#37474F', tian_dan_lie: '#F57F17', lu_zhonglian_lie: '#1B5E20', li_jia_shu: '#006064', liang_qi_lie: '#455A64', quyuan_jiasheng_lie: '#0097A7', lv_buwei_lie: '#827717', ci_ke_lie: '#37474F', li_silie: '#1565C0', meng_tian_lie: '#4527A0', peng_yue_lie: '#F4511E', ying_bu_lie: '#6A1B9A', huaiyin_hou_lie: '#1565C0', xin_qi_lie: '#00838F', yue_wang_goujian_lie: '#455A64', zheng_shi_lie: '#7B1FA2', yuan_ang_chao_cuo_lie: '#AD1457', banyuan_lie: '#37474F', wu_wang_bi_lie: '#E64A19', weiqi_wuanhou_lie: '#7B1FA2', li_ji_lian_po_lie: '#5D4037', huo_zhi_lie: '#2E7D32', tai_shi_gong: '#4A148C', he_shu: '#00838F', pingzhun_shu: '#2E7D32', fengshan_shu: '#C62828'
+};
+
+function renderCharts() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const chartTextColor = isDark ? '#E8E0D4' : '#2C2416';
+  const chartAxisColor = isDark ? '#3a3530' : '#DDD2C0';
+  const chartSplitLineColor = isDark ? '#2a2520' : '#eee';
+  const chartTooltipBg = isDark ? '#2a2520' : '#fff';
+  const chartTooltipBorder = isDark ? '#3a3530' : '#DDD2C0';
+
+  // Characters by chapter
+  const charChart = echarts.init(document.getElementById('charByChapter'));
+  const chapterCounts = {};
+  allData.characters.forEach(c => { chapterCounts[c.chapter] = (chapterCounts[c.chapter] || 0) + 1; });
+  const chapterOrder = ['wudi','xia','yin','zhou','kongzi','lianpo','lu','jin','chu','zhao','cike','wuyue','shangjun','weigongzi','qitaigong','guanyan','liguang','qinshi','cheshe','xiangyu','gaozu','lvhou','liuhou','huaiyinhou','sunwuzi','baiqiwangjian','suqin','zhangyi','mengzi_xunzi','xiongnu','lisi','mengtian','wutaibo','zheng','song','wei','han','yan','tianqi','wei_kangshu','fanju_caize','yueyi','quyuan_jiasheng','lvbuwei','qin_benji','cai','cao','chenqi','waiqi','ranghou','mengchangjun','pingyuanjun','chunshenjun','tiandan','luzhonglian','lisheng_lujia','zhangchengxiang','liujing_shusuntong','yuanang_chaocuo','xiaowen','xiaojing','xiaowu','liangxiaowang','wuzong','sanwang','jibu_luanbu','fengtang','wanshi','tianshu','bianque','wuwangbi','weiqi_wuanhou','hanchangru','weijiangjun','pingjinhou','nanyue','dongyue','chaoxian','xinanyi', 'xiaochu', 'caoxiangguo', 'huainan_hengshan_jishan', 'qianhouchushu', 'lihai_zhichun', 'dayuanyoushi', 'youyu', 'hongyan', 'shiji_jingzhong', 'rizhualie', 'guice_lielie', 'huozhilie', 'sunzi_wuqi', 'wuzilie', 'zhonglishu', 'shangjunlie', 'suqinlie', 'zhangyilie', 'meigeng', 'ranghoulielie', 'heiqi_juliang_lie', 'mengchang_lie', 'pingyuan_lie', 'chunshen_lie', 'fan_ju_lie', 'yueyi_lie', 'lian_po_lin_xiangru_lie', 'tian_dan_lie', 'lu_zhonglian_lie', 'li_jia_shu', 'liang_qi_lie', 'quyuan_jiasheng_lie', 'lv_buwei_lie', 'ci_ke_lie', 'li_silie', 'meng_tian_lie', 'peng_yue_lie', 'ying_bu_lie', 'huaiyin_hou_lie', 'xin_qi_lie', 'yue_wang_goujian_lie', 'zheng_shi_lie', 'yuan_ang_chao_cuo_lie', 'banyuan_lie', 'wu_wang_bi_lie', 'weiqi_wuanhou_lie', 'li_ji_lian_po_lie', 'huo_zhi_lie', 'tai_shi_gong', 'he_shu', 'pingzhun_shu', 'fengshan_shu'];
+  const orderedChapters = chapterOrder.filter(ch => chapterCounts[ch] > 0);
+  charChart.setOption({
+    tooltip: { trigger: 'axis', backgroundColor: chartTooltipBg, borderColor: chartTooltipBorder, textStyle: { color: chartTextColor } },
+    xAxis: { type: 'category', data: orderedChapters.map(ch => dashChapterNames[ch]), axisLabel: { fontFamily: 'Noto Serif SC', fontSize: 10, rotate: 30, color: chartTextColor }, axisLine: { lineStyle: { color: chartAxisColor } } },
+    yAxis: { type: 'value', minInterval: 1, axisLabel: { color: chartTextColor }, axisLine: { lineStyle: { color: chartAxisColor } }, splitLine: { lineStyle: { color: chartSplitLineColor } } },
+    series: [{
+      type: 'bar',
+      data: orderedChapters.map(ch => ({ value: chapterCounts[ch], itemStyle: { color: dashChapterColors[ch], borderRadius: [6,6,0,0] } })),
+      barWidth: '50%',
+      label: { show: true, position: 'top', fontSize: 14, fontWeight: 'bold', fontFamily: 'Noto Serif SC', color: chartTextColor }
+    }],
+    grid: { left: 40, right: 20, top: 40, bottom: 60 }
+  });
+
+  // Relationship type bar
+  const relChart = echarts.init(document.getElementById('relTypePie'));
+  const relTypes = {};
+  allData.relationships.forEach(r => { relTypes[r.type] = (relTypes[r.type] || 0) + 1; });
+  const relData = Object.entries(relTypes)
+    .map(([name, value]) => ({ name, value }))
+    .sort((a, b) => b.value - a.value);
+  const relColors = ['#B4462A', '#5B7B5A', '#C8A24E', '#7A6A8E', '#4A90D9', '#D4764E', '#6B8E6B', '#8B6914', '#2E8B57', '#CD7F32', '#4169E1', '#6A5ACD', '#20B2AA', '#3CB371', '#228B22', '#696969', '#4a4a4a'];
+  relChart.setOption({
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, backgroundColor: chartTooltipBg, borderColor: chartTooltipBorder, textStyle: { color: chartTextColor } },
+    grid: { left: 60, right: 30, top: 20, bottom: 20 },
+    xAxis: { type: 'value', minInterval: 1, axisLabel: { color: chartTextColor }, axisLine: { lineStyle: { color: chartAxisColor } }, splitLine: { lineStyle: { color: chartSplitLineColor } } },
+    yAxis: { type: 'category', data: relData.map(d => d.name), axisLabel: { fontFamily: 'Noto Serif SC', fontSize: 11, color: chartTextColor }, axisLine: { lineStyle: { color: chartAxisColor } } },
+    series: [{
+      type: 'bar',
+      data: relData.map((d, i) => ({ value: d.value, itemStyle: { color: relColors[i % relColors.length], borderRadius: [0, 4, 4, 0] } })),
+      barWidth: '60%',
+      label: { show: true, position: 'right', fontSize: 12, fontFamily: 'Noto Serif SC', color: chartTextColor }
+    }]
+  });
+
+  window.addEventListener('resize', () => {
+    charChart.resize(); relChart.resize();
+  });
+}
+
+function renderPeriodDonut() {
+  const periodChart = echarts.init(document.getElementById('periodPie'));
+  const periodCounts = {};
+  allData.chapters.forEach(ch => {
+    periodCounts[ch.period] = (periodCounts[ch.period] || 0) + 1;
+  });
+
+  const periodData = Object.entries(periodCounts)
+    .sort((a, b) => b[1] - a[1]);
+
+  const periodColors = [
+    '#B4462A', '#5B7B5A', '#C8A24E', '#8B7E6A', '#7A6A8E', '#4A90D9',
+    '#D4764E', '#6B8E6B', '#8B6914', '#2E8B57', '#CD7F32', '#4169E1',
+    '#6A5ACD', '#20B2AA', '#3CB371', '#228B22', '#708090', '#FF8C00',
+    '#A0522D', '#CD853F', '#DAA520', '#4682B4', '#8B008B', '#FF6347',
+    '#006400', '#A52A2A', '#483D8B', '#008080'
+  ];
+
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const textColor = isDark ? '#E8E0D4' : '#2C2416';
+
+  periodChart.setOption({
+    tooltip: {
+      trigger: 'item',
+      formatter: p => `${p.name}<br/>${p.value} 篇 (${p.percent}%)`
+    },
+    legend: {
+      type: 'scroll',
+      orient: 'vertical',
+      right: 10,
+      top: 20,
+      bottom: 20,
+      textStyle: { fontFamily: 'Noto Serif SC', fontSize: 11, color: textColor },
+      formatter: name => {
+        const item = periodData.find(d => d[0] === name);
+        return name + ' (' + (item ? item[1] : '') + ')';
+      }
+    },
+    color: periodColors,
+    series: [{
+      type: 'pie',
+      radius: ['35%', '65%'],
+      center: ['35%', '50%'],
+      avoidLabelOverlap: true,
+      itemStyle: {
+        borderRadius: 6,
+        borderColor: isDark ? '#1a1814' : '#F8F4EC',
+        borderWidth: 2
+      },
+      label: {
+        show: true,
+        formatter: '{b}\n{d}%',
+        fontFamily: 'Noto Serif SC',
+        fontSize: 10,
+        color: textColor
+      },
+      labelLine: {
+        lineStyle: { color: isDark ? '#3a3530' : '#DDD2C0' }
+      },
+      emphasis: {
+        label: { show: true, fontSize: 13, fontWeight: 'bold' },
+        itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.2)' }
+      },
+      data: periodData.map(d => ({ name: d[0], value: d[1] }))
+    }]
+  });
+
+  window.addEventListener('resize', () => { periodChart.resize(); });
+}
+
+let dashMapInstance = null;
+function renderDashMap() {
+  if (dashMapInstance) { dashMapInstance.remove(); dashMapInstance = null; }
+
+  dashMapInstance = L.map('dashMap').setView([35.0, 110.0], 5);
+  L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+    subdomains: ['1','2','3','4'],
+    attribution: '高德地图',
+    maxZoom: 18
+  }).addTo(dashMapInstance);
+
+  // Count events per location
+  const locEventCount = {};
+  allData.locations.forEach(loc => {
+    const relatedEvents = allData.events.filter(e => e.locationId === loc.id);
+    locEventCount[loc.id] = relatedEvents.length;
+  });
+  const maxEvents = Math.max(...Object.values(locEventCount), 1);
+
+  const coordCounts = {};
+  allData.locations.forEach(loc => {
+    const key = `${loc.lat.toFixed(3)},${loc.lng.toFixed(3)}`;
+    const count = coordCounts[key] || 0;
+    coordCounts[key] = count + 1;
+
+    let lat = loc.lat, lng = loc.lng;
+    if (count > 0) {
+      const angle = count * 0.8;
+      const radius = 0.03 * Math.sqrt(count);
+      lat += radius * Math.cos(angle);
+      lng += radius * Math.sin(angle) / Math.cos(lat * Math.PI / 180);
+    }
+
+    const eventCount = locEventCount[loc.id] || 0;
+    const baseRadius = 6;
+    const scaledRadius = baseRadius + (eventCount / maxEvents) * 14;
+
+    const color = dashChapterColors[loc.chapter] || '#8B7E6A';
+    const marker = L.circleMarker([lat, lng], {
+      radius: scaledRadius,
+      fillColor: color,
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.7
+    }).addTo(dashMapInstance);
+
+    const relatedEvents = allData.events.filter(e => e.locationId === loc.id);
+    const popup = `
+      <div class="min-w-[180px]">
+        <h3 class="font-bold serif text-base mb-1" style="color:${color}">${loc.name}</h3>
+        <p class="text-xs mb-2" style="color:var(--muted)">今：${loc.modernName}</p>
+        <p class="text-sm mb-2" style="color:var(--ink)">${loc.description}</p>
+        <div class="text-xs mb-1" style="color:var(--muted)">相关事件 (${eventCount})：</div>
+        <div class="space-y-1 mt-1">
+          ${relatedEvents.map(e => `<div class="text-sm font-medium" style="color:var(--ink)">${e.date} · ${e.name}</div>`).join('')}
+        </div>
+        <a href="detail.html?type=location&id=${loc.id}" class="inline-block mt-2 text-xs px-2 py-1 rounded" style="background:${color};color:#fff;text-decoration:none">查看详情</a>
+      </div>
+    `;
+    marker.bindPopup(popup);
+    marker.on('click', () => { /* popup auto-opens */ });
+  });
+
+  // fitBounds
+  const bounds = [];
+  allData.locations.forEach(loc => {
+    if (loc.lat && loc.lng) bounds.push([loc.lat, loc.lng]);
+  });
+  if (bounds.length) {
+    dashMapInstance.fitBounds(bounds, { pad: [20, 20] });
+  }
+}
+
+function renderRanking() {
+  const charRelCount = {};
+  allData.characters.forEach(c => { charRelCount[c.name] = { count: 0, id: c.id, chapter: c.chapter }; });
+  allData.relationships.forEach(r => {
+    if (charRelCount[r.source]) charRelCount[r.source].count++;
+    if (charRelCount[r.target]) charRelCount[r.target].count++;
+  });
+  const sorted = Object.entries(charRelCount).sort((a, b) => b[1].count - a[1].count);
+  const maxCount = sorted[0]?.[1].count || 1;
+
+  document.getElementById('charRanking').innerHTML = sorted.map(([name, info], i) => {
+    const pct = (info.count / maxCount * 100).toFixed(0);
+    const color = info.chapter === 'xiangyu' ? 'var(--accent)' : 'var(--accent2)';
+    const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `<span class="text-[var(--muted)]">${i+1}</span>`;
+    return `
+      <div class="flex items-center gap-4">
+        <div class="w-8 text-center text-sm">${medal}</div>
+        <div class="flex-1">
+          <div class="flex justify-between mb-1">
+            <a href="detail.html?type=character&id=${info.id}" class="font-medium text-sm hover:text-[var(--accent)]">${esc(name)}</a>
+            <span class="text-xs text-[var(--muted)]">${info.count} 个关系</span>
+          </div>
+          <div class="h-2 rounded-full bg-[var(--bg2)]">
+            <div class="h-full rounded-full transition-all duration-1000" style="width:${pct}%;background:${color}"></div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderEventTable() {
+  const sorted = [...allData.events].sort((a, b) => a.year - b.year);
+  document.getElementById('eventTable').innerHTML = sorted.map(e => `
+    <tr class="border-b border-[var(--rule)] hover:bg-[var(--bg2)] transition cursor-pointer" onclick="location.href='detail.html?type=event&id=${e.id}'">
+      <td class="py-3 px-4 font-medium text-[var(--accent)] whitespace-nowrap">${esc(e.date)}</td>
+      <td class="py-3 px-4 font-medium">${esc(e.name)}</td>
+      <td class="py-3 px-4"><span class="text-xs px-2 py-0.5 rounded" style="background:${dashChapterColors[e.chapter]}20;color:${dashChapterColors[e.chapter]}">${dashChapterNames[e.chapter] || e.chapter}</span></td>
+      <td class="py-3 px-4 text-[var(--muted)]">${esc(e.locationName)}</td>
+      <td class="py-3 px-4"><div class="flex flex-wrap gap-1">${e.characters.map(c => `<span class="text-xs px-1.5 py-0.5 rounded bg-[var(--bg2)]">${esc(c)}</span>`).join('')}</div></td>
+      <td class="py-3 px-4 text-xs text-[var(--muted)] max-w-[200px]">${esc(e.significance)}</td>
+    </tr>
+  `).join('');
+}
+
+loadData();
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>

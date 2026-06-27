@@ -1,0 +1,1624 @@
+[
+  {
+    "id": "banyuan",
+    "name": "阪泉",
+    "chapter": "wudi",
+    "modernName": "河北涿鹿东南",
+    "lat": 40.4,
+    "lng": 115.2,
+    "description": "阪泉之战的发生地，黄帝与炎帝在此展开大战。",
+    "events": [
+      "阪泉之战"
+    ],
+    "significance": "华夏部落统一的关键地点"
+  },
+  {
+    "id": "zhuolu",
+    "name": "涿鹿",
+    "chapter": "wudi",
+    "modernName": "河北涿鹿",
+    "lat": 40.4,
+    "lng": 115.2,
+    "description": "涿鹿之战的发生地，黄帝联合炎帝击败蚩尤。",
+    "events": [
+      "涿鹿之战"
+    ],
+    "significance": "华夏族形成的重要地点"
+  },
+  {
+    "id": "pingyang",
+    "name": "平阳",
+    "chapter": "wudi",
+    "modernName": "山西临汾",
+    "lat": 36.1,
+    "lng": 111.5,
+    "description": "尧的都城，尧舜禅让的发生地。",
+    "events": [
+      "尧舜禅让"
+    ],
+    "significance": "上古圣王都城"
+  },
+  {
+    "id": "tushan",
+    "name": "涂山",
+    "chapter": "xia",
+    "modernName": "安徽蚌埠",
+    "lat": 32.9,
+    "lng": 117.4,
+    "description": "大禹治水成功后在此会盟诸侯，也是大禹娶妻之地。",
+    "events": [
+      "涂山之会",
+      "大禹治水"
+    ],
+    "significance": "夏朝建立的标志性地点"
+  },
+  {
+    "id": "yangcheng",
+    "name": "阳城",
+    "chapter": "xia",
+    "modernName": "河南登封",
+    "lat": 34.5,
+    "lng": 113.0,
+    "description": "夏朝早期的都城，夏启继位之地。",
+    "events": [
+      "夏启继位"
+    ],
+    "significance": "夏朝都城之一"
+  },
+  {
+    "id": "mingtiao_loc",
+    "name": "鸣条",
+    "chapter": "xia",
+    "modernName": "山西夏县",
+    "lat": 35.1,
+    "lng": 111.2,
+    "description": "鸣条之战的发生地，商汤在此击败夏桀。",
+    "events": [
+      "鸣条之战"
+    ],
+    "significance": "夏商更替的决战之地"
+  },
+  {
+    "id": "zhenxun",
+    "name": "斟鄩",
+    "chapter": "xia",
+    "modernName": "河南偃师",
+    "lat": 34.7,
+    "lng": 112.8,
+    "description": "夏朝中后期的都城之一。",
+    "events": [],
+    "significance": "夏朝重要都城"
+  },
+  {
+    "id": "bo",
+    "name": "亳",
+    "chapter": "yin",
+    "modernName": "河南商丘",
+    "lat": 34.4,
+    "lng": 115.7,
+    "description": "商汤建立商朝时的都城。",
+    "events": [
+      "商汤灭夏"
+    ],
+    "significance": "商朝开国都城"
+  },
+  {
+    "id": "yinxu",
+    "name": "殷墟",
+    "chapter": "yin",
+    "modernName": "河南安阳",
+    "lat": 36.1,
+    "lng": 114.3,
+    "description": "盘庚迁都后的商朝都城遗址，出土大量甲骨文。",
+    "events": [
+      "盘庚迁殷"
+    ],
+    "significance": "商朝中后期都城，甲骨文发现地"
+  },
+  {
+    "id": "muye",
+    "name": "牧野",
+    "chapter": "yin",
+    "modernName": "河南淇县",
+    "lat": 35.6,
+    "lng": 114.2,
+    "description": "牧野之战的发生地，周武王在此击败商纣王。",
+    "events": [
+      "牧野之战"
+    ],
+    "significance": "商周更替的决战之地"
+  },
+  {
+    "id": "chaoge",
+    "name": "朝歌",
+    "chapter": "yin",
+    "modernName": "河南淇县",
+    "lat": 35.6,
+    "lng": 114.2,
+    "description": "商朝末期的都城，纣王自焚之地。",
+    "events": [
+      "纣王自焚"
+    ],
+    "significance": "商朝末代都城"
+  },
+  {
+    "id": "qishan",
+    "name": "岐山",
+    "chapter": "zhou",
+    "modernName": "陕西岐山",
+    "lat": 34.4,
+    "lng": 107.6,
+    "description": "周族的发源地，周文王以德治国的地方。",
+    "events": [
+      "文王演周易"
+    ],
+    "significance": "周族兴起的基地"
+  },
+  {
+    "id": "haojing",
+    "name": "镐京",
+    "chapter": "zhou",
+    "modernName": "陕西西安",
+    "lat": 34.3,
+    "lng": 108.9,
+    "description": "西周的都城，周公摄政之地。",
+    "events": [
+      "周公摄政"
+    ],
+    "significance": "西周都城"
+  },
+  {
+    "id": "lishan",
+    "name": "骊山",
+    "chapter": "zhou",
+    "modernName": "陕西临潼",
+    "lat": 34.4,
+    "lng": 109.2,
+    "description": "周幽王烽火戏诸侯的地方，也是秦始皇陵墓所在地。",
+    "events": [
+      "烽火戏诸侯"
+    ],
+    "significance": "西周灭亡的关键地点"
+  },
+  {
+    "id": "lintao",
+    "name": "临洮",
+    "chapter": "qinshi",
+    "modernName": "甘肃岷县",
+    "lat": 34.4,
+    "lng": 104.0,
+    "description": "秦长城西起点，蒙恬修筑长城的起始地。",
+    "events": [
+      "修筑长城"
+    ],
+    "significance": "万里长城西起点"
+  },
+  {
+    "id": "shajuu",
+    "name": "沙丘",
+    "chapter": "qinshi",
+    "modernName": "河北广宗",
+    "lat": 37.1,
+    "lng": 115.2,
+    "description": "秦始皇病逝的地方，也是赵武灵王饿死之地。",
+    "events": [
+      "沙丘之变"
+    ],
+    "significance": "秦朝由盛转衰的转折点"
+  },
+  {
+    "id": "bolangsha",
+    "name": "博浪沙",
+    "chapter": "qinshi",
+    "modernName": "河南原阳",
+    "lat": 35.0,
+    "lng": 113.7,
+    "description": "张良派刺客在此狙击秦始皇，误中副车。",
+    "events": [],
+    "significance": "刺杀秦始皇未遂之地"
+  },
+  {
+    "id": "peixian",
+    "name": "沛县",
+    "chapter": "gaozu",
+    "modernName": "江苏沛县",
+    "lat": 34.7,
+    "lng": 116.9,
+    "description": "刘邦的故乡，刘邦起兵之地。",
+    "events": [
+      "刘邦起兵"
+    ],
+    "significance": "汉高祖故乡"
+  },
+  {
+    "id": "bashang",
+    "name": "霸上",
+    "chapter": "gaozu",
+    "modernName": "陕西西安",
+    "lat": 34.3,
+    "lng": 109.0,
+    "description": "刘邦入关中后驻军之地，在此与关中父老约法三章。",
+    "events": [
+      "约法三章"
+    ],
+    "significance": "刘邦取得民心的关键地点"
+  },
+  {
+    "id": "sishui",
+    "name": "汜水",
+    "chapter": "gaozu",
+    "modernName": "河南荥阳",
+    "lat": 34.8,
+    "lng": 113.4,
+    "description": "楚汉争霸的重要战场，刘邦称帝之地。",
+    "events": [
+      "楚汉争霸",
+      "刘邦称帝"
+    ],
+    "significance": "汉朝建立之地"
+  },
+  {
+    "id": "luoyang",
+    "name": "洛阳",
+    "chapter": "gaozu",
+    "modernName": "河南洛阳",
+    "lat": 34.6,
+    "lng": 112.5,
+    "description": "刘邦初建汉朝时的都城，后迁都长安。",
+    "events": [
+      "剪除异姓王",
+      "锥刺股",
+      "一诺千金"
+    ],
+    "significance": "东汉都城，西汉初期都城"
+  },
+  {
+    "id": "changan",
+    "name": "长安",
+    "chapter": "gaozu",
+    "modernName": "陕西西安",
+    "lat": 34.3,
+    "lng": 108.9,
+    "description": "西汉都城，刘邦建立汉朝后迁都于此。",
+    "events": [
+      "诸吕之乱"
+    ],
+    "significance": "中国历史上最重要的都城之一"
+  },
+  {
+    "id": "weiyanggong",
+    "name": "未央宫",
+    "chapter": "lvhou",
+    "modernName": "陕西西安",
+    "lat": 34.3,
+    "lng": 108.9,
+    "description": "西汉皇宫，吕后临朝称制之地。",
+    "events": [
+      "吕后称制"
+    ],
+    "significance": "西汉政治中心"
+  },
+  {
+    "id": "zhaodi",
+    "name": "赵邸",
+    "chapter": "lvhou",
+    "modernName": "河北邯郸",
+    "lat": 36.6,
+    "lng": 114.5,
+    "description": "赵王如意的府邸，吕后在此毒杀刘如意。",
+    "events": [
+      "人彘之祸"
+    ],
+    "significance": "吕后心狠手辣的象征地点"
+  },
+  {
+    "id": "daiguo",
+    "name": "代国",
+    "chapter": "lvhou",
+    "modernName": "山西代县",
+    "lat": 39.1,
+    "lng": 112.9,
+    "description": "汉文帝刘恒即位前的封地。",
+    "events": [],
+    "significance": "汉文帝故封地"
+  },
+  {
+    "id": "qufu",
+    "name": "曲阜",
+    "chapter": "kongzi",
+    "modernName": "山东曲阜",
+    "lat": 35.6,
+    "lng": 117.0,
+    "description": "孔子的故乡，孔子出生和逝世之地，儒家圣地。",
+    "events": [
+      "孔子出世",
+      "孔子逝世"
+    ],
+    "significance": "儒家圣地"
+  },
+  {
+    "id": "xingtan",
+    "name": "杏坛",
+    "chapter": "kongzi",
+    "modernName": "山东曲阜",
+    "lat": 35.6,
+    "lng": 117.0,
+    "description": "孔子讲学之地，后成为教育圣地的代称。",
+    "events": [
+      "删订六经"
+    ],
+    "significance": "孔子教育事业的象征"
+  },
+  {
+    "id": "luoyi",
+    "name": "洛邑",
+    "chapter": "kongzi",
+    "modernName": "河南洛阳",
+    "lat": 34.6,
+    "lng": 112.5,
+    "description": "周朝东都，孔子曾在此向老子问礼。",
+    "events": [],
+    "significance": "东周都城"
+  },
+  {
+    "id": "chencai",
+    "name": "陈蔡",
+    "chapter": "kongzi",
+    "modernName": "河南淮阳/上蔡",
+    "lat": 33.7,
+    "lng": 114.9,
+    "description": "孔子周游列国时被困之地，陈蔡之间绝粮七日，孔子仍弦歌不辍。",
+    "events": [
+      "周游列国"
+    ],
+    "significance": "孔子坚持理想精神的象征"
+  },
+  {
+    "id": "dazexiang",
+    "name": "大泽乡",
+    "chapter": "cheshe",
+    "modernName": "安徽宿州",
+    "lat": 33.6,
+    "lng": 116.9,
+    "description": "陈胜吴广起义的发生地，中国历史上第一次大规模农民起义的起点。",
+    "events": [
+      "大泽乡起义"
+    ],
+    "significance": "中国农民起义的起点"
+  },
+  {
+    "id": "chenxian",
+    "name": "陈县",
+    "chapter": "cheshe",
+    "modernName": "河南淮阳",
+    "lat": 33.7,
+    "lng": 114.9,
+    "description": "陈胜攻克后在此称王，建立张楚政权。",
+    "events": [
+      "陈胜称王"
+    ],
+    "significance": "张楚政权的都城"
+  },
+  {
+    "id": "xingyang",
+    "name": "荥阳",
+    "chapter": "cheshe",
+    "modernName": "河南荥阳",
+    "lat": 34.8,
+    "lng": 113.4,
+    "description": "起义军与秦军激战之地，吴广在此被杀。",
+    "events": [
+      "起义失败"
+    ],
+    "significance": "秦末战争的重要战场"
+  },
+  {
+    "id": "yishui",
+    "name": "易水",
+    "chapter": "cike",
+    "modernName": "河北易县",
+    "lat": 39.3,
+    "lng": 115.5,
+    "description": "燕太子丹送别荆轲之地，'风萧萧兮易水寒'的发生地。",
+    "events": [
+      "易水送别"
+    ],
+    "significance": "中国历史上最悲壮的送别地点"
+  },
+  {
+    "id": "xianyanggong",
+    "name": "咸阳宫",
+    "chapter": "cike",
+    "modernName": "陕西咸阳",
+    "lat": 34.3,
+    "lng": 108.7,
+    "description": "秦朝皇宫，荆轲刺秦王的发生地。",
+    "events": [
+      "荆轲刺秦王",
+      "高渐离击筑"
+    ],
+    "significance": "秦朝政治中心"
+  },
+  {
+    "id": "jieshi",
+    "name": "碣石",
+    "chapter": "cike",
+    "modernName": "河北昌黎",
+    "lat": 39.7,
+    "lng": 119.2,
+    "description": "燕国东部海边，太子丹曾在此谋划刺秦。",
+    "events": [],
+    "significance": "燕国海防重地"
+  },
+  {
+    "id": "yanguo",
+    "name": "燕国",
+    "chapter": "cike",
+    "modernName": "河北/北京一带",
+    "lat": 39.9,
+    "lng": 116.4,
+    "description": "战国七雄之一，太子丹派荆轲刺秦的发生地。",
+    "events": [
+      "荆轲刺秦王"
+    ],
+    "significance": "荆轲刺秦的策划地"
+  },
+  {
+    "id": "kuaiji",
+    "name": "会稽",
+    "chapter": "xiangyu",
+    "modernName": "浙江绍兴",
+    "lat": 30.0,
+    "lng": 120.6,
+    "description": "项羽随叔父项梁起兵之地，秦始皇东巡时项羽曾在此说出'彼可取而代也'的豪言。",
+    "events": [
+      "项羽起兵"
+    ],
+    "significance": "项羽反秦的起点"
+  },
+  {
+    "id": "julu",
+    "name": "巨鹿",
+    "chapter": "xiangyu",
+    "modernName": "河北平乡",
+    "lat": 37.0,
+    "lng": 114.9,
+    "description": "巨鹿之战的发生地，项羽在此破釜沉舟，以少胜多大败秦军主力。",
+    "events": [
+      "巨鹿之战"
+    ],
+    "significance": "项羽崛起的关键战役地点"
+  },
+  {
+    "id": "xianyang",
+    "name": "咸阳",
+    "chapter": "xiangyu",
+    "modernName": "陕西咸阳",
+    "lat": 34.3,
+    "lng": 108.7,
+    "description": "秦朝都城，项羽入关后火烧阿房宫，处死秦王子婴。",
+    "events": [
+      "分封诸侯"
+    ],
+    "significance": "秦朝政治中心"
+  },
+  {
+    "id": "hongmen",
+    "name": "鸿门",
+    "chapter": "xiangyu",
+    "modernName": "陕西临潼",
+    "lat": 34.4,
+    "lng": 109.2,
+    "description": "鸿门宴发生地，项羽军营所在地。",
+    "events": [
+      "鸿门宴"
+    ],
+    "significance": "楚汉命运的转折点"
+  },
+  {
+    "id": "pengcheng",
+    "name": "彭城",
+    "chapter": "xiangyu",
+    "modernName": "江苏徐州",
+    "lat": 34.3,
+    "lng": 117.2,
+    "description": "西楚霸王项羽的都城，楚汉战争中多次争夺的焦点。",
+    "events": [
+      "彭城之战"
+    ],
+    "significance": "项羽的政治中心"
+  },
+  {
+    "id": "gaixia",
+    "name": "垓下",
+    "chapter": "xiangyu",
+    "modernName": "安徽灵璧",
+    "lat": 33.5,
+    "lng": 117.3,
+    "description": "垓下之围的发生地，韩信率联军围困项羽，四面楚歌。",
+    "events": [
+      "垓下之围"
+    ],
+    "significance": "楚汉争霸的决战之地"
+  },
+  {
+    "id": "wujiang",
+    "name": "乌江",
+    "chapter": "xiangyu",
+    "modernName": "安徽和县乌江镇",
+    "lat": 31.8,
+    "lng": 118.4,
+    "description": "项羽兵败突围至此，乌江亭长劝其渡江，项羽以无颜见江东父老为由拒绝，自刎而死。",
+    "events": [
+      "乌江自刎"
+    ],
+    "significance": "一代霸王的终点"
+  },
+  {
+    "id": "dingtao",
+    "name": "定陶",
+    "chapter": "xiangyu",
+    "modernName": "山东定陶",
+    "lat": 35.1,
+    "lng": 115.6,
+    "description": "项梁战死之地。",
+    "events": [
+      "项梁战死"
+    ],
+    "significance": "项梁战死之地"
+  },
+  {
+    "id": "nanzheng",
+    "name": "南郑",
+    "chapter": "xiangyu",
+    "modernName": "陕西汉中",
+    "lat": 33.1,
+    "lng": 107.0,
+    "description": "刘邦被封为汉王后的都城，萧何月下追韩信的发生地。",
+    "events": [
+      "萧何月下追韩信"
+    ],
+    "significance": "刘邦被封汉王之地"
+  },
+  {
+    "id": "handan",
+    "name": "邯郸",
+    "chapter": "lianpo",
+    "modernName": "河北邯郸",
+    "lat": 36.6,
+    "lng": 114.5,
+    "description": "赵国都城，廉颇蔺相如故事的主要发生地。",
+    "events": [
+      "负荆请罪"
+    ],
+    "significance": "赵国政治中心"
+  },
+  {
+    "id": "qin",
+    "name": "秦国",
+    "chapter": "lianpo",
+    "modernName": "陕西一带",
+    "lat": 34.3,
+    "lng": 109.0,
+    "description": "秦国所在地，蔺相如携和氏璧入秦，完璧归赵的故事发生地。",
+    "events": [
+      "完璧归赵",
+      "秦穆公称霸",
+      "商鞅变法"
+    ],
+    "significance": "秦国政治中心"
+  },
+  {
+    "id": "miandian",
+    "name": "渑池",
+    "chapter": "lianpo",
+    "modernName": "河南渑池",
+    "lat": 34.8,
+    "lng": 111.8,
+    "description": "秦赵两国国君相会之地，蔺相如以死相拼维护赵国尊严。",
+    "events": [
+      "渑池之会"
+    ],
+    "significance": "外交斗争的重要地点"
+  },
+  {
+    "id": "changping",
+    "name": "长平",
+    "chapter": "lianpo",
+    "modernName": "山西高平",
+    "lat": 35.8,
+    "lng": 112.9,
+    "description": "长平之战的发生地，赵括纸上谈兵导致四十万赵军被坑杀。",
+    "events": [
+      "长平之战"
+    ],
+    "significance": "战国最惨烈的战役地点"
+  },
+  {
+    "id": "kuaiji_wuyue",
+    "name": "会稽山",
+    "chapter": "wuyue",
+    "modernName": "浙江绍兴",
+    "lat": 30.0,
+    "lng": 120.6,
+    "description": "越王勾践战败后退守之地，也是卧薪尝胆、励精图治之地。",
+    "events": [
+      "卧薪尝胆"
+    ],
+    "significance": "勾践复国精神的象征"
+  },
+  {
+    "id": "gusu",
+    "name": "姑苏",
+    "chapter": "wuyue",
+    "modernName": "江苏苏州",
+    "lat": 31.3,
+    "lng": 120.6,
+    "description": "吴国都城，夫差在此建姑苏台，最终被勾践攻破。",
+    "events": [
+      "勾践灭吴"
+    ],
+    "significance": "吴国政治中心"
+  },
+  {
+    "id": "wuhu",
+    "name": "五湖",
+    "chapter": "wuyue",
+    "modernName": "太湖一带",
+    "lat": 31.2,
+    "lng": 120.3,
+    "description": "范蠡功成身退后携西施泛舟之地。",
+    "events": [
+      "范蠡归隐"
+    ],
+    "significance": "功成身退的象征"
+  },
+  {
+    "id": "gusu_tai",
+    "name": "姑苏台",
+    "chapter": "wuyue",
+    "modernName": "江苏苏州",
+    "lat": 31.3,
+    "lng": 120.6,
+    "description": "夫差修建的豪华宫殿，也是吴国灭亡之地。",
+    "events": [
+      "夫椒之战"
+    ],
+    "significance": "吴国奢靡误国的象征"
+  },
+  {
+    "id": "yueyang",
+    "name": "栎阳",
+    "chapter": "shangjun",
+    "modernName": "陕西阎良",
+    "lat": 34.7,
+    "lng": 109.2,
+    "description": "秦国早期都城，商鞅变法前秦孝公曾在此发布求贤令。",
+    "events": [],
+    "significance": "秦国变法的前奏"
+  },
+  {
+    "id": "hanguguan",
+    "name": "函谷关",
+    "chapter": "shangjun",
+    "modernName": "河南灵宝",
+    "lat": 34.6,
+    "lng": 110.9,
+    "description": "秦国的东大门，地势险要，是进出关中地区的咽喉要道。",
+    "events": [],
+    "significance": "秦国的军事要塞"
+  },
+  {
+    "id": "yimen",
+    "name": "夷门",
+    "chapter": "weigongzi",
+    "modernName": "河南开封",
+    "lat": 34.8,
+    "lng": 114.3,
+    "description": "大梁城的东门，侯嬴看守之地。信陵君在此迎接侯嬴，也是侯嬴自刎送行之地。",
+    "events": [
+      "窃符救赵"
+    ],
+    "significance": "信陵君礼贤下士的象征"
+  },
+  {
+    "id": "yecheng",
+    "name": "邺城",
+    "chapter": "weigongzi",
+    "modernName": "河北临漳",
+    "lat": 36.3,
+    "lng": 114.6,
+    "description": "信陵君大破秦军解邯郸之围后，不敢归魏，留居赵地。",
+    "events": [
+      "救赵存魏"
+    ],
+    "significance": "信陵君威震天下之地"
+  },
+  {
+    "id": "daliang",
+    "name": "大梁",
+    "chapter": "weigongzi",
+    "modernName": "河南开封",
+    "lat": 34.8,
+    "lng": 114.3,
+    "description": "魏国都城，信陵君礼贤下士之地，侯嬴看守的夷门即是大梁东门。",
+    "events": [
+      "窃符救赵"
+    ],
+    "significance": "魏国政治中心"
+  },
+  {
+    "id": "longxi",
+    "name": "陇西",
+    "chapter": "liguang",
+    "modernName": "甘肃临洮",
+    "lat": 35.4,
+    "lng": 103.9,
+    "description": "李广的祖籍之地，也是汉代与匈奴交战的前沿。",
+    "events": [],
+    "significance": "李广故里"
+  },
+  {
+    "id": "shangjun_loc",
+    "name": "上郡",
+    "chapter": "liguang",
+    "modernName": "陕西榆林",
+    "lat": 38.3,
+    "lng": 109.7,
+    "description": "李广驻守之地，曾在此射石入箭。",
+    "events": [
+      "李广射石"
+    ],
+    "significance": "飞将军镇守的边郡"
+  },
+  {
+    "id": "yanmenguan",
+    "name": "雁门关",
+    "chapter": "liguang",
+    "modernName": "山西代县",
+    "lat": 39.2,
+    "lng": 112.4,
+    "description": "长城重要关隘，李广多次在此与匈奴交战。",
+    "events": [],
+    "significance": "汉代边防要塞"
+  },
+  {
+    "id": "youbeiping",
+    "name": "右北平",
+    "chapter": "liguang",
+    "modernName": "河北平泉",
+    "lat": 41.0,
+    "lng": 118.7,
+    "description": "李广驻守右北平期间，匈奴数年不敢入侵。",
+    "events": [
+      "漠北之战",
+      "李广自刎"
+    ],
+    "significance": "飞将军威名远扬之地"
+  },
+  {
+    "id": "weishui",
+    "name": "渭水",
+    "chapter": "qitaigong",
+    "modernName": "陕西宝鸡",
+    "lat": 34.4,
+    "lng": 107.2,
+    "description": "姜子牙垂钓之地，周文王在此遇到姜子牙。",
+    "events": [
+      "姜太公钓鱼"
+    ],
+    "significance": "周朝兴起的开端"
+  },
+  {
+    "id": "yingqiu",
+    "name": "营丘",
+    "chapter": "qitaigong",
+    "modernName": "山东临淄",
+    "lat": 36.9,
+    "lng": 118.3,
+    "description": "姜子牙封于齐后建立的都城，后改称临淄。",
+    "events": [],
+    "significance": "齐国开国都城"
+  },
+  {
+    "id": "linzi",
+    "name": "临淄",
+    "chapter": "qitaigong",
+    "modernName": "山东淄博",
+    "lat": 36.9,
+    "lng": 118.3,
+    "description": "齐国都城，春秋战国时期最繁华的都市之一。管仲、晏婴在此辅佐齐君。",
+    "events": [
+      "尊王攘夷",
+      "管鲍之交",
+      "二桃杀三士",
+      "稷下学宫"
+    ],
+    "significance": "齐国政治文化中心"
+  },
+  {
+    "id": "xiapi",
+    "name": "下邳",
+    "chapter": "liuhou",
+    "modernName": "江苏睢宁",
+    "lat": 34.0,
+    "lng": 117.9,
+    "description": "张良隐居之地，在此遇到黄石公，得授《太公兵法》。",
+    "events": [
+      "圯上受书"
+    ],
+    "significance": "张良人生的转折点"
+  },
+  {
+    "id": "liuxian",
+    "name": "留县",
+    "chapter": "liuhou",
+    "modernName": "江苏沛县",
+    "lat": 34.7,
+    "lng": 116.9,
+    "description": "刘邦封张良为留侯的封地。",
+    "events": [],
+    "significance": "张良封号来源"
+  },
+  {
+    "id": "huaiyin",
+    "name": "淮阴",
+    "chapter": "huaiyinhou",
+    "modernName": "江苏淮安",
+    "lat": 33.6,
+    "lng": 119.0,
+    "description": "韩信的故乡，韩信在此受胯下之辱。",
+    "events": [
+      "胯下之辱"
+    ],
+    "significance": "韩信故里"
+  },
+  {
+    "id": "hanzhong",
+    "name": "汉中",
+    "chapter": "huaiyinhou",
+    "modernName": "陕西汉中",
+    "lat": 33.1,
+    "lng": 107.0,
+    "description": "刘邦被封汉王后的封地，韩信在此被拜为大将。",
+    "events": [
+      "萧何月下追韩信"
+    ],
+    "significance": "韩信拜将之地"
+  },
+  {
+    "id": "changle",
+    "name": "长乐宫",
+    "chapter": "huaiyinhou",
+    "modernName": "陕西西安",
+    "lat": 34.3,
+    "lng": 108.9,
+    "description": "西汉皇宫，韩信被吕后诱杀于此。",
+    "events": [],
+    "significance": "韩信悲剧的终点"
+  },
+  {
+    "id": "kelu",
+    "name": "柯邑",
+    "chapter": "lu",
+    "modernName": "山东阳谷",
+    "lat": 36.1,
+    "lng": 115.8,
+    "description": "齐鲁会盟之地，曹沫在此劫持齐桓公。",
+    "events": [
+      "曹沫劫盟"
+    ],
+    "significance": "曹沫胆识的见证"
+  },
+  {
+    "id": "chengpu",
+    "name": "城濮",
+    "chapter": "jin",
+    "modernName": "山东鄄城",
+    "lat": 35.6,
+    "lng": 115.5,
+    "description": "晋楚城濮之战的发生地，晋文公退避三舍后大败楚军。",
+    "events": [
+      "城濮之战"
+    ],
+    "significance": "晋文公称霸之地"
+  },
+  {
+    "id": "jieshan",
+    "name": "介山",
+    "chapter": "jin",
+    "modernName": "山西介休",
+    "lat": 37.0,
+    "lng": 111.9,
+    "description": "介子推隐居之地，晋文公放火烧山逼其出山，介子推抱树而死。",
+    "events": [
+      "介子推割股"
+    ],
+    "significance": "寒食节起源地"
+  },
+  {
+    "id": "jiangyi",
+    "name": "绛邑",
+    "chapter": "jin",
+    "modernName": "山西侯马",
+    "lat": 35.6,
+    "lng": 111.4,
+    "description": "晋国都城，三家分晋的发生地。",
+    "events": [
+      "三家分晋"
+    ],
+    "significance": "晋国政治中心"
+  },
+  {
+    "id": "yingdu",
+    "name": "郢都",
+    "chapter": "chu",
+    "modernName": "湖北荆州",
+    "lat": 30.3,
+    "lng": 112.2,
+    "description": "楚国都城，楚国政治文化中心。",
+    "events": [
+      "一鸣惊人",
+      "伍子胥奔吴"
+    ],
+    "significance": "楚国政治中心"
+  },
+  {
+    "id": "bicheng",
+    "name": "邲城",
+    "chapter": "chu",
+    "modernName": "河南郑州",
+    "lat": 34.7,
+    "lng": 113.6,
+    "description": "邲之战的发生地，楚庄王大败晋军，成为春秋霸主。",
+    "events": [
+      "问鼎中原"
+    ],
+    "significance": "楚庄王称霸之地"
+  },
+  {
+    "id": "miluojiang",
+    "name": "汨罗江",
+    "chapter": "chu",
+    "modernName": "湖南汨罗",
+    "lat": 28.8,
+    "lng": 113.1,
+    "description": "屈原投江之地，端午节划龙舟纪念屈原的起源。",
+    "events": [
+      "屈原投江"
+    ],
+    "significance": "爱国诗人殉国之地"
+  },
+  {
+    "id": "jinyang",
+    "name": "晋阳",
+    "chapter": "zhao",
+    "modernName": "山西太原",
+    "lat": 37.9,
+    "lng": 112.5,
+    "description": "赵氏封地，赵氏孤儿故事的发生地。",
+    "events": [
+      "赵氏孤儿"
+    ],
+    "significance": "赵氏起源之地"
+  },
+  {
+    "id": "wu_guo",
+    "name": "吴国",
+    "chapter": "sunwuzi",
+    "modernName": "江苏苏州",
+    "lat": 31.3,
+    "lng": 120.6,
+    "description": "吴国都城，孙武在此练兵并辅佐吴王阖闾称霸。",
+    "events": [
+      "孙子练兵",
+      "七国之乱"
+    ],
+    "significance": "孙武练兵之地"
+  },
+  {
+    "id": "luguo",
+    "name": "鲁国",
+    "chapter": "sunwuzi",
+    "modernName": "山东曲阜一带",
+    "lat": 35.6,
+    "lng": 117.0,
+    "description": "吴起曾仕鲁国为将，以鲁军击败齐国。",
+    "events": [],
+    "significance": "吴起仕鲁之地"
+  },
+  {
+    "id": "weiguo_loc",
+    "name": "魏国",
+    "chapter": "sunwuzi",
+    "modernName": "河南开封一带",
+    "lat": 34.8,
+    "lng": 114.3,
+    "description": "吴起曾仕魏国，创立武卒制，击败秦军。",
+    "events": [],
+    "significance": "吴起创立武卒制之地"
+  },
+  {
+    "id": "maling",
+    "name": "马陵",
+    "chapter": "sunwuzi",
+    "modernName": "河南范县",
+    "lat": 35.9,
+    "lng": 115.5,
+    "description": "马陵之战的发生地，孙膑在此设伏大败庞涓。",
+    "events": [
+      "马陵之战"
+    ],
+    "significance": "孙膑复仇之战"
+  },
+  {
+    "id": "zhaoguo_loc",
+    "name": "赵国",
+    "chapter": "suqin",
+    "modernName": "河北邯郸",
+    "lat": 36.6,
+    "lng": 114.5,
+    "description": "赵国都城，苏秦游说六国合纵的核心。",
+    "events": [
+      "六国合纵"
+    ],
+    "significance": "合纵抗秦中心"
+  },
+  {
+    "id": "qiguo_loc",
+    "name": "齐国",
+    "chapter": "suqin",
+    "modernName": "山东淄博一带",
+    "lat": 36.8,
+    "lng": 118.1,
+    "description": "战国七雄之一，苏秦合纵六国之一。",
+    "events": [],
+    "significance": "战国大国"
+  },
+  {
+    "id": "zouguo",
+    "name": "邹国",
+    "chapter": "mengzi_xunzi",
+    "modernName": "山东邹城",
+    "lat": 35.4,
+    "lng": 117.0,
+    "description": "孟子的故乡。",
+    "events": [
+      "孟母三迁"
+    ],
+    "significance": "孟子故里"
+  },
+  {
+    "id": "chuguo_loc",
+    "name": "楚国",
+    "chapter": "zhangyi",
+    "modernName": "湖北荆州市",
+    "lat": 30.4,
+    "lng": 112.2,
+    "description": "战国七雄之一，张仪连横的重要对象。",
+    "events": [],
+    "significance": "战国大国"
+  },
+  {
+    "id": "menggugaoyuan",
+    "name": "蒙古高原",
+    "chapter": "xiongnu",
+    "modernName": "蒙古国",
+    "lat": 47.0,
+    "lng": 105.0,
+    "description": "匈奴帝国的核心区域，冒顿单于此统一各部。",
+    "events": [
+      "冒顿弑父"
+    ],
+    "significance": "匈奴帝国中心"
+  },
+  {
+    "id": "baidengshan",
+    "name": "白登山",
+    "chapter": "xiongnu",
+    "modernName": "山西大同",
+    "lat": 40.1,
+    "lng": 113.3,
+    "description": "刘邦被匈奴围困之地，白登之围的发生地。",
+    "events": [
+      "白登之围"
+    ],
+    "significance": "汉匈关系转折点"
+  },
+  {
+    "id": "mobei_loc",
+    "name": "漠北",
+    "chapter": "xiongnu",
+    "modernName": "蒙古高原北部",
+    "lat": 48.0,
+    "lng": 105.0,
+    "description": "漠北是匈奴的核心活动区域，汉武帝派卫青、霍去病远征漠北。",
+    "events": [],
+    "significance": "匈奴活动核心区域"
+  },
+  {
+    "id": "changcheng",
+    "name": "长城",
+    "chapter": "mengtian",
+    "modernName": "横跨北方多省",
+    "lat": 40.4,
+    "lng": 116.6,
+    "description": "蒙恬主持修筑的万里长城，西起临洮，东至辽东。",
+    "events": [
+      "修筑长城"
+    ],
+    "significance": "中华民族的象征"
+  },
+  {
+    "id": "shangcai_loc",
+    "name": "上蔡",
+    "chapter": "lisi",
+    "modernName": "河南上蔡",
+    "lat": 33.3,
+    "lng": 114.0,
+    "description": "李斯的故乡，楚国人。李斯从上蔡小吏成为秦国丞相。",
+    "events": [],
+    "significance": "李斯故乡"
+  },
+  {
+    "id": "guiling",
+    "name": "桂陵",
+    "chapter": "wei",
+    "modernName": "河南长垣",
+    "lat": 35.2,
+    "lng": 114.7,
+    "description": "桂陵之战的发生地，孙膑在此大败庞涓。",
+    "events": [
+      "桂陵之战"
+    ],
+    "significance": "围魏救赵的经典战场"
+  },
+  {
+    "id": "hanguo_loc",
+    "name": "韩国",
+    "chapter": "han",
+    "modernName": "河南新郑一带",
+    "lat": 34.4,
+    "lng": 113.7,
+    "description": "战国七雄之一，最先被秦国灭亡。申不害在此推行变法。",
+    "events": [],
+    "significance": "战国七雄之一"
+  },
+  {
+    "id": "xinzheng",
+    "name": "新郑",
+    "chapter": "han",
+    "modernName": "河南新郑",
+    "lat": 34.4,
+    "lng": 113.7,
+    "description": "韩国都城，郑国故都。",
+    "events": [],
+    "significance": "韩郑都城"
+  },
+  {
+    "id": "ji",
+    "name": "蓟",
+    "chapter": "yan",
+    "modernName": "北京",
+    "lat": 39.9,
+    "lng": 116.4,
+    "description": "燕国都城，今北京地区。",
+    "events": [],
+    "significance": "燕国都城"
+  },
+  {
+    "id": "zhengguo_loc",
+    "name": "郑国",
+    "chapter": "zheng",
+    "modernName": "河南新郑一带",
+    "lat": 34.4,
+    "lng": 113.7,
+    "description": "春秋初期强国，郑庄公是春秋第一个霸主。",
+    "events": [],
+    "significance": "春秋初期霸主"
+  },
+  {
+    "id": "xuge",
+    "name": "繻葛",
+    "chapter": "zheng",
+    "modernName": "河南长葛",
+    "lat": 34.2,
+    "lng": 113.8,
+    "description": "繻葛之战的发生地，郑庄公在此击败周桓王。",
+    "events": [
+      "繻葛之战"
+    ],
+    "significance": "诸侯挑战王权之地"
+  },
+  {
+    "id": "songguo_loc",
+    "name": "宋国",
+    "chapter": "song",
+    "modernName": "河南商丘一带",
+    "lat": 34.4,
+    "lng": 115.6,
+    "description": "商朝后裔的封国，以仁义著称。宋襄公是春秋五霸之一。",
+    "events": [],
+    "significance": "商朝后裔封国"
+  },
+  {
+    "id": "shangqiu",
+    "name": "商丘",
+    "chapter": "song",
+    "modernName": "河南商丘",
+    "lat": 34.4,
+    "lng": 115.6,
+    "description": "宋国都城，商朝故都。",
+    "events": [],
+    "significance": "宋国都城"
+  },
+  {
+    "id": "hongshui",
+    "name": "泓水",
+    "chapter": "song",
+    "modernName": "河南柘城",
+    "lat": 34.1,
+    "lng": 115.3,
+    "description": "泓水之战的发生地，宋襄公在此坚持仁义而大败。",
+    "events": [
+      "泓水之战"
+    ],
+    "significance": "仁义之辩的战场"
+  },
+  {
+    "id": "weiguo_loc2",
+    "name": "卫国",
+    "chapter": "wei_kangshu",
+    "modernName": "河南淇县一带",
+    "lat": 35.6,
+    "lng": 114.2,
+    "description": "周武王之弟康叔的封国，延续八百余年。商鞅、吕不韦、荆轲都出自卫国。",
+    "events": [],
+    "significance": "人才辈出的诸侯国"
+  },
+  {
+    "id": "changsha",
+    "name": "长沙",
+    "chapter": "quyuan_jiasheng",
+    "modernName": "湖南长沙",
+    "lat": 28.2,
+    "lng": 112.9,
+    "description": "贾谊贬谪之地，他在这里写下《吊屈原赋》和《鵩鸟赋》。",
+    "events": [
+      "贾谊贬长沙"
+    ],
+    "significance": "贾谊贬谪之地"
+  },
+  {
+    "id": "keqiu",
+    "name": "柯丘",
+    "chapter": "cao",
+    "modernName": "山东阳谷",
+    "lat": 36.1,
+    "lng": 115.8,
+    "description": "曹沫劫持齐桓公之地。",
+    "events": [
+      "曹沫劫齐桓公"
+    ],
+    "significance": "以弱胁强之地"
+  },
+  {
+    "id": "caiguo_loc",
+    "name": "蔡国",
+    "chapter": "cai",
+    "modernName": "河南上蔡一带",
+    "lat": 33.3,
+    "lng": 114.0,
+    "description": "周武王弟叔度的封国，春秋时期的小国。",
+    "events": [],
+    "significance": "西周封国"
+  },
+  {
+    "id": "chenguo_loc",
+    "name": "陈国",
+    "chapter": "chenqi",
+    "modernName": "河南淮阳一带",
+    "lat": 33.7,
+    "lng": 114.9,
+    "description": "舜的后裔封国。",
+    "events": [],
+    "significance": "古老诸侯国"
+  },
+  {
+    "id": "qiguo_loc3",
+    "name": "杞国",
+    "chapter": "chenqi",
+    "modernName": "山东安丘一带",
+    "lat": 36.4,
+    "lng": 119.2,
+    "description": "夏禹的后裔封国。",
+    "events": [],
+    "significance": "古老诸侯国"
+  },
+  {
+    "id": "xue",
+    "name": "薛",
+    "chapter": "mengchangjun",
+    "modernName": "山东滕州",
+    "lat": 35.1,
+    "lng": 117.2,
+    "description": "孟尝君的封地，今山东滕州一带。",
+    "events": [
+      "冯谖弹铗"
+    ],
+    "significance": "孟尝君封地"
+  },
+  {
+    "id": "chunshenjun_fengdi",
+    "name": "春申君封地",
+    "chapter": "chunshenjun",
+    "modernName": "上海/苏州一带",
+    "lat": 31.2,
+    "lng": 121.5,
+    "description": "春申君的封地，相传上海简称'申'即源于此。",
+    "events": [],
+    "significance": "春申君封地"
+  },
+  {
+    "id": "jimo",
+    "name": "即墨",
+    "chapter": "tiandan",
+    "modernName": "山东平度",
+    "lat": 36.8,
+    "lng": 120.0,
+    "description": "田单以火牛阵大破燕军之地。",
+    "events": [
+      "火牛阵"
+    ],
+    "significance": "火牛阵战场"
+  },
+  {
+    "id": "liangguo",
+    "name": "梁国",
+    "chapter": "luzhonglian",
+    "modernName": "河南商丘一带",
+    "lat": 34.4,
+    "lng": 115.6,
+    "description": "邹阳被梁孝王下狱之地。",
+    "events": [
+      "狱中上书"
+    ],
+    "significance": "邹阳下狱之地"
+  },
+  {
+    "id": "caoguo_loc",
+    "name": "曹国",
+    "chapter": "cao",
+    "modernName": "山东定陶一带",
+    "lat": 35.1,
+    "lng": 115.6,
+    "description": "周武王弟叔振铎的封国，春秋时期的小国。",
+    "events": [],
+    "significance": "西周封国"
+  },
+  {
+    "id": "hejian",
+    "name": "河间",
+    "chapter": "wuzong",
+    "modernName": "河北河间",
+    "lat": 38.4,
+    "lng": 116.1,
+    "description": "河间献王的封地。",
+    "events": [],
+    "significance": "河间国"
+  },
+  {
+    "id": "guangling",
+    "name": "广陵",
+    "chapter": "sanwang",
+    "modernName": "江苏扬州",
+    "lat": 32.4,
+    "lng": 119.4,
+    "description": "汉武帝之子广陵王的封地。",
+    "events": [],
+    "significance": "广陵国"
+  },
+  {
+    "id": "panyu",
+    "name": "番禺",
+    "chapter": "nanyue",
+    "modernName": "广东广州",
+    "lat": 23.1,
+    "lng": 113.3,
+    "description": "南越国都城，今广州。",
+    "events": [
+      "南越归汉"
+    ],
+    "significance": "南越都城"
+  },
+  {
+    "id": "chaoxian_loc",
+    "name": "朝鲜",
+    "chapter": "chaoxian",
+    "modernName": "朝鲜半岛",
+    "lat": 37.5,
+    "lng": 127.0,
+    "description": "卫氏朝鲜所在地。",
+    "events": [
+      "朝鲜设郡"
+    ],
+    "significance": "卫氏朝鲜"
+  },
+  {
+    "id": "dongyue_loc",
+    "name": "东越",
+    "chapter": "dongyue",
+    "modernName": "福建/浙江一带",
+    "lat": 26.0,
+    "lng": 119.3,
+    "description": "越国后裔之地，汉武帝时期内迁江淮。",
+    "events": [],
+    "significance": "东越故地"
+  },
+  {
+    "id": "xinanyi_loc",
+    "name": "西南夷",
+    "chapter": "xinanyi",
+    "modernName": "云南/贵州一带",
+    "lat": 25.0,
+    "lng": 102.7,
+    "description": "西南各少数民族部落所在地。",
+    "events": [
+      "通西南夷"
+    ],
+    "significance": "西南边疆"
+  },
+  {
+    "id": "huainan_loc",
+    "name": "淮南",
+    "chapter": "huainan_hengshan_jishan",
+    "modernName": "安徽淮南",
+    "lat": 32.6,
+    "lng": 117.0,
+    "description": "淮南王刘安的封地。",
+    "events": [
+      "淮南王谋反"
+    ],
+    "significance": "淮南国"
+  },
+  {
+    "id": "hengshan_loc",
+    "name": "衡山",
+    "chapter": "huainan_hengshan_jishan",
+    "modernName": "湖南衡阳",
+    "lat": 26.9,
+    "lng": 112.6,
+    "description": "衡山王刘赐的封地。",
+    "events": [],
+    "significance": "衡山国"
+  },
+  {
+    "id": "dayuan_loc",
+    "name": "大宛",
+    "chapter": "dayuanyoushi",
+    "modernName": "中亚费尔干纳",
+    "lat": 40.7,
+    "lng": 71.0,
+    "description": "张骞出使西域的目的地之一，盛产汗血宝马。",
+    "events": [
+      "张骞出使西域"
+    ],
+    "significance": "丝绸之路节点"
+  },
+  {
+    "id": "tao_loc",
+    "name": "陶",
+    "chapter": "huozhilie",
+    "modernName": "山东定陶",
+    "lat": 35.1,
+    "lng": 115.6,
+    "description": "范蠡弃官经商之地，号陶朱公。",
+    "events": [
+      "陶朱公致富"
+    ],
+    "significance": "陶朱公故地"
+  },
+  {
+    "id": "jingshui",
+    "name": "泾水",
+    "chapter": "he_shu",
+    "modernName": "陕西泾阳",
+    "lat": 34.5,
+    "lng": 108.8,
+    "description": "郑国渠的引水源。",
+    "events": [
+      "郑国渠"
+    ],
+    "significance": "古代水利工程"
+  },
+  {
+    "id": "taishan_loc",
+    "name": "泰山",
+    "chapter": "fengshan_shu",
+    "modernName": "山东泰安",
+    "lat": 36.3,
+    "lng": 117.1,
+    "description": "封禅大典举行之地，五岳之首。",
+    "events": [
+      "泰山封禅"
+    ],
+    "significance": "五岳之首"
+  },
+  {
+    "id": "shaoxing_loc",
+    "name": "少康",
+    "chapter": "xia",
+    "modernName": "河南濮阳一带",
+    "lat": 35.7,
+    "lng": 115.0,
+    "description": "少康中兴的发生地，夏朝复兴的关键区域。",
+    "events": [],
+    "significance": "夏朝中兴之地"
+  },
+  {
+    "id": "shaofeng",
+    "name": "少鄂",
+    "chapter": "zhou",
+    "modernName": "陕西宝鸡一带",
+    "lat": 34.4,
+    "lng": 107.2,
+    "description": "国人暴动后周公、召公在此共同行政。",
+    "events": [],
+    "significance": "共和行政的都城"
+  },
+  {
+    "id": "kuiqiu",
+    "name": "葵丘",
+    "chapter": "qitaigong",
+    "modernName": "河南兰考",
+    "lat": 34.8,
+    "lng": 115.0,
+    "description": "齐桓公葵丘之会，九合诸侯、一匡天下的象征。",
+    "events": [],
+    "significance": "齐桓公霸业的巅峰之地"
+  },
+  {
+    "id": "songcheng_biping",
+    "name": "宋城",
+    "chapter": "song",
+    "modernName": "河南商丘",
+    "lat": 34.4,
+    "lng": 115.7,
+    "description": "弭兵之会的召开地之一。",
+    "events": [],
+    "significance": "弭兵之会所在地"
+  },
+  {
+    "id": "shouling_loc",
+    "name": "兽鬲",
+    "chapter": "qinshi",
+    "modernName": "河南新安",
+    "lat": 34.7,
+    "lng": 111.9,
+    "description": "秦灭六国统一过程中的重要战场。",
+    "events": [],
+    "significance": "秦统一六国进程"
+  },
+  {
+    "id": "yihe_loc",
+    "name": "伊阙",
+    "chapter": "baiqiwangjian",
+    "modernName": "河南洛阳南",
+    "lat": 34.5,
+    "lng": 112.5,
+    "description": "白起伊阙之战大破韩魏联军。",
+    "events": [],
+    "significance": "白起成名之战地点"
+  },
+  {
+    "id": "wuhan_loc",
+    "name": "鄢郢",
+    "chapter": "baiqiwangjian",
+    "modernName": "湖北宜城",
+    "lat": 31.7,
+    "lng": 112.3,
+    "description": "白起攻陷鄢郢，重创楚国。",
+    "events": [],
+    "significance": "秦国重创楚国之战"
+  }
+]

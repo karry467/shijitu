@@ -1,0 +1,2559 @@
+[
+  {
+    "id": "sanquojiaxing",
+    "idiom": "三过家门而不入",
+    "pinyin": "sān guò jiā mén ér bù rù",
+    "source": "夏本纪 · 大禹治水",
+    "characters": [
+      "大禹"
+    ],
+    "meaning": "形容公而忘私、勤勉敬业的精神。",
+    "story": "大禹受命治水，婚后第四天就离家赴任。在十三年治水期间，三次经过家门都没有进去。第一次儿子出生，第二次儿子叫他父亲，第三次儿子已长大成人。",
+    "quote": "予娶涂山，辛壬癸甲，启呱呱而泣，予弗子，惟荒度土功。",
+    "modernUsage": "形容为了工作而顾不上家庭，全身心投入事业的精神。",
+    "relatedEvent": "大禹治水"
+  },
+  {
+    "id": "muyizhixin",
+    "idiom": "牧野之志",
+    "pinyin": "mù yě zhī zhì",
+    "source": "周本纪 · 武王伐纣",
+    "characters": [
+      "周武王",
+      "姜太公"
+    ],
+    "meaning": "指推翻暴政、拯救百姓的伟大志向。",
+    "story": "周武王在牧野誓师，宣布纣王的罪行，表达了推翻暴政的决心。",
+    "quote": "纣有臣亿万，惟亿万心；予有臣三千，惟一心。",
+    "modernUsage": "形容推翻邪恶统治的正义决心。",
+    "relatedEvent": "武王伐纣"
+  },
+  {
+    "id": "fenghuoxizhuhou",
+    "idiom": "烽火戏诸侯",
+    "pinyin": "fēng huǒ xì zhū hóu",
+    "source": "周本纪",
+    "characters": [
+      "周幽王",
+      "褒姒"
+    ],
+    "meaning": "比喻拿国家大事开玩笑，戏弄他人。",
+    "story": "周幽王为博褒姒一笑，无故点燃烽火台。诸侯率兵来救，发现被骗。后来犬戎真的入侵，再点烽火无人来救，幽王被杀，西周灭亡。",
+    "quote": "昔自夏后氏之衰也，有二神龙止于夏庭。",
+    "modernUsage": "形容拿严肃的事情开玩笑，最终导致严重后果。",
+    "relatedEvent": "烽火戏诸侯"
+  },
+  {
+    "id": "fenshukengru_idiom",
+    "idiom": "焚书坑儒",
+    "pinyin": "fén shū kēng rú",
+    "source": "秦始皇本纪",
+    "characters": [
+      "秦始皇",
+      "李斯"
+    ],
+    "meaning": "指摧残文化、迫害知识分子的暴行。",
+    "story": "秦始皇采纳李斯建议，下令焚烧《诗》《书》及百家语，次年又因方士求仙失败，坑杀儒生方士四百六十余人于咸阳。",
+    "quote": "史官非秦记皆烧之。非博士官所职，天下敢有藏诗、书、百家语者，悉诣守、尉杂烧之。",
+    "modernUsage": "常用来比喻摧残文化、迫害知识分子的行为。",
+    "relatedEvent": "焚书坑儒"
+  },
+  {
+    "id": "zhiqinxiaogong",
+    "idiom": "指鹿为马",
+    "pinyin": "zhǐ lù wéi mǎ",
+    "source": "秦始皇本纪",
+    "characters": [
+      "赵高"
+    ],
+    "meaning": "比喻故意颠倒黑白，混淆是非。",
+    "story": "赵高欲篡权，恐群臣不服，乃先设验。持鹿献于二世，曰：'马也。'二世笑曰：'丞相误邪？谓鹿为马。'问左右，左右或默，或言马以阿顺赵高。",
+    "quote": null,
+    "modernUsage": "形容故意颠倒黑白、混淆是非的行为。",
+    "relatedEvent": "沙丘之变"
+  },
+  {
+    "id": "yuefasanzhan",
+    "idiom": "约法三章",
+    "pinyin": "yuē fǎ sān zhāng",
+    "source": "高祖本纪",
+    "characters": [
+      "刘邦"
+    ],
+    "meaning": "指事先约好或规定的事，后泛指订立简单的条款。",
+    "story": "刘邦入关中后，与关中父老约法三章：杀人者死，伤人及盗抵罪。废除秦朝苛法，深得民心。",
+    "quote": "父老苦秦苛法久矣。诽谤者族，偶语者弃市。",
+    "modernUsage": "现多指订立简单的条款或事先约定。",
+    "relatedEvent": "约法三章"
+  },
+  {
+    "id": "jiaotusibogu",
+    "idiom": "狡兔死，走狗烹",
+    "pinyin": "jiǎo tù sǐ，zǒu gǒu pēng",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "比喻事情成功后，就把出过力的人杀掉或抛弃。",
+    "story": "韩信被贬为淮阴侯后，心怀不满。刘邦平定陈豨叛乱后，吕后与萧何合谋，在未央宫将韩信斩杀。韩信临死前叹曰：'狡兔死，走狗烹；高鸟尽，良弓藏；敌国破，谋臣亡。'",
+    "quote": "狡兔死，走狗烹；高鸟尽，良弓藏。",
+    "modernUsage": "形容功成之后忘恩负义、杀害功臣的行为。",
+    "relatedEvent": "剪除异姓王"
+  },
+  {
+    "id": "renzhizhihuo",
+    "idiom": "人彘之祸",
+    "pinyin": "rén zhì zhī huò",
+    "source": "吕太后本纪",
+    "characters": [
+      "吕后",
+      "戚夫人"
+    ],
+    "meaning": "指吕后将戚夫人断手足、去眼、煇耳、饮哑药，置于厕所中的惨剧。",
+    "story": "吕后因嫉妒戚夫人得宠，将其断手足、去眼、煇耳、饮哑药，置于厕所中，称为'人彘'。又毒杀戚夫人之子赵王如意。",
+    "quote": null,
+    "modernUsage": "形容极端残忍的迫害行为。",
+    "relatedEvent": "人彘之祸"
+  },
+  {
+    "id": "zhuerbuzu",
+    "idiom": "竖子不足与谋",
+    "pinyin": "shù zǐ bù zú yǔ móu",
+    "source": "项羽本纪 · 鸿门宴",
+    "characters": [
+      "范增",
+      "项羽"
+    ],
+    "meaning": "指这小子不值得和他商量大事。形容对人不屑一顾。",
+    "story": "鸿门宴上，范增多次示意项羽杀掉刘邦，项羽犹豫不决。刘邦借故逃脱后，范增气得将刘邦送的玉斗摔碎，怒骂项羽'竖子不足与谋'。",
+    "quote": "竖子不足与谋！",
+    "modernUsage": "形容对某人的能力和见识极为失望。",
+    "relatedEvent": "鸿门宴"
+  },
+  {
+    "id": "pofuchenzhou",
+    "idiom": "破釜沉舟",
+    "pinyin": "pò fǔ chén zhōu",
+    "source": "项羽本纪 · 巨鹿之战",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "打破饭锅，凿沉渡船。比喻下定决心，不顾一切地干到底。",
+    "story": "公元前207年，项羽率领楚军救援被秦军围困的赵国。渡河后，项羽下令凿沉船只、打破炊具、烧毁营帐，只带三天口粮，以示必死决心。楚军士气大振，以一当十，大破秦军。",
+    "quote": "项羽乃悉引兵渡河，皆沉船，破釜甑，烧庐舍，持三日粮，以示士卒必死，无一还心。",
+    "modernUsage": "常用于形容下定决心、不留退路地完成某项艰巨任务。",
+    "relatedEvent": "巨鹿之战"
+  },
+  {
+    "id": "simianchuge",
+    "idiom": "四面楚歌",
+    "pinyin": "sì miàn chǔ gē",
+    "source": "项羽本纪 · 垓下之围",
+    "characters": [
+      "项羽",
+      "韩信"
+    ],
+    "meaning": "四面都传来楚国的歌声。比喻四面受敌，孤立无援，处于绝境。",
+    "story": "公元前202年，韩信率联军将项羽围困于垓下。夜间，汉军四面唱起楚地歌谣，项羽大惊：'汉军已得楚地了吗？为何楚人如此之多？'楚军闻之，军心瓦解，纷纷逃散。",
+    "quote": "夜闻汉军四面皆楚歌，项王乃大惊曰：'汉皆已得楚乎？是何楚人之多也！'",
+    "modernUsage": "形容处境危急，四面受敌，孤立无援。",
+    "relatedEvent": "垓下之围"
+  },
+  {
+    "id": "wanbiguizhao",
+    "idiom": "完璧归赵",
+    "pinyin": "wán bì guī zhào",
+    "source": "廉颇蔺相如列传",
+    "characters": [
+      "蔺相如",
+      "赵惠文王",
+      "秦昭襄王"
+    ],
+    "meaning": "将和氏璧完好无损地送回赵国。比喻把原物完好无损地归还本人。",
+    "story": "秦昭王以十五城相换，欲得赵国的和氏璧。蔺相如携璧入秦，看出秦王并无诚意，便假称璧有瑕疵要指给秦王看，趁机取回玉璧，威胁要与璧同归于尽。秦王无奈，只得放蔺相如携璧归赵。",
+    "quote": "城不入，臣请完璧归赵。",
+    "modernUsage": "形容将借来的东西完好无损地归还给原主。",
+    "relatedEvent": "完璧归赵"
+  },
+  {
+    "id": "fujingqingzui",
+    "idiom": "负荆请罪",
+    "pinyin": "fù jīng qǐng zuì",
+    "source": "廉颇蔺相如列传",
+    "characters": [
+      "廉颇",
+      "蔺相如"
+    ],
+    "meaning": "背着荆条向对方请罪。表示真心诚意地承认错误，请求责罚。",
+    "story": "廉颇不满蔺相如位高于己，扬言要羞辱他。蔺相如以国家大局为重，处处避让。廉颇得知后深受感动，便脱去上衣，背着荆条到蔺相如门前请罪。二人从此结为生死之交。",
+    "quote": "廉颇闻之，肉袒负荆，因宾客至蔺相如门谢罪。",
+    "modernUsage": "形容主动向人认错赔罪，请求责罚。",
+    "relatedEvent": "负荆请罪"
+  },
+  {
+    "id": "zhishangtanbing",
+    "idiom": "纸上谈兵",
+    "pinyin": "zhǐ shàng tán bīng",
+    "source": "廉颇蔺相如列传 · 长平之战",
+    "characters": [
+      "赵括",
+      "赵奢"
+    ],
+    "meaning": "在纸面上谈论用兵打仗。比喻空谈理论，不能解决实际问题。",
+    "story": "赵括自幼熟读兵书，谈起兵法来头头是道，连父亲赵奢也难不倒他。但赵奢深知儿子只会纸上谈兵，缺乏实战经验。长平之战中，赵王以赵括替代廉颇为将，赵括只会照搬兵书，不知变通，导致赵军大败，四十万大军被坑杀。",
+    "quote": "赵括自少时学兵法，言兵事，以天下莫能当。",
+    "modernUsage": "形容空谈理论，脱离实际，不能解决实际问题。",
+    "relatedEvent": "长平之战"
+  },
+  {
+    "id": "hongmenyan",
+    "idiom": "鸿门宴",
+    "pinyin": "hóng mén yàn",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽",
+      "刘邦",
+      "范增"
+    ],
+    "meaning": "比喻暗藏杀机、危机四伏的宴会或聚会。",
+    "story": "刘邦先入关中，项羽大怒，设宴于鸿门。范增多次示意项羽杀掉刘邦，项羽犹豫不决。刘邦借故离席逃脱，范增怒斥项羽'竖子不足与谋'。",
+    "quote": "范增数目项王，举所佩玉玦以示之者三，项王默然不应。",
+    "modernUsage": "比喻表面热情款待，实则暗藏杀机的场合。",
+    "relatedEvent": "鸿门宴"
+  },
+  {
+    "id": "bashanwusi",
+    "idiom": "霸王别姬",
+    "pinyin": "bà wáng bié jī",
+    "source": "项羽本纪 · 垓下之围",
+    "characters": [
+      "项羽",
+      "虞姬"
+    ],
+    "meaning": "形容英雄末路、悲壮离别的场景。",
+    "story": "垓下之围，项羽夜饮帐中，面对宠姬虞姬，悲歌'力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！'虞姬拔剑起舞，和歌而舞后自刎殉情。",
+    "quote": "力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！",
+    "modernUsage": "形容英雄末路时与心爱之人的悲壮离别。",
+    "relatedEvent": "垓下之围"
+  },
+  {
+    "id": "wujiangziwen",
+    "idiom": "无颜见江东父老",
+    "pinyin": "wú yán jiàn jiāng dōng fù lǎo",
+    "source": "项羽本纪 · 乌江自刎",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "比喻因失败而感到羞愧，不好意思回去见家乡父老。",
+    "story": "项羽兵败突围至乌江边，乌江亭长劝他渡江回江东东山再起。项羽笑曰'天之亡我，非战之罪'，又说'籍与江东子弟八千人渡江而西，今无一人还，纵江东父兄怜而王我，我何面目见之？'遂拒绝渡江，自刎而死。",
+    "quote": "纵江东父兄怜而王我，我何面目见之？",
+    "modernUsage": "形容因失败或做错事而感到羞愧，不好意思面对家乡亲人或同事。",
+    "relatedEvent": "乌江自刎"
+  },
+  {
+    "id": "wanghoujiangxiang",
+    "idiom": "王侯将相宁有种乎",
+    "pinyin": "wáng hóu jiàng xiàng nìng yǒu zhǒng hū",
+    "source": "陈涉世家",
+    "characters": [
+      "陈胜",
+      "吴广"
+    ],
+    "meaning": "王侯将相难道有天生的贵种吗？指人的贵贱不是天生的，而是靠自己奋斗得来的。",
+    "story": "陈胜吴广被征发戍守渔阳，途中遇大雨受阻。按秦法失期当斩，陈胜便在大泽乡号召众人起义，喊出了'王侯将相宁有种乎'的响亮口号。",
+    "quote": "且壮士不死即已，死即举大名耳，王侯将相宁有种乎！",
+    "modernUsage": "鼓励人们不要被出身限制，要勇于奋斗改变命运。",
+    "relatedEvent": "大泽乡起义"
+  },
+  {
+    "id": "yanque",
+    "idiom": "燕雀安知鸿鹄之志",
+    "pinyin": "yàn què ān zhī hóng hú zhī zhì",
+    "source": "陈涉世家",
+    "characters": [
+      "陈胜"
+    ],
+    "meaning": "燕雀怎么知道天鹅的志向呢？比喻平凡的人不知道英雄人物的远大志向。",
+    "story": "陈胜年轻时为人佣耕，曾对同伴说：'苟富贵，无相忘。'同伴笑他痴人说梦。陈胜叹息道：'嗟乎！燕雀安知鸿鹄之志哉！'",
+    "quote": "嗟乎！燕雀安知鸿鹄之志哉！",
+    "modernUsage": "形容志向远大的人不被平庸之人理解。",
+    "relatedEvent": "大泽乡起义"
+  },
+  {
+    "id": "fengxiaoxiaoxi",
+    "idiom": "风萧萧兮易水寒",
+    "pinyin": "fēng xiāo xiāo xī yì shuǐ hán",
+    "source": "刺客列传",
+    "characters": [
+      "荆轲",
+      "太子丹"
+    ],
+    "meaning": "形容离别时的悲壮气氛，一去不复返的决心。",
+    "story": "荆轲受命入秦刺杀秦王政，燕太子丹及宾客送至易水之上。高渐离击筑，荆轲和而歌，唱出'风萧萧兮易水寒，壮士一去兮不复还'的千古悲歌。",
+    "quote": "风萧萧兮易水寒，壮士一去兮不复还！",
+    "modernUsage": "形容为正义事业赴死的悲壮决心。",
+    "relatedEvent": "易水送别"
+  },
+  {
+    "id": "tuqiongbixian",
+    "idiom": "图穷匕见",
+    "pinyin": "tú qióng bǐ xiàn",
+    "source": "刺客列传",
+    "characters": [
+      "荆轲",
+      "秦始皇"
+    ],
+    "meaning": "比喻事情发展到最后，真相或本意显露出来。",
+    "story": "荆轲以献督亢地图和樊於期首级为名入秦，在咸阳宫向秦王嬴政献地图。当地图展开到尽头时，藏在地图中的匕首露了出来。荆轲持匕首刺向秦王，但未成功。",
+    "quote": "秦王发图，图穷而匕首见。",
+    "modernUsage": "形容事情发展到最后，真相或本意终于暴露出来。",
+    "relatedEvent": "荆轲刺秦王"
+  },
+  {
+    "id": "yixiaozhizhi",
+    "idiom": "以小人之心，度君子之腹",
+    "pinyin": "yǐ xiǎo rén zhī xīn, duó jūn zǐ zhī fù",
+    "source": "左传 · 昭公二十八年",
+    "characters": [],
+    "meaning": "用卑劣的想法去推测正派人的心思。",
+    "story": "此成语最早出自《左传》，后广泛用于形容以恶意揣测他人。",
+    "quote": null,
+    "modernUsage": "形容用狭隘、卑劣的想法去猜测正直之人的心思。",
+    "relatedEvent": null
+  },
+  {
+    "id": "woxinchangdan_idiom",
+    "idiom": "卧薪尝胆",
+    "pinyin": "wò xīn cháng dǎn",
+    "source": "越王勾践世家",
+    "characters": [
+      "勾践"
+    ],
+    "meaning": "睡觉睡在柴草上，吃饭睡觉前都要尝一尝苦胆。形容刻苦自励，发愤图强。",
+    "story": "越王勾践被吴王夫差打败后，入吴为奴三年。回国后，他睡柴草、尝苦胆以自励，励精图治二十年，终于使越国富强，灭吴复仇。",
+    "quote": "十年生聚，十年教训。",
+    "modernUsage": "形容刻苦自励、发愤图强的精神。",
+    "relatedEvent": "卧薪尝胆"
+  },
+  {
+    "id": "feiniaojin",
+    "idiom": "鸟尽弓藏",
+    "pinyin": "niǎo jìn gōng cáng",
+    "source": "越王勾践世家",
+    "characters": [
+      "范蠡",
+      "文种"
+    ],
+    "meaning": "比喻事情成功以后，把曾经出过力的人一脚踢开。",
+    "story": "越国灭吴后，范蠡写信劝文种离开：'飞鸟尽，良弓藏；狡兔死，走狗烹。越王为人长颈鸟喙，可与共患难，不可与共乐。'文种不听，后被勾践赐死。",
+    "quote": "飞鸟尽，良弓藏；狡兔死，走狗烹。",
+    "modernUsage": "形容功成之后抛弃或杀害功臣。",
+    "relatedEvent": "范蠡归隐"
+  },
+  {
+    "id": "ximulixin_idiom",
+    "idiom": "徙木立信",
+    "pinyin": "xǐ mù lì xìn",
+    "source": "商君列传",
+    "characters": [
+      "商鞅"
+    ],
+    "meaning": "通过搬动木头树立信用。比喻用实际行动建立威信。",
+    "story": "商鞅变法前，在国都市南门立三丈之木，宣布谁能搬到北门就赏五十金。有人搬了，商鞅立即兑现。以此向百姓表明政府言出必行。",
+    "quote": null,
+    "modernUsage": "形容通过实际行动建立信誉。",
+    "relatedEvent": "徙木立信"
+  },
+  {
+    "id": "bianfaguzhi",
+    "idiom": "治世不一道，便国不法古",
+    "pinyin": "zhì shì bù yī dào, biàn guó bù fǎ gǔ",
+    "source": "商君列传",
+    "characters": [
+      "商鞅",
+      "甘龙"
+    ],
+    "meaning": "治理国家不是只有一种方法，有利于国家的不必效法古代。",
+    "story": "商鞅与甘龙等旧贵族辩论变法。甘龙主张'法古无过，循礼无邪'。商鞅反驳说：'治世不一道，便国不法古。故汤武不循古而王，夏殷不易礼而亡。'",
+    "quote": "治世不一道，便国不法古。",
+    "modernUsage": "形容改革创新的精神，不拘泥于旧制。",
+    "relatedEvent": "商鞅变法"
+  },
+  {
+    "id": "qiefujiu_idiom",
+    "idiom": "窃符救赵",
+    "pinyin": "qiè fú jiù zhào",
+    "source": "魏公子列传",
+    "characters": [
+      "信陵君",
+      "侯嬴",
+      "如姬"
+    ],
+    "meaning": "窃取兵符去救援赵国。比喻用智谋解救危难。",
+    "story": "秦军围邯郸，信陵君在侯嬴的建议下，通过如姬窃得魏王兵符。又与朱亥赴赵，椎杀晋鄙，夺兵权大破秦军，解邯郸之围。",
+    "quote": null,
+    "modernUsage": "形容用智慧和勇气解救危难。",
+    "relatedEvent": "窃符救赵"
+  },
+  {
+    "id": "maosui_zijian_idiom",
+    "idiom": "毛遂自荐",
+    "pinyin": "máo suì zì jiàn",
+    "source": "魏公子列传",
+    "characters": [
+      "毛遂",
+      "平原君"
+    ],
+    "meaning": "比喻自告奋勇，自己推荐自己担任某项工作。",
+    "story": "平原君赴楚求救，毛遂自告奋勇随行。在楚国朝堂上，毛遂按剑而谈，以利害说服楚王合纵抗秦。平原君赞曰：'毛先生一至楚，而使赵重于九鼎大吕。'",
+    "quote": null,
+    "modernUsage": "形容自告奋勇，主动承担任务。",
+    "relatedEvent": "毛遂自荐"
+  },
+  {
+    "id": "liguangsheshi_idiom",
+    "idiom": "射石饮羽",
+    "pinyin": "shè shí yǐn yǔ",
+    "source": "李将军列传",
+    "characters": [
+      "李广"
+    ],
+    "meaning": "形容箭术高超，力量之大竟能使箭羽没入石中。",
+    "story": "李广出猎，见草中石，以为是虎而射之，箭入石中。后知道是石头，再射则不能入。",
+    "quote": null,
+    "modernUsage": "形容技艺高超或力量惊人。",
+    "relatedEvent": "李广射石"
+  },
+  {
+    "id": "fenglangjuxu",
+    "idiom": "封狼居胥",
+    "pinyin": "fēng láng jū xū",
+    "source": "李将军列传",
+    "characters": [
+      "霍去病"
+    ],
+    "meaning": "指在狼居胥山祭天，比喻建立显赫战功。",
+    "story": "霍去病率军深入漠北，大败匈奴，在狼居胥山举行祭天封礼，在姑衍山举行祭地禅礼，威震匈奴。",
+    "quote": null,
+    "modernUsage": "形容建立显赫战功，威震敌胆。",
+    "relatedEvent": "漠北之战"
+  },
+  {
+    "id": "jiangtaigong_idiom",
+    "idiom": "姜太公钓鱼",
+    "pinyin": "jiāng tài gōng diào yú",
+    "source": "齐太公世家",
+    "characters": [
+      "姜太公",
+      "周文王"
+    ],
+    "meaning": "比喻心甘情愿上圈套，也比喻胸有成竹地等待时机。",
+    "story": "姜子牙在渭水边用直钩钓鱼，离水面三尺，不挂鱼饵。有人说他钓法不对，他说：'愿者上钩。'周文王出猎遇之，拜为太师。",
+    "quote": "姜太公钓鱼，愿者上钩。",
+    "modernUsage": "比喻用特别的方式吸引有才能的人。",
+    "relatedEvent": "姜太公钓鱼"
+  },
+  {
+    "id": "yuanzheshanggou",
+    "idiom": "愿者上钩",
+    "pinyin": "yuàn zhě shàng gōu",
+    "source": "齐太公世家",
+    "characters": [
+      "姜太公"
+    ],
+    "meaning": "比喻心甘情愿地上圈套。",
+    "story": "姜子牙用直钩钓鱼，说愿意上钩的鱼自然会来。比喻心甘情愿地做某事。",
+    "quote": null,
+    "modernUsage": "比喻心甘情愿地上当或接受某种安排。",
+    "relatedEvent": "姜太公钓鱼"
+  },
+  {
+    "id": "guanbaozhijiao_idiom",
+    "idiom": "管鲍之交",
+    "pinyin": "guǎn bào zhī jiāo",
+    "source": "管晏列传",
+    "characters": [
+      "管仲",
+      "鲍叔牙"
+    ],
+    "meaning": "形容朋友之间深厚的友谊和相互信任。",
+    "story": "管仲与鲍叔牙早年经商，分利时管仲多取，鲍叔牙知其家贫而不以为贪。后鲍叔牙向齐桓公力荐管仲，甘居其下。管仲感叹：'生我者父母，知我者鲍子也。'",
+    "quote": "生我者父母，知我者鲍子也。",
+    "modernUsage": "形容朋友间相互理解、信任的深厚友谊。",
+    "relatedEvent": "管鲍之交"
+  },
+  {
+    "id": "ertaoshasanshi_idiom",
+    "idiom": "二桃杀三士",
+    "pinyin": "èr táo shā sān shì",
+    "source": "管晏列传",
+    "characters": [
+      "晏婴"
+    ],
+    "meaning": "比喻用计谋杀人，或借刀杀人。",
+    "story": "齐景公手下有三勇士：公孙接、田开疆、古冶子。晏婴设计以两个桃子让三人争功，三人因羞愤相继自杀。",
+    "quote": null,
+    "modernUsage": "比喻用计谋借刀杀人。",
+    "relatedEvent": "二桃杀三士"
+  },
+  {
+    "id": "canglinshizhili",
+    "idiom": "仓廪实而知礼节",
+    "pinyin": "cāng lǐn shí ér zhī lǐ jié",
+    "source": "管晏列传",
+    "characters": [
+      "管仲"
+    ],
+    "meaning": "仓库充实了，人们才会讲究礼节。比喻物质基础决定精神追求。",
+    "story": "管仲向齐桓公阐述治国之道时说：'仓廪实而知礼节，衣食足而知荣辱。'强调经济基础对道德风尚的重要性。",
+    "quote": "仓廪实而知礼节，衣食足而知荣辱。",
+    "modernUsage": "强调物质基础的重要性。",
+    "relatedEvent": null
+  },
+  {
+    "id": "jushenghuainan",
+    "idiom": "橘生淮南",
+    "pinyin": "jú shēng huái nán",
+    "source": "管晏列传",
+    "characters": [
+      "晏婴"
+    ],
+    "meaning": "比喻环境对人的影响很大。",
+    "story": "晏婴出使楚国，楚王想羞辱他，让人绑着一个齐国人从晏婴面前走过。晏婴说：'橘生淮南则为橘，生于淮北则为枳。'意思是环境变了，人的性质也会变。",
+    "quote": "橘生淮南则为橘，生于淮北则为枳。",
+    "modernUsage": "比喻环境对人的影响很大。",
+    "relatedEvent": null
+  },
+  {
+    "id": "yunchouweiwo_idiom",
+    "idiom": "运筹帷幄",
+    "pinyin": "yùn chóu wéi wò",
+    "source": "留侯世家",
+    "characters": [
+      "张良",
+      "刘邦"
+    ],
+    "meaning": "在军帐中谋划策略。形容善于在后方制定作战方案。",
+    "story": "刘邦评价张良：'夫运筹策帷帐之中，决胜于千里之外，吾不如子房。'张良以谋略辅佐刘邦战胜项羽。",
+    "quote": "夫运筹策帷帐之中，决胜于千里之外。",
+    "modernUsage": "形容善于策划、指挥。",
+    "relatedEvent": "运筹帷幄"
+  },
+  {
+    "id": "jueshengqianli",
+    "idiom": "决胜千里",
+    "pinyin": "jué shèng qiān lǐ",
+    "source": "留侯世家",
+    "characters": [
+      "张良"
+    ],
+    "meaning": "在千里之外决定胜利。形容将帅善于谋划指挥。",
+    "story": "刘邦评价张良能在军帐中制定策略，在千里之外决定胜负。后人以此形容高明的谋略。",
+    "quote": "决胜于千里之外。",
+    "modernUsage": "形容善于谋划指挥。",
+    "relatedEvent": "运筹帷幄"
+  },
+  {
+    "id": "kuaxiazhiru_idiom",
+    "idiom": "胯下之辱",
+    "pinyin": "kuà xià zhī rǔ",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "从别人胯下爬过去的耻辱。比喻有才能的人在未得志时忍受的屈辱。",
+    "story": "韩信年轻时穷困潦倒，被市井少年羞辱，逼他从胯下钻过。旁人都笑他怯懦，韩信却忍辱负重，后成为一代名将。",
+    "quote": null,
+    "modernUsage": "比喻大丈夫能屈能伸。",
+    "relatedEvent": "胯下之辱"
+  },
+  {
+    "id": "guoshiwushuang",
+    "idiom": "国士无双",
+    "pinyin": "guó shì wú shuāng",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信",
+      "萧何"
+    ],
+    "meaning": "国内独一无二的人才。",
+    "story": "萧何向刘邦推荐韩信时说：'诸将易得耳。至如信者，国士无双。'刘邦于是拜韩信为大将。",
+    "quote": "诸将易得耳。至如信者，国士无双。",
+    "modernUsage": "形容顶尖人才。",
+    "relatedEvent": "萧何月下追韩信"
+  },
+  {
+    "id": "dianbingduoduo",
+    "idiom": "多多益善",
+    "pinyin": "duō duō yì shàn",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信",
+      "刘邦"
+    ],
+    "meaning": "越多越好。",
+    "story": "刘邦问韩信能带多少兵，韩信说：'臣多多而益善耳。'刘邦笑曰：'多多益善，何为为我禽？'韩信答：'陛下不能将兵，而善将将。'",
+    "quote": "韩信点兵，多多益善。",
+    "modernUsage": "形容越多越好。",
+    "relatedEvent": null
+  },
+  {
+    "id": "tumianmaifu",
+    "idiom": "十面埋伏",
+    "pinyin": "shí miàn mái fú",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信",
+      "项羽"
+    ],
+    "meaning": "比喻重重包围，无处可逃。",
+    "story": "韩信率汉军在垓下围困项羽，以十面埋伏大破楚军，并命人四面唱起楚歌瓦解楚军士气。",
+    "quote": null,
+    "modernUsage": "形容处境危急，四面受敌。",
+    "relatedEvent": "十面埋伏"
+  },
+  {
+    "id": "zhoutaobuxin",
+    "idiom": "周公吐哺",
+    "pinyin": "zhōu gōng tǔ bǔ",
+    "source": "鲁周公世家",
+    "characters": [
+      "周公"
+    ],
+    "meaning": "周公为了接待贤士，吃饭时多次吐出食物停下来接待宾客。形容礼贤下士。",
+    "story": "周公辅佐成王时，为了招揽天下贤才，常常吃饭时停下来接待来访的士人，生怕错过人才。",
+    "quote": "周公吐哺，天下归心。",
+    "modernUsage": "形容求贤若渴、礼贤下士。",
+    "relatedEvent": null
+  },
+  {
+    "id": "tianxiewuhuan",
+    "idiom": "退避三舍",
+    "pinyin": "tuì bì sān shè",
+    "source": "晋世家",
+    "characters": [
+      "晋文公"
+    ],
+    "meaning": "主动退让九十里。比喻退让和回避，避免冲突。",
+    "story": "晋文公流亡时曾受楚成王款待，许诺如果日后两军交战，晋军愿意退避三舍（九十里）。城濮之战时，晋文公兑现承诺退避三舍，然后反击大败楚军。",
+    "quote": null,
+    "modernUsage": "比喻主动退让，避免正面冲突。",
+    "relatedEvent": "城濮之战"
+  },
+  {
+    "id": "jiezitui",
+    "idiom": "割股奉君",
+    "pinyin": "gē gǔ fèng jūn",
+    "source": "晋世家",
+    "characters": [
+      "介子推"
+    ],
+    "meaning": "割下自己大腿的肉给君主吃。形容极端忠诚。",
+    "story": "介子推跟随晋文公流亡，在重耳饥饿时割下自己大腿的肉煮汤给他吃。",
+    "quote": null,
+    "modernUsage": "形容对君主的极端忠诚。",
+    "relatedEvent": "介子推割股"
+  },
+  {
+    "id": "yimingjingren_idiom",
+    "idiom": "一鸣惊人",
+    "pinyin": "yī míng jīng rén",
+    "source": "楚世家",
+    "characters": [
+      "楚庄王"
+    ],
+    "meaning": "比喻平时没有突出表现，一下子做出惊人成绩。",
+    "story": "楚庄王即位后三年不理朝政。有大臣用鸟比喻问他，他说：'不飞则已，一飞冲天；不鸣则已，一鸣惊人。'随后整顿朝纲，使楚国大治。",
+    "quote": "不飞则已，一飞冲天；不鸣则已，一鸣惊人。",
+    "modernUsage": "形容平时默默无闻，突然做出惊人成绩。",
+    "relatedEvent": "一鸣惊人"
+  },
+  {
+    "id": "wendingzhongyuan_idiom",
+    "idiom": "问鼎中原",
+    "pinyin": "wèn dǐng zhōng yuán",
+    "source": "楚世家",
+    "characters": [
+      "楚庄王"
+    ],
+    "meaning": "比喻企图夺取天下。",
+    "story": "楚庄王北伐时询问周鼎的大小轻重，有夺取天下的野心。鼎在古代象征国家政权。",
+    "quote": null,
+    "modernUsage": "比喻有夺取天下的野心。",
+    "relatedEvent": "问鼎中原"
+  },
+  {
+    "id": "lumanyouxian",
+    "idiom": "路漫漫其修远兮",
+    "pinyin": "lù màn màn qí xiū yuǎn xī",
+    "source": "楚世家",
+    "characters": [
+      "屈原"
+    ],
+    "meaning": "道路漫长遥远。比喻追求理想的道路漫长而艰难。",
+    "story": "屈原在《离骚》中表达自己追求理想的决心：'路漫漫其修远兮，吾将上下而求索。'",
+    "quote": "路漫漫其修远兮，吾将上下而求索。",
+    "modernUsage": "形容追求理想的道路漫长而艰难。",
+    "relatedEvent": "屈原投江"
+  },
+  {
+    "id": "zhaoshiguer_idiom",
+    "idiom": "赵氏孤儿",
+    "pinyin": "zhào shì gū ér",
+    "source": "赵世家",
+    "characters": [
+      "程婴",
+      "公孙杵臼"
+    ],
+    "meaning": "比喻忠义之士为保护忠良后代而做出的牺牲。",
+    "story": "屠岸贾灭赵氏全族，程婴与公孙杵臼合谋保护赵氏孤儿，程婴以自己的儿子替换，公孙杵臼牺牲，程婴忍辱十五年抚养孤儿长大。",
+    "quote": null,
+    "modernUsage": "形容忠义之士为保护忠良后代而做出的牺牲。",
+    "relatedEvent": "赵氏孤儿"
+  },
+  {
+    "id": "hufuqishe_idiom",
+    "idiom": "胡服骑射",
+    "pinyin": "hú fú qí shè",
+    "source": "赵世家",
+    "characters": [
+      "赵武灵王"
+    ],
+    "meaning": "改穿胡人的服装，学习骑马射箭。比喻学习外来先进经验以改革图强。",
+    "story": "赵武灵王推行改革，废除宽袍大袖，改穿胡人短衣紧袖的服饰；废除车战，学习骑马射箭。赵国军事力量大增。",
+    "quote": null,
+    "modernUsage": "比喻学习外来先进经验以改革图强。",
+    "relatedEvent": "胡服骑射"
+  },
+  {
+    "id": "zhijizhibaidi",
+    "idiom": "知己知彼",
+    "pinyin": "zhī jǐ zhī bǐ",
+    "source": "孙子吴起列传",
+    "characters": [
+      "孙武"
+    ],
+    "meaning": "了解自己也了解对方。形容对双方情况都很清楚。",
+    "story": "孙武在《孙子兵法》中提出：'知彼知己，百战不殆；不知彼而知己，一胜一负；不知彼不知己，每战必殆。'",
+    "quote": "知己知彼，百战不殆。",
+    "modernUsage": "形容对双方情况都很了解。",
+    "relatedEvent": "孙子练兵"
+  },
+  {
+    "id": "weiweijiuzhao_idiom",
+    "idiom": "围魏救赵",
+    "pinyin": "wéi wèi jiù zhào",
+    "source": "孙子吴起列传",
+    "characters": [
+      "孙膑"
+    ],
+    "meaning": "包围魏国以救援赵国。比喻袭击敌人后方以迫使敌人撤回。",
+    "story": "魏国围攻赵国都城邯郸，孙膑建议齐军直攻魏国都城大梁，魏军回援途中在桂陵中伏。",
+    "quote": null,
+    "modernUsage": "比喻用袭击敌人后方来解除围困。",
+    "relatedEvent": "围魏救赵"
+  },
+  {
+    "id": "zhui_ci_gu",
+    "idiom": "悬梁刺股",
+    "pinyin": "xuán liáng cì gǔ",
+    "source": "苏秦列传",
+    "characters": [
+      "苏秦"
+    ],
+    "meaning": "形容刻苦学习。",
+    "story": "苏秦游说失败后，回家刻苦读书，困倦时用锥子刺大腿保持清醒。后人以此形容发愤读书。",
+    "quote": null,
+    "modernUsage": "形容非常刻苦地学习。",
+    "relatedEvent": "锥刺股"
+  },
+  {
+    "id": "mengmusanqian_idiom",
+    "idiom": "孟母三迁",
+    "pinyin": "mèng mǔ sān qiān",
+    "source": "孟子荀卿列传",
+    "characters": [
+      "孟子"
+    ],
+    "meaning": "比喻为子女选择良好的教育环境。",
+    "story": "孟母为让孟子受到良好教育，三次搬家：从墓地旁搬到市场旁，又搬到学堂旁。",
+    "quote": null,
+    "modernUsage": "比喻为子女选择良好的成长和教育环境。",
+    "relatedEvent": "孟母三迁"
+  },
+  {
+    "id": "zhi_lu_wei_ma",
+    "idiom": "指鹿为马",
+    "pinyin": "zhǐ lù wéi mǎ",
+    "source": "李斯列传",
+    "characters": [
+      "赵高"
+    ],
+    "meaning": "指着鹿说是马。比喻故意颠倒黑白，混淆是非。",
+    "story": "赵高为了测试朝臣谁敢违抗自己，在朝堂上指着一只鹿说是马。多数大臣不敢反对，只有少数正直的大臣说是鹿。",
+    "quote": null,
+    "modernUsage": "比喻故意颠倒黑白，混淆是非。",
+    "relatedEvent": null
+  },
+  {
+    "id": "mengtianzhiwang",
+    "idiom": "万里长城",
+    "pinyin": "wàn lǐ cháng chéng",
+    "source": "蒙恬列传",
+    "characters": [
+      "蒙恬"
+    ],
+    "meaning": "比喻宏伟的防御工程或不可逾越的障碍。",
+    "story": "蒙恬主持修筑的万里长城，西起临洮，东至辽东，绵延万里，是世界上最伟大的建筑工程之一。",
+    "quote": null,
+    "modernUsage": "比喻宏伟的防御工程或巨大的屏障。",
+    "relatedEvent": "修筑长城"
+  },
+  {
+    "id": "weiwenhou_qiuxian",
+    "idiom": "礼贤下士",
+    "pinyin": "lǐ xián xià shì",
+    "source": "魏世家",
+    "characters": [
+      "魏文侯"
+    ],
+    "meaning": "尊敬有才能的人，降低身份与他们交往。",
+    "story": "魏文侯礼贤下士，亲自拜卜子夏、段干木等名士为师，使天下人才纷纷投奔魏国。",
+    "quote": null,
+    "modernUsage": "形容对有才能的人非常尊敬。",
+    "relatedEvent": null
+  },
+  {
+    "id": "shu_bu_hai_shu_zhi",
+    "idiom": "术治",
+    "pinyin": "shù zhì",
+    "source": "韩世家",
+    "characters": [
+      "申不害"
+    ],
+    "meaning": "以权术治理国家，强调君主驾驭臣下的方法。",
+    "story": "申不害在韩昭侯时任相，推行术治，以权术驾驭群臣，使韩国一度强盛。",
+    "quote": null,
+    "modernUsage": "指以权术和策略治理国家或组织。",
+    "relatedEvent": "申不害变法"
+  },
+  {
+    "id": "huangjintai",
+    "idiom": "黄金台",
+    "pinyin": "huáng jīn tái",
+    "source": "燕世家",
+    "characters": [
+      "燕昭王"
+    ],
+    "meaning": "比喻求贤若渴、招揽人才的诚意。",
+    "story": "燕昭王为报齐国破燕之仇，在易水旁筑黄金台，置千金于台上以招揽天下贤士。乐毅、邹衍等纷纷来投。",
+    "quote": null,
+    "modernUsage": "比喻招揽人才的诚意和行动。",
+    "relatedEvent": "乐毅破齐"
+  },
+  {
+    "id": "buji_ming_er",
+    "idiom": "不鸣则已，一鸣惊人",
+    "pinyin": "bù míng zé yǐ, yī míng jīng rén",
+    "source": "田敬仲完世家",
+    "characters": [
+      "齐威王"
+    ],
+    "meaning": "比喻平时没有突出表现，一旦行动就做出惊人成绩。",
+    "story": "齐威王即位后九年不理朝政，后以不鸣则已一鸣惊人为喻，整顿朝纲，任用贤才，使齐国大治。",
+    "quote": "不鸣则已，一鸣惊人。",
+    "modernUsage": "形容平时默默无闻，突然做出惊人成绩。",
+    "relatedEvent": null
+  },
+  {
+    "id": "taibo_rangguo",
+    "idiom": "太伯让国",
+    "pinyin": "tài bó ràng guó",
+    "source": "吴太伯世家",
+    "characters": [
+      "太伯"
+    ],
+    "meaning": "比喻以大局为重，主动让位。",
+    "story": "太伯为让位给弟弟季历，与仲雍奔荆蛮，断发文身，建立吴国。孔子赞其'至德'。",
+    "quote": null,
+    "modernUsage": "形容高风亮节，主动让贤。",
+    "relatedEvent": "太伯奔吴"
+  },
+  {
+    "id": "zhuangong_bazhu",
+    "idiom": "春秋小霸",
+    "pinyin": "chūn qiū xiǎo bà",
+    "source": "郑世家",
+    "characters": [
+      "郑庄公"
+    ],
+    "meaning": "指春秋初期的霸主。",
+    "story": "郑庄公击败周桓王，使周天子威信扫地，开启了诸侯争霸的时代。",
+    "quote": null,
+    "modernUsage": "形容地方势力的崛起。",
+    "relatedEvent": "繻葛之战"
+  },
+  {
+    "id": "hongshuizhizhan_idiom",
+    "idiom": "宋襄之仁",
+    "pinyin": "sòng xiāng zhī rén",
+    "source": "宋微子世家",
+    "characters": [
+      "宋襄公"
+    ],
+    "meaning": "指不切实际的仁义，在战争中讲仁义而导致失败。",
+    "story": "宋襄公在泓水之战中坚持不击未阵之敌、不擒二毛，结果宋军大败，襄公重伤而死。",
+    "quote": null,
+    "modernUsage": "形容迂腐的仁义。",
+    "relatedEvent": "泓水之战"
+  },
+  {
+    "id": "yuanjiaojingong_idiom",
+    "idiom": "远交近攻",
+    "pinyin": "yuǎn jiāo jìn gōng",
+    "source": "范雎蔡泽列传",
+    "characters": [
+      "范雎"
+    ],
+    "meaning": "与远方的国家交好，进攻邻近的国家。",
+    "story": "范雎向秦昭襄王提出远交近攻之策，与远方的齐国等交好，而进攻邻近的韩魏。这一战略为秦国统一六国指明了方向。",
+    "quote": null,
+    "modernUsage": "比喻处理复杂关系时的策略。",
+    "relatedEvent": "远交近攻"
+  },
+  {
+    "id": "yueyi_poqi_idiom",
+    "idiom": "连下七十余城",
+    "pinyin": "lián xià qī shí yú chéng",
+    "source": "乐毅列传",
+    "characters": [
+      "乐毅"
+    ],
+    "meaning": "形容战功赫赫，所向披靡。",
+    "story": "乐毅率五国联军大破齐国，连下七十余城，齐国几乎灭亡。",
+    "quote": null,
+    "modernUsage": "形容连续取得重大胜利。",
+    "relatedEvent": "乐毅破齐"
+  },
+  {
+    "id": "quyuan_toujiang_idiom",
+    "idiom": "以身殉国",
+    "pinyin": "yǐ shēn xùn guó",
+    "source": "屈原贾生列传",
+    "characters": [
+      "屈原"
+    ],
+    "meaning": "为国家而牺牲自己的生命。",
+    "story": "屈原忠心为国却遭流放，楚国郢都被秦军攻破后，投汨罗江而死。",
+    "quote": "路漫漫其修远兮，吾将上下而求索。",
+    "modernUsage": "形容为国家利益牺牲一切。",
+    "relatedEvent": "屈原投江"
+  },
+  {
+    "id": "jiayi_guoqin",
+    "idiom": "前事不忘，后事之师",
+    "pinyin": "qián shì bù wàng, hòu shì zhī shī",
+    "source": "屈原贾生列传",
+    "characters": [
+      "贾谊"
+    ],
+    "meaning": "记住过去的教训，可以作为以后的借鉴。",
+    "story": "贾谊在《过秦论》中总结秦朝灭亡的教训，指出前事不忘后事之师。",
+    "quote": "前事不忘，后事之师。",
+    "modernUsage": "形容从历史中吸取教训。",
+    "relatedEvent": null
+  },
+  {
+    "id": "lvbuwei_qi_huo_ke_ju",
+    "idiom": "奇货可居",
+    "pinyin": "qí huò kě jū",
+    "source": "吕不韦列传",
+    "characters": [
+      "吕不韦"
+    ],
+    "meaning": "比喻把某种东西囤积起来，等待时机高价出售。",
+    "story": "吕不韦在赵国遇见质子异人，认为'此奇货可居'，于是帮助异人回国即位，自己因此成为秦国相国。",
+    "quote": "此奇货可居。",
+    "modernUsage": "形容利用某种资源等待时机获取利益。",
+    "relatedEvent": "吕不韦拜相"
+  },
+  {
+    "id": "yi_zi_qian_jin",
+    "idiom": "一字千金",
+    "pinyin": "yī zì qiān jīn",
+    "source": "吕不韦列传",
+    "characters": [
+      "吕不韦"
+    ],
+    "meaning": "形容文辞精妙，价值极高。",
+    "story": "吕不韦编纂《吕氏春秋》后，悬千金于咸阳城门，声称能增删一字者赏千金。无人敢应，可见其文章精妙。",
+    "quote": null,
+    "modernUsage": "形容文章极其精妙。",
+    "relatedEvent": null
+  },
+  {
+    "id": "yinuoqianjin_idiom",
+    "idiom": "一诺千金",
+    "pinyin": "yī nuò qiān jīn",
+    "source": "季布栾布列传",
+    "characters": [
+      "季布"
+    ],
+    "meaning": "形容说话算数，极有信用。",
+    "story": "季布以信守承诺闻名，楚地流传'得黄金百斤，不如得季布一诺'。",
+    "quote": "得黄金百斤，不如得季布一诺。",
+    "modernUsage": "形容说话算数，极有信用。",
+    "relatedEvent": "一诺千金"
+  },
+  {
+    "id": "fengtang_yilao",
+    "idiom": "冯唐易老",
+    "pinyin": "féng táng yì lǎo",
+    "source": "冯唐列传",
+    "characters": [
+      "冯唐"
+    ],
+    "meaning": "比喻人生易老，机会难逢。",
+    "story": "冯唐以直言敢谏闻名，曾对汉文帝指出朝廷赏罚不公。'冯唐易老，李广难封'成为千古名句。",
+    "quote": "冯唐易老，李广难封。",
+    "modernUsage": "比喻人生易老，机会难逢。",
+    "relatedEvent": "冯唐谏文帝"
+  },
+  {
+    "id": "guanfu_mazuo_idiom",
+    "idiom": "灌夫骂座",
+    "pinyin": "guàn fū mà zuò",
+    "source": "魏其武安侯列传",
+    "characters": [
+      "窦婴",
+      "田蚡"
+    ],
+    "meaning": "比喻因醉酒而失态，或借酒发泄不满。",
+    "story": "田蚡娶妻设宴，灌夫因不满田蚡傲慢而醉酒骂座，被田蚡以不敬罪弹劾。窦婴为救灌夫与田蚡争辩，最终二人皆被处死。",
+    "quote": null,
+    "modernUsage": "形容借酒发泄不满。",
+    "relatedEvent": "灌夫骂座"
+  },
+  {
+    "id": "tuienling_idiom",
+    "idiom": "推恩令",
+    "pinyin": "tuī ēn lìng",
+    "source": "平津侯主父列传",
+    "characters": [
+      "主父偃"
+    ],
+    "meaning": "比喻以温和手段逐步削弱对方势力。",
+    "story": "主父偃向汉武帝建议，允许诸侯王将封地分给所有子弟。诸侯国越分越小，无力对抗中央。",
+    "quote": null,
+    "modernUsage": "形容以温和手段逐步削弱对方势力。",
+    "relatedEvent": "推恩令"
+  },
+  {
+    "id": "nanyue_guihan_idiom",
+    "idiom": "赵佗归汉",
+    "pinyin": "zhào tuó guī hàn",
+    "source": "南越列传",
+    "characters": [
+      "赵佗"
+    ],
+    "meaning": "比喻远方之地归附中央。",
+    "story": "赵佗建立南越国，统治岭南八十余年。汉武帝派兵攻灭南越，设立郡县。",
+    "quote": null,
+    "modernUsage": "形容远方之地归附中央。",
+    "relatedEvent": "南越归汉"
+  },
+  {
+    "id": "tongxinanyi_idiom",
+    "idiom": "夜郎自大",
+    "pinyin": "yè láng zì dà",
+    "source": "西南夷列传",
+    "characters": [
+      "唐蒙"
+    ],
+    "meaning": "比喻无知而狂妄自大。",
+    "story": "汉武帝派唐蒙出使夜郎，夜郎王问'汉孰与我大？'因夜郎地处偏远，不知汉朝之大，后人以此比喻无知而狂妄自大。",
+    "quote": null,
+    "modernUsage": "形容无知而狂妄自大。",
+    "relatedEvent": "通西南夷"
+  },
+  {
+    "id": "xiaoguicaosui_idiom",
+    "idiom": "萧规曹随",
+    "pinyin": "xiāo guī cáo suí",
+    "source": "曹相国世家",
+    "characters": [
+      "曹参",
+      "萧何"
+    ],
+    "meaning": "比喻按照前人的成规办事。",
+    "story": "萧何去世后，曹参继任丞相，以清净无为治国，'萧规曹随'，使汉朝社会安定。",
+    "quote": null,
+    "modernUsage": "形容按照前人的成规办事。",
+    "relatedEvent": "萧规曹随"
+  },
+  {
+    "id": "wuzixu_bianshi_idiom",
+    "idiom": "伍子胥鞭尸",
+    "pinyin": "wǔ zǐ xū biān shī",
+    "source": "伍子胥列传",
+    "characters": [
+      "伍子胥"
+    ],
+    "meaning": "比喻极端复仇的行为。",
+    "story": "伍子胥父兄被楚平王杀害，他引吴军攻破楚国，挖出楚平王之尸，鞭之三百以报父仇。",
+    "quote": null,
+    "modernUsage": "形容极端的复仇行为。",
+    "relatedEvent": "伍子胥鞭尸"
+  },
+  {
+    "id": "zhangqian_chushi_idiom",
+    "idiom": "凿空",
+    "pinyin": "záo kōng",
+    "source": "大宛列传",
+    "characters": [
+      "张骞"
+    ],
+    "meaning": "比喻开通道路或探索未知领域。",
+    "story": "张骞出使西域，历经千辛万苦，开辟了丝绸之路。司马迁称之为'凿空'。",
+    "quote": null,
+    "modernUsage": "形容开通道路或探索未知领域。",
+    "relatedEvent": "张骞出使西域"
+  },
+  {
+    "id": "sichouzhilu_idiom",
+    "idiom": "丝绸之路",
+    "pinyin": "sī chóu zhī lù",
+    "source": "大宛列传",
+    "characters": [
+      "张骞"
+    ],
+    "meaning": "连接中国与西方的古代贸易通道。",
+    "story": "张骞出使西域后，汉朝与西域各国的贸易往来日益频繁，形成了著名的丝绸之路。",
+    "quote": null,
+    "modernUsage": "指古代中西方的贸易通道。",
+    "relatedEvent": "张骞出使西域"
+  },
+  {
+    "id": "youmeng_yiguan_idiom",
+    "idiom": "优孟衣冠",
+    "pinyin": "yōu mèng yī guān",
+    "source": "滑稽列传",
+    "characters": [
+      "优孟"
+    ],
+    "meaning": "比喻假装古人或他人的样子行事。",
+    "story": "楚国优人优孟假扮已故令尹孙叔敖，讽谏楚王善待孙叔敖之子。",
+    "quote": null,
+    "modernUsage": "形容假装他人的样子。",
+    "relatedEvent": "优孟衣冠"
+  },
+  {
+    "id": "taozhugong_idiom",
+    "idiom": "陶朱公",
+    "pinyin": "táo zhū gōng",
+    "source": "货殖列传",
+    "characters": [
+      "范蠡"
+    ],
+    "meaning": "比喻致富的人。",
+    "story": "范蠡辅佐勾践灭吴后弃官经商，改名陶朱公，以经商才能成为巨富。",
+    "quote": null,
+    "modernUsage": "比喻致富之人。",
+    "relatedEvent": "陶朱公致富"
+  },
+  {
+    "id": "yanhui_haoxue_idiom",
+    "idiom": "颜回好学",
+    "pinyin": "yán huí hào xué",
+    "source": "仲尼弟子列传",
+    "characters": [
+      "颜回"
+    ],
+    "meaning": "形容勤奋好学。",
+    "story": "颜回是孔子最得意的弟子，安贫乐道，一箪食一瓢饮，居陋巷而不改其乐。",
+    "quote": "一箪食，一瓢饮，在陋巷，人不堪其忧，回也不改其乐。",
+    "modernUsage": "形容安贫乐道，勤奋好学。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zigong_shanyan_idiom",
+    "idiom": "子贡善辩",
+    "pinyin": "zǐ gòng shàn biàn",
+    "source": "仲尼弟子列传",
+    "characters": [
+      "子贡"
+    ],
+    "meaning": "形容善于言辞。",
+    "story": "子贡以善于辞令闻名，曾出使各国，说服齐国退兵，保存鲁国。孔子称其'瑚琏之器'。",
+    "quote": null,
+    "modernUsage": "形容善于言辞辩论。",
+    "relatedEvent": null
+  },
+  {
+    "id": "pengyue_zhisi_idiom",
+    "idiom": "兔死狗烹",
+    "pinyin": "tù sǐ gǒu pēng",
+    "source": "彭越列传",
+    "characters": [
+      "彭越",
+      "刘邦"
+    ],
+    "meaning": "比喻事情成功后就抛弃或杀害有功之人。",
+    "story": "彭越助刘邦灭项羽，封梁王。后被刘邦以谋反罪名诛杀，是'狡兔死，走狗烹'的典型。",
+    "quote": "狡兔死，走狗烹。",
+    "modernUsage": "形容过河拆桥，卸磨杀驴。",
+    "relatedEvent": "彭越之死"
+  },
+  {
+    "id": "yingbu_idiom",
+    "idiom": "黥布之叛",
+    "pinyin": "qíng bù zhī pàn",
+    "source": "黥布列传",
+    "characters": [
+      "英布",
+      "刘邦"
+    ],
+    "meaning": "比喻因恐惧而铤而走险。",
+    "story": "英布见韩信、彭越先后被诛，恐惧不安，遂起兵叛乱。",
+    "quote": null,
+    "modernUsage": "形容因恐惧而铤而走险。",
+    "relatedEvent": "英布叛汉"
+  },
+  {
+    "id": "zhengguoqu_idiom",
+    "idiom": "疲秦之计",
+    "pinyin": "pí qín zhī jì",
+    "source": "河渠书",
+    "characters": [],
+    "meaning": "比喻以消耗对方精力为目的的策略。",
+    "story": "韩国水工郑国建议秦国修渠，实为'疲秦'之计。秦国发现后仍令其完工，渠成后反而使秦国更加强大。",
+    "quote": null,
+    "modernUsage": "比喻以消耗对方精力为目的的策略。",
+    "relatedEvent": "郑国渠"
+  },
+  {
+    "id": "taishan_fengchan_idiom",
+    "idiom": "泰山封禅",
+    "pinyin": "tài shān fēng shàn",
+    "source": "封禅书",
+    "characters": [
+      "汉武帝"
+    ],
+    "meaning": "帝王到泰山祭祀天地的隆重典礼。",
+    "story": "汉武帝到泰山举行封禅大典，祭祀天地，以彰其功德。",
+    "quote": null,
+    "modernUsage": "比喻帝王举行的最隆重典礼。",
+    "relatedEvent": "泰山封禅"
+  },
+  {
+    "id": "simaqian_zhushu_idiom",
+    "idiom": "重于泰山",
+    "pinyin": "zhòng yú tài shān",
+    "source": "太史公自序",
+    "characters": [
+      "司马迁"
+    ],
+    "meaning": "比喻意义重大，价值极高。",
+    "story": "司马迁因替李陵辩护受宫刑，忍辱著书，在《报任安书》中写道：'人固有一死，或重于泰山，或轻于鸿毛。'",
+    "quote": "人固有一死，或重于泰山，或轻于鸿毛。",
+    "modernUsage": "形容意义重大。",
+    "relatedEvent": null
+  },
+  {
+    "id": "fengshan_idiom2",
+    "idiom": "天下名山",
+    "pinyin": "tiān xià míng shān",
+    "source": "封禅书",
+    "characters": [
+      "汉武帝"
+    ],
+    "meaning": "指天下著名的山岳。",
+    "story": "汉武帝封禅泰山，此后历代帝王皆以泰山为封禅之地。",
+    "quote": null,
+    "modernUsage": "形容名山大川。",
+    "relatedEvent": "泰山封禅"
+  },
+  {
+    "id": "beishuiyizhan",
+    "idiom": "背水一战",
+    "pinyin": "bèi shuǐ yī zhàn",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "背靠着河水作战，表示没有退路。比喻决一死战。",
+    "story": "韩信攻打赵国时，在井陉口布置背水阵。赵军见汉军背水布阵，大笑韩信不懂兵法。韩信以少量兵力正面迎敌，以精兵突袭赵军大营，赵军回营大乱，汉军前后夹击，大破赵军二十万。",
+    "quote": "信乃使万人先行，出，背水陈。赵军望见而大笑。",
+    "modernUsage": "比喻在没有退路的情况下与敌人决一死战。",
+    "relatedEvent": null
+  },
+  {
+    "id": "mingxiuzhaodaodu",
+    "idiom": "明修栈道暗渡陈仓",
+    "pinyin": "míng xiū zhàn dào àn dù chén cāng",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "比喻在暗中进行某种活动，而表面上装作不做，以迷惑对手。",
+    "story": "楚汉相争时，刘邦听从韩信之计，派兵大张旗鼓地修复被烧毁的栈道，暗中却率主力从陈仓古道突袭关中，出其不意地打败了章邯，平定了三秦。",
+    "quote": "章邯果疑，乃引兵拒之。汉出奇兵袭陈仓，雍王邯迎击，汉军击走之。",
+    "modernUsage": "比喻以明显的行动迷惑对方，暗中却进行另一项计划。",
+    "relatedEvent": null
+  },
+  {
+    "id": "weibiansanjue",
+    "idiom": "韦编三绝",
+    "pinyin": "wéi biān sān jué",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "编连竹简的皮绳断了三次。比喻读书勤奋刻苦。",
+    "story": "孔子晚年喜欢研读《周易》，因为反复翻阅，把串联竹简的皮绳都磨断了三次。孔子说：'再给我几年，我对《周易》就能精通了。'",
+    "quote": "读易，韦编三绝。曰：假我数年，若是，我于易则彬彬矣。",
+    "modernUsage": "形容读书极为勤奋刻苦。",
+    "relatedEvent": "删订六经"
+  },
+  {
+    "id": "sanrenxingbiyouwoshi",
+    "idiom": "三人行必有我师",
+    "pinyin": "sān rén xíng bì yǒu wǒ shī",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "三个人同行，其中一定有人可以做我的老师。指应虚心向他人学习。",
+    "story": "孔子在《论语》中说：'三人行，必有我师焉。择其善者而从之，其不善者而改之。'孔子一生好学，认为每个人都有值得学习的地方。",
+    "quote": "三人行，必有我师焉。择其善者而从之，其不善者而改之。",
+    "modernUsage": "形容虚心好学，善于从他人身上取长补短。",
+    "relatedEvent": null
+  },
+  {
+    "id": "qiaoyanlingse",
+    "idiom": "巧言令色",
+    "pinyin": "qiǎo yán lìng sè",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "花言巧语，虚伪的面貌。形容花言巧语讨好别人。",
+    "story": "孔子曰：'巧言令色，鲜矣仁。'意思是花言巧语、装出一副好看的面貌的人，很少有仁德之心。",
+    "quote": "巧言令色，鲜矣仁。",
+    "modernUsage": "形容花言巧语，虚伪讨好的样子。",
+    "relatedEvent": null
+  },
+  {
+    "id": "juyifansan",
+    "idiom": "举一反三",
+    "pinyin": "jǔ yī fǎn sān",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "从一件事情类推而知道其他许多事情。比喻善于学习，能够由此及彼。",
+    "story": "孔子对子贡说：'赐也，始可与言诗已矣，告诸往而知来者。'又对弟子说：'不愤不启，不悱不发。举一隅不以三隅反，则不复也。'",
+    "quote": "举一隅不以三隅反，则不复也。",
+    "modernUsage": "形容善于触类旁通，由此及彼。",
+    "relatedEvent": null
+  },
+  {
+    "id": "wenguzhixin",
+    "idiom": "温故知新",
+    "pinyin": "wēn gù zhī xīn",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "温习旧的知识，能够得到新的理解和体会。",
+    "story": "孔子曰：'温故而知新，可以为师矣。'强调复习旧知识的重要性，在温习中可以获得新的领悟。",
+    "quote": "温故而知新，可以为师矣。",
+    "modernUsage": "形容温习旧知识，从中获得新体会。",
+    "relatedEvent": null
+  },
+  {
+    "id": "jianxiansiqi",
+    "idiom": "见贤思齐",
+    "pinyin": "jiàn xián sī qí",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "见到贤人就想要和他看齐。指努力学习别人的长处。",
+    "story": "孔子曰：'见贤思齐焉，见不贤而内自省也。'看到有德行的人，就想努力向他看齐；看到没有德行的人，就要反省自己是否有同样的缺点。",
+    "quote": "见贤思齐焉，见不贤而内自省也。",
+    "modernUsage": "形容见到优秀的人就想向他学习。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zizhongpipin",
+    "idiom": "自知之明",
+    "pinyin": "zì zhī zhī míng",
+    "source": "老子韩非列传",
+    "characters": [
+      "老子"
+    ],
+    "meaning": "了解自己的长处和短处。指对自己有清醒的认识。",
+    "story": "老子曰：'知人者智，自知者明。胜人者有力，自胜者强。'了解别人是有智慧，了解自己才是真正的高明。",
+    "quote": "知人者智，自知者明。",
+    "modernUsage": "形容对自己有清醒客观的认识。",
+    "relatedEvent": null
+  },
+  {
+    "id": "chiyin_changge",
+    "idiom": "荆轲和歌",
+    "pinyin": "jīng kē hè gē",
+    "source": "刺客列传",
+    "characters": [
+      "荆轲",
+      "高渐离"
+    ],
+    "meaning": "荆轲和高渐离在易水边击筑悲歌。形容英雄临别时慷慨悲壮的情景。",
+    "story": "荆轲刺秦出发前，太子丹及宾客皆白衣冠送行于易水之上。高渐离击筑，荆轲和而歌，为变徵之声，士皆垂泪涕泣。",
+    "quote": "荆轲和而歌，为变徵之声，士皆垂泪涕泣。又前而为歌曰：风萧萧兮易水寒，壮士一去兮不复还。",
+    "modernUsage": "形容离别时慷慨悲壮的情景。",
+    "relatedEvent": "易水送别"
+  },
+  {
+    "id": "qinqu_riou_yulie",
+    "idiom": "期期艾艾",
+    "pinyin": "qī qī ài ài",
+    "source": "张丞相列传",
+    "characters": [
+      "周昌"
+    ],
+    "meaning": "形容口吃，也形容做事犹豫不决。",
+    "story": "汉初大臣周昌有口吃的毛病，一次在朝堂上急切地表达意见，说'期期……期期……以为不可'。后人以此形容口吃。",
+    "quote": "臣期期知其不可。",
+    "modernUsage": "形容口吃或说话吞吞吐吐。",
+    "relatedEvent": null
+  },
+  {
+    "id": "koushukongzhuan",
+    "idiom": "口尚乳臭",
+    "pinyin": "kǒu shàng rǔ chòu",
+    "source": "魏其武安侯列传",
+    "characters": [],
+    "meaning": "嘴里还有奶腥味。形容年轻人缺乏经验，幼稚无知。",
+    "story": "此成语源于古代形容年轻人乳臭未干、不成熟。在汉朝典故中也有相关用法。",
+    "quote": null,
+    "modernUsage": "形容年轻人幼稚无知，缺乏经验。",
+    "relatedEvent": null
+  },
+  {
+    "id": "chengfengpolang",
+    "idiom": "乘风破浪",
+    "pinyin": "chéng fēng pò làng",
+    "source": "南史·宗悫传",
+    "characters": [],
+    "meaning": "驾着风势，破浪前进。比喻志向远大，不怕困难。",
+    "story": "南朝宋宗悫少年时，叔父问他的志向，他答道：'愿乘长风破万里浪。'",
+    "quote": "愿乘长风破万里浪。",
+    "modernUsage": "比喻志向远大，不怕困难，奋勇前进。",
+    "relatedEvent": null
+  },
+  {
+    "id": "tusheziwo",
+    "idiom": "兔死狐悲",
+    "pinyin": "tù sǐ hú bēi",
+    "source": "史记·未有明文",
+    "characters": [],
+    "meaning": "兔子死了，狐狸感到悲伤。比喻因同类的灭亡而感到悲伤。",
+    "story": "此成语虽广泛使用，但其典故源于古人观察动物行为。比喻因同盟或同类的失败而悲伤。",
+    "quote": null,
+    "modernUsage": "比喻因同类的死亡或失败而感到悲伤。",
+    "relatedEvent": null
+  },
+  {
+    "id": "youzhi_zheyi_zaihangu",
+    "idiom": "有志者事竟成",
+    "pinyin": "yǒu zhì zhě shì jìng chéng",
+    "source": "后汉书·耿弇传",
+    "characters": [],
+    "meaning": "有志向的人做事终究会成功。",
+    "story": "东汉光武帝刘秀对耿弇说：'将军前在南阳，建此大策，常以为落落难合，有志者事竟成也。'",
+    "quote": "有志者事竟成。",
+    "modernUsage": "形容只要有决心和毅力，事情终究会成功。",
+    "relatedEvent": null
+  },
+  {
+    "id": "qinyue_wanghuan_zhao_baima",
+    "idiom": "秦舞阳",
+    "pinyin": "qín wǔ yáng",
+    "source": "刺客列传",
+    "characters": [
+      "荆轲",
+      "秦舞阳"
+    ],
+    "meaning": "秦舞阳年少勇士，随荆轲入秦。比喻年少气盛但缺乏历练。",
+    "story": "荆轲入秦时带副手秦舞阳同行。秦舞阳年十二杀人，人不敢忤视。然入秦宫见秦王时，色变振恐，群臣怪之。荆轲笑曰：'北蕃蛮夷之鄙人，未尝见天子，故振慑。'",
+    "quote": "北蕃蛮夷之鄙人，未尝见天子，故振慑。",
+    "modernUsage": "形容年少气盛但临事怯场。",
+    "relatedEvent": "荆轲刺秦王"
+  },
+  {
+    "id": "xinyi_zhiduo_zhu",
+    "idiom": "心有余而力不足",
+    "pinyin": "xīn yǒu yú ér lì bù zú",
+    "source": "史记·未有明文",
+    "characters": [],
+    "meaning": "心里很想做，但力量不够。",
+    "story": "此成语虽然广泛使用，但其精神在史记诸多人物身上体现，如孔子周游列国推行仁道，心有余而力不足。",
+    "quote": null,
+    "modernUsage": "形容想做某事但力不从心。",
+    "relatedEvent": null
+  },
+  {
+    "id": "chengxiao_xia_yang",
+    "idiom": "城狐社鼠",
+    "pinyin": "chéng hú shè shǔ",
+    "source": "史记·未有明文",
+    "characters": [],
+    "meaning": "城墙上的狐狸，社庙里的老鼠。比喻有所依恃的小人。",
+    "story": "古人认为城墙上的狐、社庙里的鼠不可轻易烧杀，否则会毁坏城墙社庙。比喻依仗权势为非作歹的小人。",
+    "quote": null,
+    "modernUsage": "比喻依仗权势作恶，难以清除的人。",
+    "relatedEvent": null
+  },
+  {
+    "id": "tianranxia_dao",
+    "idiom": "天道好还",
+    "pinyin": "tiān dào hǎo huán",
+    "source": "史记",
+    "characters": [],
+    "meaning": "天道循环，善恶终有报应。",
+    "story": "司马迁在史记中多次表达天道的观念，认为善恶终有报应。许多历史人物的命运都印证了这一道理。",
+    "quote": null,
+    "modernUsage": "形容善恶终有报应。",
+    "relatedEvent": null
+  },
+  {
+    "id": "xianfa_zhixianzhe",
+    "idiom": "先发制人",
+    "pinyin": "xiān fā zhì rén",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽",
+      "项梁"
+    ],
+    "meaning": "先下手为强，先行动就能制服对方。",
+    "story": "会稽守殷通对项梁说：'先即制人，后则为人所制。'项梁于是先发制人，杀了殷通，举兵反秦。",
+    "quote": "先即制人，后则为人所制。",
+    "modernUsage": "比喻先下手取得主动权，制服对方。",
+    "relatedEvent": "项羽起兵"
+  },
+  {
+    "id": "bijian_qiruo",
+    "idiom": "彼可取而代也",
+    "pinyin": "bǐ kě qǔ ér dài yě",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "他可以被取代啊。形容有雄心壮志，想要取代某人。",
+    "story": "项羽年轻时见秦始皇出游，叹曰：'彼可取而代也。'叔父项梁急掩其口，但由此看出项羽的雄心壮志。",
+    "quote": "彼可取而代也。",
+    "modernUsage": "形容有取代他人的雄心壮志。",
+    "relatedEvent": "项羽起兵"
+  },
+  {
+    "id": "shaquanchengjing",
+    "idiom": "杀卿成名",
+    "pinyin": "shā qīng chéng míng",
+    "source": "刺客列传",
+    "characters": [
+      "专诸"
+    ],
+    "meaning": "刺杀吴王僚以成名。",
+    "story": "吴国公子光（阖闾）欲杀吴王僚自立，伍子胥推荐勇士专诸。专诸将匕首藏于烤鱼中，趁献鱼之机刺杀吴王僚，专诸也当场被杀。",
+    "quote": "专诸置匕首鱼炙之腹中而进。",
+    "modernUsage": "比喻舍身取义的行为。",
+    "relatedEvent": "专诸刺王僚"
+  },
+  {
+    "id": "jinyeyexing",
+    "idiom": "锦衣夜行",
+    "pinyin": "jǐn yī yè xíng",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "穿着锦绣衣服在黑夜走路。比喻虽有才能却不为人知，或富贵后不愿回乡炫耀。",
+    "story": "项羽攻占咸阳后，有人劝他留在关中称霸。项羽说'富贵不归故乡，如衣绣夜行，谁知之者！'执意东归彭城。",
+    "quote": "富贵不归故乡，如衣绣夜行，谁知之者！",
+    "modernUsage": "形容虽有才干或富贵却不为人所知。",
+    "relatedEvent": null
+  },
+  {
+    "id": "muhouerguan",
+    "idiom": "沐猴而冠",
+    "pinyin": "mù hóu ér guàn",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "猕猴戴上帽子装人。比喻虚有其表，形同傀儡。",
+    "story": "项羽烧毁秦宫室后东归，韩生劝他定都关中。项羽不听，韩生私下说'人言楚人沐猴而冠耳，果然。'项羽闻之大怒，烹杀韩生。",
+    "quote": "人言楚人沐猴而冠耳，果然。",
+    "modernUsage": "形容虚有其表、品位低下的人。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zuociyou",
+    "idiom": "作壁上观",
+    "pinyin": "zuò bì shàng guān",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽",
+      "宋义"
+    ],
+    "meaning": "在营壁上观看别人交战。比喻置身事外，在旁观望。",
+    "story": "巨鹿之战时，项羽杀了畏缩不前的主帅宋义，率军渡河破釜沉舟。各路诸侯援军皆在壁垒上观战，见楚军以一当十，无不惊惧。",
+    "quote": "及楚击秦，诸将皆从壁上观。",
+    "modernUsage": "比喻置身事外，在旁观望。",
+    "relatedEvent": "巨鹿之战"
+  },
+  {
+    "id": "gaoyangjiutu",
+    "idiom": "高阳酒徒",
+    "pinyin": "gāo yáng jiǔ tú",
+    "source": "郦生陆贾列传",
+    "characters": [
+      "郦食其",
+      "刘邦"
+    ],
+    "meaning": "指嗜酒而不拘礼法的人。",
+    "story": "郦食其求见刘邦，刘邦正让两个女子洗脚，不愿接见。郦食其斥曰'足下必是高阳酒徒，非有天下之志。'刘邦闻言起身更衣，请郦食其上坐。",
+    "quote": "足下必是高阳酒徒，非有天下之志。",
+    "modernUsage": "形容嗜酒而放荡不羁的人。",
+    "relatedEvent": "郦生说齐"
+  },
+  {
+    "id": "dafengge",
+    "idiom": "大风歌",
+    "pinyin": "dà fēng gē",
+    "source": "高祖本纪",
+    "characters": [
+      "刘邦"
+    ],
+    "meaning": "汉高祖刘邦平定英布后回乡所作之歌。表达帝王忧虑天下的情怀。",
+    "story": "刘邦平定黥布叛乱后回乡沛县，设宴款待故旧，酒酣击筑自歌：'大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方！'",
+    "quote": "大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方！",
+    "modernUsage": "形容帝王忧虑天下、思贤若渴的情怀。",
+    "relatedEvent": null
+  },
+  {
+    "id": "anliubibo",
+    "idiom": "安刘必勃",
+    "pinyin": "ān liú bì bó",
+    "source": "高祖本纪",
+    "characters": [
+      "刘邦",
+      "周勃"
+    ],
+    "meaning": "安定刘氏天下者必是周勃。",
+    "story": "刘邦病重时，有人进谗言说樊哙将不利于吕后之子。刘邦派陈平、周勃去杀樊哙。周勃后来果然平定诸吕之乱，迎立汉文帝，应验了'安刘者勃'之言。",
+    "quote": "安刘氏者必勃也。",
+    "modernUsage": "形容预言某人将担当大任。",
+    "relatedEvent": "诸吕之乱"
+  },
+  {
+    "id": "tuichenchuxin",
+    "idiom": "推陈出新",
+    "pinyin": "tuī chén chū xīn",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "去掉旧事物的糟粕，取其精华，使旧事物变为新事物。",
+    "story": "韩信为将时，粮仓中有些粮食陈旧变质。韩信命人将旧粮先发出去，腾出粮仓存放新粮。将士们对新粮感到满意，军心大振。",
+    "quote": null,
+    "modernUsage": "比喻在旧基础上创新。",
+    "relatedEvent": null
+  },
+  {
+    "id": "gonggaozhenzhu",
+    "idiom": "功高震主",
+    "pinyin": "gōng gāo zhèn zhǔ",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信",
+      "刘邦"
+    ],
+    "meaning": "功劳太大，使君主感到威胁。",
+    "story": "韩信平定齐国后，派人向刘邦请求做假齐王。刘邦大怒，张良踩刘邦脚提醒他忍让。韩信的功勋令刘邦日益忌惮，最终导致韩信被害。",
+    "quote": null,
+    "modernUsage": "形容臣子的功劳太大，引起君主的猜忌和不安。",
+    "relatedEvent": "剪除异姓王"
+  },
+  {
+    "id": "baiganwanghou",
+    "idiom": "百战百胜",
+    "pinyin": "bǎi zhàn bǎi shèng",
+    "source": "淮阴侯列传",
+    "characters": [
+      "韩信"
+    ],
+    "meaning": "每战必胜。形容善于用兵。",
+    "story": "韩信一生征战无数，几乎未尝败绩。刘邦问韩信能带多少兵，韩信说自己多多益善。韩信的军事才能为汉朝的建立立下了赫赫战功。",
+    "quote": "战必胜，攻必取。",
+    "modernUsage": "形容善于作战，每次都能获胜。",
+    "relatedEvent": null
+  },
+  {
+    "id": "taolibuxiacheng",
+    "idiom": "桃李不言下自成蹊",
+    "pinyin": "táo lǐ bù yán, xià zì chéng xī",
+    "source": "李将军列传",
+    "characters": [
+      "李广"
+    ],
+    "meaning": "桃树李树不招引人，但因有花有果，人们在树下走来走去，走出了一条小路。比喻为人真诚自然能感召人心。",
+    "story": "李广一生为人质朴，不善言辞。但他爱护士兵，深得部下爱戴。司马迁评价道：'桃李不言，下自成蹊。'此言虽小，可以喻大也。",
+    "quote": "桃李不言，下自成蹊。此言虽小，可以喻大也。",
+    "modernUsage": "比喻为人真诚，不事张扬，自然能感召人心。",
+    "relatedEvent": null
+  },
+  {
+    "id": "liguangnanfeng",
+    "idiom": "李广难封",
+    "pinyin": "lǐ guǎng nán fēng",
+    "source": "李将军列传",
+    "characters": [
+      "李广",
+      "汉武帝"
+    ],
+    "meaning": "李广一生征战却未能封侯。比喻有才能的人终身不得志。",
+    "story": "李广历经文帝、景帝、武帝三朝，与匈奴大小七十余战，却因种种原因始终未能封侯。最后在漠北之战中迷路失期，引刀自刎。",
+    "quote": "广结发与匈奴大小七十余战。",
+    "modernUsage": "比喻有才能的人却终身不得志。",
+    "relatedEvent": "李广自刎"
+  },
+  {
+    "id": "feijiangjiao",
+    "idiom": "飞将军",
+    "pinyin": "fēi jiāng jūn",
+    "source": "李将军列传",
+    "characters": [
+      "李广"
+    ],
+    "meaning": "指李广。匈奴人称其为飞将军，形容勇猛善战的将领。",
+    "story": "李广镇守边关时，匈奴人敬畏其勇武，称他为'汉之飞将军'，避之数年不敢犯边。",
+    "quote": "广居右北平，匈奴闻之，号曰'汉之飞将军'，避之数岁，不敢入右北平。",
+    "modernUsage": "形容勇猛善战的将领。",
+    "relatedEvent": null
+  },
+  {
+    "id": "weningjiaojiao",
+    "idiom": "刎颈之交",
+    "pinyin": "wěn jǐng zhī jiāo",
+    "source": "廉颇蔺相如列传",
+    "characters": [
+      "廉颇",
+      "蔺相如"
+    ],
+    "meaning": "表示同生共死的友谊。",
+    "story": "廉颇负荆请罪后，对蔺相如说'鄙贱之人，不知将军宽之至此也。'二人从此结为刎颈之交，以死相报，共同为国效力。",
+    "quote": "卒相与欢，为刎颈之交。",
+    "modernUsage": "形容朋友之间同生共死的深厚情谊。",
+    "relatedEvent": "负荆请罪"
+  },
+  {
+    "id": "nufachongguan",
+    "idiom": "怒发冲冠",
+    "pinyin": "nù fà chōng guān",
+    "source": "廉颇蔺相如列传",
+    "characters": [
+      "蔺相如"
+    ],
+    "meaning": "愤怒得头发直竖，顶起帽子。形容极其愤怒。",
+    "story": "蔺相如见秦昭王得璧后无意偿城，便上前持璧，怒发冲冠，指责秦王不守信用，威胁要将和氏璧与自己的脑袋一同撞碎在柱子上。",
+    "quote": "相如因持璧却立，倚柱，怒发上冲冠。",
+    "modernUsage": "形容极度愤怒。",
+    "relatedEvent": "完璧归赵"
+  },
+  {
+    "id": "zuofazib",
+    "idiom": "作法自毙",
+    "pinyin": "zuò fǎ zì bì",
+    "source": "商君列传",
+    "characters": [
+      "商鞅"
+    ],
+    "meaning": "自己制定的法律反而害了自己。比喻自作自受。",
+    "story": "商鞅变法时制定严刑峻法。秦孝公死后，公子虔诬告商鞅谋反。商鞅逃亡时，因自己制定的法律规定客舍收留无证件者要同罪，无人敢收留他。最终被车裂。",
+    "quote": "商君亡至关下，欲舍客舍。客人不知其是商君也，曰：'商君之法，舍人无验者坐之。'",
+    "modernUsage": "比喻自作自受。",
+    "relatedEvent": "车裂商鞅"
+  },
+  {
+    "id": "tuishigoutun",
+    "idiom": "兔死狗烹",
+    "pinyin": "tù sǐ gǒu pēng",
+    "source": "越王勾践世家",
+    "characters": [
+      "范蠡",
+      "文种"
+    ],
+    "meaning": "兔子死了，猎狗就被煮了吃。比喻事情成功后把出过力的人杀掉。",
+    "story": "范蠡灭吴后离开越国，写信劝文种：'蜚鸟尽，良弓藏；狡兔死，走狗烹。越王为人长颈鸟喙，可与共患难，不可与共乐。'文种不信，后被勾践赐死。",
+    "quote": "蜚鸟尽，良弓藏；狡兔死，走狗烹。",
+    "modernUsage": "比喻功成后被抛弃或杀害。",
+    "relatedEvent": "范蠡归隐"
+  },
+  {
+    "id": "fanzhouwuhu",
+    "idiom": "泛舟五湖",
+    "pinyin": "fàn zhōu wǔ hú",
+    "source": "越王勾践世家",
+    "characters": [
+      "范蠡",
+      "西施"
+    ],
+    "meaning": "在五湖上泛舟。比喻功成身退，隐居江湖。",
+    "story": "范蠡深知勾践'可与共患难，不可与共乐'，灭吴后辞官离去，携西施泛舟五湖，化名陶朱公经商致富。",
+    "quote": "范蠡遂去，乘扁舟浮于江湖。",
+    "modernUsage": "比喻功成身退，归隐江湖。",
+    "relatedEvent": "范蠡归隐"
+  },
+  {
+    "id": "renqiwoqu",
+    "idiom": "人弃我取",
+    "pinyin": "rén qì wǒ qǔ",
+    "source": "货殖列传",
+    "characters": [
+      "白圭"
+    ],
+    "meaning": "别人抛弃的我拿过来。形容善于把握时机，在低谷时买入。",
+    "story": "白圭是战国时期著名商人，他总结经商之道说：'人弃我取，人取我与。'即别人不想要的低价买入，别人抢购的高价卖出。",
+    "quote": "人弃我取，人取我与。",
+    "modernUsage": "形容善于把握时机，逆向操作。",
+    "relatedEvent": null
+  },
+  {
+    "id": "hanzizizhou",
+    "idiom": "旱则资舟",
+    "pinyin": "hàn zé zī zhōu",
+    "source": "货殖列传",
+    "characters": [
+      "白圭"
+    ],
+    "meaning": "干旱时就要准备船只。比喻未雨绸缪，提前做好准备。",
+    "story": "白圭经商讲究'旱则资舟，水则资车'，即在干旱时准备船只（预见将来会有洪水），在水涝时准备车辆。",
+    "quote": "旱则资舟，水则资车。",
+    "modernUsage": "比喻未雨绸缪，提前做好准备。",
+    "relatedEvent": null
+  },
+  {
+    "id": "yushifuyang",
+    "idiom": "与时俯仰",
+    "pinyin": "yǔ shí fǔ yǎng",
+    "source": "货殖列传",
+    "characters": [
+      "范蠡"
+    ],
+    "meaning": "随着时代的变化而灵活应对。",
+    "story": "范蠡弃政从商后，善于观察市场行情，把握时机，'与时俯仰'，灵活应对，最终成为巨富陶朱公。",
+    "quote": "与时俯仰，获其赢利。",
+    "modernUsage": "形容顺应时代变化，灵活应对。",
+    "relatedEvent": "陶朱公致富"
+  },
+  {
+    "id": "bumingzeyi",
+    "idiom": "不鸣则已一鸣惊人",
+    "pinyin": "bù míng zé yǐ yī míng jīng rén",
+    "source": "滑稽列传",
+    "characters": [
+      "淳于髡",
+      "齐威王"
+    ],
+    "meaning": "不叫则已，一叫就惊动人。比喻平时没有表现，一行动就做出惊人的成绩。",
+    "story": "淳于髡用隐语讽谏齐威王：'国中有大鸟，止王之庭，三年不飞不鸣，王知此鸟何也？'齐威王答：'此鸟不飞则已，一飞冲天；不鸣则已，一鸣惊人。'于是奋发图治。",
+    "quote": "不飞则已，一飞冲天；不鸣则已，一鸣惊人。",
+    "modernUsage": "比喻平时沉默，一行动就有惊人表现。",
+    "relatedEvent": null
+  },
+  {
+    "id": "ruzikejiao",
+    "idiom": "孺子可教",
+    "pinyin": "rú zǐ kě jiào",
+    "source": "留侯世家",
+    "characters": [
+      "张良",
+      "黄石公"
+    ],
+    "meaning": "年轻人有出息，值得教导。",
+    "story": "张良在圯桥遇到黄石公。黄石公故意将鞋掉到桥下，让张良去捡。张良强忍怒气捡鞋并替他穿上。黄石公笑着说'孺子可教矣'，后传授张良《太公兵法》。",
+    "quote": "瓀子可教矣。",
+    "modernUsage": "形容年轻人有出息，值得培养。",
+    "relatedEvent": "圯上受书"
+  },
+  {
+    "id": "gongchengshentui",
+    "idiom": "功成身退",
+    "pinyin": "gōng chéng shēn tuì",
+    "source": "留侯世家",
+    "characters": [
+      "张良"
+    ],
+    "meaning": "功业成就后自行隐退。",
+    "story": "汉朝建立后，张良功成不居，说自己'以三寸舌为帝者师，封万户，位列侯，此布衣之极，于良足矣。'愿意弃人间事，欲从赤松子游。",
+    "quote": "愿弃人间事，欲从赤松子游耳。",
+    "modernUsage": "形容大功告成后隐退，不求名利。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zunwangrangyi_gy",
+    "idiom": "尊王攘夷",
+    "pinyin": "zūn wáng rǎng yí",
+    "source": "管晏列传",
+    "characters": [
+      "管仲",
+      "齐桓公"
+    ],
+    "meaning": "尊崇周天子，抵御四方的少数民族入侵。",
+    "story": "管仲辅佐齐桓公，提出'尊王攘夷'的口号。齐桓公以诸侯霸主身份，率军北伐山戎，南伐楚国，尊崇周天子，维护中原秩序，成为春秋首霸。",
+    "quote": "管仲相齐，尊王攘夷，九合诸侯，一匡天下。",
+    "modernUsage": "形容维护正统秩序，抵御外敌。",
+    "relatedEvent": "尊王攘夷"
+  },
+  {
+    "id": "yikuangtianxia",
+    "idiom": "一匡天下",
+    "pinyin": "yī kuāng tiān xià",
+    "source": "管晏列传",
+    "characters": [
+      "管仲",
+      "齐桓公"
+    ],
+    "meaning": "匡正天下，使天下归于正道。",
+    "story": "管仲辅佐齐桓公，九合诸侯，一匡天下，使齐国成为春秋第一个霸主。",
+    "quote": "九合诸侯，一匡天下。",
+    "modernUsage": "形容匡正天下、建立秩序的伟大功业。",
+    "relatedEvent": "尊王攘夷"
+  },
+  {
+    "id": "qiuhaowufan_hx",
+    "idiom": "秋毫无犯",
+    "pinyin": "qiū háo wú fàn",
+    "source": "匈奴列传",
+    "characters": [
+      "刘邦"
+    ],
+    "meaning": "连秋天的毫毛都不侵犯。形容军纪严明，丝毫不侵犯百姓利益。",
+    "story": "汉高祖刘邦入关中后，严禁军队侵扰百姓，'财物无所取，妇女无所幸'。关中百姓感恩戴德，这正是约法三章之外秋毫无犯的体现。",
+    "quote": "财物无所取，妇女无所幸。",
+    "modernUsage": "形容军纪严明，丝毫不侵犯百姓利益。",
+    "relatedEvent": null
+  },
+  {
+    "id": "langjuxushan",
+    "idiom": "狼居胥山",
+    "pinyin": "láng jū xū shān",
+    "source": "匈奴列传",
+    "characters": [
+      "霍去病"
+    ],
+    "meaning": "在狼居胥山祭天。比喻建立不朽功勋。",
+    "story": "霍去病率军深入漠北，大败匈奴，封狼居胥山以祭天，禅姑衍山以祭地，凯旋而归。这是汉代对匈奴作战的最大胜利。",
+    "quote": "封狼居胥山以祭天。",
+    "modernUsage": "形容建立辉煌的军事功勋。",
+    "relatedEvent": "漠北之战"
+  },
+  {
+    "id": "wofayan",
+    "idiom": "握发延士",
+    "pinyin": "wò fà yán shì",
+    "source": "鲁周公世家",
+    "characters": [
+      "周公"
+    ],
+    "meaning": "握着头发接待贤士。形容求贤若渴。",
+    "story": "周公辅佐成王时，求贤若渴。'一沐三握发，一饭三吐哺'，洗头时多次握起湿发，吃饭时多次吐出食物，起来接待来访的贤士。",
+    "quote": "一沐三握发，一饭三吐哺。",
+    "modernUsage": "形容礼贤下士、求贤若渴。",
+    "relatedEvent": "周公辅政"
+  },
+  {
+    "id": "shuerbu",
+    "idiom": "述而不作",
+    "pinyin": "shù ér bù zuò",
+    "source": "孔子世家",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "只阐述而不创作。指传承古代文化而不自创新说。",
+    "story": "孔子晚年整理六经时说：'述而不作，信而好古。'意思是只传述古代的文献而不自己创作，以传承先贤之道为己任。",
+    "quote": "述而不作，信而好古，窃比于我老彭。",
+    "modernUsage": "形容传承文化遗产而不自创。",
+    "relatedEvent": "删订六经"
+  },
+  {
+    "id": "yiyebaitou",
+    "idiom": "一夜白头",
+    "pinyin": "yī yè bái tóu",
+    "source": "伍子胥列传",
+    "characters": [
+      "伍子胥"
+    ],
+    "meaning": "一夜之间头发全白了。形容极度忧虑和焦急。",
+    "story": "伍子胥逃亡至昭关，关口有重兵把守，画影图形捉拿他。伍子胥一夜间忧愁得头发全白，后因此得以伪装蒙混过关。",
+    "quote": null,
+    "modernUsage": "形容因极度忧虑或焦急而头发变白。",
+    "relatedEvent": "伍子胥奔吴"
+  },
+  {
+    "id": "juemubianshi",
+    "idiom": "掘墓鞭尸",
+    "pinyin": "jué mù biān shī",
+    "source": "伍子胥列传",
+    "characters": [
+      "伍子胥",
+      "楚平王"
+    ],
+    "meaning": "挖开坟墓鞭打尸体。形容极端的报复行为。",
+    "story": "伍子胥引吴军攻破楚都后，为报父兄之仇，挖出楚平王的棺椁，鞭尸三百。楚人皆悲，申包胥哭秦庭求救。",
+    "quote": null,
+    "modernUsage": "形容极端残酷的复仇行为。",
+    "relatedEvent": "伍子胥鞭尸"
+  },
+  {
+    "id": "xiumubukediao",
+    "idiom": "朽木不可雕",
+    "pinyin": "xiǔ mù bù kě diāo",
+    "source": "仲尼弟子列传",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "腐烂的木头不能雕刻。比喻人已经无可救药。",
+    "story": "孔子的学生宰予白天睡觉，孔子批评道：'朽木不可雕也，粪土之墙不可圬也。'意思是腐烂的木头不能雕刻，粪土墙不能粉刷。",
+    "quote": "朽木不可雕也，粪土之墙不可圬也。",
+    "modernUsage": "比喻人无可救药、不可造就。",
+    "relatedEvent": null
+  },
+  {
+    "id": "tingqiyanguanq",
+    "idiom": "听其言观其行",
+    "pinyin": "tīng qí yán guān qí xíng",
+    "source": "仲尼弟子列传",
+    "characters": [
+      "孔子"
+    ],
+    "meaning": "听了他的话，还要看他的行动。指不能只听人怎么说，还要看人怎么做。",
+    "story": "孔子说：'始吾于人也，听其言而信其行；今吾于人也，听其言而观其行。'意思是从前对人听其言就信其行，现在听其言还要观察其行。",
+    "quote": "始吾于人也，听其言而信其行；今吾于人也，听其言而观其行。",
+    "modernUsage": "形容不能只听表面的话，要看实际行为。",
+    "relatedEvent": null
+  },
+  {
+    "id": "huaijinwoyu",
+    "idiom": "怀瑾握瑜",
+    "pinyin": "huái jǐn wò yú",
+    "source": "屈原贾生列传",
+    "characters": [
+      "屈原"
+    ],
+    "meaning": "怀揣美玉，手握宝玉。比喻人具有纯洁高尚的品德。",
+    "story": "屈原在《怀沙》中写道：'怀瑾握瑜兮，穷不知所示。'司马迁引用此句，比喻屈原虽怀高洁品行，却不被楚王理解。",
+    "quote": "怀瑾握瑜兮，穷不知所示。",
+    "modernUsage": "比喻具有高尚纯洁的品德。",
+    "relatedEvent": "屈原投江"
+  },
+  {
+    "id": "suzhongduren",
+    "idiom": "独醒众人",
+    "pinyin": "dú xǐng zhòng rén",
+    "source": "屈原贾生列传",
+    "characters": [
+      "屈原"
+    ],
+    "meaning": "在众人皆醉时独自清醒。比喻不随波逐流，保持清醒的头脑。",
+    "story": "屈原在《渔父》中说：'举世皆浊我独清，众人皆醉我独醒。'表达了他在楚国朝堂昏庸时仍保持清醒和坚持操守的精神。",
+    "quote": "举世皆浊我独清，众人皆醉我独醒。",
+    "modernUsage": "比喻在浊世中保持清醒和操守。",
+    "relatedEvent": "屈原投江"
+  },
+  {
+    "id": "sanlingwushen",
+    "idiom": "三令五申",
+    "pinyin": "sān lìng wǔ shēn",
+    "source": "孙子吴起列传",
+    "characters": [
+      "孙武",
+      "阖闾"
+    ],
+    "meaning": "多次命令和告诫。形容再三叮嘱命令。",
+    "story": "孙武为吴王阖闾练兵，以宫女为示范。他三令五申军令，但吴王两个宠妃嬉笑不听。孙武依军法斩杀二人，吴王大惊，从此军纪严明。",
+    "quote": "约束既布，乃设鈇钺，即三令五申之。",
+    "modernUsage": "形容多次命令和反复告诫。",
+    "relatedEvent": "孙子练兵"
+  },
+  {
+    "id": "lianhenghezong",
+    "idiom": "合纵连横",
+    "pinyin": "hé zòng lián héng",
+    "source": "苏秦列传",
+    "characters": [
+      "苏秦",
+      "张仪"
+    ],
+    "meaning": "战国时期纵横家的两大策略。合纵是六国联合抗秦，连横是秦国拉拢各国破坏合纵。",
+    "story": "苏秦以合纵之策说服六国联合抗秦，身佩六国相印。张仪以连横之策帮助秦国破坏合纵联盟。二人是战国纵横家的代表人物。",
+    "quote": null,
+    "modernUsage": "形容利用外交手段联合或分化各方势力。",
+    "relatedEvent": "六国合纵"
+  },
+  {
+    "id": "chaoqinmuchu",
+    "idiom": "朝秦暮楚",
+    "pinyin": "zhāo qín mù chǔ",
+    "source": "苏秦列传",
+    "characters": [
+      "苏秦"
+    ],
+    "meaning": "早上侍奉秦国，晚上侍奉楚国。比喻反复无常，投机取巧。",
+    "story": "战国时期，一些小国为了生存，时而依附秦国，时而依附楚国。纵横家们也频繁游走于各国之间，朝秦暮楚，反复无常。",
+    "quote": null,
+    "modernUsage": "形容反复无常、没有立场。",
+    "relatedEvent": null
+  },
+  {
+    "id": "jiutianrenzhiji",
+    "idiom": "究天人之际",
+    "pinyin": "jiū tiān rén zhī jì",
+    "source": "太史公自序",
+    "characters": [
+      "司马迁"
+    ],
+    "meaning": "探究天道与人事之间的关系。",
+    "story": "司马迁在《报任安书》中阐述撰著《史记》的宗旨：'究天人之际，通古今之变，成一家之言。'这是中国古代史学的最高追求。",
+    "quote": "究天人之际，通古今之变，成一家之言。",
+    "modernUsage": "形容探究自然规律与人类社会的关系。",
+    "relatedEvent": null
+  },
+  {
+    "id": "jinwucangjiao",
+    "idiom": "金屋藏娇",
+    "pinyin": "jīn wū cáng jiāo",
+    "source": "外戚世家",
+    "characters": [],
+    "meaning": "以金屋藏美女。比喻纳妾或外室。",
+    "story": "汉武帝刘彻幼时，姑母馆陶公主问他想娶谁为妻。刘彻说'若得阿娇作妇，当作金屋贮之也。'阿娇即后来的陈皇后。",
+    "quote": "若得阿娇作妇，当作金屋贮之也。",
+    "modernUsage": "比喻纳妾或包养情妇。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zhangyilianheng_zy",
+    "idiom": "张仪欺楚",
+    "pinyin": "zhāng yí qī chǔ",
+    "source": "张仪列传",
+    "characters": [
+      "张仪",
+      "楚怀王"
+    ],
+    "meaning": "张仪以欺骗手段使楚国上当。",
+    "story": "张仪以商於六百里之地为诱饵，劝说楚怀王与齐国断交。楚怀王上当后派人追讨，张仪却翻脸不认。楚怀王大怒发兵攻秦，结果大败。",
+    "quote": null,
+    "modernUsage": "比喻用欺骗手段使对方上当。",
+    "relatedEvent": "张仪欺楚"
+  },
+  {
+    "id": "yidengqianjin_jb",
+    "idiom": "得黄金百斤不如得季布一诺",
+    "pinyin": "dé huáng jīn bǎi jīn bù rú dé jì bù yī nuò",
+    "source": "季布栾布列传",
+    "characters": [
+      "季布"
+    ],
+    "meaning": "得到百斤黄金不如得到季布一个承诺。形容信誉极高。",
+    "story": "楚地流传民谚：'得黄金百斤，不如得季布一诺。'季布以信守承诺闻名天下。",
+    "quote": "得黄金百斤，不如得季布一诺。",
+    "modernUsage": "形容一个信守承诺的信誉胜过大量财富。",
+    "relatedEvent": "一诺千金"
+  },
+  {
+    "id": "changxuelizhuan",
+    "idiom": "长勺之战",
+    "pinyin": "cháng sháo zhī zhàn",
+    "source": "陈涉世家",
+    "characters": [
+      "陈胜"
+    ],
+    "meaning": "比喻条件不成熟时仓促行事必然失败。",
+    "story": "陈胜建立张楚政权后，派周文率军西征。周文虽有数十万之众，但缺乏训练和补给，被秦将章邯击败。陈胜的失败证明了仓促起事的教训。",
+    "quote": null,
+    "modernUsage": "比喻仓促行事导致失败。",
+    "relatedEvent": "起义失败"
+  },
+  {
+    "id": "zhuangshiyiqu",
+    "idiom": "壮士一去不复还",
+    "pinyin": "zhuàng shì yī qù bù fù huán",
+    "source": "刺客列传",
+    "characters": [
+      "荆轲",
+      "太子丹"
+    ],
+    "meaning": "壮士离去就不再回来。形容视死如归的决心。",
+    "story": "荆轲在易水之畔唱出'风萧萧兮易水寒，壮士一去兮不复还'的悲歌，表达了赴秦刺杀秦王、视死如归的决心。",
+    "quote": "壮士一去兮不复还！",
+    "modernUsage": "形容英雄赴难、视死如归的悲壮决心。",
+    "relatedEvent": "易水送别"
+  },
+  {
+    "id": "yuchangjian",
+    "idiom": "鱼肠剑",
+    "pinyin": "yú cháng jiàn",
+    "source": "刺客列传",
+    "characters": [
+      "专诸"
+    ],
+    "meaning": "藏在烤鱼肚子里的匕首。指专诸刺杀吴王僚时所用的暗器。",
+    "story": "专诸刺杀吴王僚时，将匕首藏于烤鱼的腹中，趁献鱼之机抽出匕首刺死吴王僚。此剑后称'鱼肠剑'。",
+    "quote": "乃藏匕首于鱼腹中而进。",
+    "modernUsage": "比喻暗藏的利器或暗中进行的刺杀。",
+    "relatedEvent": "专诸刺王僚"
+  },
+  {
+    "id": "tuoyingerchu",
+    "idiom": "脱颖而出",
+    "pinyin": "tuō yǐng ér chū",
+    "source": "平原君虞卿列传",
+    "characters": [
+      "毛遂",
+      "赵胜"
+    ],
+    "meaning": "锥子的尖端全部露出。比喻人的才能全部显露出来。",
+    "story": "毛遂自荐随平原君赴楚求救。平原君说贤士如锥在囊中，其末立见。毛遂答：'臣乃今日请处囊中耳。使遂早得处囊中，乃颖脱而出，非特其末见而已。'",
+    "quote": "使遂早得处囊中，乃颖脱而出。",
+    "modernUsage": "比喻人的才能全部显露出来。",
+    "relatedEvent": "毛遂自荐"
+  },
+  {
+    "id": "taishanburang",
+    "idiom": "泰山不让土壤",
+    "pinyin": "tài shān bù ràng tǔ rǎng",
+    "source": "李斯列传",
+    "characters": [
+      "李斯"
+    ],
+    "meaning": "泰山不拒绝每一抔泥土。比喻胸怀宽广，能容纳一切。",
+    "story": "李斯在《谏逐客书》中写道：'泰山不让土壤，故能成其大；河海不择细流，故能就其深。'以此说服秦始皇不要驱逐客卿。",
+    "quote": "泰山不让土壤，故能成其大；河海不择细流，故能就其深。",
+    "modernUsage": "比喻胸怀宽广，能容纳万物。",
+    "relatedEvent": "谏逐客书"
+  },
+  {
+    "id": "jiminggoudao_mz",
+    "idiom": "鸡鸣狗盗",
+    "pinyin": "jī míng gǒu dào",
+    "source": "孟尝君列传",
+    "characters": [
+      "田文"
+    ],
+    "meaning": "学鸡叫骗人、装狗偷盗。比喻微不足道的技能。",
+    "story": "孟尝君入秦被囚，门客中有人学狗叫潜入秦宫偷狐白裘贿赂宠姬，又有人学鸡叫骗开函谷关门，使孟尝君得以逃脱。",
+    "quote": null,
+    "modernUsage": "比喻微不足道的技能或旁门左道。",
+    "relatedEvent": "鸡鸣狗盗"
+  },
+  {
+    "id": "fengxuantanjia_fx",
+    "idiom": "冯谖弹铗",
+    "pinyin": "féng xuān tán jiá",
+    "source": "孟尝君列传",
+    "characters": [
+      "冯谖",
+      "田文"
+    ],
+    "meaning": "冯谖弹剑唱歌。比喻怀才不遇时发出不平之鸣。",
+    "story": "冯谖投奔孟尝君，因不被重视而三次弹剑唱歌，要求更好的待遇：'长铗归来乎，食无鱼！''长铗归来乎，出无车！'孟尝君一一满足。",
+    "quote": "长铗归来乎，食无鱼！",
+    "modernUsage": "比喻怀才不遇时发出不平之鸣。",
+    "relatedEvent": "冯谖弹铗"
+  },
+  {
+    "id": "jumasangdezhi",
+    "idiom": "居马上得之",
+    "pinyin": "jū mǎ shàng dé zhī",
+    "source": "郦生陆贾列传",
+    "characters": [
+      "陆贾",
+      "刘邦"
+    ],
+    "meaning": "在马背上打下的天下。比喻以武力夺取政权。",
+    "story": "陆贾常向刘邦说《诗》《书》，刘邦不耐烦说'乃公居马上而得之，安事诗书！'陆贾答：'居马上得之，宁可以马上治之乎？'刘邦醒悟，命其著书论述治国之道。",
+    "quote": "居马上得之，宁可以马上治之乎？",
+    "modernUsage": "比喻以武力夺取天下。",
+    "relatedEvent": "陆贾著新语"
+  },
+  {
+    "id": "xiaoguicaosui_cs",
+    "idiom": "清静无为",
+    "pinyin": "qīng jìng wú wéi",
+    "source": "曹相国世家",
+    "characters": [
+      "曹参"
+    ],
+    "meaning": "不妄为，顺应自然。形容以宽松政策治理国家。",
+    "story": "曹参继萧何为相，整日饮酒无所事事。惠帝不满，曹参说'高帝与萧何定天下，法令已明，陛下垂拱，参等守职，遵而勿失，不亦可乎？'遂以清静无为治国，天下大治。",
+    "quote": "萧规曹随，清静无为。",
+    "modernUsage": "形容以不干涉、宽松的方式治理。",
+    "relatedEvent": "萧规曹随"
+  },
+  {
+    "id": "huoniuzhen_td",
+    "idiom": "火牛阵",
+    "pinyin": "huǒ niú zhèn",
+    "source": "田单列传",
+    "characters": [
+      "田单"
+    ],
+    "meaning": "用火牛冲锋的阵法。",
+    "story": "燕军围攻即墨，田单收集城中千余头牛，牛角绑利刀、牛尾缚油脂芦苇，夜间点燃芦苇，火牛直冲燕军。五千壮士随后冲杀，大破燕军。",
+    "quote": null,
+    "modernUsage": "形容出奇制胜的战术。",
+    "relatedEvent": "火牛阵"
+  },
+  {
+    "id": "qishengzhibian",
+    "idiom": "七国之乱",
+    "pinyin": "qī guó zhī luàn",
+    "source": "魏其武安侯列传",
+    "characters": [
+      "晁错",
+      "汉景帝"
+    ],
+    "meaning": "七个诸侯国联合叛乱。",
+    "story": "晁错建议汉景帝削藩，引发吴楚等七国以'诛晁错、清君侧'为名联合叛乱。景帝处死晁错后七国仍不退兵，最终被周亚夫率军平定。",
+    "quote": null,
+    "modernUsage": "比喻大规模的叛乱或动乱。",
+    "relatedEvent": "七国之乱"
+  },
+  {
+    "id": "qingjunce",
+    "idiom": "清君侧",
+    "pinyin": "qīng jūn cè",
+    "source": "袁盎晁错列传",
+    "characters": [
+      "袁盎",
+      "晁错"
+    ],
+    "meaning": "清除君主身边的奸臣。常被用来作为叛乱的借口。",
+    "story": "吴楚七国以'诛晁错，清君侧'为借口发动叛乱。汉景帝听信袁盎之言处死晁错，但七国仍不退兵。",
+    "quote": null,
+    "modernUsage": "常被叛乱者用来作为起事的借口。",
+    "relatedEvent": "七国之乱"
+  },
+  {
+    "id": "pengyuezhuzuo",
+    "idiom": "醢彭越",
+    "pinyin": "hǎi péng yuè",
+    "source": "彭越列传",
+    "characters": [
+      "彭越",
+      "刘邦"
+    ],
+    "meaning": "将彭越剁成肉酱。形容极端残酷的处刑。",
+    "story": "彭越被吕后以谋反罪名诛杀，并夷三族。吕后将彭越剁成肉酱，分赐各诸侯，以儆效尤。",
+    "quote": null,
+    "modernUsage": "形容极端残酷的刑罚。",
+    "relatedEvent": "彭越之死"
+  },
+  {
+    "id": "hanwudizhijiang",
+    "idiom": "匈奴未灭何以家为",
+    "pinyin": "xiōng nú wèi miè hé yǐ jiā wèi",
+    "source": "卫将军骠骑列传",
+    "characters": [
+      "霍去病"
+    ],
+    "meaning": "匈奴还没有消灭，怎么能成家呢。形容先国后家、以身许国的精神。",
+    "story": "汉武帝要为霍去病修建府第，霍去病辞谢说：'匈奴未灭，无以家为也。'汉武帝由此更加器重他。",
+    "quote": "匈奴未灭，无以家为也。",
+    "modernUsage": "形容先国后家、以国家大事为重。",
+    "relatedEvent": "漠北之战"
+  },
+  {
+    "id": "shiqingjiangli",
+    "idiom": "七战七捷",
+    "pinyin": "qī zhàn qī jié",
+    "source": "卫将军骠骑列传",
+    "characters": [
+      "卫青"
+    ],
+    "meaning": "七次出击匈奴，每次都取得胜利。",
+    "story": "卫青七次出击匈奴，每次都取得胜利。从龙城之战到漠北大决战，卫青始终是汉武帝最信赖的大将。",
+    "quote": null,
+    "modernUsage": "形容连续取得胜利。",
+    "relatedEvent": "漠北之战"
+  },
+  {
+    "id": "huainanziwu",
+    "idiom": "淮南子",
+    "pinyin": "huái nán zǐ",
+    "source": "淮南衡山济北王列传",
+    "characters": [
+      "刘安"
+    ],
+    "meaning": "指西汉淮南王刘安及其门客编撰的百科全书式著作。",
+    "story": "淮南王刘安招致宾客方术之士数千人，编撰《淮南子》一书。此书融合道家、儒家、法家思想，是中国古代重要的学术著作。",
+    "quote": null,
+    "modernUsage": "指代中国古代百科全书式的著作。",
+    "relatedEvent": null
+  },
+  {
+    "id": "wangwenwenzhen",
+    "idiom": "望闻问切",
+    "pinyin": "wàng wén wèn qiè",
+    "source": "扁鹊仓公列传",
+    "characters": [
+      "扁鹊"
+    ],
+    "meaning": "中医诊断疾病的四种基本方法：望色、闻声、问症、切脉。",
+    "story": "扁鹊行医，创造了望闻问切四诊法。他通过观察面色、听声音、问症状、切脉象来综合判断病情，是中国医学诊断的奠基人。",
+    "quote": null,
+    "modernUsage": "指中医的四种诊断方法，也比喻全面的调查了解。",
+    "relatedEvent": null
+  },
+  {
+    "id": "zhangtangzheng",
+    "idiom": "酷吏政治",
+    "pinyin": "kù lì zhèng zhì",
+    "source": "酷吏列传",
+    "characters": [
+      "张汤"
+    ],
+    "meaning": "以严刑峻法治理国家的政治方式。",
+    "story": "张汤以严刑峻法审理案件，深得汉武帝赏识。但酷吏政治最终导致民怨沸腾，张汤自己也被人陷害自杀。",
+    "quote": null,
+    "modernUsage": "形容以严酷手段治理。",
+    "relatedEvent": null
+  },
+  {
+    "id": "guojieyouxia",
+    "idiom": "侠以武犯禁",
+    "pinyin": "xiá yǐ wǔ fàn jìn",
+    "source": "游侠列传",
+    "characters": [
+      "郭解"
+    ],
+    "meaning": "游侠以武力触犯法律禁令。",
+    "story": "司马迁在《游侠列传》中描述郭解等游侠的行为。游侠虽重义轻生、深受民间敬仰，但其以武犯禁的行为终不为朝廷所容。",
+    "quote": null,
+    "modernUsage": "形容侠义行为虽受民间敬仰但违法。",
+    "relatedEvent": null
+  },
+  {
+    "id": "hanxuetianma",
+    "idiom": "汗血宝马",
+    "pinyin": "hàn xuè bǎo mǎ",
+    "source": "大宛列传",
+    "characters": [
+      "张骞",
+      "汉武帝"
+    ],
+    "meaning": "出汗如血的骏马。泛指良马。",
+    "story": "张骞出使西域后，汉朝得知大宛国有汗血宝马。汉武帝派使者求购被拒，遂派李广利率军远征大宛，得良马三千匹。",
+    "quote": null,
+    "modernUsage": "泛指珍贵的良马。",
+    "relatedEvent": "张骞出使西域"
+  },
+  {
+    "id": "lvbuweizibai",
+    "idiom": "吕不韦自鸩",
+    "pinyin": "lǚ bù wéi zì zhèn",
+    "source": "吕不韦列传",
+    "characters": [
+      "吕不韦"
+    ],
+    "meaning": "吕不韦被贬后饮鸩自杀。",
+    "story": "吕不韦因嫪毐之乱受到牵连，被秦王嬴政免去相国职位，遣出京城，后流放到蜀地。吕不韦自知难逃一死，饮鸩自杀。",
+    "quote": null,
+    "modernUsage": "形容权臣失势后的悲惨结局。",
+    "relatedEvent": "嫪毐之乱"
+  },
+  {
+    "id": "xibashuiguang",
+    "idiom": "席卷天下",
+    "pinyin": "xí juǎn tiān xià",
+    "source": "项羽本纪",
+    "characters": [
+      "项羽"
+    ],
+    "meaning": "像卷席子一样席卷天下。形容势力强大，迅速征服。",
+    "story": "项羽在巨鹿之战后声威大震，各路诸侯纷纷归附。项羽率军入关，杀子婴，烧秦宫，'席卷天下'之势不可阻挡。",
+    "quote": null,
+    "modernUsage": "形容势力强大，迅速征服各方。",
+    "relatedEvent": "巨鹿之战"
+  },
+  {
+    "id": "dahufujianding",
+    "idiom": "大丈夫当如此",
+    "pinyin": "dà zhàng fū dāng rú cǐ",
+    "source": "高祖本纪",
+    "characters": [
+      "刘邦"
+    ],
+    "meaning": "大丈夫就应当如此。形容有大志向。",
+    "story": "刘邦在咸阳见到秦始皇出巡的盛大场面，感叹道：'嗟乎，大丈夫当如此也！'后项羽见秦始皇则说'彼可取而代也'。",
+    "quote": "嗟乎，大丈夫当如此也！",
+    "modernUsage": "形容有大志向、大抱负。",
+    "relatedEvent": "刘邦起兵"
+  },
+  {
+    "id": "dayuzhishui_idiom",
+    "idiom": "大禹治水",
+    "pinyin": "dà yǔ zhì shuǐ",
+    "source": "河渠书",
+    "characters": [
+      "大禹"
+    ],
+    "meaning": "大禹治理洪水。比喻克服巨大困难。",
+    "story": "上古洪水滔天，大禹受命治水。他改堵为疏，疏导九河入海。三过家门而不入，历经十三年终于平息水患，划定九州。",
+    "quote": "禹抑洪水十三年，过家不入门。",
+    "modernUsage": "比喻克服巨大困难，为民造福。",
+    "relatedEvent": "大禹治水"
+  },
+  {
+    "id": "zhengguoqu_hqs",
+    "idiom": "疲秦之计",
+    "pinyin": "pí qín zhī jì",
+    "source": "河渠书",
+    "characters": [],
+    "meaning": "消耗秦国国力的计策。",
+    "story": "韩国水工郑国建议秦国修建大型水利工程，实为消耗秦国国力、阻止其东征的疲秦之计。秦王发现后仍令完工，渠成后反而使关中更加富庶。",
+    "quote": null,
+    "modernUsage": "比喻以消耗对方精力为目的的策略。",
+    "relatedEvent": "郑国渠"
+  },
+  {
+    "id": "zhaotuosuzhi",
+    "idiom": "赵佗称帝",
+    "pinyin": "zhào tuó chēng dì",
+    "source": "南越列传",
+    "characters": [
+      "赵佗"
+    ],
+    "meaning": "赵佗自立为南越武帝。",
+    "story": "秦末天下大乱，赵佗据岭南自立为南越王。后刘邦派陆贾出使，赵佗去帝号归汉，但仍称帝于国内。",
+    "quote": null,
+    "modernUsage": "比喻地方势力割据自立。",
+    "relatedEvent": "南越归汉"
+  },
+  {
+    "id": "fengshanshandian",
+    "idiom": "封禅泰山",
+    "pinyin": "fēng shàn tài shān",
+    "source": "封禅书",
+    "characters": [
+      "汉武帝"
+    ],
+    "meaning": "帝王到泰山举行祭祀天地的典礼。封为祭天，禅为祭地。",
+    "story": "汉武帝在位期间多次到泰山封禅，祭祀天地，以彰显自己的丰功伟绩。封禅是中国古代帝王最隆重的典礼。",
+    "quote": null,
+    "modernUsage": "比喻帝王举行的最隆重典礼。",
+    "relatedEvent": "泰山封禅"
+  }
+]

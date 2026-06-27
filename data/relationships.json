@@ -1,0 +1,1142 @@
+[
+  {
+    "source": "黄帝",
+    "target": "颛顼",
+    "type": "亲属",
+    "description": "颛顼是黄帝之孙"
+  },
+  {
+    "source": "黄帝",
+    "target": "尧",
+    "type": "亲属",
+    "description": "尧是黄帝的玄孙"
+  },
+  {
+    "source": "颛顼",
+    "target": "帝喾",
+    "type": "亲属",
+    "description": "帝喾是颛顼的侄子"
+  },
+  {
+    "source": "帝喾",
+    "target": "尧",
+    "type": "亲属",
+    "description": "尧是帝喾之子"
+  },
+  {
+    "source": "尧",
+    "target": "舜",
+    "type": "禅让",
+    "description": "尧禅让帝位给舜"
+  },
+  {
+    "source": "舜",
+    "target": "大禹",
+    "type": "禅让",
+    "description": "舜禅让帝位给大禹"
+  },
+  {
+    "source": "大禹",
+    "target": "启",
+    "type": "父子",
+    "description": "启是大禹之子"
+  },
+  {
+    "source": "启",
+    "target": "桀",
+    "type": "后裔",
+    "description": "桀是夏朝末代君主，启的后代"
+  },
+  {
+    "source": "桀",
+    "target": "妹喜",
+    "type": "爱侣",
+    "description": "妹喜是桀的宠妃"
+  },
+  {
+    "source": "桀",
+    "target": "商汤",
+    "type": "敌手",
+    "description": "商汤灭夏，桀是末代夏君"
+  },
+  {
+    "source": "商汤",
+    "target": "伊尹",
+    "type": "君臣",
+    "description": "伊尹辅佐商汤灭夏"
+  },
+  {
+    "source": "商汤",
+    "target": "纣王",
+    "type": "后裔",
+    "description": "纣王是商朝末代君主"
+  },
+  {
+    "source": "纣王",
+    "target": "妲己",
+    "type": "爱侣",
+    "description": "妲己是纣王的宠妃"
+  },
+  {
+    "source": "纣王",
+    "target": "比干",
+    "type": "亲属",
+    "description": "比干是纣王的叔父"
+  },
+  {
+    "source": "纣王",
+    "target": "周武王",
+    "type": "敌手",
+    "description": "周武王伐纣，纣王自焚"
+  },
+  {
+    "source": "盘庚",
+    "target": "纣王",
+    "type": "后裔",
+    "description": "盘庚是商朝中期君主"
+  },
+  {
+    "source": "周文王",
+    "target": "周武王",
+    "type": "父子",
+    "description": "周武王是周文王之子"
+  },
+  {
+    "source": "周文王",
+    "target": "周公",
+    "type": "亲属",
+    "description": "周公是周文王的第四子"
+  },
+  {
+    "source": "周文王",
+    "target": "姜太公",
+    "type": "君臣",
+    "description": "姜太公辅佐周文王和周武王"
+  },
+  {
+    "source": "周武王",
+    "target": "周公",
+    "type": "亲属",
+    "description": "周公是周武王之弟"
+  },
+  {
+    "source": "周武王",
+    "target": "姜太公",
+    "type": "君臣",
+    "description": "姜太公辅佐武王伐纣"
+  },
+  {
+    "source": "周幽王",
+    "target": "褒姒",
+    "type": "爱侣",
+    "description": "褒姒是周幽王的宠妃"
+  },
+  {
+    "source": "周公",
+    "target": "周武王",
+    "type": "辅佐",
+    "description": "周公辅佐武王和成王"
+  },
+  {
+    "source": "秦始皇",
+    "target": "赵高",
+    "type": "君臣",
+    "description": "赵高是秦始皇的宠臣"
+  },
+  {
+    "source": "秦始皇",
+    "target": "李斯",
+    "type": "君臣",
+    "description": "李斯是秦始皇的丞相"
+  },
+  {
+    "source": "秦始皇",
+    "target": "蒙恬",
+    "type": "君臣",
+    "description": "蒙恬是秦始皇的爱将"
+  },
+  {
+    "source": "秦始皇",
+    "target": "扶苏",
+    "type": "父子",
+    "description": "扶苏是秦始皇的长子"
+  },
+  {
+    "source": "秦始皇",
+    "target": "胡亥",
+    "type": "父子",
+    "description": "胡亥是秦始皇的第十八子"
+  },
+  {
+    "source": "赵高",
+    "target": "李斯",
+    "type": "同谋",
+    "description": "赵高与李斯合谋篡改遗诏"
+  },
+  {
+    "source": "赵高",
+    "target": "胡亥",
+    "type": "操控",
+    "description": "赵高操控胡亥，独揽大权"
+  },
+  {
+    "source": "李斯",
+    "target": "胡亥",
+    "type": "被害",
+    "description": "李斯被赵高陷害，腰斩于市"
+  },
+  {
+    "source": "刘邦",
+    "target": "吕后",
+    "type": "夫妻",
+    "description": "吕后是刘邦的正妻"
+  },
+  {
+    "source": "刘邦",
+    "target": "樊哙",
+    "type": "亲属",
+    "description": "樊哙是刘邦的连襟"
+  },
+  {
+    "source": "刘邦",
+    "target": "周勃",
+    "type": "君臣",
+    "description": "周勃随刘邦起兵，后平定诸吕之乱"
+  },
+  {
+    "source": "刘邦",
+    "target": "曹参",
+    "type": "君臣",
+    "description": "曹参是刘邦的功臣，继萧何为相"
+  },
+  {
+    "source": "刘邦",
+    "target": "灌婴",
+    "type": "君臣",
+    "description": "灌婴随刘邦起兵，官至丞相"
+  },
+  {
+    "source": "吕后",
+    "target": "刘邦",
+    "type": "夫妻",
+    "description": "吕后辅佐刘邦定天下"
+  },
+  {
+    "source": "吕后",
+    "target": "刘如意",
+    "type": "迫害",
+    "description": "吕后毒杀刘如意"
+  },
+  {
+    "source": "吕后",
+    "target": "陈平",
+    "type": "君臣",
+    "description": "陈平在吕后时曲意逢迎"
+  },
+  {
+    "source": "吕后",
+    "target": "周勃",
+    "type": "敌手",
+    "description": "周勃平定诸吕之乱"
+  },
+  {
+    "source": "陈平",
+    "target": "周勃",
+    "type": "同僚",
+    "description": "陈平与周勃合谋平定诸吕之乱"
+  },
+  {
+    "source": "刘恒",
+    "target": "周勃",
+    "type": "君臣",
+    "description": "周勃迎立刘恒为汉文帝"
+  },
+  {
+    "source": "孔子",
+    "target": "颜回",
+    "type": "师生",
+    "description": "颜回是孔子最得意的弟子"
+  },
+  {
+    "source": "孔子",
+    "target": "子路",
+    "type": "师生",
+    "description": "子路是孔子的弟子"
+  },
+  {
+    "source": "孔子",
+    "target": "子贡",
+    "type": "师生",
+    "description": "子贡是孔子的弟子"
+  },
+  {
+    "source": "孔子",
+    "target": "鲁定公",
+    "type": "君臣",
+    "description": "孔子曾任鲁定公的司寇"
+  },
+  {
+    "source": "孔子",
+    "target": "齐景公",
+    "type": "问答",
+    "description": "齐景公曾向孔子问政"
+  },
+  {
+    "source": "颜回",
+    "target": "子路",
+    "type": "同门",
+    "description": "二人同为孔子弟子"
+  },
+  {
+    "source": "勾践",
+    "target": "夫差",
+    "type": "敌手",
+    "description": "吴越争霸，勾践被夫差打败后卧薪尝胆，最终灭吴"
+  },
+  {
+    "source": "勾践",
+    "target": "范蠡",
+    "type": "君臣",
+    "description": "范蠡辅佐勾践灭吴，功成身退"
+  },
+  {
+    "source": "勾践",
+    "target": "文种",
+    "type": "君臣",
+    "description": "文种辅佐勾践灭吴，后因不听范蠡劝告而遭杀害"
+  },
+  {
+    "source": "夫差",
+    "target": "伍子胥",
+    "type": "君臣",
+    "description": "伍子胥辅佐夫差，多次劝谏灭越，被夫差赐死"
+  },
+  {
+    "source": "范蠡",
+    "target": "西施",
+    "type": "爱侣",
+    "description": "传说范蠡与西施泛舟五湖而去"
+  },
+  {
+    "source": "夫差",
+    "target": "西施",
+    "type": "爱侣",
+    "description": "西施被献给夫差，以麻痹吴国"
+  },
+  {
+    "source": "商鞅",
+    "target": "秦孝公",
+    "type": "君臣",
+    "description": "秦孝公任用商鞅变法，使秦国富强"
+  },
+  {
+    "source": "商鞅",
+    "target": "公子虔",
+    "type": "迫害",
+    "description": "商鞅因太子犯法而处罚公子虔，后遭公子虔报复"
+  },
+  {
+    "source": "信陵君",
+    "target": "侯嬴",
+    "type": "知遇",
+    "description": "信陵君亲自驾车迎接侯嬴，拜为上客"
+  },
+  {
+    "source": "信陵君",
+    "target": "朱亥",
+    "type": "知遇",
+    "description": "朱亥随信陵君救赵，椎杀晋鄙"
+  },
+  {
+    "source": "信陵君",
+    "target": "如姬",
+    "type": "恩义",
+    "description": "信陵君为如姬报杀父之仇，如姬窃符报恩"
+  },
+  {
+    "source": "信陵君",
+    "target": "魏王",
+    "type": "兄弟",
+    "description": "信陵君是魏安釐王的弟弟"
+  },
+  {
+    "source": "信陵君",
+    "target": "平原君",
+    "type": "姻亲",
+    "description": "信陵君救赵解了平原君之围"
+  },
+  {
+    "source": "侯嬴",
+    "target": "朱亥",
+    "type": "挚友",
+    "description": "侯嬴推荐朱亥随信陵君救赵"
+  },
+  {
+    "source": "李广",
+    "target": "卫青",
+    "type": "同僚",
+    "description": "卫青是漠北之战主帅，李广迷路失期自刎"
+  },
+  {
+    "source": "李广",
+    "target": "霍去病",
+    "type": "同僚",
+    "description": "霍去病射杀李广之子李敢"
+  },
+  {
+    "source": "李广",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "汉武帝未重用李广，导致其终生未能封侯"
+  },
+  {
+    "source": "卫青",
+    "target": "霍去病",
+    "type": "舅甥",
+    "description": "霍去病是卫青的外甥"
+  },
+  {
+    "source": "李广",
+    "target": "李敢",
+    "type": "父子",
+    "description": "李敢是李广之子"
+  },
+  {
+    "source": "姜太公",
+    "target": "周文王",
+    "type": "君臣",
+    "description": "周文王在渭水遇姜子牙，拜为太师"
+  },
+  {
+    "source": "姜太公",
+    "target": "周武王",
+    "type": "君臣",
+    "description": "姜子牙辅佐武王伐纣，建立周朝"
+  },
+  {
+    "source": "齐桓公",
+    "target": "管仲",
+    "type": "君臣",
+    "description": "齐桓公任用管仲为相，称霸诸侯"
+  },
+  {
+    "source": "齐桓公",
+    "target": "鲍叔牙",
+    "type": "君臣",
+    "description": "鲍叔牙向齐桓公力荐管仲"
+  },
+  {
+    "source": "管仲",
+    "target": "鲍叔牙",
+    "type": "挚友",
+    "description": "管鲍之交，千古知己"
+  },
+  {
+    "source": "管仲",
+    "target": "齐桓公",
+    "type": "君臣",
+    "description": "管仲辅佐齐桓公称霸"
+  },
+  {
+    "source": "晏婴",
+    "target": "齐景公",
+    "type": "君臣",
+    "description": "晏婴辅佐齐景公"
+  },
+  {
+    "source": "张良",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "张良辅佐刘邦建立汉朝"
+  },
+  {
+    "source": "张良",
+    "target": "黄石公",
+    "type": "师徒",
+    "description": "黄石公传授张良《太公兵法》"
+  },
+  {
+    "source": "张良",
+    "target": "韩信",
+    "type": "同僚",
+    "description": "汉初三杰之一，共同辅佐刘邦"
+  },
+  {
+    "source": "张良",
+    "target": "萧何",
+    "type": "同僚",
+    "description": "汉初三杰之一，共同辅佐刘邦"
+  },
+  {
+    "source": "韩信",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "刘邦拜韩信为大将，后猜忌杀害"
+  },
+  {
+    "source": "韩信",
+    "target": "萧何",
+    "type": "知遇",
+    "description": "萧何月下追韩信，向刘邦力荐"
+  },
+  {
+    "source": "韩信",
+    "target": "项羽",
+    "type": "敌手",
+    "description": "韩信以十面埋伏大破项羽"
+  },
+  {
+    "source": "韩信",
+    "target": "吕后",
+    "type": "被害",
+    "description": "吕后诱杀韩信于长乐宫"
+  },
+  {
+    "source": "韩信",
+    "target": "蒯通",
+    "type": "谋士",
+    "description": "蒯通劝韩信自立，韩信不听"
+  },
+  {
+    "source": "周公",
+    "target": "周成王",
+    "type": "辅佐",
+    "description": "周公摄政辅佐年幼的成王"
+  },
+  {
+    "source": "周公",
+    "target": "伯禽",
+    "type": "父子",
+    "description": "伯禽是周公长子，受封于鲁"
+  },
+  {
+    "source": "曹沫",
+    "target": "齐桓公",
+    "type": "敌对",
+    "description": "曹沫劫持齐桓公，逼其归还鲁国土地"
+  },
+  {
+    "source": "曹沫",
+    "target": "管仲",
+    "type": "敌对",
+    "description": "管仲是齐桓公的谋士，与曹沫对立"
+  },
+  {
+    "source": "晋文公",
+    "target": "介子推",
+    "type": "主从",
+    "description": "介子推跟随晋文公流亡十九年，割股奉君"
+  },
+  {
+    "source": "晋文公",
+    "target": "狐偃",
+    "type": "舅甥",
+    "description": "狐偃是晋文公的舅舅，重要谋士"
+  },
+  {
+    "source": "晋献公",
+    "target": "骊姬",
+    "type": "宠幸",
+    "description": "晋献公宠爱骊姬，导致内乱"
+  },
+  {
+    "source": "晋献公",
+    "target": "晋文公",
+    "type": "父子",
+    "description": "晋献公是晋文公之父"
+  },
+  {
+    "source": "晋文公",
+    "target": "楚成王",
+    "type": "敌手",
+    "description": "城濮之战中晋文公大败楚成王"
+  },
+  {
+    "source": "楚庄王",
+    "target": "孙叔敖",
+    "type": "君臣",
+    "description": "孙叔敖辅佐楚庄王称霸"
+  },
+  {
+    "source": "楚怀王",
+    "target": "屈原",
+    "type": "君臣",
+    "description": "屈原辅佐楚怀王，后被疏远"
+  },
+  {
+    "source": "屈原",
+    "target": "伍子胥",
+    "type": "同族",
+    "description": "伍子胥奔吴，屈原投江，都是楚国悲剧"
+  },
+  {
+    "source": "伍子胥",
+    "target": "楚平王",
+    "type": "仇恨",
+    "description": "楚平王杀害伍子胥父兄，伍子胥发誓报仇"
+  },
+  {
+    "source": "赵武灵王",
+    "target": "程婴",
+    "type": "先祖",
+    "description": "程婴保护赵氏孤儿，是赵氏的恩人"
+  },
+  {
+    "source": "程婴",
+    "target": "公孙杵臼",
+    "type": "同谋",
+    "description": "二人合谋保护赵氏孤儿"
+  },
+  {
+    "source": "赵盾",
+    "target": "程婴",
+    "type": "主从",
+    "description": "程婴是赵盾的门客"
+  },
+  {
+    "source": "陈胜",
+    "target": "吴广",
+    "type": "同僚",
+    "description": "陈胜吴广共同发动大泽乡起义"
+  },
+  {
+    "source": "陈胜",
+    "target": "葛婴",
+    "type": "上下级",
+    "description": "葛婴是陈胜的部将"
+  },
+  {
+    "source": "陈胜",
+    "target": "武臣",
+    "type": "上下级",
+    "description": "武臣原是陈胜部将，后自立为赵王"
+  },
+  {
+    "source": "吴广",
+    "target": "田臧",
+    "type": "被害",
+    "description": "田臧杀害吴广"
+  },
+  {
+    "source": "荆轲",
+    "target": "太子丹",
+    "type": "受托",
+    "description": "太子丹派荆轲刺秦"
+  },
+  {
+    "source": "荆轲",
+    "target": "秦始皇",
+    "type": "刺杀",
+    "description": "荆轲刺杀秦王政未遂"
+  },
+  {
+    "source": "荆轲",
+    "target": "高渐离",
+    "type": "挚友",
+    "description": "高渐离是荆轲的好友"
+  },
+  {
+    "source": "太子丹",
+    "target": "田光",
+    "type": "托付",
+    "description": "太子丹通过田光结识荆轲"
+  },
+  {
+    "source": "高渐离",
+    "target": "秦始皇",
+    "type": "刺杀",
+    "description": "高渐离以筑击秦始皇未遂"
+  },
+  {
+    "source": "廉颇",
+    "target": "蔺相如",
+    "type": "同僚",
+    "description": "廉颇负荆请罪，二人结为生死之交"
+  },
+  {
+    "source": "蔺相如",
+    "target": "赵惠文王",
+    "type": "君臣",
+    "description": "蔺相如为赵国上卿"
+  },
+  {
+    "source": "廉颇",
+    "target": "赵惠文王",
+    "type": "君臣",
+    "description": "廉颇为赵国大将"
+  },
+  {
+    "source": "赵惠文王",
+    "target": "秦昭襄王",
+    "type": "敌手",
+    "description": "秦赵两国的君主对立"
+  },
+  {
+    "source": "蔺相如",
+    "target": "秦昭襄王",
+    "type": "对抗",
+    "description": "完璧归赵和渑池之会上针锋相对"
+  },
+  {
+    "source": "赵奢",
+    "target": "赵括",
+    "type": "父子",
+    "description": "赵奢是赵括之父，预见儿子只会纸上谈兵"
+  },
+  {
+    "source": "赵括",
+    "target": "廉颇",
+    "type": "替代",
+    "description": "赵括替代廉颇为将，导致长平惨败"
+  },
+  {
+    "source": "项羽",
+    "target": "刘邦",
+    "type": "敌手",
+    "description": "楚汉争霸的主要对手"
+  },
+  {
+    "source": "项羽",
+    "target": "范增",
+    "type": "君臣",
+    "description": "范增是项羽的主要谋士，尊为亚父"
+  },
+  {
+    "source": "项羽",
+    "target": "虞姬",
+    "type": "爱侣",
+    "description": "项羽宠爱的美人，垓下自刎殉情"
+  },
+  {
+    "source": "项羽",
+    "target": "项梁",
+    "type": "亲属",
+    "description": "项梁是项羽的叔父，养育项羽并带他起兵"
+  },
+  {
+    "source": "项羽",
+    "target": "章邯",
+    "type": "降服",
+    "description": "巨鹿之战后章邯投降项羽"
+  },
+  {
+    "source": "项羽",
+    "target": "韩信",
+    "type": "敌手",
+    "description": "垓下之战韩信率联军围困项羽"
+  },
+  {
+    "source": "项羽",
+    "target": "宋义",
+    "type": "上下级",
+    "description": "项羽斩杀宋义夺取兵权"
+  },
+  {
+    "source": "刘邦",
+    "target": "韩信",
+    "type": "君臣",
+    "description": "刘邦拜韩信为大将"
+  },
+  {
+    "source": "刘邦",
+    "target": "张良",
+    "type": "君臣",
+    "description": "张良辅佐刘邦运筹帷幄"
+  },
+  {
+    "source": "刘邦",
+    "target": "萧何",
+    "type": "君臣",
+    "description": "萧何为刘邦管理后方"
+  },
+  {
+    "source": "萧何",
+    "target": "韩信",
+    "type": "举荐",
+    "description": "萧何月下追韩信，力荐于刘邦"
+  },
+  {
+    "source": "孙武",
+    "target": "阖闾",
+    "type": "君臣",
+    "description": "孙武辅佐吴王阖闾称霸"
+  },
+  {
+    "source": "孙膑",
+    "target": "庞涓",
+    "type": "敌手",
+    "description": "庞涓嫉妒孙膑才华，施加膑刑"
+  },
+  {
+    "source": "白起",
+    "target": "赵括",
+    "type": "敌手",
+    "description": "长平之战中白起大败赵括"
+  },
+  {
+    "source": "苏秦",
+    "target": "张仪",
+    "type": "对手",
+    "description": "合纵与连横的代表人物"
+  },
+  {
+    "source": "张仪",
+    "target": "楚怀王",
+    "type": "欺骗",
+    "description": "张仪以商於之地欺骗楚怀王"
+  },
+  {
+    "source": "孟子",
+    "target": "荀子",
+    "type": "同侪",
+    "description": "儒家两大思想家，分别主张性善和性恶"
+  },
+  {
+    "source": "李斯",
+    "target": "秦始皇",
+    "type": "君臣",
+    "description": "李斯辅佐秦始皇统一天下"
+  },
+  {
+    "source": "李斯",
+    "target": "赵高",
+    "type": "同谋",
+    "description": "沙丘之谋中合谋篡改遗诏"
+  },
+  {
+    "source": "赵高",
+    "target": "蒙恬",
+    "type": "迫害",
+    "description": "赵高矫诏逼蒙恬自杀"
+  },
+  {
+    "source": "蒙恬",
+    "target": "蒙毅",
+    "type": "兄弟",
+    "description": "蒙恬蒙毅兄弟同为秦始皇宠臣"
+  },
+  {
+    "source": "魏文侯",
+    "target": "李悝",
+    "type": "君臣",
+    "description": "魏文侯任用李悝变法"
+  },
+  {
+    "source": "魏惠王",
+    "target": "庞涓",
+    "type": "君臣",
+    "description": "魏惠王任用庞涓为将"
+  },
+  {
+    "source": "韩昭侯",
+    "target": "申不害",
+    "type": "君臣",
+    "description": "韩昭侯任用申不害变法"
+  },
+  {
+    "source": "燕昭王",
+    "target": "乐毅",
+    "type": "君臣",
+    "description": "燕昭王重用乐毅，大破齐国"
+  },
+  {
+    "source": "乐毅",
+    "target": "燕惠王",
+    "type": "被害",
+    "description": "燕惠王猜忌乐毅，乐毅被迫投奔赵国"
+  },
+  {
+    "source": "齐威王",
+    "target": "孙膑",
+    "type": "君臣",
+    "description": "齐威王重用孙膑为将"
+  },
+  {
+    "source": "阖闾",
+    "target": "伍子胥",
+    "type": "君臣",
+    "description": "伍子胥辅佐阖闾称霸"
+  },
+  {
+    "source": "郑庄公",
+    "target": "子产",
+    "type": "先祖",
+    "description": "子产是郑国后期的贤相"
+  },
+  {
+    "source": "宋襄公",
+    "target": "楚成王",
+    "type": "敌手",
+    "description": "泓水之战中宋襄公大败于楚"
+  },
+  {
+    "source": "范雎",
+    "target": "秦昭襄王",
+    "type": "君臣",
+    "description": "范雎辅佐秦昭襄王，提出远交近攻"
+  },
+  {
+    "source": "蔡泽",
+    "target": "范雎",
+    "type": "替代",
+    "description": "蔡泽以辩才说服范雎让位"
+  },
+  {
+    "source": "乐毅",
+    "target": "齐湣王",
+    "type": "敌手",
+    "description": "乐毅率联军大破齐国"
+  },
+  {
+    "source": "屈原",
+    "target": "楚怀王",
+    "type": "君臣",
+    "description": "屈原辅佐楚怀王，后遭疏远流放"
+  },
+  {
+    "source": "贾谊",
+    "target": "刘恒",
+    "type": "君臣",
+    "description": "贾谊辅佐汉文帝，后遭贬谪"
+  },
+  {
+    "source": "吕不韦",
+    "target": "秦始皇",
+    "type": "辅佐",
+    "description": "吕不韦助秦始皇之父即位，后辅佐秦始皇"
+  },
+  {
+    "source": "吕不韦",
+    "target": "嫪毐",
+    "type": "同谋",
+    "description": "吕不韦将嫪毐送入宫中"
+  },
+  {
+    "source": "嫪毐",
+    "target": "秦始皇",
+    "type": "叛乱",
+    "description": "嫪毐发动叛乱，被秦始皇平定"
+  },
+  {
+    "source": "秦孝公",
+    "target": "商鞅",
+    "type": "君臣",
+    "description": "秦孝公任用商鞅变法"
+  },
+  {
+    "source": "汉景帝",
+    "target": "晁错",
+    "type": "君臣",
+    "description": "晁错辅佐汉景帝"
+  },
+  {
+    "source": "汉景帝",
+    "target": "周亚夫",
+    "type": "君臣",
+    "description": "周亚夫平定七国之乱"
+  },
+  {
+    "source": "汉武帝",
+    "target": "卫青",
+    "type": "君臣",
+    "description": "卫青辅佐汉武帝北击匈奴"
+  },
+  {
+    "source": "汉武帝",
+    "target": "霍去病",
+    "type": "君臣",
+    "description": "霍去病辅佐汉武帝北击匈奴"
+  },
+  {
+    "source": "汉武帝",
+    "target": "董仲舒",
+    "type": "君臣",
+    "description": "董仲舒向汉武帝提出独尊儒术"
+  },
+  {
+    "source": "刘武",
+    "target": "窦太后",
+    "type": "母子",
+    "description": "窦太后宠爱梁孝王"
+  },
+  {
+    "source": "季布",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "刘邦赦免季布并任用"
+  },
+  {
+    "source": "栾布",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "刘邦感栾布忠义而赦免"
+  },
+  {
+    "source": "冯唐",
+    "target": "刘恒",
+    "type": "君臣",
+    "description": "冯唐直言谏文帝"
+  },
+  {
+    "source": "石奋",
+    "target": "石庆",
+    "type": "父子",
+    "description": "石庆继承父风"
+  },
+  {
+    "source": "田叔",
+    "target": "张敖",
+    "type": "君臣",
+    "description": "田叔随张敖入京"
+  },
+  {
+    "source": "刘濞",
+    "target": "汉景帝",
+    "type": "叛乱",
+    "description": "刘濞发动七国之乱"
+  },
+  {
+    "source": "窦婴",
+    "target": "田蚡",
+    "type": "敌对",
+    "description": "窦婴与田蚡互相倾轧"
+  },
+  {
+    "source": "窦婴",
+    "target": "汉武帝",
+    "type": "亲属",
+    "description": "窦婴是汉武帝的表叔"
+  },
+  {
+    "source": "田蚡",
+    "target": "汉武帝",
+    "type": "亲属",
+    "description": "田蚡是汉武帝的舅舅"
+  },
+  {
+    "source": "韩安国",
+    "target": "刘武",
+    "type": "君臣",
+    "description": "韩安国辅佐梁孝王"
+  },
+  {
+    "source": "卫青",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "卫青辅佐汉武帝"
+  },
+  {
+    "source": "霍去病",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "霍去病辅佐汉武帝"
+  },
+  {
+    "source": "公孙弘",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "公孙弘辅佐汉武帝"
+  },
+  {
+    "source": "主父偃",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "主父偃向汉武帝提出推恩令"
+  },
+  {
+    "source": "赵佗",
+    "target": "汉武帝",
+    "type": "敌对",
+    "description": "汉武帝攻灭南越"
+  },
+  {
+    "source": "卫满",
+    "target": "汉武帝",
+    "type": "敌对",
+    "description": "汉武帝攻灭卫氏朝鲜"
+  },
+  {
+    "source": "司马相如",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "司马相如出使西南夷"
+  },
+  {
+    "source": "唐蒙",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "唐蒙出使西南夷"
+  },
+  {
+    "source": "萧何",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "萧何辅佐刘邦建立汉朝"
+  },
+  {
+    "source": "萧何",
+    "target": "曹参",
+    "type": "继任",
+    "description": "曹参继萧何为相"
+  },
+  {
+    "source": "刘安",
+    "target": "汉武帝",
+    "type": "叛乱",
+    "description": "淮南王刘安谋反"
+  },
+  {
+    "source": "张骞",
+    "target": "汉武帝",
+    "type": "君臣",
+    "description": "张骞出使西域"
+  },
+  {
+    "source": "范蠡",
+    "target": "勾践",
+    "type": "君臣",
+    "description": "范蠡辅佐勾践灭吴"
+  },
+  {
+    "source": "伍子胥",
+    "target": "阖闾",
+    "type": "君臣",
+    "description": "伍子胥辅佐吴王阖闾"
+  },
+  {
+    "source": "伍子胥",
+    "target": "夫差",
+    "type": "被害",
+    "description": "伍子胥被夫差赐死"
+  },
+  {
+    "source": "孔子",
+    "target": "子夏",
+    "type": "师生",
+    "description": "子夏以文学闻名"
+  },
+  {
+    "source": "樗里子",
+    "target": "甘茂",
+    "type": "同僚",
+    "description": "樗里子与甘茂同为秦国重臣"
+  },
+  {
+    "source": "彭越",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "彭越助刘邦灭项羽"
+  },
+  {
+    "source": "英布",
+    "target": "刘邦",
+    "type": "君臣",
+    "description": "英布归汉助刘邦灭项羽"
+  },
+  {
+    "source": "英布",
+    "target": "项羽",
+    "type": "叛离",
+    "description": "英布叛离项羽归汉"
+  }
+]

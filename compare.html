@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人物对比 — 史迹图</title>
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="common.css?v=2" />
+  <style>
+
+
+  .vs-divider { position: relative; text-align: center; }
+  .vs-divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--rule); }
+  .vs-divider span { position: relative; background: var(--bg); padding: 0 16px; font-weight: bold; color: var(--accent); }
+  .trait-bar { height: 8px; border-radius: 4px; background: var(--bg2); overflow: hidden; }
+  .trait-bar-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+  .compare-select { background: var(--bg); border: 1px solid var(--rule); color: var(--ink); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.95rem; min-width: 180px; cursor: pointer; }
+  .compare-select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent); }
+  .compare-select optgroup { font-weight: bold; color: var(--accent); }
+  .compare-select option { padding: 0.3rem; }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 768px) {
+    .compare-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+  .section-label { font-size: 0.75rem; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; padding-left: 0.5rem; border-left: 3px solid var(--accent); }
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+        <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-5 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-5xl mx-auto px-6 py-8">
+  <button onclick="history.back()" class="mb-4 flex items-center gap-1 text-sm text-[var(--muted)] hover:text-[var(--accent)] transition">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    返回
+  </button>
+
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl font-bold serif mb-2">人物对比</h1>
+    <p class="text-sm text-[var(--muted)]">选择两位历史人物，多维度对比他们的生平与故事</p>
+  </div>
+
+  <!-- Selector Panel -->
+  <div class="panel p-6 mb-8">
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <div class="flex flex-col items-center gap-1">
+        <label class="text-xs font-semibold text-[var(--accent)]">人物 A</label>
+        <select id="selectA" class="compare-select">
+          <option value="">-- 请选择 --</option>
+        </select>
+      </div>
+      <div class="flex items-center pt-4">
+        <span class="text-lg font-bold serif text-[var(--gold)]">VS</span>
+      </div>
+      <div class="flex flex-col items-center gap-1">
+        <label class="text-xs font-semibold text-[var(--accent2)]">人物 B</label>
+        <select id="selectB" class="compare-select">
+          <option value="">-- 请选择 --</option>
+        </select>
+      </div>
+      <div class="flex items-center pt-4">
+        <button id="startBtn" onclick="startCompare()" class="px-6 py-2 bg-[var(--accent)] text-white rounded-lg font-semibold hover:opacity-90 transition text-sm">
+          开始对比
+        </button>
+      </div>
+    </div>
+    <div id="errorMsg" class="text-center text-sm mt-3 text-[var(--accent)] hidden"></div>
+  </div>
+
+  <!-- Comparison Content (hidden until comparison starts) -->
+  <div id="comparisonArea" class="hidden">
+
+    <!-- Header Cards -->
+    <div class="compare-grid mb-8" id="heroCards">
+      <div class="panel p-6 text-center border-t-4 border-[var(--accent)]">
+        <div class="w-16 h-16 rounded-full bg-[var(--accent)]/10 flex items-center justify-center mx-auto mb-3">
+          <span class="text-2xl font-bold serif text-[var(--accent)]" id="charAInitial">-</span>
+        </div>
+        <h2 class="text-2xl font-bold serif" id="charAName">-</h2>
+        <p class="text-sm text-[var(--muted)]" id="charAInfo">-</p>
+        <p class="text-sm mt-3 leading-relaxed" id="charADesc">-</p>
+      </div>
+      <div class="panel p-6 text-center border-t-4 border-[var(--accent2)]">
+        <div class="w-16 h-16 rounded-full bg-[var(--accent2)]/10 flex items-center justify-center mx-auto mb-3">
+          <span class="text-2xl font-bold serif text-[var(--accent2)]" id="charBInitial">-</span>
+        </div>
+        <h2 class="text-2xl font-bold serif" id="charBName">-</h2>
+        <p class="text-sm text-[var(--muted)]" id="charBInfo">-</p>
+        <p class="text-sm mt-3 leading-relaxed" id="charBDesc">-</p>
+      </div>
+    </div>
+
+    <!-- Basic Info Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-4 text-center">基本信息</h3>
+      <div class="compare-grid" id="basicInfoGrid">
+        <div class="space-y-2" id="basicInfoA"></div>
+        <div class="space-y-2" id="basicInfoB"></div>
+      </div>
+    </div>
+
+    <!-- Traits Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-6 text-center">性格特质</h3>
+      <div class="compare-grid">
+        <div id="traitsA" class="flex flex-wrap gap-2 justify-center"></div>
+        <div id="traitsB" class="flex flex-wrap gap-2 justify-center"></div>
+      </div>
+    </div>
+
+    <!-- Quotes Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-6 text-center">名言</h3>
+      <div class="compare-grid">
+        <div id="quotesA" class="space-y-3"></div>
+        <div id="quotesB" class="space-y-3"></div>
+      </div>
+    </div>
+
+    <!-- Events Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-6 text-center">参与事件</h3>
+      <div id="eventsArea"></div>
+    </div>
+
+    <!-- Relationships Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-6 text-center">人物关系</h3>
+      <div class="compare-grid">
+        <div id="relsA" class="space-y-2"></div>
+        <div id="relsB" class="space-y-2"></div>
+      </div>
+    </div>
+
+    <!-- Idioms Comparison -->
+    <div class="panel p-6 mb-8">
+      <h3 class="font-bold serif mb-6 text-center">相关典故</h3>
+      <div class="compare-grid">
+        <div id="idiomsA" class="space-y-3"></div>
+        <div id="idiomsB" class="space-y-3"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="bg-[var(--footer-bg)] text-white/70 py-10 px-6 mt-12">
+  <div class="max-w-5xl mx-auto text-center text-sm">
+    <p class="serif text-white text-lg mb-2">史迹图</p>
+    <p>TRAE AI 创造力大赛 · 社区公益 - 古籍活化工具</p>
+  </div>
+</footer>
+
+<script>
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+// Chapter name mapping
+const chapterNames = {
+  wudi: '五帝本纪',
+  xia: '夏本纪',
+  yin: '殷本纪',
+  zhou: '周本纪',
+  qinshi: '秦始皇本纪',
+  qin_benji: '秦本纪',
+  xiangyu: '项羽本纪',
+  gaozu: '高祖本纪',
+  lvhou: '吕太后本纪',
+  kongzi: '孔子世家',
+  cheshe: '陈涉世家',
+  cike: '刺客列传',
+  lianpo: '廉颇蔺相如列传',
+  wuyue: '越王勾践世家',
+  shangjun: '商君列传',
+  weigongzi: '魏公子列传',
+  liguang: '李将军列传',
+  qitaigong: '齐太公世家',
+  guanyan: '管晏列传',
+  liuhou: '留侯世家',
+  huaiyinhou: '淮阴侯列传',
+  lu: '鲁周公世家',
+  jin: '晋世家',
+  chu: '楚世家',
+  zhao: '赵世家',
+  sunwuzi: '孙子吴起列传',
+  baiqiwangjian: '白起王翦列传',
+  suqin: '苏秦列传',
+  zhangyi: '张仪列传',
+  mengzi_xunzi: '孟子荀卿列传',
+  xiongnu: '匈奴列传',
+  lisi: '李斯列传',
+  mengtian: '蒙恬列传',
+  wei: '魏世家',
+  han: '韩世家',
+  yan: '燕世家',
+  tianqi: '田敬仲完世家',
+  wutaibo: '吴太伯世家',
+  zheng: '郑世家',
+  song: '宋微子世家',
+  wei_kangshu: '卫康叔世家',
+  fanju_caize: '范雎蔡泽列传',
+  yueyi: '乐毅列传',
+  quyuan_jiasheng: '屈原贾生列传',
+  lvbuwei: '吕不韦列传',
+  cai: '蔡世家',
+  cao: '曹世家',
+  chenqi: '陈杞世家',
+  waiqi: '外戚世家',
+  ranghou: '穰侯列传',
+  mengchangjun: '孟尝君列传',
+  pingyuanjun: '平原君虞卿列传',
+  chunshenjun: '春申君列传',
+  tiandan: '田单列传',
+  luzhonglian: '鲁仲连邹阳列传',
+  lisheng_lujia: '郦生陆贾列传',
+  zhangchengxiang: '张丞相列传',
+  liujing_shusuntong: '刘敬叔孙通列传',
+  yuanang_chaocuo: '袁盎晁错列传',
+  xiaowen: '孝文本纪',
+  xiaojing: '孝景本纪',
+  xiaowu: '孝武本纪',
+  liangxiaowang: '梁孝王世家',
+  wuzong: '五宗世家',
+  sanwang: '三王世家',
+  jibu_luanbu: '季布栾布列传',
+  fengtang: '冯唐列传',
+  wanshi: '万石张叔列传',
+  tianshu: '田叔列传',
+  bianque: '扁鹊仓公列传',
+  wuwangbi: '吴王濞列传',
+  weiqi_wuanhou: '魏其武安侯列传',
+  hanchangru: '韩长孺列传',
+  weijiangjun: '卫将军骠骑列传',
+  pingjinhou: '平津侯主父列传',
+  nanyue: '南越列传',
+  dongyue: '东越列传',
+  chaoxian: '朝鲜列传',
+  xinanyi: '西南夷列传',
+  xiaochu: '萧相国世家',
+  caoxiangguo: '曹相国世家',
+  huainan_hengshan_jishan: '淮南衡山济北王列传',
+  qianhouchushu: '循吏列传',
+  lihai_zhichun: '酷吏列传',
+  dayuanyoushi: '大宛列传',
+  youyu: '游侠列传',
+  hongyan: '佞幸列传',
+  shiji_jingzhong: '滑稽列传',
+  rizhualie: '日者列传',
+  guice_lielie: '龟策列传',
+  huozhilie: '货殖列传',
+  sunzi_wuqi: '孙子吴起列传-重复',
+  wuzilie: '伍子胥列传',
+  zhonglishu: '仲尼弟子列传',
+  shangjunlie: '商君列传-重复',
+  suqinlie: '苏秦列传-重复',
+  zhangyilie: '张仪列传-重复',
+  meigeng: '樗里子甘茂列传',
+  ranghoulielie: '穰侯列传-重复',
+  // duplicate/extra ids from JSON
+  heiqi_juliang_lie: '白起王翦列传-重复',
+  mengchang_lie: '孟尝君列传-重复',
+  pingyuan_lie: '平原君虞卿列传-重复',
+  chunshen_lie: '春申君列传-重复',
+  fan_ju_lie: '范雎蔡泽列传-重复',
+  yueyi_lie: '乐毅列传-重复',
+  lian_po_lin_xiangru_lie: '廉颇蔺相如列传-重复',
+  tian_dan_lie: '田单列传-重复',
+  lu_zhonglian_lie: '鲁仲连邹阳列传-重复',
+  li_jia_shu: '郦生陆贾列传-重复',
+  liang_qi_lie: '刘敬叔孙通列传-重复',
+  quyuan_jiasheng_lie: '屈原贾生列传-重复',
+  lv_buwei_lie: '吕不韦列传-重复',
+  ci_ke_lie: '刺客列传-重复',
+  li_silie: '李斯列传-重复',
+  meng_tian_lie: '蒙恬列传-重复',
+  peng_yue_lie: '彭越列传',
+  ying_bu_lie: '英布列传',
+  huaiyin_hou_lie: '淮阴侯列传-重复',
+  xin_qi_lie: '信陵君列传-重复',
+  yue_wang_goujian_lie: '越王勾践世家-重复',
+  zheng_shi_lie: '张丞相列传-重复',
+  yuan_ang_chao_cuo_lie: '袁盎晁错列传-重复',
+  banyuan_lie: '扁鹊仓公列传-重复',
+  wu_wang_bi_lie: '吴王濞列传-重复',
+  weiqi_wuanhou_lie: '魏其武安侯列传-重复',
+  li_ji_lian_po_lie: '李将军列传-重复',
+  huo_zhi_lie: '货殖列传-重复',
+  tai_shi_gong: '太史公自序',
+  he_shu: '河渠书',
+  pingzhun_shu: '平准书',
+  fengshan_shu: '封禅书'
+};
+
+// Global data
+let allCharacters = [];
+let allEvents = [];
+let allRelationships = [];
+let allIdioms = [];
+
+// Populate selects
+async function loadData() {
+  try {
+    const [characters, events, relationships, idioms] = await Promise.all([
+      fetch('data/characters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/events.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/relationships.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/idioms.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; })
+    ]);
+    allCharacters = characters;
+    allEvents = events;
+    allRelationships = relationships;
+    allIdioms = idioms;
+    populateSelects();
+  } catch (e) {
+    console.error(e);
+    const el = document.getElementById('errorMsg');
+    if (el) { el.textContent = '数据加载失败，请刷新页面重试'; el.classList.remove('hidden'); }
+  }
+}
+
+function getChapterLabel(chapter) {
+  return chapterNames[chapter] || chapter;
+}
+
+function populateSelects() {
+  const selA = document.getElementById('selectA');
+  const selB = document.getElementById('selectB');
+
+  // Group characters by chapter
+  const grouped = {};
+  allCharacters.forEach(c => {
+    const ch = c.chapter || 'other';
+    if (!grouped[ch]) grouped[ch] = [];
+    grouped[ch].push(c);
+  });
+
+  // Sort chapters by a predefined order (roughly chronological)
+  const chapterOrder = ['wudi','xia','yin','zhou','qinshi','qin_benji','xiangyu','gaozu','lvhou',
+    'wutaibo','qitaigong','lu','song','wei_kangshu','cai','cao','chenqi','waiqi',
+    'jin','chu','zhao','wei','han','yan','tianqi',
+    'kongzi','cheshe','liangxiaowang','xiaowen','xiaojing',
+    'liuhou','zhangchengxiang','liujing_shusuntong',
+    'guanyan','sunwuzi','suqin','zhangyi','baiqiwangjian','shangjun',
+    'weigongzi','ranghou','mengchangjun','pingyuanjun','yueyi','lianpo',
+    'quyuan_jiasheng','fanju_caize','cike','wuzilie','zhonglishu',
+    'huaiyinhou','lisi','lvbuwei','mengtian',
+    'jibu_luanbu','yuanang_chaocuo','fengtang','wanshi','tianshu',
+    'liguang','weijiangjun','pingjinhou',
+    'nanyue','dongyue','chaoxian','xinanyi','dayuanyoushi',
+    'youyu','shiji_jingzhong','huozhilie',
+    'wuwangbi','weiqi_wuanhou','hanchangru',
+    'xiaochu','caoxiangguo','huainan_hengshan_jishan',
+    'qianhouchushu','lihai_zhichun',
+    'wuzong','sanwang',
+    'bianque',
+    'hongyan',
+    'xiaowu',
+    'tai_shi_gong','fengshan_shu','he_shu','pingzhun_shu'
+  ];
+
+  const sortedChapters = Object.keys(grouped).sort((a, b) => {
+    const ia = chapterOrder.indexOf(a);
+    const ib = chapterOrder.indexOf(b);
+    if (ia !== -1 && ib !== -1) return ia - ib;
+    if (ia !== -1) return -1;
+    if (ib !== -1) return 1;
+    return a.localeCompare(b);
+  });
+
+  [selA, selB].forEach(sel => {
+    sortedChapters.forEach(ch => {
+      const label = getChapterLabel(ch);
+      if (label.endsWith('-重复')) return;
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = label;
+      grouped[ch].forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.name;
+        opt.textContent = c.name + (c.title ? (' - ' + c.title) : '');
+        optgroup.appendChild(opt);
+      });
+      sel.appendChild(optgroup);
+    });
+  });
+
+  // Try to read URL params for pre-selection
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('a')) selA.value = params.get('a');
+  if (params.get('b')) selB.value = params.get('b');
+  if (selA.value && selB.value) {
+    startCompare();
+  }
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorMsg');
+  el.textContent = msg;
+  el.classList.remove('hidden');
+}
+
+function hideError() {
+  document.getElementById('errorMsg').classList.add('hidden');
+}
+
+function startCompare() {
+  hideError();
+  const nameA = document.getElementById('selectA').value;
+  const nameB = document.getElementById('selectB').value;
+
+  if (!nameA || !nameB) {
+    showError('请选择两位人物');
+    return;
+  }
+  if (nameA === nameB) {
+    showError('请选择两位不同的人物');
+    return;
+  }
+
+  const charA = allCharacters.find(c => c.name === nameA);
+  const charB = allCharacters.find(c => c.name === nameB);
+  if (!charA || !charB) {
+    showError('未找到所选人物数据');
+    return;
+  }
+
+  // Show comparison area
+  document.getElementById('comparisonArea').classList.remove('hidden');
+
+  // Update URL params
+  const url = new URL(window.location);
+  url.searchParams.set('a', nameA);
+  url.searchParams.set('b', nameB);
+  window.history.replaceState({}, '', url);
+
+  renderHeroCards(charA, charB);
+  renderBasicInfo(charA, charB);
+  renderTraits(charA, charB);
+  renderQuotes(charA, charB);
+  renderEvents(charA, charB);
+  renderRelationships(charA, charB);
+  renderIdioms(charA, charB);
+
+  // Scroll to comparison
+  document.getElementById('comparisonArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderHeroCards(a, b) {
+  document.getElementById('charAInitial').textContent = a.name.charAt(0);
+  document.getElementById('charBInitial').textContent = b.name.charAt(0);
+  document.getElementById('charAName').textContent = a.name;
+  document.getElementById('charBName').textContent = b.name;
+  document.getElementById('charAInfo').textContent = (a.title || a.identity) + ' · ' + (a.lifespan || '');
+  document.getElementById('charBInfo').textContent = (b.title || b.identity) + ' · ' + (b.lifespan || '');
+  document.getElementById('charADesc').textContent = a.description || '';
+  document.getElementById('charBDesc').textContent = b.description || '';
+}
+
+function renderBasicInfo(a, b) {
+  const fields = [
+    { label: '身份', key: 'identity' },
+    { label: '称谓', key: 'title' },
+    { label: '生卒年', key: 'lifespan' },
+    { label: '时期', key: 'period' },
+    { label: '字', key: 'courtesyName' }
+  ];
+
+  const renderSide = (char) => {
+    return fields.map(f => {
+      const val = char[f.key];
+      if (!val) return '';
+      return `<div class="p-3 rounded-lg bg-[var(--bg2)]">
+        <div class="section-label">${f.label}</div>
+        <div class="text-sm">${esc(val)}</div>
+      </div>`;
+    }).filter(Boolean).join('');
+  };
+
+  document.getElementById('basicInfoA').innerHTML = renderSide(a) || '<p class="text-sm text-[var(--muted)]">暂无数据</p>';
+  document.getElementById('basicInfoB').innerHTML = renderSide(b) || '<p class="text-sm text-[var(--muted)]">暂无数据</p>';
+}
+
+function renderTraits(a, b) {
+  const renderSide = (char) => {
+    if (!char.traits || !char.traits.length) return '<p class="text-sm text-[var(--muted)]">暂无数据</p>';
+    return char.traits.map(t =>
+      `<span class="px-3 py-1 rounded-full text-sm font-medium border border-[var(--accent)]/30 text-[var(--accent)] bg-[var(--accent)]/5">${t}</span>`
+    ).join('');
+  };
+  document.getElementById('traitsA').innerHTML = renderSide(a);
+  document.getElementById('traitsB').innerHTML = renderSide(b);
+}
+
+function renderQuotes(a, b) {
+  const renderSide = (char, side) => {
+    if (!char.quotes || !char.quotes.length) return '<p class="text-sm text-[var(--muted)]">暂无名言数据</p>';
+    return char.quotes.map(q =>
+      `<div class="p-4 rounded-lg bg-[var(--bg2)] border-l-4" style="border-left-color: var(--${side === 'a' ? 'accent' : 'accent2'})">
+        <p class="italic text-sm serif leading-relaxed">"${esc(q)}"</p>
+        <p class="text-xs text-[var(--muted)] mt-2">-- ${esc(char.name)}</p>
+      </div>`
+    ).join('');
+  };
+  document.getElementById('quotesA').innerHTML = renderSide(a, 'a');
+  document.getElementById('quotesB').innerHTML = renderSide(b, 'b');
+}
+
+function renderEvents(a, b) {
+  const nameA = a.name;
+  const nameB = b.name;
+
+  // Find events related to either character
+  const relEventsA = allEvents.filter(e => e.characters && e.characters.includes(nameA));
+  const relEventsB = allEvents.filter(e => e.characters && e.characters.includes(nameB));
+
+  // Find common events (involving both)
+  const commonEventIds = new Set(relEventsA.map(e => e.id));
+  const commonEvents = relEventsB.filter(e => commonEventIds.has(e.id));
+
+  // Merge all relevant events and deduplicate
+  const eventMap = new Map();
+  [...relEventsA, ...relEventsB].forEach(e => eventMap.set(e.id, e));
+  const allRelEvents = Array.from(eventMap.values()).sort((x, y) => x.year - y.year);
+
+  const eventsArea = document.getElementById('eventsArea');
+  if (!allRelEvents.length) {
+    eventsArea.innerHTML = '<p class="text-sm text-[var(--muted)] text-center">暂无相关事件数据</p>';
+    return;
+  }
+
+  eventsArea.innerHTML = allRelEvents.map(e => {
+    const inA = e.characters.includes(nameA);
+    const inB = e.characters.includes(nameB);
+    let badge = '';
+    if (inA && inB) {
+      badge = `<span class="text-xs px-2 py-0.5 rounded-full bg-[var(--gold)]/20 text-[var(--gold)] font-semibold">双方</span>`;
+    } else if (inA) {
+      badge = `<span class="text-xs px-2 py-0.5 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] font-semibold">${esc(nameA)}</span>`;
+    } else {
+      badge = `<span class="text-xs px-2 py-0.5 rounded-full bg-[var(--accent2)]/10 text-[var(--accent2)] font-semibold">${esc(nameB)}</span>`;
+    }
+    return `<div class="flex items-start gap-3 p-3 rounded-lg bg-[var(--bg2)] mb-2">
+      <div class="text-center min-w-[90px] flex-shrink-0">
+        <div class="text-xs text-[var(--muted)]">${esc(e.date || '')}</div>
+        <div class="mt-1">${badge}</div>
+      </div>
+      <div class="flex-1">
+        <div class="font-bold text-sm">${esc(e.name)}</div>
+        <p class="text-sm text-[var(--muted)] mt-1">${esc(e.description)}</p>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderRelationships(a, b) {
+  const nameA = a.name;
+  const nameB = b.name;
+
+  const relsA = allRelationships.filter(r => r.source === nameA || r.target === nameA);
+  const relsB = allRelationships.filter(r => r.source === nameB || r.target === nameB);
+
+  // Check if A and B have a direct relationship
+  const directRel = allRelationships.find(r =>
+    (r.source === nameA && r.target === nameB) || (r.source === nameB && r.target === nameA)
+  );
+
+  const renderSide = (rels, charName, otherName) => {
+    if (!rels.length) return '<p class="text-sm text-[var(--muted)]">暂无关系数据</p>';
+
+    // Highlight direct relationship if exists
+    let html = '';
+    if (directRel) {
+      const isSource = directRel.source === charName;
+      html += `<div class="p-3 rounded-lg border border-[var(--gold)]/40 bg-[var(--gold)]/5">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-[var(--gold)]/20 text-[var(--gold)]">直接关系</span>
+          <span class="font-bold text-sm">${esc(otherName)}</span>
+          <span class="text-xs text-[var(--muted)]">${esc(directRel.type)}</span>
+        </div>
+        <p class="text-sm text-[var(--muted)] mt-1">${esc(directRel.description)}</p>
+      </div>`;
+    }
+
+    // Show other relationships (exclude the direct one)
+    const otherRels = rels.filter(r => r !== directRel);
+    if (otherRels.length) {
+      html += '<div class="space-y-2 mt-2">' + otherRels.slice(0, 8).map(r => {
+        const isSource = r.source === charName;
+        const otherPerson = isSource ? r.target : r.source;
+        return `<div class="p-2 rounded-lg bg-[var(--bg2)] text-sm">
+          <span class="font-medium">${esc(otherPerson)}</span>
+          <span class="text-xs text-[var(--muted)] ml-2">${esc(r.type)}</span>
+          <p class="text-xs text-[var(--muted)] mt-1">${esc(r.description)}</p>
+        </div>`;
+      }).join('') + '</div>';
+    }
+
+    return html || '<p class="text-sm text-[var(--muted)]">暂无关系数据</p>';
+  };
+
+  document.getElementById('relsA').innerHTML = renderSide(relsA, nameA, nameB);
+  document.getElementById('relsB').innerHTML = renderSide(relsB, nameB, nameA);
+}
+
+function renderIdioms(a, b) {
+  const nameA = a.name;
+  const nameB = b.name;
+
+  const idiomsA = allIdioms.filter(id => id.characters && id.characters.includes(nameA));
+  const idiomsB = allIdioms.filter(id => id.characters && id.characters.includes(nameB));
+
+  // Check for common idioms
+  const idASet = new Set(idiomsA.map(i => i.id));
+  const commonIdioms = idiomsB.filter(i => idASet.has(i.id));
+
+  const renderSide = (idioms, side) => {
+    if (!idioms.length) return '<p class="text-sm text-[var(--muted)]">暂无典故数据</p>';
+    return idioms.slice(0, 8).map(id => {
+      const isCommon = commonIdioms.some(ci => ci.id === id.id);
+      return `<div class="p-3 rounded-lg bg-[var(--bg2)]">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="font-bold serif text-sm">${esc(id.idiom)}</span>
+          <span class="text-xs text-[var(--muted)]">${esc(id.source)}</span>
+          ${isCommon ? '<span class="text-xs px-2 py-0.5 rounded-full bg-[var(--gold)]/20 text-[var(--gold)]">双方共有</span>' : ''}
+        </div>
+        <p class="text-xs text-[var(--muted)] mt-2 leading-relaxed">${esc(id.meaning)}</p>
+        ${id.story ? `<p class="text-xs text-[var(--muted)] mt-1 leading-relaxed">${esc(id.story.length > 80 ? id.story.substring(0, 80) + '...' : id.story)}</p>` : ''}
+      </div>`;
+    }).join('');
+  };
+
+  document.getElementById('idiomsA').innerHTML = renderSide(idiomsA, 'a');
+  document.getElementById('idiomsB').innerHTML = renderSide(idiomsB, 'b');
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', loadData);
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>

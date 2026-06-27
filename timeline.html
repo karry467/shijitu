@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>事件时间轴 — 史迹图</title>
+<link rel="stylesheet" href="common.css?v=2" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="lib/echarts.min.js"></script>
+  <style>
+
+
+  .timeline-item { position: relative; padding-left: 24px; border-left: 2px solid var(--rule); }
+  .timeline-item::before { content: ''; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .timeline-item.active::before { background: var(--accent2); transform: scale(1.3); }
+  .chapter-badge-wudi { background: #8B691420; color: #8B6914; }
+  .chapter-badge-xia { background: #B8860B20; color: #B8860B; }
+  .chapter-badge-yin { background: #CD7F3220; color: #CD7F32; }
+  .chapter-badge-zhou { background: #2E8B5720; color: #2E8B57; }
+  .chapter-badge-kongzi { background: #20B2AA20; color: #20B2AA; }
+  .chapter-badge-cike { background: #3CB37120; color: #3CB371; }
+  .chapter-badge-lianpo { background: #228B2220; color: #228B22; }
+  .chapter-badge-lu { background: #8B000020; color: #8B0000; }
+  .chapter-badge-jin { background: #80008020; color: #800080; }
+  .chapter-badge-chu { background: #00640020; color: #006400; }
+  .chapter-badge-zhao { background: #FF8C0020; color: #FF8C00; }
+  .chapter-badge-qinshi { background: #4a4a4a20; color: #4a4a4a; }
+  .chapter-badge-cheshe { background: #69696920; color: #696969; }
+  .chapter-badge-xiangyu { background: #B4462A20; color: #B4462A; }
+  .chapter-badge-gaozu { background: #4169E120; color: #4169E1; }
+  .chapter-badge-lvhou { background: #6A5ACD20; color: #6A5ACD; }
+  .chapter-badge-qitaigong { background: #2F4F4F20; color: #2F4F4F; }
+  .chapter-badge-guanyan { background: #556B2F20; color: #556B2F; }
+  .chapter-badge-liuhou { background: #4682B420; color: #4682B4; }
+  .chapter-badge-huaiyinhou { background: #8B008B20; color: #8B008B; }
+  .chapter-badge-sunwuzi { background: #5F9EA020; color: #5F9EA0; }
+  .chapter-badge-baiqiwangjian { background: #A52A2A20; color: #A52A2A; }
+  .chapter-badge-suqin { background: #4B008220; color: #4B0082; }
+  .chapter-badge-zhangyi { background: #7B68EE20; color: #7B68EE; }
+  .chapter-badge-mengzi_xunzi { background: #DAA52020; color: #DAA520; }
+  .chapter-badge-xiongnu { background: #70809020; color: #708090; }
+  .chapter-badge-lisi { background: #CD853F20; color: #CD853F; }
+  .chapter-badge-mengtian { background: #D2691E20; color: #D2691E; }
+  .chapter-badge-wei { background: #8B451320; color: #8B4513; }
+  .chapter-badge-han { background: #A52A2A20; color: #A52A2A; }
+  .chapter-badge-yan { background: #483D8B20; color: #483D8B; }
+  .chapter-badge-tianqi { background: #00808020; color: #008080; }
+  .chapter-badge-wutaibo { background: #80000020; color: #800000; }
+  .chapter-badge-zheng { background: #D2691E20; color: #D2691E; }
+  .chapter-badge-song { background: #B2222220; color: #B22222; }
+  .chapter-badge-wei_kangshu { background: #9932CC20; color: #9932CC; }
+  .chapter-badge-fanju_caize { background: #6495ED20; color: #6495ED; }
+  .chapter-badge-yueyi { background: #DC143C20; color: #DC143C; }
+  .chapter-badge-quyuan_jiasheng { background: #1E90FF20; color: #1E90FF; }
+  .chapter-badge-lvbuwei { background: #FF634720; color: #FF6347; }
+  .chapter-badge-qin_benji { background: #4B008220; color: #4B0082; }
+  .chapter-badge-cai { background: #9400D320; color: #9400D3; }
+  .chapter-badge-cao { background: #FF149320; color: #FF1493; }
+  .chapter-badge-chenqi { background: #00CED120; color: #00CED1; }
+  .chapter-badge-waiqi { background: #FF450020; color: #FF4500; }
+  .chapter-badge-ranghou { background: #7FFFD420; color: #7FFFD4; }
+  .chapter-badge-mengchangjun { background: #F0E68C20; color: #F0E68C; }
+  .chapter-badge-pingyuanjun { background: #DDA0DD20; color: #DDA0DD; }
+  .chapter-badge-chunshenjun { background: #98FB9820; color: #98FB98; }
+  .chapter-badge-tiandan { background: #F4A46020; color: #F4A460; }
+  .chapter-badge-luzhonglian { background: #87CEEB20; color: #87CEEB; }
+  .chapter-badge-lisheng_lujia { background: #FFB6C120; color: #FFB6C1; }
+  .chapter-badge-zhangchengxiang { background: #B0C4DE20; color: #B0C4DE; }
+  .chapter-badge-liujing_shusuntong { background: #FFD70020; color: #FFD700; }
+  .chapter-badge-yuanang_chaocuo { background: #FF69B420; color: #FF69B4; }
+  .chapter-badge-xiaowen { background: #556B2F20; color: #556B2F; }
+  .chapter-badge-xiaojing { background: #8FBC8F20; color: #8FBC8F; }
+  .chapter-badge-xiaowu { background: #CD5C5C20; color: #CD5C5C; }
+  .chapter-badge-liangxiaowang { background: #DEB88720; color: #DEB887; }
+  .chapter-badge-wuzong { background: #D2B48C20; color: #D2B48C; }
+  .chapter-badge-sanwang { background: #BC8F8F20; color: #BC8F8F; }
+  .chapter-badge-jibu_luanbu { background: #77889920; color: #778899; }
+  .chapter-badge-fengtang { background: #70809020; color: #708090; }
+  .chapter-badge-wanshi { background: #BDB76B20; color: #BDB76B; }
+  .chapter-badge-tianshu { background: #8B837820; color: #8B8378; }
+  .chapter-badge-bianque { background: #20B2AA20; color: #20B2AA; }
+  .chapter-badge-wuwangbi { background: #CD5C5C20; color: #CD5C5C; }
+  .chapter-badge-weiqi_wuanhou { background: #9370DB20; color: #9370DB; }
+  .chapter-badge-hanchangru { background: #6B8E2320; color: #6B8E23; }
+  .chapter-badge-weijiangjun { background: #B2222220; color: #B22222; }
+  .chapter-badge-pingjinhou { background: #A0522D20; color: #A0522D; }
+  .chapter-badge-nanyue { background: #2E8B5720; color: #2E8B57; }
+  .chapter-badge-dongyue { background: #3CB37120; color: #3CB371; }
+  .chapter-badge-chaoxian { background: #4682B420; color: #4682B4; }
+  .chapter-badge-xinanyi { background: #5F9EA020; color: #5F9EA0; }
+  .chapter-badge-xiaochu { background: #2F4F4F20; color: #2F4F4F; }
+  .chapter-badge-caoxiangguo { background: #556B2F20; color: #556B2F; }
+  .chapter-badge-huainan_hengshan_jishan { background: #8B008B20; color: #8B008B; }
+  .chapter-badge-qianhouchushu { background: #698B2220; color: #698B22; }
+  .chapter-badge-lihai_zhichun { background: #8B000020; color: #8B0000; }
+  .chapter-badge-dayuanyoushi { background: #B8860B20; color: #B8860B; }
+  .chapter-badge-youyu { background: #A52A2A20; color: #A52A2A; }
+  .chapter-badge-hongyan { background: #CD5C5C20; color: #CD5C5C; }
+  .chapter-badge-shiji_jingzhong { background: #20B2AA20; color: #20B2AA; }
+  .chapter-badge-rizhualie { background: #77889920; color: #778899; }
+  .chapter-badge-guice_lielie { background: #BDB76B20; color: #BDB76B; }
+  .chapter-badge-huozhilie { background: #DAA52020; color: #DAA520; }
+  .chapter-badge-sunzi_wuqi { background: #8B5A2B20; color: #8B5A2B; }
+  .chapter-badge-wuzilie { background: #4169E120; color: #4169E1; }
+  .chapter-badge-zhonglishu { background: #228B2220; color: #228B22; }
+  .chapter-badge-shangjunlie { background: #4A674120; color: #4A6741; }
+  .chapter-badge-suqinlie { background: #CD853F20; color: #CD853F; }
+  .chapter-badge-zhangyilie { background: #DAA52020; color: #DAA520; }
+  .chapter-badge-meigeng { background: #70809020; color: #708090; }
+  .chapter-badge-ranghoulielie { background: #6495ED20; color: #6495ED; }
+
+  .chapter-badge-heiqi_juliang_lie { background: #A0522D20; color: #A0522D; }
+  .chapter-badge-mengchang_lie { background: #F0E68C20; color: #F0E68C; }
+  .chapter-badge-pingyuan_lie { background: #DDA0DD20; color: #DDA0DD; }
+  .chapter-badge-chunshen_lie { background: #98FB9820; color: #98FB98; }
+  .chapter-badge-fan_ju_lie { background: #6495ED20; color: #6495ED; }
+  .chapter-badge-yueyi_lie { background: #DC143C20; color: #DC143C; }
+  .chapter-badge-lian_po_lin_xiangru_lie { background: #228B2220; color: #228B22; }
+  .chapter-badge-tian_dan_lie { background: #F4A46020; color: #F4A460; }
+  .chapter-badge-lu_zhonglian_lie { background: #87CEEB20; color: #87CEEB; }
+  .chapter-badge-li_jia_shu { background: #FFB6C120; color: #FFB6C1; }
+  .chapter-badge-liang_qi_lie { background: #FFD70020; color: #FFD700; }
+  .chapter-badge-quyuan_jiasheng_lie { background: #1E90FF20; color: #1E90FF; }
+  .chapter-badge-lv_buwei_lie { background: #FF634720; color: #FF6347; }
+  .chapter-badge-ci_ke_lie { background: #3CB37120; color: #3CB371; }
+  .chapter-badge-li_silie { background: #5F9EA020; color: #5F9EA0; }
+  .chapter-badge-meng_tian_lie { background: #008B8B20; color: #008B8B; }
+  .chapter-badge-peng_yue_lie { background: #8B451320; color: #8B4513; }
+  .chapter-badge-ying_bu_lie { background: #A52A2A20; color: #A52A2A; }
+  .chapter-badge-huaiyin_hou_lie { background: #8B008B20; color: #8B008B; }
+  .chapter-badge-xin_qi_lie { background: #6B422620; color: #6B4226; }
+  .chapter-badge-yue_wang_goujian_lie { background: #8B451320; color: #8B4513; }
+  .chapter-badge-zheng_shi_lie { background: #B0C4DE20; color: #B0C4DE; }
+  .chapter-badge-yuan_ang_chao_cuo_lie { background: #FF69B420; color: #FF69B4; }
+  .chapter-badge-banyuan_lie { background: #20B2AA20; color: #20B2AA; }
+  .chapter-badge-wu_wang_bi_lie { background: #CD5C5C20; color: #CD5C5C; }
+  .chapter-badge-weiqi_wuanhou_lie { background: #9370DB20; color: #9370DB; }
+  .chapter-badge-li_ji_lian_po_lie { background: #4A6FA520; color: #4A6FA5; }
+  .chapter-badge-huo_zhi_lie { background: #DAA52020; color: #DAA520; }
+  .chapter-badge-tai_shi_gong { background: #80008020; color: #800080; }
+  .chapter-badge-he_shu { background: #4682B420; color: #4682B4; }
+  .chapter-badge-pingzhun_shu { background: #2E8B5720; color: #2E8B57; }
+  .chapter-badge-fengshan_shu { background: #CD7F3220; color: #CD7F32; }
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+        <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-5 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--ink)] font-medium">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-6 py-8">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold serif">事件时间轴</h1>
+    <p class="text-sm text-[var(--muted)] mt-1">按时间顺序浏览历史事件，点击事件查看详情</p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-6">
+    <!-- Timeline List -->
+    <div class="flex-1">
+      <div class="panel p-5">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <select id="chapterSelect" class="px-3 py-2 rounded-lg border border-[var(--rule)] text-sm bg-[var(--bg)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]">
+            <option value="all">全部篇章</option>
+            <option value="wudi">五帝本纪</option>
+            <option value="xia">夏本纪</option>
+            <option value="yin">殷本纪</option>
+            <option value="zhou">周本纪</option>
+            <option value="qinshi">秦始皇本纪</option>
+            <option value="xiangyu">项羽本纪</option>
+            <option value="gaozu">高祖本纪</option>
+            <option value="lvhou">吕太后本纪</option>
+            <option value="kongzi">孔子世家</option>
+            <option value="cheshe">陈涉世家</option>
+            <option value="cike">刺客列传</option>
+            <option value="lianpo">廉颇蔺相如列传</option>
+            <option value="lu">鲁周公世家</option>
+            <option value="jin">晋世家</option>
+            <option value="chu">楚世家</option>
+            <option value="zhao">赵世家</option>
+            <option value="qitaigong">齐太公世家</option>
+            <option value="guanyan">管晏列传</option>
+            <option value="liuhou">留侯世家</option>
+            <option value="huaiyinhou">淮阴侯列传</option>
+            <option value="sunwuzi">孙子吴起列传</option>
+            <option value="baiqiwangjian">白起王翦列传</option>
+            <option value="suqin">苏秦列传</option>
+            <option value="zhangyi">张仪列传</option>
+            <option value="mengzi_xunzi">孟子荀卿列传</option>
+            <option value="xiongnu">匈奴列传</option>
+            <option value="lisi">李斯列传</option>
+            <option value="mengtian">蒙恬列传</option>
+            <option value="wei">魏世家</option>
+            <option value="han">韩世家</option>
+            <option value="yan">燕世家</option>
+            <option value="tianqi">田敬仲完世家</option>
+            <option value="wutaibo">吴太伯世家</option>
+            <option value="zheng">郑世家</option>
+            <option value="song">宋微子世家</option>
+            <option value="wei_kangshu">卫康叔世家</option>
+            <option value="fanju_caize">范雎蔡泽列传</option>
+            <option value="yueyi">乐毅列传</option>
+            <option value="quyuan_jiasheng">屈原贾生列传</option>
+            <option value="lvbuwei">吕不韦列传</option>
+            <option value="qin_benji">秦本纪</option>
+            <option value="cai">蔡世家</option>
+            <option value="cao">曹世家</option>
+            <option value="chenqi">陈杞世家</option>
+            <option value="waiqi">外戚世家</option>
+            <option value="ranghou">穰侯列传</option>
+            <option value="mengchangjun">孟尝君列传</option>
+            <option value="pingyuanjun">平原君虞卿列传</option>
+            <option value="chunshenjun">春申君列传</option>
+            <option value="tiandan">田单列传</option>
+            <option value="luzhonglian">鲁仲连邹阳列传</option>
+            <option value="lisheng_lujia">郦生陆贾列传</option>
+            <option value="zhangchengxiang">张丞相列传</option>
+            <option value="liujing_shusuntong">刘敬叔孙通列传</option>
+            <option value="yuanang_chaocuo">袁盎晁错列传</option>
+                      <option value="xiaowen">孝文本纪</option>
+            <option value="xiaojing">孝景本纪</option>
+            <option value="xiaowu">孝武本纪</option>
+            <option value="liangxiaowang">梁孝王世家</option>
+            <option value="wuzong">五宗世家</option>
+            <option value="sanwang">三王世家</option>
+            <option value="jibu_luanbu">季布栾布列传</option>
+            <option value="fengtang">冯唐列传</option>
+            <option value="wanshi">万石张叔列传</option>
+            <option value="tianshu">田叔列传</option>
+            <option value="bianque">扁鹊仓公列传</option>
+            <option value="wuwangbi">吴王濞列传</option>
+            <option value="weiqi_wuanhou">魏其武安侯列传</option>
+            <option value="hanchangru">韩长孺列传</option>
+            <option value="weijiangjun">卫将军骠骑列传</option>
+            <option value="pingjinhou">平津侯主父列传</option>
+            <option value="nanyue">南越列传</option>
+            <option value="dongyue">东越列传</option>
+            <option value="chaoxian">朝鲜列传</option>
+            <option value="xinanyi">西南夷列传</option>
+            <option value="xiaochu">萧相国世家</option>
+            <option value="caoxiangguo">曹相国世家</option>
+            <option value="huainan_hengshan_jishan">淮南衡山济北王列传</option>
+            <option value="qianhouchushu">循吏列传</option>
+            <option value="lihai_zhichun">酷吏列传</option>
+            <option value="dayuanyoushi">大宛列传</option>
+            <option value="youyu">游侠列传</option>
+            <option value="hongyan">佞幸列传</option>
+            <option value="shiji_jingzhong">滑稽列传</option>
+            <option value="rizhualie">日者列传</option>
+            <option value="guice_lielie">龟策列传</option>
+            <option value="huozhilie">货殖列传</option>
+            <option value="sunzi_wuqi">孙子吴起列传-重复</option>
+            <option value="wuzilie">伍子胥列传</option>
+            <option value="zhonglishu">仲尼弟子列传</option>
+            <option value="shangjunlie">商君列传-重复</option>
+            <option value="suqinlie">苏秦列传-重复</option>
+            <option value="zhangyilie">张仪列传-重复</option>
+            <option value="meigeng">樗里子甘茂列传</option>
+            <option value="ranghoulielie">穰侯列传-重复</option>
+          </select>
+          <input type="text" id="timelineSearch" placeholder="搜索事件、人物..." autocomplete="off" class="px-3 py-2 rounded-lg border border-[var(--rule)] text-sm bg-[var(--bg)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] w-48">
+          <div class="text-xs text-[var(--muted)]" id="eventCount"></div>
+        </div>
+        <!-- Time Range Filter -->
+        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-[var(--rule)]">
+          <span class="text-xs text-[var(--muted)] whitespace-nowrap">时间范围:</span>
+          <input type="range" id="yearStart" min="-2700" max="200" value="-2700" class="flex-1 h-1.5 rounded-lg appearance-none cursor-pointer accent-[var(--accent)]">
+          <input type="range" id="yearEnd" min="-2700" max="200" value="200" class="flex-1 h-1.5 rounded-lg appearance-none cursor-pointer accent-[var(--accent)]">
+          <span id="yearLabel" class="text-xs text-[var(--muted)] whitespace-nowrap min-w-[120px]"></span>
+          <button id="resetRange" class="text-xs px-2 py-1 rounded border border-[var(--rule)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition">重置</button>
+        </div>
+        <div id="timelineList" class="space-y-6"></div>
+      </div>
+    </div>
+
+    <!-- Chart & Detail -->
+    <div class="w-full lg:w-96 space-y-4 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-120px)] lg:overflow-y-auto">
+      <div class="panel p-4">
+        <h3 class="font-bold serif mb-3 text-sm">时间分布图</h3>
+        <div id="timelineChart" style="width:100%;height:280px;"></div>
+      </div>
+
+      <div class="panel p-5" id="detailPanel" style="display:none;">
+        <div class="flex items-center gap-2 mb-3">
+          <span id="detailBadge" class="text-xs px-2 py-0.5 rounded font-medium"></span>
+          <span id="detailDate" class="text-xs text-[var(--muted)]"></span>
+        </div>
+        <h3 class="font-bold serif text-lg mb-2" id="detailTitle"></h3>
+        <p class="text-sm text-[var(--muted)] leading-relaxed mb-4" id="detailDesc"></p>
+        <div class="space-y-3 text-sm">
+          <div><strong class="text-[var(--muted)]">结果</strong><p id="detailOutcome"></p></div>
+          <div><strong class="text-[var(--muted)]">历史意义</strong><p id="detailSignificance"></p></div>
+          <div><strong class="text-[var(--muted)]">相关人物</strong>
+            <div class="flex flex-wrap gap-2 mt-1" id="detailChars"></div>
+          </div>
+          <div class="pt-3 border-t border-[var(--rule)]">
+            <strong class="text-[var(--muted)] text-xs">史记原文</strong>
+            <p class="italic text-[var(--accent)] mt-1 text-sm leading-relaxed" id="detailQuote"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel p-5" id="emptyPanel">
+        <div class="text-center text-[var(--muted)]">
+          <svg class="w-10 h-10 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <p class="text-sm">点击左侧时间轴事件<br>查看详细信息</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+let allData = {}, currentChapter = 'all', searchQuery = '', yearStart = -2700, yearEnd = 200;
+const chapterNames = { wudi: '五帝本纪', xia: '夏本纪', yin: '殷本纪', zhou: '周本纪', qinshi: '秦始皇本纪', xiangyu: '项羽本纪', gaozu: '高祖本纪', lvhou: '吕太后本纪', kongzi: '孔子世家', cheshe: '陈涉世家', cike: '刺客列传', lianpo: '廉颇蔺相如列传', wuyue: '越王勾践世家', shangjun: '商君列传', weigongzi: '魏公子列传', liguang: '李将军列传', qitaigong: '齐太公世家', guanyan: '管晏列传', liuhou: '留侯世家', huaiyinhou: '淮阴侯列传', lu: '鲁周公世家', jin: '晋世家', chu: '楚世家', zhao: '赵世家', sunwuzi: '孙子吴起列传', baiqiwangjian: '白起王翦列传', suqin: '苏秦列传', zhangyi: '张仪列传', mengzi_xunzi: '孟子荀卿列传', xiongnu: '匈奴列传', lisi: '李斯列传', mengtian: '蒙恬列传', wei: '魏世家', han: '韩世家', yan: '燕世家', tianqi: '田敬仲完世家', wutaibo: '吴太伯世家', zheng: '郑世家', song: '宋微子世家', wei_kangshu: '卫康叔世家', fanju_caize: '范雎蔡泽列传', yueyi: '乐毅列传', quyuan_jiasheng: '屈原贾生列传', lvbuwei: '吕不韦列传', qin_benji: '秦本纪', cai: '蔡世家', cao: '曹世家', chenqi: '陈杞世家', waiqi: '外戚世家', ranghou: '穰侯列传', mengchangjun: '孟尝君列传', pingyuanjun: '平原君虞卿列传', chunshenjun: '春申君列传', tiandan: '田单列传', luzhonglian: '鲁仲连邹阳列传', lisheng_lujia: '郦生陆贾列传', zhangchengxiang: '张丞相列传', liujing_shusuntong: '刘敬叔孙通列传', yuanang_chaocuo: '袁盎晁错列传' , xiaowen: '孝文本纪', xiaojing: '孝景本纪', xiaowu: '孝武本纪', liangxiaowang: '梁孝王世家', wuzong: '五宗世家', sanwang: '三王世家', jibu_luanbu: '季布栾布列传', fengtang: '冯唐列传', wanshi: '万石张叔列传', tianshu: '田叔列传', bianque: '扁鹊仓公列传', wuwangbi: '吴王濞列传', weiqi_wuanhou: '魏其武安侯列传', hanchangru: '韩长孺列传', weijiangjun: '卫将军骠骑列传', pingjinhou: '平津侯主父列传', nanyue: '南越列传', dongyue: '东越列传', chaoxian: '朝鲜列传', xinanyi: '西南夷列传', xiaochu: '萧相国世家', caoxiangguo: '曹相国世家', huainan_hengshan_jishan: '淮南衡山济北王列传', qianhouchushu: '循吏列传', lihai_zhichun: '酷吏列传', dayuanyoushi: '大宛列传', youyu: '游侠列传', hongyan: '佞幸列传', shiji_jingzhong: '滑稽列传', rizhualie: '日者列传', guice_lielie: '龟策列传', huozhilie: '货殖列传', sunzi_wuqi: '孙子吴起列传-重复', wuzilie: '伍子胥列传', zhonglishu: '仲尼弟子列传', shangjunlie: '商君列传-重复', suqinlie: '苏秦列传-重复', zhangyilie: '张仪列传-重复', meigeng: '樗里子甘茂列传', ranghoulielie: '穰侯列传-重复'
+};
+const eventColors = { wudi: '#8B6914', xia: '#B8860B', yin: '#CD7F32', zhou: '#2E8B57', kongzi: '#20B2AA', cike: '#3CB371', lianpo: '#228B22', wuyue: '#8B4513', shangjun: '#4A6741', weigongzi: '#6B4226', qinshi: '#4a4a4a', cheshe: '#696969', xiangyu: '#B4462A', gaozu: '#4169E1', lvhou: '#6A5ACD', liguang: '#4A6FA5', qitaigong: '#2F4F4F', guanyan: '#556B2F', liuhou: '#4682B4', huaiyinhou: '#8B008B', lu: '#8B0000', jin: '#800080', chu: '#006400', zhao: '#FF8C00', sunwuzi: '#8B5A2B', baiqiwangjian: '#A0522D', suqin: '#CD853F', zhangyi: '#DAA520', mengzi_xunzi: '#6B8E23', xiongnu: '#708090', lisi: '#5F9EA0', mengtian: '#008B8B', wei: '#8B4513', han: '#A52A2A', yan: '#483D8B', tianqi: '#008080', wutaibo: '#800000', zheng: '#D2691E', song: '#B22222', wei_kangshu: '#9932CC', fanju_caize: '#6495ED', yueyi: '#DC143C', quyuan_jiasheng: '#1E90FF', lvbuwei: '#FF6347', qin_benji: '#4B0082', cai: '#9400D3', cao: '#FF1493', chenqi: '#00CED1', waiqi: '#FF4500', ranghou: '#7FFFD4', mengchangjun: '#F0E68C', pingyuanjun: '#DDA0DD', chunshenjun: '#98FB98', tiandan: '#F4A460', luzhonglian: '#87CEEB', lisheng_lujia: '#FFB6C1', zhangchengxiang: '#B0C4DE', liujing_shusuntong: '#FFD700', yuanang_chaocuo: '#FF69B4' , xiaowen: '#556B2F', xiaojing: '#8FBC8F', xiaowu: '#CD5C5C', liangxiaowang: '#DEB887', wuzong: '#D2B48C', sanwang: '#BC8F8F', jibu_luanbu: '#778899', fengtang: '#708090', wanshi: '#BDB76B', tianshu: '#8B8378', bianque: '#20B2AA', wuwangbi: '#CD5C5C', weiqi_wuanhou: '#9370DB', hanchangru: '#6B8E23', weijiangjun: '#B22222', pingjinhou: '#A0522D', nanyue: '#2E8B57', dongyue: '#3CB371', chaoxian: '#4682B4', xinanyi: '#5F9EA0', xiaochu: '#2F4F4F', caoxiangguo: '#556B2F', huainan_hengshan_jishan: '#8B008B', qianhouchushu: '#698B22', lihai_zhichun: '#8B0000', dayuanyoushi: '#B8860B', youyu: '#A52A2A', hongyan: '#CD5C5C', shiji_jingzhong: '#20B2AA', rizhualie: '#778899', guice_lielie: '#BDB76B', huozhilie: '#DAA520', sunzi_wuqi: '#8B5A2B', wuzilie: '#4169E1', zhonglishu: '#228B22', shangjunlie: '#4A6741', suqinlie: '#CD853F', zhangyilie: '#DAA520', meigeng: '#708090', ranghoulielie: '#6495ED'
+, heiqi_juliang_lie: '白起王翦列传-重复', mengchang_lie: '孟尝君列传-重复', pingyuan_lie: '平原君虞卿列传-重复', chunshen_lie: '春申君列传-重复', fan_ju_lie: '范雎蔡泽列传-重复', yueyi_lie: '乐毅列传-重复', lian_po_lin_xiangru_lie: '廉颇蔺相如列传-重复', tian_dan_lie: '田单列传-重复', lu_zhonglian_lie: '鲁仲连邹阳列传-重复', li_jia_shu: '郦生陆贾列传-重复', liang_qi_lie: '刘敬叔孙通列传-重复', quyuan_jiasheng_lie: '屈原贾生列传-重复', lv_buwei_lie: '吕不韦列传-重复', ci_ke_lie: '刺客列传-重复', li_silie: '李斯列传-重复', meng_tian_lie: '蒙恬列传-重复', peng_yue_lie: '彭越列传', ying_bu_lie: '英布列传', huaiyin_hou_lie: '淮阴侯列传-重复', xin_qi_lie: '信陵君列传-重复', yue_wang_goujian_lie: '越王勾践世家-重复', zheng_shi_lie: '张丞相列传-重复', yuan_ang_chao_cuo_lie: '袁盎晁错列传-重复', banyuan_lie: '扁鹊仓公列传-重复', wu_wang_bi_lie: '吴王濞列传-重复', weiqi_wuanhou_lie: '魏其武安侯列传-重复', li_ji_lian_po_lie: '李将军列传-重复', huo_zhi_lie: '货殖列传-重复', tai_shi_gong: '太史公自序', he_shu: '河渠书', pingzhun_shu: '平准书', fengshan_shu: '封禅书'
+};
+function chapterName(ch) { return chapterNames[ch] || ch; }
+
+function showError(msg) {
+  document.getElementById('timelineList').innerHTML = '<div class="text-center text-[var(--accent)] py-20">' + msg + '</div>';
+}
+
+async function loadData() {
+  try {
+    const [events, chapters] = await Promise.all([
+      fetch('data/events.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/chapters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; })
+    ]);
+    allData = { events, chapters };
+
+    const params = new URLSearchParams(location.search);
+    const ch = params.get('chapter') || localStorage.getItem('selectedChapter') || 'all';
+    currentChapter = ch;
+    document.getElementById('chapterSelect').value = ch;
+
+    render();
+    renderChart();
+  } catch (e) {
+    console.error(e);
+    showError('数据加载失败，请刷新页面重试');
+  }
+}
+
+function getFilteredEvents() {
+  let evs = [...allData.events].sort((a, b) => a.year - b.year);
+  if (currentChapter !== 'all') evs = evs.filter(e => e.chapter === currentChapter);
+  // Time range filter
+  evs = evs.filter(e => e.year >= yearStart && e.year <= yearEnd);
+  // Search filter
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    evs = evs.filter(e =>
+      e.name.toLowerCase().includes(q) ||
+      e.description.toLowerCase().includes(q) ||
+      (e.characters && e.characters.some(c => c.toLowerCase().includes(q))) ||
+      (e.locationName && e.locationName.toLowerCase().includes(q))
+    );
+  }
+  return evs;
+}
+
+function updateYearLabel() {
+  const fmt = y => y < 0 ? `公元前${Math.abs(y)}年` : (y === 0 ? '公元元年' : `公元${y}年`);
+  document.getElementById('yearLabel').textContent = `${fmt(yearStart)} — ${fmt(yearEnd)}`;
+}
+
+function render() {
+  const evs = getFilteredEvents();
+  document.getElementById('eventCount').textContent = `共 ${evs.length} 个事件`;
+
+  const container = document.getElementById('timelineList');
+  container.innerHTML = evs.map((e, i) => `
+    <div class="timeline-item ${i === 0 ? 'active' : ''} cursor-pointer hover:bg-[var(--bg)] -mx-2 px-4 py-2 rounded-lg transition" data-id="${e.id}" onclick="showDetail('${e.id}')">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-lg font-bold serif text-[var(--accent)]">${esc(e.date)}</span>
+        <span class="chapter-badge-${e.chapter} text-xs px-2 py-0.5 rounded font-medium">${chapterName(e.chapter)}</span>
+      </div>
+      <h3 class="font-bold text-base mb-1">${esc(e.name)}</h3>
+      <p class="text-sm text-[var(--muted)] line-clamp-2">${esc(e.description)}</p>
+      <div class="flex flex-wrap gap-1 mt-2">
+        ${e.characters.slice(0,4).map(c => `<span class="text-xs px-2 py-0.5 rounded bg-[var(--bg2)] text-[var(--muted)]">${esc(c)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showDetail(id) {
+  const e = allData.events.find(x => x.id === id);
+  if (!e) return;
+
+  document.querySelectorAll('.timeline-item').forEach(el => el.classList.remove('active'));
+  document.querySelector(`[data-id="${id}"]`)?.classList.add('active');
+
+  document.getElementById('emptyPanel').style.display = 'none';
+  document.getElementById('detailPanel').style.display = 'block';
+
+  const badge = document.getElementById('detailBadge');
+  badge.className = `text-xs px-2 py-0.5 rounded font-medium chapter-badge-${e.chapter}`;
+  badge.textContent = chapterName(e.chapter);
+
+  document.getElementById('detailDate').textContent = e.date;
+  document.getElementById('detailTitle').textContent = e.name;
+  document.getElementById('detailDesc').textContent = e.description;
+  document.getElementById('detailOutcome').textContent = e.outcome;
+  document.getElementById('detailSignificance').textContent = e.significance;
+  document.getElementById('detailQuote').textContent = e.quote;
+  document.getElementById('detailChars').innerHTML = e.characters.map(c =>
+    `<span class="text-xs px-2 py-0.5 rounded bg-[var(--accent)]/10 text-[var(--accent)] cursor-pointer hover:bg-[var(--accent)]/20" onclick="viewChar('${c}')">${esc(c)}</span>`
+  ).join('');
+}
+
+function viewChar(name) {
+  window.location.href = 'graph.html?char=' + encodeURIComponent(name);
+}
+
+function renderChart() {
+  const evs = getFilteredEvents();
+  const chart = echarts.init(document.getElementById('timelineChart'));
+  const data = evs.map(e => [e.year, e.name, e.chapter]);
+
+  chart.setOption({
+    tooltip: {
+      formatter: p => `${p.data[1]}<br/>${Math.abs(p.data[0])}年${p.data[0] < 0 ? ' BC' : ''}`
+    },
+    xAxis: {
+      type: 'value',
+      min: value => Math.floor(value.min - 10),
+      max: value => Math.ceil(value.max + 10),
+      axisLabel: {
+        formatter: v => `${Math.abs(v)}${v < 0 ? ' BC' : ' AD'}`,
+        fontSize: 10
+      },
+      splitLine: { lineStyle: { color: '#eee' } }
+    },
+    yAxis: { type: 'category', data: evs.map(e => e.name), axisLabel: { fontSize: 10 } },
+    series: [{
+      type: 'scatter',
+      data: evs.map(e => ({
+        value: [e.year, e.name],
+        itemStyle: { color: eventColors[e.chapter] || '#8B7E6A' }
+      })),
+      symbolSize: 14,
+      emphasis: { scale: 1.5 }
+    }],
+    grid: { left: 80, right: 20, top: 20, bottom: 30 }
+  });
+
+  chart.on('click', params => {
+    const ev = allData.events.find(e => e.name === params.data.value[1]);
+    if (ev) showDetail(ev.id);
+  });
+}
+
+document.getElementById('chapterSelect').addEventListener('change', e => {
+  currentChapter = e.target.value;
+  render();
+  renderChart();
+});
+
+// Search
+const tlSearchInput = document.getElementById('timelineSearch');
+let tlSearchDebounce;
+tlSearchInput.addEventListener('input', e => {
+  clearTimeout(tlSearchDebounce);
+  tlSearchDebounce = setTimeout(() => {
+    searchQuery = e.target.value.trim();
+    render();
+    renderChart();
+  }, 200);
+});
+
+// Time range sliders
+const yearStartEl = document.getElementById('yearStart');
+const yearEndEl = document.getElementById('yearEnd');
+function onYearChange() {
+  yearStart = parseInt(yearStartEl.value);
+  yearEnd = parseInt(yearEndEl.value);
+  if (yearStart > yearEnd) { yearEnd = yearStart; yearEndEl.value = yearEnd; }
+  updateYearLabel();
+  render();
+  renderChart();
+}
+yearStartEl.addEventListener('input', onYearChange);
+yearEndEl.addEventListener('input', onYearChange);
+document.getElementById('resetRange').addEventListener('click', () => {
+  yearStartEl.value = -2700; yearEndEl.value = 200;
+  yearStart = -2700; yearEnd = 200;
+  updateYearLabel();
+  render();
+  renderChart();
+});
+updateYearLabel();
+
+// Filter out "-重复" options from dropdown
+document.querySelectorAll('#chapterSelect option').forEach(function(opt) {
+  if (opt.value !== 'all' && opt.textContent.endsWith('-重复')) {
+    opt.style.display = 'none';
+  }
+});
+
+loadData();
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>

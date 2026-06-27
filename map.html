@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>时空地图 — 史迹图</title>
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="common.css?v=2" />
+  <link rel="stylesheet" href="lib/leaflet.css" />
+<script src="lib/leaflet.js"></script>
+<style>
+
+
+  #map { width: 100%; height: 600px; border-radius: 8px; }
+  .leaflet-popup-content-wrapper { border-radius: 8px; font-family: "Noto Sans CJK SC", sans-serif; }
+  .leaflet-popup-content { margin: 12px 16px; line-height: 1.6; }
+  .map-legend { background: var(--bg); padding: 10px 14px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 12px; }
+  .map-legend-item { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  /* 行军路线面板样式 */
+  .march-route-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .march-route-panel.open {
+    max-height: 500px;
+  }
+  .march-route-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--rule);
+    background: var(--bg2);
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .march-route-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .march-route-btn .arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  .march-route-btn.active .arrow-icon {
+    transform: rotate(180deg);
+  }
+  .march-route-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 13px;
+  }
+  .march-route-checkbox:hover {
+    background: var(--bg2);
+  }
+  .march-route-checkbox input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+  }
+  .march-route-color-bar {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .march-route-node-marker {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  }
+  /* 流动虚线动画 */
+  @keyframes dash-flow {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+        <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-5 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--ink)] font-medium">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-6 py-8">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold serif">时空地图</h1>
+    <p class="text-sm text-[var(--muted)] mt-1">在历史地图上探索事件发生地点，古今地名对照</p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-6">
+    <!-- Map -->
+    <div class="flex-1 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-120px)] lg:overflow-y-auto">
+      <div class="panel p-4">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <select id="chapterSelect" class="px-3 py-2 rounded-lg border border-[var(--rule)] text-sm bg-[var(--bg)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]">
+            <option value="all">全部篇章</option>
+            <option value="wudi">五帝本纪</option>
+            <option value="xia">夏本纪</option>
+            <option value="yin">殷本纪</option>
+            <option value="zhou">周本纪</option>
+            <option value="qinshi">秦始皇本纪</option>
+            <option value="xiangyu">项羽本纪</option>
+            <option value="gaozu">高祖本纪</option>
+            <option value="lvhou">吕太后本纪</option>
+            <option value="kongzi">孔子世家</option>
+            <option value="cheshe">陈涉世家</option>
+            <option value="cike">刺客列传</option>
+            <option value="lianpo">廉颇蔺相如列传</option>
+            <option value="lu">鲁周公世家</option>
+            <option value="jin">晋世家</option>
+            <option value="chu">楚世家</option>
+            <option value="zhao">赵世家</option>
+            <option value="wuyue">越王勾践世家</option>
+            <option value="shangjun">商君列传</option>
+            <option value="weigongzi">魏公子列传</option>
+            <option value="liguang">李将军列传</option>
+            <option value="qitaigong">齐太公世家</option>
+            <option value="guanyan">管晏列传</option>
+            <option value="liuhou">留侯世家</option>
+            <option value="huaiyinhou">淮阴侯列传</option>
+            <option value="sunwuzi">孙子吴起列传</option>
+            <option value="baiqiwangjian">白起王翦列传</option>
+            <option value="suqin">苏秦列传</option>
+            <option value="zhangyi">张仪列传</option>
+            <option value="mengzi_xunzi">孟子荀卿列传</option>
+            <option value="xiongnu">匈奴列传</option>
+            <option value="lisi">李斯列传</option>
+            <option value="mengtian">蒙恬列传</option>
+            <option value="wei">魏世家</option>
+            <option value="han">韩世家</option>
+            <option value="yan">燕世家</option>
+            <option value="tianqi">田敬仲完世家</option>
+            <option value="wutaibo">吴太伯世家</option>
+            <option value="zheng">郑世家</option>
+            <option value="song">宋微子世家</option>
+            <option value="wei_kangshu">卫康叔世家</option>
+            <option value="fanju_caize">范雎蔡泽列传</option>
+            <option value="yueyi">乐毅列传</option>
+            <option value="quyuan_jiasheng">屈原贾生列传</option>
+            <option value="lvbuwei">吕不韦列传</option>
+            <option value="qin_benji">秦本纪</option>
+            <option value="cai">蔡世家</option>
+            <option value="cao">曹世家</option>
+            <option value="chenqi">陈杞世家</option>
+            <option value="waiqi">外戚世家</option>
+            <option value="ranghou">穰侯列传</option>
+            <option value="mengchangjun">孟尝君列传</option>
+            <option value="pingyuanjun">平原君虞卿列传</option>
+            <option value="chunshenjun">春申君列传</option>
+            <option value="tiandan">田单列传</option>
+            <option value="luzhonglian">鲁仲连邹阳列传</option>
+            <option value="lisheng_lujia">郦生陆贾列传</option>
+            <option value="zhangchengxiang">张丞相列传</option>
+            <option value="liujing_shusuntong">刘敬叔孙通列传</option>
+            <option value="yuanang_chaocuo">袁盎晁错列传</option>
+            <option value="xiaowen">孝文本纪</option>
+            <option value="xiaojing">孝景本纪</option>
+            <option value="xiaowu">孝武本纪</option>
+            <option value="liangxiaowang">梁孝王世家</option>
+            <option value="wuzong">五宗世家</option>
+            <option value="sanwang">三王世家</option>
+            <option value="jibu_luanbu">季布栾布列传</option>
+            <option value="fengtang">冯唐列传</option>
+            <option value="wanshi">万石张叔列传</option>
+            <option value="tianshu">田叔列传</option>
+            <option value="bianque">扁鹊仓公列传</option>
+            <option value="wuwangbi">吴王濞列传</option>
+            <option value="weiqi_wuanhou">魏其武安侯列传</option>
+            <option value="hanchangru">韩长孺列传</option>
+            <option value="weijiangjun">卫将军骠骑列传</option>
+            <option value="pingjinhou">平津侯主父列传</option>
+            <option value="nanyue">南越列传</option>
+            <option value="dongyue">东越列传</option>
+            <option value="chaoxian">朝鲜列传</option>
+            <option value="xinanyi">西南夷列传</option>
+            <option value="xiaochu">萧相国世家</option>
+            <option value="caoxiangguo">曹相国世家</option>
+            <option value="huainan_hengshan_jishan">淮南衡山济北王列传</option>
+            <option value="qianhouchushu">循吏列传</option>
+            <option value="lihai_zhichun">酷吏列传</option>
+            <option value="dayuanyoushi">大宛列传</option>
+            <option value="youyu">游侠列传</option>
+            <option value="hongyan">佞幸列传</option>
+            <option value="shiji_jingzhong">滑稽列传</option>
+            <option value="rizhualie">日者列传</option>
+            <option value="guice_lielie">龟策列传</option>
+            <option value="huozhilie">货殖列传</option>
+            <option value="sunzi_wuqi">孙子吴起列传-重复</option>
+            <option value="wuzilie">伍子胥列传</option>
+            <option value="zhonglishu">仲尼弟子列传</option>
+            <option value="shangjunlie">商君列传-重复</option>
+            <option value="suqinlie">苏秦列传-重复</option>
+            <option value="zhangyilie">张仪列传-重复</option>
+            <option value="meigeng">樗里子甘茂列传</option>
+            <option value="ranghoulielie">穰侯列传-重复</option>
+          </select>
+          <label class="flex items-center gap-2 text-sm cursor-pointer">
+            <input type="checkbox" id="showRoutes" checked class="accent-[var(--accent)]">
+            <span>显示进军路线</span>
+          </label>
+          <div class="text-xs text-[var(--muted)]" id="locCount"></div>
+        </div>
+        <div id="map" class="map-dark-filter"></div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w-full lg:w-80 space-y-4">
+      <!-- 行军路线面板 -->
+      <div class="panel p-4">
+        <button id="marchRouteToggle" class="march-route-btn" onclick="toggleMarchRoutePanel()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>行军路线</span>
+          <span class="arrow-icon">&#9660;</span>
+        </button>
+        <div id="marchRoutePanel" class="march-route-panel mt-3">
+          <div class="space-y-1" id="marchRouteList"></div>
+          <button id="clearMarchRoutes" class="mt-2 w-full py-1.5 text-xs rounded-md border border-[var(--rule)] hover:bg-[var(--bg2)] transition" style="display:none" onclick="clearAllMarchRoutes()">清除所有路线</button>
+        </div>
+      </div>
+
+      <div class="panel p-5">
+        <h3 class="font-bold serif mb-3">地点列表</h3>
+        <div class="space-y-3" id="locationList"></div>
+      </div>
+
+      <div class="map-legend" style="max-height: 300px; overflow-y: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: var(--bg); z-index: 1; padding-bottom: 8px;">
+          <h3 style="font-weight: 600; font-size: 14px; margin: 0;">篇章图例</h3>
+          <button id="legendToggle" onclick="toggleLegend()" style="background: none; border: 1px solid var(--rule); padding: 2px 8px; cursor: pointer; color: var(--fg);">收起</button>
+        </div>
+        <div id="legendContent">
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B6914]"></span>五帝本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#B8860B]"></span>夏本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#CD7F32]"></span>殷本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#2E8B57]"></span>周本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#20B2AA]"></span>孔子世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#3CB371]"></span>刺客列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#228B22]"></span>廉颇蔺相如列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B0000]"></span>鲁周公世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#800080]"></span>晋世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#006400]"></span>楚世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FF8C00]"></span>赵世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4a4a4a]"></span>秦始皇本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#696969]"></span>陈涉世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#B4462A]"></span>项羽本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4169E1]"></span>高祖本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#6A5ACD]"></span>吕太后本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#2F4F4F]"></span>齐太公世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#556B2F]"></span>管晏列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4682B4]"></span>留侯世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B008B]"></span>淮阴侯列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B5A2B]"></span>孙子吴起列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#A0522D]"></span>白起王翦列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#CD853F]"></span>苏秦列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#DAA520]"></span>张仪列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#6B8E23]"></span>孟子荀卿列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#708090]"></span>匈奴列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#5F9EA0]"></span>李斯列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#008B8B]"></span>蒙恬列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B4513]"></span>魏世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#A52A2A]"></span>韩世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#483D8B]"></span>燕世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#008080]"></span>田敬仲完世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#800000]"></span>吴太伯世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#D2691E]"></span>郑世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#B22222]"></span>宋微子世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#9932CC]"></span>卫康叔世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#6495ED]"></span>范雎蔡泽列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#DC143C]"></span>乐毅列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#1E90FF]"></span>屈原贾生列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FF6347]"></span>吕不韦列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4B0082]"></span>秦本纪</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#9400D3]"></span>蔡世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FF1493]"></span>曹世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#00CED1]"></span>陈杞世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FF4500]"></span>外戚世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#7FFFD4]"></span>穰侯列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#F0E68C]"></span>孟尝君列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#DDA0DD]"></span>平原君虞卿列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#98FB98]"></span>春申君列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#F4A460]"></span>田单列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#87CEEB]"></span>鲁仲连邹阳列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FFB6C1]"></span>郦生陆贾列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#B0C4DE]"></span>张丞相列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FFD700]"></span>刘敬叔孙通列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#FF69B4]"></span>袁盎晁错列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#2F4F4F]"></span>萧相国世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#556B2F]"></span>曹相国世家</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B008B]"></span>淮南衡山济北王列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#698B22]"></span>循吏列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B0000]"></span>酷吏列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#B8860B]"></span>大宛列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#A52A2A]"></span>游侠列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#CD5C5C]"></span>佞幸列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#20B2AA]"></span>滑稽列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#778899]"></span>日者列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#BDB76B]"></span>龟策列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#DAA520]"></span>货殖列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#8B5A2B]"></span>孙子吴起列传-重复</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4169E1]"></span>伍子胥列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#228B22]"></span>仲尼弟子列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#4A6741]"></span>商君列传-重复</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#CD853F]"></span>苏秦列传-重复</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#DAA520]"></span>张仪列传-重复</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#708090]"></span>樗里子甘茂列传</div>
+        <div class="map-legend-item"><span class="legend-dot bg-[#6495ED]"></span>穰侯列传-重复</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleLegend() {
+  var content = document.getElementById('legendContent');
+  var btn = document.getElementById('legendToggle');
+  if (content.style.display === 'none') {
+    content.style.display = '';
+    btn.textContent = '收起';
+  } else {
+    content.style.display = 'none';
+    btn.textContent = '展开';
+  }
+}
+
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+let allData = {}, map, markers = [], routeLayers = [], currentChapter = 'all';
+
+function showError(msg) {
+  document.getElementById('map').innerHTML = '<div class="text-center text-[var(--accent)] py-20">' + msg + '</div>';
+}
+
+async function loadData() {
+  try {
+    const [locations, events] = await Promise.all([
+      fetch('data/locations.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/events.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; })
+    ]);
+    allData = { locations, events };
+
+    const params = new URLSearchParams(location.search);
+    const ch = params.get('chapter') || localStorage.getItem('selectedChapter') || 'all';
+    currentChapter = ch;
+    document.getElementById('chapterSelect').value = ch;
+
+    initMap();
+    render();
+  } catch (e) {
+    console.error(e);
+    showError('数据加载失败，请刷新页面重试');
+  }
+}
+
+function initMap() {
+  map = L.map('map').setView([35.0, 110.0], 5);
+  L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+    subdomains: ['1','2','3','4'],
+    attribution: '高德地图',
+    maxZoom: 18
+  }).addTo(map);
+}
+
+function getFilteredLocs() {
+  let locs = allData.locations;
+  if (currentChapter !== 'all') locs = locs.filter(l => l.chapter === currentChapter);
+  return locs;
+}
+
+function render() {
+  const locs = getFilteredLocs();
+  document.getElementById('locCount').textContent = `共 ${locs.length} 个地点`;
+
+  // Clear markers
+  markers.forEach(m => map.removeLayer(m));
+  markers = [];
+
+  // Clear routes
+  routeLayers.forEach(l => map.removeLayer(l));
+  routeLayers = [];
+
+  const colorMap = { wudi: '#8B6914', xia: '#B8860B', yin: '#CD7F32', zhou: '#2E8B57', kongzi: '#20B2AA', cike: '#3CB371', lianpo: '#228B22', wuyue: '#8B4513', shangjun: '#4A6741', weigongzi: '#6B4226', qinshi: '#4a4a4a', cheshe: '#696969', xiangyu: '#B4462A', gaozu: '#4169E1', lvhou: '#6A5ACD', liguang: '#4A6FA5', qitaigong: '#2F4F4F', guanyan: '#556B2F', liuhou: '#4682B4', huaiyinhou: '#8B008B', lu: '#8B0000', jin: '#800080', chu: '#006400', zhao: '#FF8C00', sunwuzi: '#8B5A2B', baiqiwangjian: '#A0522D', suqin: '#CD853F', zhangyi: '#DAA520', mengzi_xunzi: '#6B8E23', xiongnu: '#708090', lisi: '#5F9EA0', mengtian: '#008B8B', wei: '#8B4513', han: '#A52A2A', yan: '#483D8B', tianqi: '#008080', wutaibo: '#800000', zheng: '#D2691E', song: '#B22222', wei_kangshu: '#9932CC', fanju_caize: '#6495ED', yueyi: '#DC143C', quyuan_jiasheng: '#1E90FF', lvbuwei: '#FF6347', qin_benji: '#4B0082', cai: '#9400D3', cao: '#FF1493', chenqi: '#00CED1', waiqi: '#FF4500', ranghou: '#7FFFD4', mengchangjun: '#F0E68C', pingyuanjun: '#DDA0DD', chunshenjun: '#98FB98', tiandan: '#F4A460', luzhonglian: '#87CEEB', lisheng_lujia: '#FFB6C1', zhangchengxiang: '#B0C4DE', liujing_shusuntong: '#FFD700', yuanang_chaocuo: '#FF69B4' , xiaowen: '#556B2F', xiaojing: '#8FBC8F', xiaowu: '#CD5C5C', liangxiaowang: '#DEB887', wuzong: '#D2B48C', sanwang: '#BC8F8F', jibu_luanbu: '#778899', fengtang: '#708090', wanshi: '#BDB76B', tianshu: '#8B8378', bianque: '#20B2AA', wuwangbi: '#CD5C5C', weiqi_wuanhou: '#9370DB', hanchangru: '#6B8E23', weijiangjun: '#B22222', pingjinhou: '#A0522D', nanyue: '#2E8B57', dongyue: '#3CB371', chaoxian: '#4682B4', xinanyi: '#5F9EA0', xiaochu: '#2F4F4F', caoxiangguo: '#556B2F', huainan_hengshan_jishan: '#8B008B', qianhouchushu: '#698B22', lihai_zhichun: '#8B0000', dayuanyoushi: '#B8860B', youyu: '#A52A2A', hongyan: '#CD5C5C', shiji_jingzhong: '#20B2AA', rizhualie: '#778899', guice_lielie: '#BDB76B', huozhilie: '#DAA520', sunzi_wuqi: '#8B5A2B', wuzilie: '#4169E1', zhonglishu: '#228B22', shangjunlie: '#4A6741', suqinlie: '#CD853F', zhangyilie: '#DAA520', meigeng: '#708090', ranghoulielie: '#6495ED'
+, heiqi_juliang_lie: '#A0522D', mengchang_lie: '#F0E68C', pingyuan_lie: '#DDA0DD', chunshen_lie: '#98FB98', fan_ju_lie: '#6495ED', yueyi_lie: '#DC143C', lian_po_lin_xiangru_lie: '#228B22', tian_dan_lie: '#F4A460', lu_zhonglian_lie: '#87CEEB', li_jia_shu: '#FFB6C1', liang_qi_lie: '#FFD700', quyuan_jiasheng_lie: '#1E90FF', lv_buwei_lie: '#FF6347', ci_ke_lie: '#3CB371', li_silie: '#5F9EA0', meng_tian_lie: '#008B8B', peng_yue_lie: '#8B4513', ying_bu_lie: '#A52A2A', huaiyin_hou_lie: '#8B008B', xin_qi_lie: '#6B4226', yue_wang_goujian_lie: '#8B4513', zheng_shi_lie: '#B0C4DE', yuan_ang_chao_cuo_lie: '#FF69B4', banyuan_lie: '#20B2AA', wu_wang_bi_lie: '#CD5C5C', weiqi_wuanhou_lie: '#9370DB', li_ji_lian_po_lie: '#4A6FA5', huo_zhi_lie: '#DAA520', tai_shi_gong: '#800080', he_shu: '#4682B4', pingzhun_shu: '#2E8B57', fengshan_shu: '#CD7F32'
+};
+
+  // Track coordinates to avoid overlapping markers
+  const coordCounts = {};
+
+  locs.forEach(loc => {
+    const key = `${loc.lat.toFixed(3)},${loc.lng.toFixed(3)}`;
+    const count = coordCounts[key] || 0;
+    coordCounts[key] = count + 1;
+
+    // Apply spiral offset for overlapping markers
+    let lat = loc.lat;
+    let lng = loc.lng;
+    if (count > 0) {
+      const angle = count * 0.8; // radians
+      const radius = 0.03 * Math.sqrt(count); // degrees (~3km at this latitude)
+      lat += radius * Math.cos(angle);
+      lng += radius * Math.sin(angle) / Math.cos(lat * Math.PI / 180);
+    }
+
+    const color = colorMap[loc.chapter] || '#8B7E6A';
+    const marker = L.circleMarker([lat, lng], {
+      radius: 10,
+      fillColor: color,
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.85
+    }).addTo(map);
+
+    const events = allData.events.filter(e => e.locationId === loc.id);
+    const popup = `
+      <div class="min-w-[200px]">
+        <h3 class="font-bold serif text-base mb-1" style="color:${color}">${esc(loc.name)}</h3>
+        <p class="text-xs mb-2" style="color:var(--muted)">今：${esc(loc.modernName)}</p>
+        <p class="text-sm mb-2" style="color:var(--ink)">${esc(loc.description)}</p>
+        <div class="text-xs" style="color:var(--muted)">相关事件：</div>
+        <div class="space-y-1 mt-1">
+          ${events.map(e => `<div class="text-sm font-medium" style="color:var(--ink)">${e.date} · ${e.name}</div>`).join('')}
+        </div>
+      </div>
+    `;
+    marker.bindPopup(popup);
+    marker._locId = loc.id; // store original location id
+    markers.push(marker);
+  });
+
+  if (markers.length) {
+    const group = new L.featureGroup(markers);
+    map.fitBounds(group.getBounds().pad(0.2));
+  }
+
+  // Draw routes
+  if (document.getElementById('showRoutes').checked) {
+    drawRoutes();
+  }
+
+  // Sidebar list
+  document.getElementById('locationList').innerHTML = locs.map(loc => {
+    const color = colorMap[loc.chapter] || '#8B7E6A';
+    return `
+      <div class="p-3 rounded-lg border border-[var(--rule)] hover:bg-[var(--bg)] cursor-pointer transition" onclick="focusLoc('${loc.id}')">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 rounded-full" style="background:${color}"></span>
+          <span class="font-bold text-sm">${esc(loc.name)}</span>
+          <span class="text-xs text-[var(--muted)]">今${esc(loc.modernName)}</span>
+        </div>
+        <p class="text-xs text-[var(--muted)] line-clamp-2">${esc(loc.description)}</p>
+      </div>
+    `;
+  }).join('');
+}
+
+function focusLoc(id) {
+  const loc = allData.locations.find(l => l.id === id);
+  if (loc) {
+    map.setView([loc.lat, loc.lng], 8);
+    markers.forEach(m => {
+      if (m._locId === id) {
+        m.openPopup();
+      }
+    });
+  }
+}
+
+document.getElementById('chapterSelect').addEventListener('change', e => {
+  currentChapter = e.target.value;
+  render();
+});
+
+// Filter out "-重复" options from dropdown and hide corresponding legend items
+document.querySelectorAll('#chapterSelect option').forEach(function(opt) {
+  if (opt.value !== 'all' && opt.textContent.endsWith('-重复')) {
+    opt.style.display = 'none';
+    // Also hide the corresponding legend item with same text
+    var legendItems = document.querySelectorAll('.map-legend-item');
+    legendItems.forEach(function(item) {
+      if (item.textContent.trim() === opt.textContent) {
+        item.style.display = 'none';
+      }
+    });
+  }
+});
+
+document.getElementById('showRoutes').addEventListener('change', () => {
+  routeLayers.forEach(l => map.removeLayer(l));
+  routeLayers = [];
+  if (document.getElementById('showRoutes').checked) drawRoutes();
+});
+
+function drawRoutes() {
+  // 项羽进军路线: 会稽 -> 巨鹿 -> 鸿门 -> 咸阳 -> 彭城 -> 垓下 -> 乌江
+  const xiangyuRoute = [
+    { id: 'kuaiji', name: '会稽起兵', year: '前209年' },
+    { id: 'julu', name: '巨鹿之战', year: '前207年' },
+    { id: 'hongmen', name: '鸿门宴', year: '前206年' },
+    { id: 'xianyang', name: '入咸阳', year: '前206年' },
+    { id: 'pengcheng', name: '彭城之战', year: '前205年' },
+    { id: 'gaixia', name: '垓下之围', year: '前202年' },
+    { id: 'wujiang', name: '乌江自刎', year: '前202年' }
+  ];
+
+  // 廉颇蔺相如路线: 邯郸 -> 秦国(完璧) -> 渑池 -> 邯郸(负荆) -> 长平
+  const lianpoRoute = [
+    { id: 'handan', name: '赵国都城', year: '前283年' },
+    { id: 'qin', name: '完璧归赵', year: '前283年' },
+    { id: 'miandian', name: '渑池之会', year: '前279年' },
+    { id: 'handan', name: '负荆请罪', year: '前279年' },
+    { id: 'changping', name: '长平之战', year: '前260年' }
+  ];
+
+  // Helper: draw a route polyline and unique numbered markers
+  function drawChapterRoute(route, color, routeName) {
+    const locs = route.map(r => allData.locations.find(l => l.id === r.id)).filter(Boolean);
+    if (locs.length < 2) return;
+
+    const latlngs = locs.map(l => [l.lat, l.lng]);
+    const polyline = L.polyline(latlngs, {
+      color, weight: 3, opacity: 0.7, dashArray: '10, 8',
+      smoothFactor: 1.5
+    }).addTo(map);
+    polyline.bindTooltip(routeName, { permanent: false, direction: 'top' });
+    routeLayers.push(polyline);
+
+    // Deduplicate by location id for markers, keep first occurrence and sequential numbers
+    const seen = new Set();
+    const uniqueMarkers = [];
+    route.forEach(r => {
+      if (!seen.has(r.id)) {
+        seen.add(r.id);
+        uniqueMarkers.push(r);
+      }
+    });
+
+    uniqueMarkers.forEach((r, idx) => {
+      const loc = allData.locations.find(l => l.id === r.id);
+      if (!loc) return;
+
+      // Gather all events at this location
+      const eventsHere = route.filter(x => x.id === r.id);
+      const tooltipLines = eventsHere.map(e => `${e.name} (${e.year})`).join('<br/>');
+
+      const numMarker = L.divIcon({
+        html: `<div style="background:${color};color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3)">${idx + 1}</div>`,
+        iconSize: [22, 22], iconAnchor: [11, 11], className: ''
+      });
+      const m = L.marker([loc.lat, loc.lng], { icon: numMarker }).addTo(map);
+      m.bindTooltip(tooltipLines, { direction: 'right', offset: [12, 0] });
+      routeLayers.push(m);
+    });
+  }
+
+  if (currentChapter === 'all' || currentChapter === 'xiangyu') {
+    drawChapterRoute(xiangyuRoute, '#B4462A', '项羽进军路线');
+  }
+  if (currentChapter === 'all' || currentChapter === 'lianpo') {
+    drawChapterRoute(lianpoRoute, '#5B7B5A', '廉颇蔺相如路线');
+  }
+}
+
+loadData();
+
+/* ===== 行军路线功能 ===== */
+const marchRoutes = [
+  {
+    name: '秦始皇统一六国',
+    description: '秦王嬴政从咸阳出发，先后灭韩、赵、魏、楚、齐，完成统一大业',
+    color: '#8B0000',
+    points: [
+      { lat: 34.26, lng: 108.94, label: '咸阳（秦都）' },
+      { lat: 34.75, lng: 113.65, label: '韩（公元前230年）' },
+      { lat: 34.45, lng: 114.85, label: '赵（公元前228年）' },
+      { lat: 34.80, lng: 117.18, label: '魏（公元前225年）' },
+      { lat: 30.35, lng: 114.30, label: '楚（公元前223年）' },
+      { lat: 36.70, lng: 117.00, label: '齐（公元前221年）' },
+      { lat: 31.30, lng: 120.60, label: '越（公元前222年）' },
+    ]
+  },
+  {
+    name: '刘邦入关中',
+    description: '刘邦率军从彭城西进，经宛城、武关、蓝田，最终率先入咸阳',
+    color: '#4169E1',
+    points: [
+      { lat: 34.25, lng: 117.18, label: '彭城' },
+      { lat: 34.50, lng: 112.45, label: '宛城' },
+      { lat: 33.78, lng: 111.90, label: '武关' },
+      { lat: 33.95, lng: 107.80, label: '蓝田' },
+      { lat: 34.26, lng: 108.94, label: '咸阳' },
+    ]
+  },
+  {
+    name: '项羽北上救赵',
+    description: '项羽率楚军北上渡河，破釜沉舟，于巨鹿大败秦军',
+    color: '#B4462A',
+    points: [
+      { lat: 32.05, lng: 118.78, label: '彭城' },
+      { lat: 35.30, lng: 115.45, label: '安阳' },
+      { lat: 36.58, lng: 114.50, label: '巨鹿' },
+    ]
+  }
+];
+
+let marchRouteLayers = [];      // 存放所有行军路线图层（polyline + markers）
+let marchRouteAnimations = [];   // 存放动画定时器
+let activeMarchRoutes = new Set();
+
+// 初始化行军路线面板
+function initMarchRoutePanel() {
+  const listEl = document.getElementById('marchRouteList');
+  listEl.innerHTML = marchRoutes.map((route, idx) => `
+    <label class="march-route-checkbox" data-idx="${idx}">
+      <input type="checkbox" value="${idx}" onchange="onMarchRouteToggle(${idx}, this.checked)">
+      <span class="march-route-color-bar" style="background:${route.color}"></span>
+      <span>${route.name}</span>
+    </label>
+  `).join('');
+}
+
+// 切换行军路线面板展开/收起
+function toggleMarchRoutePanel() {
+  const panel = document.getElementById('marchRoutePanel');
+  const btn = document.getElementById('marchRouteToggle');
+  panel.classList.toggle('open');
+  btn.classList.toggle('active');
+}
+
+// 复选框切换事件
+function onMarchRouteToggle(idx, checked) {
+  if (checked) {
+    activeMarchRoutes.add(idx);
+    addMarchRoute(idx);
+  } else {
+    activeMarchRoutes.delete(idx);
+    removeMarchRoute(idx);
+  }
+  updateClearButton();
+}
+
+// 添加一条行军路线到地图
+function addMarchRoute(idx) {
+  const route = marchRoutes[idx];
+  const latlngs = route.points.map(p => [p.lat, p.lng]);
+
+  // 创建虚线 polyline
+  const polyline = L.polyline(latlngs, {
+    color: route.color,
+    weight: 3,
+    dashArray: '10, 10',
+    opacity: 0.85
+  }).addTo(map);
+
+  // 绑定路线详情 popup
+  polyline.bindPopup(`
+    <div style="min-width:180px">
+      <h3 style="font-weight:bold;color:${route.color};margin-bottom:4px;font-size:14px">${route.name}</h3>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:6px">${route.description}</p>
+      <div style="font-size:11px;color:var(--muted)">共 ${route.points.length} 个节点</div>
+    </div>
+  `);
+
+  marchRouteLayers.push({ idx, type: 'polyline', layer: polyline });
+
+  // 启动流动动画
+  const animId = startDashAnimation(polyline);
+  marchRouteAnimations.push({ idx, intervalId: animId, polyline });
+
+  // 添加节点标记
+  route.points.forEach((p, pIdx) => {
+    const nodeMarker = L.circleMarker([p.lat, p.lng], {
+      radius: 6,
+      color: route.color,
+      fillColor: '#fff',
+      fillOpacity: 0.9,
+      weight: 2
+    }).addTo(map);
+
+    const stepInfo = pIdx === 0
+      ? '<span style="color:var(--muted);font-size:11px">起点</span>'
+      : pIdx === route.points.length - 1
+        ? '<span style="color:var(--muted);font-size:11px">终点</span>'
+        : `<span style="color:var(--muted);font-size:11px">第${pIdx + 1}站</span>`;
+
+    nodeMarker.bindPopup(`
+      <div style="min-width:120px">
+        <div style="font-weight:bold;font-size:13px;margin-bottom:2px">${p.label}</div>
+        ${stepInfo}
+      </div>
+    `);
+    marchRouteLayers.push({ idx, type: 'marker', layer: nodeMarker });
+  });
+}
+
+// 使用定时器驱动虚线流动动画
+function startDashAnimation(polyline) {
+  let offset = 0;
+  const intervalId = setInterval(() => {
+    offset = (offset + 1) % 20;
+    const el = polyline.getElement();
+    if (el) {
+      el.style.strokeDashoffset = -offset;
+    }
+  }, 80);
+  return intervalId;
+}
+
+// 移除一条行军路线
+function removeMarchRoute(idx) {
+  // 移除图层
+  marchRouteLayers = marchRouteLayers.filter(item => {
+    if (item.idx === idx) {
+      map.removeLayer(item.layer);
+      return false;
+    }
+    return true;
+  });
+
+  // 移除动画定时器
+  marchRouteAnimations = marchRouteAnimations.filter(item => {
+    if (item.idx === idx) {
+      clearInterval(item.intervalId);
+      return false;
+    }
+    return true;
+  });
+}
+
+// 清除所有行军路线
+function clearAllMarchRoutes() {
+  // 取消所有勾选
+  document.querySelectorAll('#marchRouteList input[type="checkbox"]').forEach(cb => {
+    cb.checked = false;
+  });
+  // 移除所有图层和动画
+  marchRouteLayers.forEach(item => map.removeLayer(item.layer));
+  marchRouteLayers = [];
+  marchRouteAnimations.forEach(item => clearInterval(item.intervalId));
+  marchRouteAnimations = [];
+  activeMarchRoutes.clear();
+  updateClearButton();
+}
+
+// 更新清除按钮的显示状态
+function updateClearButton() {
+  const btn = document.getElementById('clearMarchRoutes');
+  btn.style.display = activeMarchRoutes.size > 0 ? 'block' : 'none';
+}
+
+// 页面加载后初始化面板
+initMarchRoutePanel();
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>

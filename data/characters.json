@@ -1,0 +1,4325 @@
+[
+  {
+    "id": "huangdi",
+    "name": "黄帝",
+    "courtesyName": null,
+    "title": "人文初祖",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2717年 — 约公元前2599年",
+    "identity": "部落联盟首领",
+    "description": "华夏民族的人文初祖，统一华夏部落，征服东夷、九黎族。发明舟车、文字、音律、医药、算数等，被尊为中华文明的开创者。",
+    "traits": [
+      "睿智",
+      "仁德",
+      "勇武",
+      "开创"
+    ],
+    "quotes": [
+      "修德振兵，治五气，艺五种。"
+    ]
+  },
+  {
+    "id": "zhuanxu",
+    "name": "颛顼",
+    "courtesyName": null,
+    "title": "玄帝",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2591年 — 约公元前2493年",
+    "identity": "部落联盟首领",
+    "description": "黄帝之孙，昌意之子。在位期间进行宗教改革，命南正重司天以属神，火正黎司地以属民，使民神不杂。",
+    "traits": [
+      "沉静",
+      "谋略",
+      "远见"
+    ],
+    "quotes": [
+      "静渊以有谋，疏通而知事，养材以任地，载时以象天。"
+    ]
+  },
+  {
+    "id": "diku",
+    "name": "帝喾",
+    "courtesyName": null,
+    "title": "高辛氏",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2480年 — 约公元前2345年",
+    "identity": "部落联盟首领",
+    "description": "黄帝的曾孙，生而神灵，自言其名。普施利物，不私其身。聪以知远，明以察微。顺天之意，知民之急。",
+    "traits": [
+      "仁德",
+      "智慧",
+      "勤政"
+    ],
+    "quotes": [
+      "顺天之义，知民之急，仁而威，惠而信。"
+    ]
+  },
+  {
+    "id": "yao",
+    "name": "尧",
+    "courtesyName": null,
+    "title": "唐尧",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2377年 — 约公元前2259年",
+    "identity": "部落联盟首领",
+    "description": "帝喾之子，仁如天，知如神。制定历法，测定四时。年老时禅让于舜，被后世视为圣明君主的典范。",
+    "traits": [
+      "仁德",
+      "明察",
+      "禅让"
+    ],
+    "quotes": [
+      "咨！尔舜！天之历数在尔躬。"
+    ]
+  },
+  {
+    "id": "shun",
+    "name": "舜",
+    "courtesyName": null,
+    "title": "虞舜",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2287年 — 约公元前2188年",
+    "identity": "部落联盟首领",
+    "description": "以孝闻名，被尧禅让帝位。在位期间巡狩四方，选贤任能，流放四凶。晚年禅让于禹。",
+    "traits": [
+      "孝顺",
+      "明德",
+      "知人善任"
+    ],
+    "quotes": [
+      "弃，黎民始饥，汝后稷，播时百谷。"
+    ]
+  },
+  {
+    "id": "yu_wudi",
+    "name": "大禹",
+    "courtesyName": null,
+    "title": "夏禹",
+    "chapter": "wudi",
+    "period": "上古",
+    "lifespan": "约公元前2123年 — 约公元前2025年",
+    "identity": "部落联盟首领",
+    "description": "因治水有功被舜禅让帝位。三过家门而不入，疏通九河，划定九州。建立夏朝，开创世袭制。",
+    "traits": [
+      "勤勉",
+      "无私",
+      "坚韧"
+    ],
+    "quotes": [
+      "予娶涂山，辛壬癸甲，启呱呱而泣，予弗子，惟荒度土功。"
+    ]
+  },
+  {
+    "id": "qi",
+    "name": "启",
+    "courtesyName": null,
+    "title": "夏启",
+    "chapter": "xia",
+    "period": "夏朝",
+    "lifespan": "约公元前2100年 — 约公元前1985年",
+    "identity": "夏朝第二任君主",
+    "description": "大禹之子，打破禅让制，确立世袭制度。继位后讨伐有扈氏，巩固王权。",
+    "traits": [
+      "果断",
+      "权谋",
+      "开创"
+    ],
+    "quotes": [
+      "用命赏于祖，不用命戮于社。"
+    ]
+  },
+  {
+    "id": "jie",
+    "name": "桀",
+    "courtesyName": null,
+    "title": "夏桀",
+    "chapter": "xia",
+    "period": "夏朝",
+    "lifespan": "约公元前1650年 — 约公元前1600年",
+    "identity": "夏朝末代君主",
+    "description": "夏朝最后一位君主，历史上有名的暴君。荒淫无度，宠爱妹喜，修建倾宫瑶台。被商汤击败，夏朝灭亡。",
+    "traits": [
+      "残暴",
+      "荒淫",
+      "刚愎"
+    ],
+    "quotes": [
+      "吾有天下，如天之有日也。日亡吾乃亡耳。"
+    ]
+  },
+  {
+    "id": "meixi",
+    "name": "妹喜",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "xia",
+    "period": "夏朝",
+    "lifespan": "? — ?",
+    "identity": "夏桀宠妃",
+    "description": "夏桀的宠妃，有施氏之女。因夏桀征伐有施氏，有施氏献妹喜以赎罪。妹喜喜欢听裂缯之声，夏桀便让人撕帛取乐。",
+    "traits": [
+      "美貌",
+      "妖媚"
+    ],
+    "quotes": [
+      "桀宠妺喜，妺喜好闻裂缯之声，为发裂缯，以顺其意。"
+    ]
+  },
+  {
+    "id": "shangtang",
+    "name": "商汤",
+    "courtesyName": null,
+    "title": "成汤",
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "约公元前1600年",
+    "identity": "商朝开国君主",
+    "description": "商族首领，任用伊尹为相，积蓄力量。以'有夏多罪，天命殛之'为号召，在鸣条之战中灭夏，建立商朝。",
+    "traits": [
+      "仁德",
+      "勇武",
+      "知人善任"
+    ],
+    "quotes": [
+      "吾甚武，号曰武王。"
+    ]
+  },
+  {
+    "id": "pangeng",
+    "name": "盘庚",
+    "courtesyName": null,
+    "title": "商王",
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "? — ?",
+    "identity": "商朝中迁都君主",
+    "description": "商朝第十九位君主，为摆脱政治困境和自然灾害，力排众议，将都城从奄迁至殷（今河南安阳），使商朝中兴。",
+    "traits": [
+      "果断",
+      "远见",
+      "坚毅"
+    ],
+    "quotes": [
+      "若涉渊水，予惟往求朕攸济。"
+    ]
+  },
+  {
+    "id": "zhouxin",
+    "name": "纣王",
+    "courtesyName": "受德",
+    "title": "商纣王",
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "约公元前1075年 — 公元前1046年",
+    "identity": "商朝末代君主",
+    "description": "商朝最后一位君主，天资聪颖但荒淫残暴。宠爱妲己，修建鹿台、沙丘台。剖比干之心，囚箕子。在牧野之战中大败，自焚于鹿台。",
+    "traits": [
+      "聪慧",
+      "残暴",
+      "荒淫",
+      "自负"
+    ],
+    "quotes": [
+      "我生不有命在天乎！"
+    ]
+  },
+  {
+    "id": "daji_yin",
+    "name": "妲己",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "? — 公元前1046年",
+    "identity": "商纣王宠妃",
+    "description": "有苏氏之女，纣王征伐有苏氏时所得。美貌绝伦，深得纣王宠爱。与纣王一起荒淫无度，酒池肉林。商亡后被杀。",
+    "traits": [
+      "美貌",
+      "妖媚",
+      "残忍"
+    ],
+    "quotes": [
+      "好酒淫乐，嬖于妇人。爱妲己，妲己之言是从。",
+      "酒池肉林，使男女裸相逐其间。"
+    ]
+  },
+  {
+    "id": "bigan",
+    "name": "比干",
+    "courtesyName": null,
+    "title": "少师",
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "? — 公元前1046年",
+    "identity": "商朝宗室大臣",
+    "description": "商纣王的叔父，官至少师。见纣王无道，强谏三日不去。纣王怒曰：'吾闻圣人心有七窍。'遂剖比干之心。",
+    "traits": [
+      "忠直",
+      "刚烈",
+      "无畏"
+    ],
+    "quotes": [
+      "主过不谏非忠也，畏死不言非勇也。"
+    ]
+  },
+  {
+    "id": "yiyin",
+    "name": "伊尹",
+    "courtesyName": null,
+    "title": "阿衡",
+    "chapter": "yin",
+    "period": "商朝",
+    "lifespan": "约公元前1649年 — 公元前1549年",
+    "identity": "商朝开国名相",
+    "description": "商汤的重要谋士和宰相，辅佐商汤灭夏。后又辅佐外丙、仲壬、太甲。太甲无道，伊尹将其放逐于桐宫，三年后迎回复位。",
+    "traits": [
+      "智慧",
+      "忠诚",
+      "果敢"
+    ],
+    "quotes": [
+      "惟尹躬暨汤，咸有一德。"
+    ]
+  },
+  {
+    "id": "wenwang",
+    "name": "周文王",
+    "courtesyName": "昌",
+    "title": "西伯",
+    "chapter": "zhou",
+    "period": "商末周初",
+    "lifespan": "约公元前1152年 — 公元前1056年",
+    "identity": "周朝奠基者",
+    "description": "姓姬名昌，商末周族首领。被商纣王囚禁于羑里期间演《周易》。礼贤下士，积德行善，为武王伐纣奠定基础。",
+    "traits": [
+      "仁德",
+      "智慧",
+      "隐忍"
+    ],
+    "quotes": [
+      "天视自我民视，天听自我民听。"
+    ]
+  },
+  {
+    "id": "wuwang",
+    "name": "周武王",
+    "courtesyName": "发",
+    "title": "周武王",
+    "chapter": "zhou",
+    "period": "西周",
+    "lifespan": "约公元前1087年 — 公元前1043年",
+    "identity": "西周开国君主",
+    "description": "周文王之子，继位后九年观兵孟津，十一年后率军伐纣，在牧野之战中大败商军，建立周朝。",
+    "traits": [
+      "勇武",
+      "果断",
+      "仁德"
+    ],
+    "quotes": [
+      "纣有臣亿万，惟亿万心；予有臣三千，惟一心。"
+    ]
+  },
+  {
+    "id": "zhougong",
+    "name": "周公",
+    "courtesyName": "旦",
+    "title": "周公",
+    "chapter": "zhou",
+    "period": "西周",
+    "lifespan": "? — 公元前1032年",
+    "identity": "西周政治家",
+    "description": "周文王第四子，周武王之弟。辅佐成王摄政，平定三监之乱，制礼作乐，建立宗法制度和礼乐制度，被尊为儒学先驱。",
+    "traits": [
+      "忠诚",
+      "智慧",
+      "制礼"
+    ],
+    "quotes": [
+      "一沐三捉发，一饭三吐哺。"
+    ]
+  },
+  {
+    "id": "youwang",
+    "name": "周幽王",
+    "courtesyName": "宫涅",
+    "title": "周王",
+    "chapter": "zhou",
+    "period": "西周",
+    "lifespan": "约公元前795年 — 公元前771年",
+    "identity": "西周末代君主",
+    "description": "西周末代君主，宠爱褒姒，为博其一笑而烽火戏诸侯。后申侯联合犬戎攻周，幽王被杀，西周灭亡。",
+    "traits": [
+      "荒淫",
+      "昏庸",
+      "失信"
+    ],
+    "quotes": [
+      "褒姒不好笑，幽王欲其笑万方，故不笑。",
+      "遂废申后及太子，以褒姒为后，伯服为太子。"
+    ]
+  },
+  {
+    "id": "baosi",
+    "name": "褒姒",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhou",
+    "period": "西周",
+    "lifespan": "? — 公元前771年",
+    "identity": "周幽王宠妃",
+    "description": "褒国进献的美女，周幽王极为宠爱。褒姒不爱笑，幽王为博其一笑，烽火戏诸侯。最终导致西周灭亡。",
+    "traits": [
+      "冷艳",
+      "寡言"
+    ],
+    "quotes": [
+      "褒姒不好笑，幽王欲其笑万方，故不笑。"
+    ]
+  },
+  {
+    "id": "jiangtaigong",
+    "name": "姜太公",
+    "courtesyName": "尚",
+    "title": "太公望",
+    "chapter": "zhou",
+    "period": "商末周初",
+    "lifespan": "约公元前1156年 — 约公元前1017年",
+    "identity": "军事家、政治家",
+    "description": "姓姜名尚，字子牙。垂钓渭水遇周文王，被拜为太师。辅佐武王伐纣，封于齐，建立齐国，是齐国的始祖。",
+    "traits": [
+      "智慧",
+      "谋略",
+      "长寿",
+      "隐忍"
+    ],
+    "quotes": [
+      "天下非一人之天下，乃天下之天下也。",
+      "姜太公钓鱼，愿者上钩。"
+    ]
+  },
+  {
+    "id": "qinshihuang",
+    "name": "秦始皇",
+    "courtesyName": null,
+    "title": "始皇帝",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "公元前259年 — 公元前210年",
+    "identity": "秦朝开国皇帝",
+    "description": "嬴政，中国历史上第一位皇帝。统一六国，建立中央集权制度。统一文字、货币、度量衡，修筑长城、驰道。晚年求仙问道，巡游天下时病逝于沙丘。",
+    "traits": [
+      "雄才大略",
+      "残暴",
+      "勤政",
+      "多疑",
+      "机敏"
+    ],
+    "quotes": [
+      "朕为始皇帝，后世以计数，二世三世至于万世，传之无穷。",
+      "嗟乎！岂非天哉！"
+    ]
+  },
+  {
+    "id": "zhaogao",
+    "name": "赵高",
+    "courtesyName": null,
+    "title": "丞相",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "? — 公元前207年",
+    "identity": "秦朝权臣",
+    "description": "秦朝宦官，精通法律。秦始皇死后与李斯合谋篡改遗诏，逼死扶苏，立胡亥为二世皇帝。后杀李斯，独揽大权，又逼死胡亥，立子婴，被子婴诛杀。",
+    "traits": [
+      "狡诈",
+      "残忍",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "lisi_qin",
+    "name": "李斯",
+    "courtesyName": null,
+    "title": "丞相",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "公元前284年 — 公元前208年",
+    "identity": "秦朝丞相",
+    "description": "楚国人，师从荀子。入秦后辅佐秦始皇统一六国，任丞相。主张焚书坑儒、郡县制。秦始皇死后与赵高合谋立胡亥，后被赵高陷害，腰斩于咸阳。",
+    "traits": [
+      "智慧",
+      "权谋",
+      "务实",
+      "悲剧"
+    ],
+    "quotes": [
+      "人之贤不肖，譬如鼠矣，在所自处耳。"
+    ]
+  },
+  {
+    "id": "mengtian",
+    "name": "蒙恬",
+    "courtesyName": null,
+    "title": "将军",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "? — 公元前210年",
+    "identity": "秦朝名将",
+    "description": "秦朝名将，出身将门。北击匈奴，收复河套，修筑长城和驰道。秦始皇死后被赵高、李斯逼迫自杀。",
+    "traits": [
+      "忠勇",
+      "善战",
+      "正直"
+    ],
+    "quotes": [
+      "自吾先人及至子孙，积功信于秦三世矣。"
+    ]
+  },
+  {
+    "id": "fusu",
+    "name": "扶苏",
+    "courtesyName": null,
+    "title": "公子",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "? — 公元前210年",
+    "identity": "秦始皇长子",
+    "description": "秦始皇长子，为人仁厚，因劝谏秦始皇不要坑儒而被派往上郡监蒙恬军。秦始皇死后被赵高、李斯假传遗诏逼令自杀。",
+    "traits": [
+      "仁厚",
+      "正直",
+      "悲剧"
+    ],
+    "quotes": [
+      "天下初定，远方黔首未集，诸生皆诵法孔子，今上皆重法绳之，臣恐天下不安。"
+    ]
+  },
+  {
+    "id": "huhai",
+    "name": "胡亥",
+    "courtesyName": null,
+    "title": "秦二世",
+    "chapter": "qinshi",
+    "period": "秦朝",
+    "lifespan": "公元前230年 — 公元前207年",
+    "identity": "秦朝第二位皇帝",
+    "description": "秦始皇第十八子，在赵高和李斯支持下篡位称帝。在位期间荒淫无道，重用赵高，导致天下大乱，被子婴逼迫自杀。",
+    "traits": [
+      "昏庸",
+      "懦弱",
+      "荒淫"
+    ],
+    "quotes": [
+      "夫人生居世间也，譬如骋六骥过决隙也。",
+      "吾愿丞相及诸大臣各悉力以讨贼。"
+    ]
+  },
+  {
+    "id": "lvzhi",
+    "name": "吕后",
+    "courtesyName": "雉",
+    "title": "高皇后",
+    "chapter": "gaozu",
+    "period": "西汉初年",
+    "lifespan": "公元前241年 — 公元前180年",
+    "identity": "汉高祖皇后",
+    "description": "汉高祖刘邦的皇后，中国历史上第一位临朝称制的女性。辅佐刘邦定天下，刘邦死后掌握朝政，重用吕氏家族。",
+    "traits": [
+      "狠辣",
+      "权谋",
+      "果断"
+    ],
+    "quotes": [
+      "单于不忘弊邑，赐之以书，弊邑恐惧。"
+    ]
+  },
+  {
+    "id": "fanxuai",
+    "name": "樊哙",
+    "courtesyName": null,
+    "title": "舞阳侯",
+    "chapter": "gaozu",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前189年",
+    "identity": "汉初名将",
+    "description": "沛县人，屠狗出身，刘邦的连襟。随刘邦起兵反秦，鸿门宴上闯入营帐，面斥项羽，保护刘邦脱险。汉朝建立后封舞阳侯。",
+    "traits": [
+      "勇猛",
+      "忠直",
+      "粗豪"
+    ],
+    "quotes": [
+      "此迫矣，臣请入，与之同命。"
+    ]
+  },
+  {
+    "id": "zhoubo",
+    "name": "周勃",
+    "courtesyName": null,
+    "title": "绛侯",
+    "chapter": "gaozu",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前169年",
+    "identity": "汉初名将",
+    "description": "沛县人，早年以编织蚕箔为生，兼做吹鼓手。随刘邦起兵，战功卓著。刘邦临终称其'安刘氏者必勃也'。后平定诸吕之乱，迎立汉文帝。",
+    "traits": [
+      "稳重",
+      "忠诚",
+      "善战"
+    ],
+    "quotes": [
+      "吾尝为布衣，然今为将相，岂可忘本乎？"
+    ]
+  },
+  {
+    "id": "caoshen",
+    "name": "曹参",
+    "courtesyName": null,
+    "title": "平阳侯",
+    "chapter": "gaozu",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前190年",
+    "identity": "汉初名相",
+    "description": "沛县人，早年为狱掾。随刘邦起兵，战功仅次于韩信。继萧何为相后，奉行'萧规曹随'，无为而治，使百姓得以休养生息。",
+    "traits": [
+      "务实",
+      "稳重",
+      "善战"
+    ],
+    "quotes": [
+      "萧何为法，顜若画一；曹参代之，守而勿失。"
+    ]
+  },
+  {
+    "id": "guanying",
+    "name": "灌婴",
+    "courtesyName": null,
+    "title": "颍阴侯",
+    "chapter": "gaozu",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前176年",
+    "identity": "汉初名将",
+    "description": "睢阳人，早年以贩卖丝绸为生。随刘邦起兵，率骑兵屡建战功。汉朝建立后参与平定诸吕之乱，官至太尉、丞相。",
+    "traits": [
+      "善战",
+      "忠诚",
+      "谨慎"
+    ],
+    "quotes": [
+      "婴以骑将击项羽，有功，赐爵列侯。"
+    ]
+  },
+  {
+    "id": "qifuren",
+    "name": "戚夫人",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lvhou",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前194年",
+    "identity": "汉高祖宠妃",
+    "description": "刘邦宠妃，以善歌舞闻名。曾一度使刘邦欲废太子刘盈而立其子刘如意。刘邦死后，被吕后断手足、去眼、煇耳、饮哑药，置于厕所中，称为'人彘'。",
+    "traits": [
+      "美貌",
+      "柔弱",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liuruoyi",
+    "name": "刘如意",
+    "courtesyName": null,
+    "title": "赵王",
+    "chapter": "lvhou",
+    "period": "西汉初年",
+    "lifespan": "公元前208年 — 公元前194年",
+    "identity": "汉高祖第三子",
+    "description": "汉高祖刘邦与戚夫人之子，封赵王。深受刘邦喜爱，险些取代刘盈为太子。刘邦死后被吕后毒杀。",
+    "traits": [
+      "年幼",
+      "无辜",
+      "悲剧"
+    ],
+    "quotes": [
+      "此子类我。",
+      "吕后最怨戚夫人及其子赵王如意。"
+    ]
+  },
+  {
+    "id": "chenping",
+    "name": "陈平",
+    "courtesyName": null,
+    "title": "曲逆侯",
+    "chapter": "lvhou",
+    "period": "西汉初年",
+    "lifespan": "? — 公元前178年",
+    "identity": "汉初谋士",
+    "description": "阳武人，早年家贫。先后辅佐魏王咎、项羽，后归刘邦。六出奇计助刘邦定天下。吕后时曲意逢迎，吕后死后与周勃合谋平定诸吕之乱。",
+    "traits": [
+      "智谋",
+      "善变",
+      "权谋"
+    ],
+    "quotes": [
+      "我多阴谋，是道家之所禁。"
+    ]
+  },
+  {
+    "id": "liheng",
+    "name": "刘恒",
+    "courtesyName": null,
+    "title": "汉文帝",
+    "chapter": "lvhou",
+    "period": "西汉初年",
+    "lifespan": "公元前203年 — 公元前157年",
+    "identity": "西汉第五位皇帝",
+    "description": "汉高祖刘邦第四子，封代王。诸吕之乱后被周勃、陈平迎立为帝，是为汉文帝。在位期间推行轻徭薄赋，开创'文景之治'。",
+    "traits": [
+      "仁厚",
+      "节俭",
+      "明智"
+    ],
+    "quotes": [
+      "夫农，天下之本也。"
+    ]
+  },
+  {
+    "id": "kongzi",
+    "name": "孔子",
+    "courtesyName": "丘",
+    "title": "至圣先师",
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "公元前551年 — 公元前479年",
+    "identity": "思想家、教育家、儒家创始人",
+    "description": "名丘字仲尼，鲁国陬邑人。创办私学，周游列国传播仁义之道。整理《诗》《书》《礼》《乐》《易》《春秋》，被后世尊为'万世师表'。",
+    "traits": [
+      "仁德",
+      "博学",
+      "坚韧",
+      "诲人不倦"
+    ],
+    "quotes": [
+      "三人行，必有我师焉。",
+      "己所不欲，勿施于人。",
+      "知之为知之，不知为不知，是知也。"
+    ]
+  },
+  {
+    "id": "yanhui",
+    "name": "颜回",
+    "courtesyName": "子渊",
+    "title": "复圣",
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "公元前521年 — 公元前481年",
+    "identity": "孔子弟子",
+    "description": "孔子最得意的弟子，以德行著称。一箪食一瓢饮在陋巷，不改其乐。孔子赞曰：'贤哉回也！'不幸早逝，孔子悲痛欲绝。",
+    "traits": [
+      "好学",
+      "安贫乐道",
+      "仁德"
+    ],
+    "quotes": [
+      "仰之弥高，钻之弥坚。"
+    ]
+  },
+  {
+    "id": "zilu",
+    "name": "子路",
+    "courtesyName": "仲由",
+    "title": null,
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "公元前542年 — 公元前480年",
+    "identity": "孔子弟子",
+    "description": "孔子弟子中性格最为刚直勇猛的一位。为人豪爽，喜勇好斗。仕于卫国，在卫国内乱中结缨正冠而死。",
+    "traits": [
+      "勇猛",
+      "刚直",
+      "豪爽"
+    ],
+    "quotes": [
+      "君子死，冠不免。"
+    ]
+  },
+  {
+    "id": "zigong",
+    "name": "子贡",
+    "courtesyName": "端木赐",
+    "title": null,
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "公元前520年 — 公元前456年",
+    "identity": "孔子弟子",
+    "description": "孔子弟子中以言语和经商才能著称。善于外交辞令，曾游说齐、吴、越、晋等国，存鲁乱齐破吴强晋而霸越。经商致富，是儒商的鼻祖。",
+    "traits": [
+      "善辩",
+      "精明",
+      "忠诚"
+    ],
+    "quotes": [
+      "夫子之文章，可得而闻也；夫子之言性与天道，不可得而闻也。"
+    ]
+  },
+  {
+    "id": "ludinggong",
+    "name": "鲁定公",
+    "courtesyName": "宋",
+    "title": "鲁君",
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前495年",
+    "identity": "鲁国国君",
+    "description": "鲁国国君，在位期间任用孔子为司寇，摄行相事。后听信季桓子之言，疏远孔子，孔子遂周游列国。",
+    "traits": [
+      "平庸",
+      "优柔"
+    ],
+    "quotes": [
+      "孔子由大司寇行摄相事，与闻国政三月。"
+    ]
+  },
+  {
+    "id": "qijinggong",
+    "name": "齐景公",
+    "courtesyName": "杵臼",
+    "title": "齐君",
+    "chapter": "kongzi",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前490年",
+    "identity": "齐国国君",
+    "description": "齐国国君，在位期间国力强盛。曾向孔子问政，孔子答以'君君，臣臣，父父，子子'。虽敬重孔子，但终未任用。",
+    "traits": [
+      "开明",
+      "犹豫"
+    ],
+    "quotes": [
+      "君君，臣臣，父父，子子。",
+      "吾老矣，不能用也。"
+    ]
+  },
+  {
+    "id": "chensheng",
+    "name": "陈胜",
+    "courtesyName": "涉",
+    "title": "张楚王",
+    "chapter": "cheshe",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "农民起义领袖",
+    "description": "阳城人，雇农出身。秦二世元年与吴广在大泽乡发动起义，提出'王侯将相宁有种乎'的口号，建立张楚政权，后被车夫庄贾所杀。",
+    "traits": [
+      "勇敢",
+      "野心",
+      "开创"
+    ],
+    "quotes": [
+      "王侯将相宁有种乎！",
+      "燕雀安知鸿鹄之志哉！"
+    ]
+  },
+  {
+    "id": "wuguang",
+    "name": "吴广",
+    "courtesyName": "叔",
+    "title": "假王",
+    "chapter": "cheshe",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "农民起义领袖",
+    "description": "阳夏人，与陈胜一同被征发戍守渔阳。因大雨受阻，与陈胜共谋起义。被陈胜任命为假王，率部西征，后被部将田臧所杀。",
+    "traits": [
+      "勇敢",
+      "忠诚",
+      "朴实"
+    ],
+    "quotes": [
+      "今亡亦死，举大计亦死，等死，死国可乎？",
+      "公等遇雨，皆已失期，失期当斩。"
+    ]
+  },
+  {
+    "id": "geying",
+    "name": "葛婴",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cheshe",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "起义军将领",
+    "description": "陈胜部将，奉命攻略蕲县以东。到达东城后立襄强为楚王，后听说陈胜已自立为王，便杀了襄强回报陈胜，被陈胜处死。",
+    "traits": [
+      "忠诚",
+      "悲剧"
+    ],
+    "quotes": [
+      "葛婴至东城，立襄强为楚王。后闻陈胜已立，乃杀襄强还报。"
+    ]
+  },
+  {
+    "id": "wuchen",
+    "name": "武臣",
+    "courtesyName": null,
+    "title": "赵王",
+    "chapter": "cheshe",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "起义军将领",
+    "description": "陈县人，原陈胜部将。奉陈胜命与张耳、陈馀北上攻略赵地，后在邯郸自立为赵王，脱离张楚政权。后被部将李良所杀。",
+    "traits": [
+      "野心",
+      "背叛"
+    ],
+    "quotes": [
+      "陈胜王，非能立赵武臣为赵王者也。"
+    ]
+  },
+  {
+    "id": "tiancang",
+    "name": "田臧",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cheshe",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "起义军将领",
+    "description": "吴广部将，因与吴广军事意见不合，假称陈胜之命杀了吴广，并将吴广首级送与陈胜。陈胜被迫任命田臧为上将，后田臧战死。",
+    "traits": [
+      "刚愎",
+      "残忍"
+    ],
+    "quotes": [
+      "田臧乃矫称陈王命，杀吴广。"
+    ]
+  },
+  {
+    "id": "jingke",
+    "name": "荆轲",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cike",
+    "period": "战国末期",
+    "lifespan": "? — 公元前227年",
+    "identity": "刺客",
+    "description": "卫国人，战国末期著名刺客。受燕太子丹之托，携樊於期首级和督亢地图入秦刺杀秦王政。图穷匕见，行刺失败，被秦王所杀。",
+    "traits": [
+      "勇敢",
+      "悲壮",
+      "重诺"
+    ],
+    "quotes": [
+      "风萧萧兮易水寒，壮士一去兮不复还！"
+    ]
+  },
+  {
+    "id": "taizidan",
+    "name": "太子丹",
+    "courtesyName": null,
+    "title": "燕太子",
+    "chapter": "cike",
+    "period": "战国末期",
+    "lifespan": "? — 公元前226年",
+    "identity": "燕国太子",
+    "description": "燕王喜之子，早年在赵国为人质，与嬴政友善。嬴政即位后，太子丹在秦为人质，受辱后逃归燕国。因恐惧秦国攻燕，策划荆轲刺秦。",
+    "traits": [
+      "勇敢",
+      "焦虑",
+      "重义"
+    ],
+    "quotes": [
+      "秦王之遇燕太子丹不善，故丹怨而亡归。"
+    ]
+  },
+  {
+    "id": "gaojianli",
+    "name": "高渐离",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cike",
+    "period": "战国末期",
+    "lifespan": "? — 公元前221年",
+    "identity": "乐师",
+    "description": "燕国人，擅长击筑，是荆轲的好友。荆轲刺秦失败后，高渐离隐姓埋名为人做雇工。后因击筑技艺高超被秦始皇召入宫中，以筑击秦始皇未遂，被杀。",
+    "traits": [
+      "忠义",
+      "才艺",
+      "悲壮"
+    ],
+    "quotes": [
+      "风萧萧兮易水寒，壮士一去兮不复还！",
+      "荆轲和而歌，为变徵之声，士皆垂泪涕泣。"
+    ]
+  },
+  {
+    "id": "tianguang",
+    "name": "田光",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cike",
+    "period": "战国末期",
+    "lifespan": "? — 公元前227年",
+    "identity": "燕国处士",
+    "description": "燕国处士，年老家贫，智勇双全。太子丹通过他结识荆轲。田光向太子丹推荐荆轲后，为表明不泄露机密，自刎而死。",
+    "traits": [
+      "忠义",
+      "守信",
+      "悲壮"
+    ],
+    "quotes": [
+      "夫为行而使人疑之，非节侠也。"
+    ]
+  },
+  {
+    "id": "zhuanzhu",
+    "name": "专诸",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cike",
+    "period": "春秋",
+    "lifespan": "? — 公元前515年",
+    "identity": "刺客",
+    "description": "春秋时期吴国刺客。受伍子胥推荐给公子光，将匕首藏于鱼腹中，在宴席上刺杀吴王僚，成功后当场被杀。鱼肠剑典故的由来。",
+    "traits": [
+      "义勇",
+      "忠诚"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "wangliao",
+    "name": "吴王僚",
+    "courtesyName": null,
+    "title": "吴王",
+    "chapter": "cike",
+    "period": "春秋",
+    "lifespan": "? — 公元前515年",
+    "identity": "吴国君主",
+    "description": "吴国国君，吴王夷昧之子。公子光（阖闾）设宴刺杀他，专诸以鱼肠剑将其刺死。",
+    "traits": [],
+    "quotes": []
+  },
+  {
+    "id": "qinwuyang",
+    "name": "秦舞阳",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cike",
+    "period": "战国末期",
+    "lifespan": "? — ?",
+    "identity": "燕国勇士",
+    "description": "燕国少年勇士，十二岁杀人，人不敢忤视。被燕太子丹选为荆轲副手，随荆轲入秦刺杀秦王。在秦王大殿上却面白如死、浑身发抖，暴露了刺杀意图。",
+    "traits": [
+      "勇猛",
+      "临阵变色"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "lianpo",
+    "name": "廉颇",
+    "courtesyName": null,
+    "title": "信平君",
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "公元前327年 — 公元前243年",
+    "identity": "赵国名将",
+    "description": "赵国杰出的军事家，与白起、王翦、李牧并称'战国四大名将'。勇猛善战，多次击败齐、魏等国。晚年因郭开谗言不被赵王重用，先后投奔魏国和楚国，最终死于楚地。",
+    "traits": [
+      "勇猛",
+      "善战",
+      "忠直",
+      "负气"
+    ],
+    "quotes": [
+      "我见相如，必辱之。",
+      "我思用赵人。"
+    ]
+  },
+  {
+    "id": "linxiangru",
+    "name": "蔺相如",
+    "courtesyName": null,
+    "title": "上卿",
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "公元前329年 — 公元前259年",
+    "identity": "赵国政治家、外交家",
+    "description": "赵国著名的政治家和外交家，原为宦者令舍人。完璧归赵展现智慧和勇气，渑池之会维护赵国尊严，与廉颇'将相和'传为千古美谈。",
+    "traits": [
+      "智慧",
+      "勇敢",
+      "大度",
+      "以国为重"
+    ],
+    "quotes": [
+      "先国家之急而后私仇也。",
+      "完璧归赵。"
+    ]
+  },
+  {
+    "id": "zhaowang",
+    "name": "赵惠文王",
+    "courtesyName": null,
+    "title": "赵王",
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "公元前310年 — 公元前266年",
+    "identity": "赵国君主",
+    "description": "赵国国君，在位期间任用廉颇、蔺相如等贤臣良将，赵国国力达到鼎盛。秦国企图以十五城换和氏璧，赵王犹豫不决。",
+    "traits": [
+      "谨慎",
+      "善用人",
+      "明理"
+    ],
+    "quotes": [
+      "璧不可得，城不可与。"
+    ]
+  },
+  {
+    "id": "zhaoshe",
+    "name": "赵奢",
+    "courtesyName": null,
+    "title": "马服君",
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "? — ?",
+    "identity": "赵国将领",
+    "description": "赵国名将，赵括之父。善于用兵，曾大破秦军。对儿子赵括只会纸上谈兵深感忧虑。",
+    "traits": [
+      "善战",
+      "有远见"
+    ],
+    "quotes": [
+      "兵，死地也，而括易言之。"
+    ]
+  },
+  {
+    "id": "zhaokuo",
+    "name": "赵括",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "? — 公元前260年",
+    "identity": "赵国将领",
+    "description": "赵奢之子，自幼熟读兵书，但缺乏实战经验。长平之战中代替廉颇为将，只会'纸上谈兵'，导致赵军大败，四十万赵军被坑杀。",
+    "traits": [
+      "空谈",
+      "自负",
+      "缺乏经验"
+    ],
+    "quotes": [
+      "赵括徒能读其父书传，不知合变也。"
+    ]
+  },
+  {
+    "id": "limu",
+    "name": "李牧",
+    "courtesyName": null,
+    "title": "武安君",
+    "chapter": "lianpo",
+    "period": "战国末期",
+    "lifespan": "? — 公元前229年",
+    "identity": "赵国名将",
+    "description": "赵国后期名将，与廉颇齐名。长期驻守北方，抵御匈奴。后来秦国攻赵，李牧率军抵抗，因秦反间计被赵王杀害。",
+    "traits": [
+      "善战",
+      "忠诚",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "xiangyu",
+    "name": "项羽",
+    "courtesyName": "籍",
+    "title": "西楚霸王",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前232年 — 公元前202年",
+    "identity": "军事家、政治家",
+    "description": "楚国名将项燕之孙，勇猛过人，力能扛鼎。起兵反秦，巨鹿之战大破秦军，后自称西楚霸王。性格刚愎自用，不善用人，最终在楚汉争霸中败于刘邦，乌江自刎。",
+    "traits": [
+      "勇猛",
+      "刚愎",
+      "重情义",
+      "不善用人"
+    ],
+    "quotes": [
+      "彼可取而代也。",
+      "力拔山兮气盖世，时不利兮骓不逝。",
+      "此天之亡我，非战之罪也。"
+    ]
+  },
+  {
+    "id": "liubang",
+    "name": "刘邦",
+    "courtesyName": "季",
+    "title": "汉高祖",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前256年 — 公元前195年",
+    "identity": "政治家、汉朝开国皇帝",
+    "description": "沛县丰邑人，原为秦朝亭长。趁秦末大乱起兵，善于用人，最终击败项羽建立汉朝。为人豁达大度，知人善任。",
+    "traits": [
+      "豁达",
+      "善用人",
+      "机变",
+      "务实"
+    ],
+    "quotes": [
+      "夫运筹策帷帐之中，决胜于千里之外，吾不如子房。"
+    ]
+  },
+  {
+    "id": "fanzeng",
+    "name": "范增",
+    "courtesyName": null,
+    "title": "亚父",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前277年 — 公元前204年",
+    "identity": "谋士",
+    "description": "项羽的主要谋士，被尊称为'亚父'。主张在鸿门宴上杀掉刘邦，但项羽未从。后因刘邦反间计，被项羽猜忌，辞官归乡，途中病死。",
+    "traits": [
+      "老谋深算",
+      "忠诚",
+      "刚直"
+    ],
+    "quotes": [
+      "竖子不足与谋！"
+    ]
+  },
+  {
+    "id": "yuji",
+    "name": "虞姬",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "? — 公元前202年",
+    "identity": "项羽爱姬",
+    "description": "项羽宠爱的美人，随军征战多年。垓下之围时，项羽悲歌'虞兮虞兮奈若何'，虞姬自刎殉情。",
+    "traits": [
+      "忠贞",
+      "刚烈",
+      "美丽"
+    ],
+    "quotes": [
+      "汉兵已略地，四方楚歌声；大王意气尽，贱妾何聊生。"
+    ]
+  },
+  {
+    "id": "zhanghan",
+    "name": "章邯",
+    "courtesyName": null,
+    "title": "雍王",
+    "chapter": "xiangyu",
+    "period": "秦末",
+    "lifespan": "? — 公元前205年",
+    "identity": "秦朝将领/诸侯王",
+    "description": "秦朝末年名将，曾镇压陈胜吴广起义。巨鹿之战败于项羽后投降，被封为雍王。后在楚汉战争中被韩信击败，自杀。",
+    "traits": [
+      "善战",
+      "无奈",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hanxin",
+    "name": "韩信",
+    "courtesyName": null,
+    "title": "淮阴侯",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前231年 — 公元前196年",
+    "identity": "军事家",
+    "description": "汉初三杰之一，被誉为'兵仙'。早年穷困潦倒，后投奔刘邦，屡建奇功。垓下之战指挥联军围困项羽，为汉朝建立立下汗马功劳。",
+    "traits": [
+      "智谋",
+      "忍辱",
+      "军事天才"
+    ],
+    "quotes": [
+      "胯下之辱",
+      "韩信点兵，多多益善"
+    ]
+  },
+  {
+    "id": "zhangliang",
+    "name": "张良",
+    "courtesyName": "子房",
+    "title": "留侯",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前250年 — 公元前186年",
+    "identity": "谋士",
+    "description": "汉初三杰之一，出身韩国贵族。精通兵法谋略，辅佐刘邦运筹帷幄。鸿门宴上巧妙周旋，救刘邦于危难。汉朝建立后功成身退，修道养生。",
+    "traits": [
+      "智慧",
+      "淡泊",
+      "谋略过人"
+    ],
+    "quotes": [
+      "运筹策帷帐之中，决胜于千里之外。"
+    ]
+  },
+  {
+    "id": "xiaobao",
+    "name": "萧何",
+    "courtesyName": null,
+    "title": "相国",
+    "chapter": "xiangyu",
+    "period": "楚汉相争",
+    "lifespan": "公元前257年 — 公元前193年",
+    "identity": "政治家",
+    "description": "汉初三杰之一，刘邦的得力助手。负责后方粮草供应和政务管理，保障刘邦前线作战。月下追韩信，力荐韩信为大将。",
+    "traits": [
+      "稳重",
+      "勤政",
+      "识人"
+    ],
+    "quotes": [
+      "国士无双"
+    ]
+  },
+  {
+    "id": "xiangliang",
+    "name": "项梁",
+    "courtesyName": null,
+    "title": "武信君",
+    "chapter": "xiangyu",
+    "period": "秦末",
+    "lifespan": "? — 公元前208年",
+    "identity": "反秦义军领袖",
+    "description": "项羽的叔父，楚国名将项燕之子。起兵反秦，拥立楚怀王，屡败秦军。后在定陶之战中轻敌战死。",
+    "traits": [
+      "勇猛",
+      "急躁",
+      "忠义"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "songyi",
+    "name": "宋义",
+    "courtesyName": null,
+    "title": "卿子冠军",
+    "chapter": "xiangyu",
+    "period": "秦末",
+    "lifespan": "? — 公元前207年",
+    "identity": "楚军将领",
+    "description": "楚怀王任命的上将军，号'卿子冠军'。率军救赵时畏敌不前，被项羽斩杀夺权。",
+    "traits": [
+      "怯懦",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "goujian",
+    "name": "勾践",
+    "courtesyName": null,
+    "title": "越王",
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "约公元前520年 — 约公元前465年",
+    "identity": "越国君主",
+    "description": "越国国君，曾被吴王夫差打败，被迫入吴为奴三年。回国后卧薪尝胆，励精图治，最终灭吴复仇，成为春秋最后一位霸主。",
+    "traits": [
+      "坚忍",
+      "谋略",
+      "忍辱负重"
+    ],
+    "quotes": [
+      "十年生聚，十年教训。"
+    ]
+  },
+  {
+    "id": "fuchai",
+    "name": "夫差",
+    "courtesyName": null,
+    "title": "吴王",
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前473年",
+    "identity": "吴国君主",
+    "description": "吴国国君，吴王阖闾之子。大败越国后骄傲自满，不听伍子胥忠谏。最终被勾践所灭，自刎而死。",
+    "traits": [
+      "勇猛",
+      "骄傲",
+      "刚愎"
+    ],
+    "quotes": [
+      "寡人将赐死伍子胥。"
+    ]
+  },
+  {
+    "id": "fanli",
+    "name": "范蠡",
+    "courtesyName": null,
+    "title": "陶朱公",
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "? — ?",
+    "identity": "越国谋士",
+    "description": "越国大夫，辅佐勾践灭吴。功成后急流勇退，携西施泛舟五湖。后经商致富，被尊为商圣。",
+    "traits": [
+      "智慧",
+      "机敏",
+      "知进退"
+    ],
+    "quotes": [
+      "飞鸟尽，良弓藏；狡兔死，走狗烹。"
+    ]
+  },
+  {
+    "id": "wenzhong",
+    "name": "文种",
+    "courtesyName": null,
+    "title": "大夫",
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前472年",
+    "identity": "越国大夫",
+    "description": "越国大夫，与范蠡共同辅佐勾践。灭吴后范蠡劝他离去，他不听，后被勾践赐剑自杀。",
+    "traits": [
+      "忠诚",
+      "智慧",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "xishi",
+    "name": "西施",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "? — ?",
+    "identity": "越国美女",
+    "description": "中国古代四大美女之一。越王勾践为麻痹夫差，将西施献给吴王。吴国灭亡后，传说与范蠡泛舟而去。",
+    "traits": [
+      "美貌",
+      "智慧",
+      "牺牲"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "wuzixu",
+    "name": "伍子胥",
+    "courtesyName": null,
+    "title": "相国",
+    "chapter": "wuyue",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前484年",
+    "identity": "吴国大臣",
+    "description": "楚国大夫伍奢之子，因父兄被楚平王杀害而投奔吴国。辅佐吴王阖闾和夫差，多次劝谏夫差灭越，不被采纳，后被赐死。",
+    "traits": [
+      "忠直",
+      "刚烈",
+      "谋略"
+    ],
+    "quotes": [
+      "胥闻之，必取吾眼置之吴东门，以观越兵之入也。"
+    ]
+  },
+  {
+    "id": "shangyang",
+    "name": "商鞅",
+    "courtesyName": null,
+    "title": "商君",
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "约公元前390年 — 公元前338年",
+    "identity": "政治家、改革家",
+    "description": "卫国公子，姓公孙名鞅，后封于商，故称商鞅。在秦孝公支持下推行变法，使秦国迅速强大。孝公死后被旧贵族陷害，车裂而死。",
+    "traits": [
+      "果决",
+      "智慧",
+      "冷酷",
+      "务实",
+      "改革",
+      "法治",
+      "才能"
+    ],
+    "quotes": [
+      "治世不一道，便国不法古。"
+    ]
+  },
+  {
+    "id": "qinxiaogong",
+    "name": "秦孝公",
+    "courtesyName": null,
+    "title": "秦王",
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "公元前381年 — 公元前338年",
+    "identity": "秦国君主",
+    "description": "秦国国君，发布求贤令，任用商鞅变法。在位期间秦国国力大增，为日后统一六国奠定基础。",
+    "traits": [
+      "开明",
+      "果断",
+      "远见"
+    ],
+    "quotes": [
+      "宾客群臣有能出奇计强秦者，吾且尊官，与之分土。"
+    ]
+  },
+  {
+    "id": "gongziqian",
+    "name": "公子虔",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "? — ?",
+    "identity": "秦国贵族",
+    "description": "秦孝公太子驷的师傅，因太子犯法而被商鞅处以劓刑。秦孝公死后，与旧贵族合谋，导致商鞅被车裂。",
+    "traits": [
+      "怨恨",
+      "保守"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "ganlong",
+    "name": "甘龙",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "? — ?",
+    "identity": "秦国贵族",
+    "description": "秦国旧贵族代表，反对商鞅变法，主张'法古无过，循礼无邪'。与商鞅展开激烈辩论。",
+    "traits": [
+      "保守",
+      "顽固"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "jingjian",
+    "name": "景监",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "? — ?",
+    "identity": "秦国宠臣",
+    "description": "秦孝公的宠臣，引荐商鞅给秦孝公，为商鞅变法铺平了道路。",
+    "traits": [
+      "识人",
+      "善荐"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhaoliang_shang",
+    "name": "赵良",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shangjun",
+    "period": "战国中期",
+    "lifespan": "? — ?",
+    "identity": "秦国隐士",
+    "description": "秦国隐士，曾劝商鞅不要锋芒太露，应归还封地、急流勇退。商鞅不听，最终被害。",
+    "traits": [
+      "明智",
+      "明哲保身"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "xinlingjun",
+    "name": "信陵君",
+    "courtesyName": "无忌",
+    "title": "魏公子",
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — 公元前243年",
+    "identity": "魏国公子",
+    "description": "魏昭王少子，战国四公子之首。礼贤下士，门下食客三千。窃符救赵，击败秦军，威震天下。后因遭魏王猜忌，郁郁而终。",
+    "traits": [
+      "仁德",
+      "侠义",
+      "智慧",
+      "礼贤下士"
+    ],
+    "quotes": [
+      "公子所以重于赵，名闻诸侯者，徒以有魏也。"
+    ]
+  },
+  {
+    "id": "houying",
+    "name": "侯嬴",
+    "courtesyName": null,
+    "title": "夷门监者",
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — 公元前257年",
+    "identity": "魏国隐士",
+    "description": "魏国隐士，年七十，为大梁夷门监者。信陵君亲自驾车迎接，拜为上客。后献计窃符救赵，并在信陵君出发后北向自刎以明志。",
+    "traits": [
+      "忠义",
+      "智慧",
+      "悲壮"
+    ],
+    "quotes": [
+      "北乡自刭以送公子。"
+    ]
+  },
+  {
+    "id": "zhuhai",
+    "name": "朱亥",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — ?",
+    "identity": "魏国力士",
+    "description": "魏国市井力士，与侯嬴相识。随信陵君救赵，以四十斤铁椎椎杀晋鄙，夺取兵权。后功成，信陵君不敢归魏，朱亥亦留赵。",
+    "traits": [
+      "勇猛",
+      "忠义",
+      "豪爽"
+    ],
+    "quotes": [
+      "公子诚一开口请如姬，如姬必许诺。"
+    ]
+  },
+  {
+    "id": "ruji",
+    "name": "如姬",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — ?",
+    "identity": "魏王宠姬",
+    "description": "魏安釐王的宠姬。信陵君曾为她报杀父之仇，她感恩图报，从魏王卧室内窃得兵符，助信陵君救赵。",
+    "traits": [
+      "感恩",
+      "勇敢",
+      "机智"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weiwang",
+    "name": "魏王",
+    "courtesyName": null,
+    "title": "魏安釐王",
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — 公元前227年",
+    "identity": "魏国君主",
+    "description": "魏国国君，信陵君的兄长。因嫉妒信陵君威名，不肯发兵救赵。信陵君窃符救赵后，对信陵君猜忌更深。",
+    "traits": [
+      "猜忌",
+      "懦弱",
+      "保守"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "pingyuanjun",
+    "name": "平原君",
+    "courtesyName": null,
+    "title": "赵公子",
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — 公元前251年",
+    "identity": "赵国公子",
+    "description": "赵惠文王之弟，战国四公子之一。长平之战后秦军围邯郸，他向魏国和楚国求救，信陵君窃符救赵解了邯郸之围。",
+    "traits": [
+      "贤德",
+      "好客",
+      "优柔"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "maosui",
+    "name": "毛遂",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "weigongzi",
+    "period": "战国末期",
+    "lifespan": "? — ?",
+    "identity": "赵国食客",
+    "description": "平原君门下食客，自荐随平原君赴楚求救。在楚国朝堂上按剑而谈，说服楚王合纵抗秦。",
+    "traits": [
+      "勇敢",
+      "自信",
+      "善辩"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liguang",
+    "name": "李广",
+    "courtesyName": null,
+    "title": "飞将军",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "? — 公元前119年",
+    "identity": "西汉名将",
+    "description": "陇西成纪人，西汉名将。一生与匈奴作战七十余次，箭术高超，被匈奴称为'飞将军'。爱护士兵，深受部下爱戴。但终生未能封侯，漠北之战中迷路失期，不愿受辱而引刀自刎。",
+    "traits": [
+      "勇猛",
+      "箭术高超",
+      "爱兵如子",
+      "悲剧"
+    ],
+    "quotes": [
+      "广结发与匈奴大小七十余战。"
+    ]
+  },
+  {
+    "id": "xiongnuchanyu",
+    "name": "匈奴单于",
+    "courtesyName": null,
+    "title": "单于",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "匈奴首领",
+    "description": "匈奴各部落的最高首领，与李广多次交战。闻李广驻守右北平，数年不敢入侵。",
+    "traits": [
+      "勇猛",
+      "狡猾"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weiqing",
+    "name": "卫青",
+    "courtesyName": null,
+    "title": "大将军",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "? — 公元前106年",
+    "identity": "西汉名将",
+    "description": "汉武帝时期大将，皇后卫子夫之弟。多次率军出击匈奴，战功赫赫，封大司马大将军。漠北之战时任主帅。",
+    "traits": [
+      "谨慎",
+      "善战",
+      "稳重"
+    ],
+    "quotes": [
+      "臣幸得待罪行间，赖陛下神灵，匈奴败走，臣何以功为？"
+    ]
+  },
+  {
+    "id": "huoqubing",
+    "name": "霍去病",
+    "courtesyName": null,
+    "title": "骠骑将军",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "公元前140年 — 公元前117年",
+    "identity": "西汉名将",
+    "description": "卫青外甥，少年英雄。多次率军深入漠北大败匈奴，封狼居胥，功勋卓著。可惜英年早逝。",
+    "traits": [
+      "勇猛",
+      "少年英雄",
+      "果敢"
+    ],
+    "quotes": [
+      "匈奴未灭，无以家为也。"
+    ]
+  },
+  {
+    "id": "ligan",
+    "name": "李敢",
+    "courtesyName": null,
+    "title": "关内侯",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "? — 公元前118年",
+    "identity": "西汉将领",
+    "description": "李广之子，因父亲之死怨恨卫青，打伤卫青。后被霍去病射杀。",
+    "traits": [
+      "勇猛",
+      "冲动",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hanwudi",
+    "name": "汉武帝",
+    "courtesyName": null,
+    "title": "皇帝",
+    "chapter": "liguang",
+    "period": "西汉",
+    "lifespan": "公元前156年 — 公元前87年",
+    "identity": "西汉皇帝",
+    "description": "西汉第七位皇帝，在位期间大举对匈奴用兵，开拓疆土。任用卫青、霍去病等名将，但对李广不够重用。",
+    "traits": [
+      "雄才大略",
+      "好大喜功",
+      "多疑"
+    ],
+    "quotes": [
+      "寇可往，我亦可往。",
+      "朕即国家，天下一统。"
+    ]
+  },
+  {
+    "id": "qihuangong",
+    "name": "齐桓公",
+    "courtesyName": null,
+    "title": "春秋首霸",
+    "chapter": "qitaigong",
+    "period": "春秋",
+    "lifespan": "? — 公元前643年",
+    "identity": "齐国君主",
+    "description": "齐国第十六位国君，春秋五霸之首。任用管仲为相，实行改革，提出'尊王攘夷'口号，九合诸侯，一匡天下。",
+    "traits": [
+      "雄才大略",
+      "知人善任",
+      "晚年昏庸"
+    ],
+    "quotes": [
+      "寡人将立管仲为仲父，善者入门，不善者屏之。",
+      "寡人之有仲父也，犹飞鸟之有羽翼也。"
+    ]
+  },
+  {
+    "id": "baoshuya",
+    "name": "鲍叔牙",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "qitaigong",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "齐国大夫",
+    "description": "齐国大夫，管仲的挚友。向齐桓公力荐管仲，甘居其下。后人以'管鲍之交'形容深厚友谊。",
+    "traits": [
+      "知人",
+      "大度",
+      "荐贤"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "guanzhong",
+    "name": "管仲",
+    "courtesyName": "夷吾",
+    "title": "仲父",
+    "chapter": "guanyan",
+    "period": "春秋",
+    "lifespan": "约公元前723年 — 公元前645年",
+    "identity": "政治家",
+    "description": "颍上人，春秋时期齐国名相。辅佐齐桓公称霸，实行'相地而衰征'、军政合一等改革。被孔子赞为'微管仲，吾其被发左衽矣'。",
+    "traits": [
+      "智慧",
+      "务实",
+      "改革"
+    ],
+    "quotes": [
+      "仓廪实而知礼节，衣食足而知荣辱。"
+    ]
+  },
+  {
+    "id": "yanzi",
+    "name": "晏婴",
+    "courtesyName": "仲",
+    "title": "晏子",
+    "chapter": "guanyan",
+    "period": "春秋",
+    "lifespan": "? — 公元前500年",
+    "identity": "政治家",
+    "description": "齐国大夫，历仕齐灵公、庄公、景公三朝。以机智善辩、节俭力行著称，身高不足六尺却闻名诸侯。",
+    "traits": [
+      "机智",
+      "善辩",
+      "节俭"
+    ],
+    "quotes": [
+      "橘生淮南则为橘，生于淮北则为枳。"
+    ]
+  },
+  {
+    "id": "huangshigong",
+    "name": "黄石公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "liuhou",
+    "period": "秦末",
+    "lifespan": "? — ?",
+    "identity": "隐士",
+    "description": "秦末隐士，在圯桥传授张良《太公兵法》。传说即道教神仙赤松子。",
+    "traits": [
+      "神秘",
+      "智慧",
+      "识人"
+    ],
+    "quotes": [
+      "读此则为王者师。"
+    ]
+  },
+  {
+    "id": "kuitong",
+    "name": "蒯通",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "huaiyinhou",
+    "period": "西汉初年",
+    "lifespan": "? — ?",
+    "identity": "辩士",
+    "description": "范阳人，辩士。韩信平定齐地后，蒯通劝韩信自立为王，与刘邦、项羽三分天下。韩信不听，后深感后悔。",
+    "traits": [
+      "机智",
+      "善辩",
+      "远见"
+    ],
+    "quotes": [
+      "勇略震主者身危，而功盖天下者不赏。"
+    ]
+  },
+  {
+    "id": "zhouchengwang",
+    "name": "周成王",
+    "courtesyName": "诵",
+    "title": "周王",
+    "chapter": "lu",
+    "period": "西周",
+    "lifespan": "约公元前1055年 — 公元前1021年",
+    "identity": "周朝君主",
+    "description": "周武王之子，年幼即位，由周公摄政。周公归政后，成王励精图治，开创'成康之治'。",
+    "traits": [
+      "年幼",
+      "谨慎",
+      "贤明"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "boqin",
+    "name": "伯禽",
+    "courtesyName": null,
+    "title": "鲁公",
+    "chapter": "lu",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "鲁国始祖",
+    "description": "周公长子，受封于鲁，建立鲁国。他坚持周礼治国，使鲁国成为保存周礼最完整的诸侯国。",
+    "traits": [
+      "守礼",
+      "勤勉"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "caomo",
+    "name": "曹沫",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lu",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "鲁国勇士",
+    "description": "鲁国勇士，在与齐国会盟时，持匕首劫持齐桓公，迫使齐国归还侵占的鲁国土地。",
+    "traits": [
+      "勇猛",
+      "忠义",
+      "胆识过人"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "jinwengong",
+    "name": "晋文公",
+    "courtesyName": "重耳",
+    "title": "春秋五霸",
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "公元前697年 — 公元前628年",
+    "identity": "晋国君主",
+    "description": "晋国国君，春秋五霸之一。因骊姬之乱流亡十九年，历经磨难。后在秦穆公帮助下回国即位，通过城濮之战大败楚国，成为霸主。",
+    "traits": [
+      "坚韧",
+      "雄才大略",
+      "知恩图报",
+      "善于用人"
+    ],
+    "quotes": [
+      "民之情伪，虽未达吾心，犹当退而察之。"
+    ]
+  },
+  {
+    "id": "jiezitui",
+    "name": "介子推",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "? — 公元前636年",
+    "identity": "晋国忠臣",
+    "description": "晋国大夫，跟随晋文公流亡十九年。在重耳饥饿时割下自己大腿的肉煮汤给他吃。重耳回国后，介子推不求功名，携母隐居介山。晋文公放火烧山逼他出山，介子推抱树而死。",
+    "traits": [
+      "忠诚",
+      "清高",
+      "牺牲"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "huyan",
+    "name": "狐偃",
+    "courtesyName": "子犯",
+    "title": null,
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "晋国大臣",
+    "description": "晋文公的舅舅，跟随重耳流亡十九年，是重耳的重要谋士。在城濮之战中出谋划策，助晋文公称霸。",
+    "traits": [
+      "智慧",
+      "忠诚",
+      "谋略"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "jinxiangong",
+    "name": "晋献公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "? — 公元前651年",
+    "identity": "晋国君主",
+    "description": "晋国国君，晋文公之父。在位期间晋国国力大增，但晚年宠爱骊姬，逼死太子申生，迫使重耳、夷吾流亡，导致晋国内乱。",
+    "traits": [
+      "雄才",
+      "晚年昏庸",
+      "多疑"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liji",
+    "name": "骊姬",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "? — 公元前651年",
+    "identity": "晋献公宠妃",
+    "description": "骊戎之女，晋献公的宠妃。设计陷害太子申生，逼死申生，迫使重耳、夷吾流亡，引发晋国内乱。",
+    "traits": [
+      "美貌",
+      "狠毒",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chuzhuangwang",
+    "name": "楚庄王",
+    "courtesyName": "侣",
+    "title": "春秋五霸",
+    "chapter": "chu",
+    "period": "春秋",
+    "lifespan": "? — 公元前591年",
+    "identity": "楚国君主",
+    "description": "楚国国君，春秋五霸之一。即位后三年不鸣，一鸣惊人。在邲之战中大败晋国，问鼎中原，成为春秋霸主。",
+    "traits": [
+      "隐忍",
+      "雄才大略",
+      "霸气"
+    ],
+    "quotes": [
+      "不飞则已，一飞冲天；不鸣则已，一鸣惊人。"
+    ]
+  },
+  {
+    "id": "sunshuao",
+    "name": "孙叔敖",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chu",
+    "period": "春秋",
+    "lifespan": "? — 公元前593年",
+    "identity": "楚国令尹",
+    "description": "楚国名相，辅佐楚庄王称霸。主持修建芍陂，发展农业，使楚国国力大增。生活清廉，死后家无余财。",
+    "traits": [
+      "清廉",
+      "智慧",
+      "实干"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chuhuaiwang",
+    "name": "楚怀王",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chu",
+    "period": "战国",
+    "lifespan": "? — 公元前296年",
+    "identity": "楚国君主",
+    "description": "楚国国君，任用屈原进行改革。后被张仪欺骗，与齐国断交，被骗入秦国囚禁而死。",
+    "traits": [
+      "昏庸",
+      "多疑",
+      "悲剧"
+    ],
+    "quotes": [
+      "奈何以万乘之国而受欺于客。"
+    ]
+  },
+  {
+    "id": "quyuan",
+    "name": "屈原",
+    "courtesyName": "平",
+    "title": "三闾大夫",
+    "chapter": "chu",
+    "period": "战国",
+    "lifespan": "约公元前340年 — 公元前278年",
+    "identity": "诗人、政治家",
+    "description": "楚国贵族，中国历史上最伟大的爱国诗人。创作《离骚》《九歌》等不朽诗篇。因楚国被秦国攻破，绝望中投汨罗江而死。端午节即源于纪念屈原。",
+    "traits": [
+      "忠贞",
+      "才华",
+      "忧国忧民",
+      "理想主义"
+    ],
+    "quotes": [
+      "路漫漫其修远兮，吾将上下而求索。"
+    ]
+  },
+  {
+    "id": "xiongyi",
+    "name": "熊绎",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chu",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "楚国始祖",
+    "description": "芈姓熊氏，周成王时被封于楚地，建立楚国。楚国从此开始数百年的发展历程。",
+    "traits": [
+      "开拓",
+      "坚韧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhaowulingwang",
+    "name": "赵武灵王",
+    "courtesyName": "雍",
+    "title": null,
+    "chapter": "zhao",
+    "period": "战国",
+    "lifespan": "约公元前340年 — 公元前295年",
+    "identity": "赵国君主",
+    "description": "赵国国君，推行'胡服骑射'改革，学习北方游牧民族的服饰和骑射技术，使赵国军事力量大增，成为战国强国。",
+    "traits": [
+      "改革",
+      "勇猛",
+      "远见"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhaodun",
+    "name": "赵盾",
+    "courtesyName": "宣子",
+    "title": null,
+    "chapter": "zhao",
+    "period": "春秋",
+    "lifespan": "? — 公元前601年",
+    "identity": "晋国大臣",
+    "description": "晋国正卿，赵氏宗主。因直言进谏触怒晋灵公，晋灵公派刺客鉏麑刺杀他。鉏麑见其忠勤不忍下手，触槐而死。",
+    "traits": [
+      "忠直",
+      "勤勉",
+      "威严"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chengying",
+    "name": "程婴",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhao",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "晋国义士",
+    "description": "晋国大夫赵朔的门客。赵氏被灭族后，程婴与公孙杵臼合谋，用自己的儿子替换赵氏孤儿，忍辱负重十五年，最终将赵氏孤儿抚养长大，为赵氏报仇。",
+    "traits": [
+      "忠义",
+      "牺牲",
+      "坚韧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "gongsunchujiu",
+    "name": "公孙杵臼",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhao",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "晋国义士",
+    "description": "晋国大夫赵朔的门客。与程婴合谋保护赵氏孤儿，自己假扮藏匿孤儿之人，被屠岸贾杀害，以保护真正的赵氏孤儿。",
+    "traits": [
+      "忠义",
+      "牺牲",
+      "勇敢"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chuchengwang",
+    "name": "楚成王",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chu",
+    "period": "春秋",
+    "lifespan": "? — 公元前626年",
+    "identity": "楚国君主",
+    "description": "楚国国君，在城濮之战中被晋文公大败。后被太子商臣逼迫自杀。",
+    "traits": [
+      "勇猛",
+      "晚年悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chupingwang",
+    "name": "楚平王",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chu",
+    "period": "春秋",
+    "lifespan": "? — 公元前516年",
+    "identity": "楚国君主",
+    "description": "楚国国君，听信费无忌谗言，杀害伍子胥父兄，导致伍子胥逃亡吴国。",
+    "traits": [
+      "昏庸",
+      "残忍"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhaoxiangzi",
+    "name": "赵襄子",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhao",
+    "period": "战国",
+    "lifespan": "? — 公元前425年",
+    "identity": "晋国大夫",
+    "description": "晋国赵氏宗主，联合韩、魏灭智伯，三家分晋的重要人物。",
+    "traits": [
+      "果断",
+      "谋略"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hankangzi",
+    "name": "韩康子",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jin",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "晋国大夫",
+    "description": "晋国韩氏宗主，与赵襄子、魏桓子联合灭智伯，三家分晋。",
+    "traits": [
+      "谋略",
+      "隐忍"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weihuanzi",
+    "name": "魏桓子",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jin",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "晋国大夫",
+    "description": "晋国魏氏宗主，与赵襄子、韩康子联合灭智伯，三家分晋。",
+    "traits": [
+      "谋略",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tuangjia",
+    "name": "屠岸贾",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhao",
+    "period": "春秋",
+    "lifespan": "? — 公元前583年",
+    "identity": "晋国权臣",
+    "description": "晋国权臣，以'赵氏孤儿'事件闻名。他灭赵氏全族，后被赵氏孤儿报仇诛杀。",
+    "traits": [
+      "狠毒",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "luhuangong",
+    "name": "鲁桓公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lu",
+    "period": "春秋",
+    "lifespan": "? — 公元前694年",
+    "identity": "鲁国君主",
+    "description": "鲁国国君，鲁庄公之父。",
+    "traits": [
+      "平庸"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "luzhuanggong",
+    "name": "鲁庄公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lu",
+    "period": "春秋",
+    "lifespan": "? — 公元前662年",
+    "identity": "鲁国君主",
+    "description": "鲁国国君，曹沫劫持齐桓公时在位。",
+    "traits": [
+      "平庸"
+    ],
+    "quotes": [
+      "曹刿请见，其乡人曰：肉食者谋之，又何间焉。刿曰：肉食者鄙，未能远谋。"
+    ]
+  },
+  {
+    "id": "zhaojianzi",
+    "name": "赵简子",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhao",
+    "period": "春秋",
+    "lifespan": "? — 公元前476年",
+    "identity": "晋国大夫",
+    "description": "晋国赵氏宗主，赵襄子之父，奠定了赵氏在晋国的强大地位。",
+    "traits": [
+      "雄才",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "sunwu",
+    "name": "孙武",
+    "courtesyName": "长卿",
+    "title": "兵圣",
+    "chapter": "sunwuzi",
+    "period": "春秋",
+    "lifespan": "约公元前545年 — 约公元前470年",
+    "identity": "军事家",
+    "description": "字长卿，齐国乐安人。著有《孙子兵法》十三篇，是中国历史上最伟大的军事家。曾以宫女练兵，被吴王阖闾拜为将，助吴破楚。",
+    "traits": [
+      "智慧",
+      "军事天才",
+      "严谨"
+    ],
+    "quotes": [
+      "知己知彼，百战不殆。"
+    ]
+  },
+  {
+    "id": "wuqi",
+    "name": "吴起",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "sunwuzi",
+    "period": "战国",
+    "lifespan": "约公元前440年 — 公元前381年",
+    "identity": "军事家",
+    "description": "卫国左氏人，先后仕鲁、魏、楚三国。在魏国创立武卒制，在楚国推行变法。军事才能卓越，但常遭猜忌，最终被楚国贵族杀害。",
+    "traits": [
+      "军事天才",
+      "改革",
+      "争议",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "sunbin",
+    "name": "孙膑",
+    "courtesyName": null,
+    "title": "兵法家",
+    "chapter": "sunwuzi",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "军事家",
+    "description": "孙武后代，因遭庞涓嫉妒被处以膑刑（砍去双脚）。后逃到齐国，以围魏救赵之计大败庞涓，著有《孙膑兵法》。",
+    "traits": [
+      "智慧",
+      "隐忍",
+      "军事天才",
+      "悲剧"
+    ],
+    "quotes": [
+      "刑足而得以成名，吾何恨乎。"
+    ]
+  },
+  {
+    "id": "pangjuan",
+    "name": "庞涓",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "sunwuzi",
+    "period": "战国",
+    "lifespan": "? — 公元前342年",
+    "identity": "魏国将领",
+    "description": "魏国将领，与孙膑同窗。嫉妒孙膑才华，设计陷害使其受膑刑。后在马陵之战中被孙膑击败自杀。",
+    "traits": [
+      "嫉妒",
+      "才能",
+      "残忍"
+    ],
+    "quotes": [
+      "庞涓恐孙膑之贤于己，乃召之，施以膑刑。"
+    ]
+  },
+  {
+    "id": "helu",
+    "name": "阖闾",
+    "courtesyName": null,
+    "title": "吴王",
+    "chapter": "sunwuzi",
+    "period": "春秋末期",
+    "lifespan": "? — 公元前496年",
+    "identity": "吴国君主",
+    "description": "吴国国君，名光。任用伍子胥、孙武等人，使吴国强大。在孙武辅佐下大败楚国，攻入郢都。后被越王勾践击败。",
+    "traits": [
+      "雄才",
+      "善用人",
+      "果断"
+    ],
+    "quotes": [
+      "我将兵欲以教后宫。"
+    ]
+  },
+  {
+    "id": "baiqi",
+    "name": "白起",
+    "courtesyName": null,
+    "title": "战神",
+    "chapter": "baiqiwangjian",
+    "period": "战国",
+    "lifespan": "? — 公元前257年",
+    "identity": "秦国将领",
+    "description": "秦国名将，一生征战三十七年，未尝败绩。长平之战坑杀赵军四十万，战功赫赫。后因与秦昭王在攻赵策略上分歧，被赐死。",
+    "traits": [
+      "军事天才",
+      "冷酷",
+      "刚烈",
+      "悲剧"
+    ],
+    "quotes": [
+      "始吾不若己也，然今闻之，乃不如也。",
+      "我固当死。长平之战，赵卒降者数十万人，我诈而尽坑之，是足以死。"
+    ]
+  },
+  {
+    "id": "wangjian",
+    "name": "王翦",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "baiqiwangjian",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "秦国将领",
+    "description": "秦国名将，与其子王贲同为秦始皇统一六国的主力。灭赵、燕、楚三国。以六十万大军伐楚，不战而屈人之兵。",
+    "traits": [
+      "老谋深算",
+      "稳重",
+      "善战"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "wangben",
+    "name": "王贲",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "baiqiwangjian",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "秦国将领",
+    "description": "王翦之子，灭魏、燕、齐三国，为秦统一立下大功。",
+    "traits": [
+      "勇猛",
+      "善战"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qinzhaowang",
+    "name": "秦昭襄王",
+    "courtesyName": null,
+    "title": "秦王",
+    "chapter": "baiqiwangjian",
+    "period": "战国",
+    "lifespan": "公元前325年 — 公元前251年",
+    "identity": "秦国君主",
+    "description": "秦国国君，在位56年，是秦国统一六国的奠基人之一。任用白起等名将，大破六国。长平之战坑杀赵军四十万，使秦国确立了绝对优势。",
+    "traits": [
+      "雄才",
+      "远略",
+      "果断"
+    ],
+    "quotes": [
+      "吾闻楚之铁剑利而倡优拙，夫铁剑利则士勇，倡优拙则思虑远。"
+    ]
+  },
+  {
+    "id": "zhaosuhou",
+    "name": "赵肃侯",
+    "courtesyName": null,
+    "title": "赵王",
+    "chapter": "suqin",
+    "period": "战国",
+    "lifespan": "? — 公元前326年",
+    "identity": "赵国君主",
+    "description": "赵国国君，苏秦合纵之策的第一个支持者，任命苏秦为相。",
+    "traits": [
+      "善用人",
+      "果断"
+    ],
+    "quotes": [
+      "寡人年少即位，安能及此？先生纵合，何以教之？"
+    ]
+  },
+  {
+    "id": "suqin",
+    "name": "苏秦",
+    "courtesyName": "季子",
+    "title": "纵约长",
+    "chapter": "suqin",
+    "period": "战国",
+    "lifespan": "? — 公元前284年",
+    "identity": "纵横家",
+    "description": "洛阳人，师从鬼谷子。初出游不利，回家后'锥刺股'发愤读书。后以合纵之策说服六国联合抗秦，身佩六国相印。",
+    "traits": [
+      "雄辩",
+      "坚韧",
+      "野心",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhangyi",
+    "name": "张仪",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "zhangyi",
+    "period": "战国",
+    "lifespan": "? — 公元前310年",
+    "identity": "纵横家",
+    "description": "魏国人，师从鬼谷子。以连横之策瓦解苏秦的合纵联盟，辅佐秦惠文王。善于欺骗利用诸侯，使秦国日益强大。",
+    "traits": [
+      "雄辩",
+      "狡诈",
+      "才能",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qinhuiwenwang",
+    "name": "秦惠文王",
+    "courtesyName": null,
+    "title": "秦王",
+    "chapter": "zhangyi",
+    "period": "战国",
+    "lifespan": "公元前356年 — 公元前311年",
+    "identity": "秦国君主",
+    "description": "秦国国君，任用张仪以连横之策瓦解六国合纵。首位称王的秦国君主，使秦国进一步强大。",
+    "traits": [
+      "善用人",
+      "雄才",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "mengzi",
+    "name": "孟子",
+    "courtesyName": "轲",
+    "title": "亚圣",
+    "chapter": "mengzi_xunzi",
+    "period": "战国",
+    "lifespan": "约公元前372年 — 约公元前289年",
+    "identity": "思想家",
+    "description": "邹国人，孔子之后儒家最重要的代表。主张性善论、仁政王道。游说诸侯不受重用，退而著述，与弟子作《孟子》七篇。",
+    "traits": [
+      "仁德",
+      "雄辩",
+      "坚持",
+      "理想主义"
+    ],
+    "quotes": [
+      "民为贵，社稷次之，君为轻。"
+    ]
+  },
+  {
+    "id": "xunzi",
+    "name": "荀子",
+    "courtesyName": "况",
+    "title": "后圣",
+    "chapter": "mengzi_xunzi",
+    "period": "战国",
+    "lifespan": "约公元前313年 — 约公元前238年",
+    "identity": "思想家",
+    "description": "赵国人，儒家最后的代表人物。主张性恶论，强调后天的学习和教化。其弟子韩非、李斯成为法家代表人物。",
+    "traits": [
+      "务实",
+      "教育",
+      "理性",
+      "博学"
+    ],
+    "quotes": [
+      "人之性恶，其善者伪也。"
+    ]
+  },
+  {
+    "id": "qixuanwang",
+    "name": "齐宣王",
+    "courtesyName": null,
+    "title": "齐王",
+    "chapter": "mengzi_xunzi",
+    "period": "战国",
+    "lifespan": "? — 公元前301年",
+    "identity": "齐国君主",
+    "description": "齐国国君，在位期间齐国国力强盛。孟子曾游说齐宣王推行仁政，但未获重用。",
+    "traits": [
+      "好大喜功",
+      "善辩"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "moduchanyu",
+    "name": "冒顿单于",
+    "courtesyName": null,
+    "title": "单于",
+    "chapter": "xiongnu",
+    "period": "秦末汉初",
+    "lifespan": "公元前234年 — 公元前174年",
+    "identity": "匈奴首领",
+    "description": "匈奴太子，被父亲头曼单于送往月氏为质。后发动政变弑父自立为单于，统一蒙古高原各部，建立强大的匈奴帝国。",
+    "traits": [
+      "雄才",
+      "残暴",
+      "军事天才",
+      "冷酷"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "touman_chanyu",
+    "name": "头曼单于",
+    "courtesyName": null,
+    "title": "单于",
+    "chapter": "xiongnu",
+    "period": "秦末",
+    "lifespan": "? — 公元前209年",
+    "identity": "匈奴首领",
+    "description": "匈奴单于，冒顿之父。因宠爱少子想立为继承人，派冒顿去月氏为质，后出兵攻打月氏想借刀杀人。冒顿逃脱后弑父夺位。",
+    "traits": [
+      "残忍",
+      "昏庸"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "mengyi",
+    "name": "蒙毅",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "mengtian",
+    "period": "秦",
+    "lifespan": "? — 公元前210年",
+    "identity": "秦国大臣",
+    "description": "蒙恬之弟，秦始皇宠信的大臣。为人忠直，后因赵高诬陷被杀。",
+    "traits": [
+      "忠直",
+      "刚烈",
+      "清廉"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weiwenhou",
+    "name": "魏文侯",
+    "courtesyName": null,
+    "title": "魏侯",
+    "chapter": "wei",
+    "period": "战国",
+    "lifespan": "公元前446年 — 公元前396年",
+    "identity": "魏国君主",
+    "description": "魏国开国君主，任用李悝变法，使魏国成为战国初期最强盛的国家。礼贤下士，曾拜卜子夏、段干木为师。",
+    "traits": [
+      "贤明",
+      "善用人",
+      "远见"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weihuiwang",
+    "name": "魏惠王",
+    "courtesyName": null,
+    "title": "魏王",
+    "chapter": "wei",
+    "period": "战国",
+    "lifespan": "公元前400年 — 公元前319年",
+    "identity": "魏国君主",
+    "description": "魏国国君，在位期间魏国国力强盛。曾攻破赵都邯郸，但被齐国的孙膑以围魏救赵之计击败。",
+    "traits": [
+      "雄心",
+      "好战",
+      "刚愎"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "likui",
+    "name": "李悝",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "wei",
+    "period": "战国",
+    "lifespan": "约公元前455年 — 公元前395年",
+    "identity": "政治家",
+    "description": "魏文侯的相国，推行变法，废除世卿世禄制，实行尽地力之教。编制《法经》，是中国古代法家的先驱。",
+    "traits": [
+      "改革",
+      "法治",
+      "务实"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hanzhaohou",
+    "name": "韩昭侯",
+    "courtesyName": null,
+    "title": "韩侯",
+    "chapter": "han",
+    "period": "战国",
+    "lifespan": "? — 公元前333年",
+    "identity": "韩国君主",
+    "description": "韩国国君，任用申不害变法，使韩国一度强盛。申不害为相十五年，国治兵强。",
+    "traits": [
+      "善用人",
+      "改革"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "shenbuhai",
+    "name": "申不害",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "han",
+    "period": "战国",
+    "lifespan": "约公元前385年 — 公元前337年",
+    "identity": "法家思想家",
+    "description": "郑国人，法家代表人物之一。在韩昭侯时任相十五年，推行术治，强调君主驾驭臣下的权术。",
+    "traits": [
+      "权谋",
+      "法治",
+      "务实"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hanfei",
+    "name": "韩非",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "han",
+    "period": "战国",
+    "lifespan": "约公元前280年 — 公元前233年",
+    "identity": "法家集大成者",
+    "description": "韩国贵族，法家思想的集大成者。其学说被秦始皇所推崇，但被李斯嫉妒，在秦国被害。著有《韩非子》。",
+    "traits": [
+      "法治",
+      "权谋",
+      "悲剧",
+      "才华"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "laozi",
+    "name": "老子",
+    "courtesyName": "耳",
+    "title": null,
+    "chapter": "kongzi",
+    "period": "春秋",
+    "lifespan": "约公元前571年 — 约公元前471年",
+    "identity": "道家学派创始人",
+    "description": "道家学派的创始人，著有《道德经》。主张无为而治、道法自然。孔子曾向老子问礼。",
+    "traits": [
+      "智慧",
+      "超脱",
+      "深邃"
+    ],
+    "quotes": [
+      "知人者智，自知者明。"
+    ]
+  },
+  {
+    "id": "zhouchang",
+    "name": "周昌",
+    "courtesyName": null,
+    "title": "汾阴侯",
+    "chapter": "zhangchengxiang",
+    "period": "西汉初年",
+    "lifespan": "? — ?",
+    "identity": "汉初大臣",
+    "description": "汉初大臣，为人刚直，有口吃之症。曾在朝堂上力争反对废太子，说'臣期期……期期……以为不可'，成为'期期艾艾'成语的来源。",
+    "traits": [
+      "刚直",
+      "忠诚",
+      "口吃"
+    ],
+    "quotes": [
+      "臣期期知其不可。"
+    ]
+  },
+  {
+    "id": "yanzhaowang",
+    "name": "燕昭王",
+    "courtesyName": null,
+    "title": "燕王",
+    "chapter": "yan",
+    "period": "战国",
+    "lifespan": "? — 公元前279年",
+    "identity": "燕国君主",
+    "description": "燕国国君，为报齐国破燕之仇，筑黄金台招揽天下人才。任用乐毅为大将，大破齐国七十余城。",
+    "traits": [
+      "忍辱",
+      "求贤",
+      "雄才"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "yanhuiwang",
+    "name": "燕惠王",
+    "courtesyName": null,
+    "title": "燕王",
+    "chapter": "yan",
+    "period": "战国",
+    "lifespan": "? — 公元前272年",
+    "identity": "燕国君主",
+    "description": "燕昭王之子，即位后猜忌乐毅，以骑劫代替乐毅为将。乐毅被迫投奔赵国，齐国趁机反攻。",
+    "traits": [
+      "猜忌",
+      "昏庸"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tianhe",
+    "name": "田和",
+    "courtesyName": null,
+    "title": "齐太公",
+    "chapter": "tianqi",
+    "period": "战国",
+    "lifespan": "? — 公元前384年",
+    "identity": "田齐开国君主",
+    "description": "田氏后代，正式废齐康公自立，建立田齐。田氏代齐标志着齐国进入新的历史时期。",
+    "traits": [
+      "权谋",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qiweiwang",
+    "name": "齐威王",
+    "courtesyName": null,
+    "title": "齐王",
+    "chapter": "tianqi",
+    "period": "战国",
+    "lifespan": "? — 公元前320年",
+    "identity": "齐国君主",
+    "description": "齐国国君，任用邹忌为相，孙膑为将，国力大增。以善于纳谏闻名，齐国成为战国七雄之一。",
+    "traits": [
+      "善用人",
+      "纳谏",
+      "雄才"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qimingwang",
+    "name": "齐湣王",
+    "courtesyName": null,
+    "title": "齐王",
+    "chapter": "tianqi",
+    "period": "战国",
+    "lifespan": "? — 公元前284年",
+    "identity": "齐国君主",
+    "description": "齐国国君，好大喜功，曾联合韩魏攻秦，又灭宋国。后被燕国乐毅率五国联军大破，齐国几乎灭亡。",
+    "traits": [
+      "好战",
+      "贪婪",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "taibo",
+    "name": "太伯",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "wutaibo",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "吴国始祖",
+    "description": "周太王长子，为让位给弟弟季历（周文王之父），与弟仲雍奔荆蛮，建立吴国。孔子赞其至德。",
+    "traits": [
+      "谦让",
+      "仁德",
+      "开创"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhengzhuanggong",
+    "name": "郑庄公",
+    "courtesyName": null,
+    "title": "郑伯",
+    "chapter": "zheng",
+    "period": "春秋",
+    "lifespan": "公元前757年 — 公元前701年",
+    "identity": "郑国君主",
+    "description": "郑国国君，春秋时期第一个霸主。击败周桓王，使周天子威信扫地，开启了诸侯争霸的时代。",
+    "traits": [
+      "雄才",
+      "权谋",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zichan",
+    "name": "子产",
+    "courtesyName": "侨",
+    "title": null,
+    "chapter": "zheng",
+    "period": "春秋",
+    "lifespan": "约公元前582年 — 公元前522年",
+    "identity": "郑国政治家",
+    "description": "郑国执政大夫，推行改革，铸刑书于鼎，是中国历史上第一次公开颁布成文法。以贤明著称。",
+    "traits": [
+      "贤明",
+      "改革",
+      "法治"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "songxianggong",
+    "name": "宋襄公",
+    "courtesyName": null,
+    "title": "宋公",
+    "chapter": "song",
+    "period": "春秋",
+    "lifespan": "? — 公元前637年",
+    "identity": "宋国君主",
+    "description": "宋国国君，春秋五霸之一。以仁义著称，在泓水之战中坚持不击未阵之敌，结果大败。",
+    "traits": [
+      "仁义",
+      "迂腐",
+      "固执"
+    ],
+    "quotes": [
+      "寡人将以仁义行师，岂有半渡而击之理？",
+      "君子不重伤，不禽二毛。"
+    ]
+  },
+  {
+    "id": "songkangwang",
+    "name": "宋康王",
+    "courtesyName": null,
+    "title": "宋王",
+    "chapter": "song",
+    "period": "战国",
+    "lifespan": "? — 公元前286年",
+    "identity": "宋国末代君主",
+    "description": "宋国最后一位君主，暴虐无道，被称为'桀宋'。后被齐、楚、魏三国联合攻灭。",
+    "traits": [
+      "残暴",
+      "狂妄"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weikangshu",
+    "name": "卫康叔",
+    "courtesyName": "封",
+    "title": null,
+    "chapter": "wei_kangshu",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "卫国开国君主",
+    "description": "周武王之弟，受封于卫。卫国是西周最重要的诸侯国之一，延续八百余年。",
+    "traits": [
+      "贤明",
+      "仁德"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "laoai",
+    "name": "嫪毐",
+    "courtesyName": null,
+    "title": "长信侯",
+    "chapter": "lvbuwei",
+    "period": "秦",
+    "lifespan": "? — 公元前238年",
+    "identity": "秦朝权臣",
+    "description": "吕不韦送入后宫冒充宦官，与秦始皇之母赵姬私通，生二子。后发动叛乱，被秦始皇平定，车裂而死。",
+    "traits": [
+      "奸诈",
+      "野心",
+      "狂妄"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "fanju",
+    "name": "范雎",
+    "courtesyName": null,
+    "title": "应侯",
+    "chapter": "fanju_caize",
+    "period": "战国",
+    "lifespan": "? — 公元前255年",
+    "identity": "秦国相国",
+    "description": "魏国人，后被秦昭襄王拜为相国。提出远交近攻之策，帮助秦国制定统一六国的战略。",
+    "traits": [
+      "谋略",
+      "远略",
+      "善辩"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "caize",
+    "name": "蔡泽",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "fanju_caize",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "辩士",
+    "description": "燕国人，以辩才说服范雎让位，自己继任秦国相国。后功成身退。",
+    "traits": [
+      "辩才",
+      "智谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "yueyi",
+    "name": "乐毅",
+    "courtesyName": null,
+    "title": "昌国君",
+    "chapter": "yueyi",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "燕国名将",
+    "description": "燕国名将，受燕昭王重用。率五国联军大破齐国，连下七十余城。后因燕惠王猜忌，投奔赵国。",
+    "traits": [
+      "军事天才",
+      "忠诚",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "jiayi",
+    "name": "贾谊",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "quyuan_jiasheng",
+    "period": "西汉",
+    "lifespan": "公元前200年 — 公元前168年",
+    "identity": "政论家",
+    "description": "洛阳人，西汉著名政论家、文学家。年少有才，被汉文帝召为博士，迁太中大夫。因遭排挤，贬为长沙王太傅。著有《过秦论》《吊屈原赋》等。",
+    "traits": [
+      "才华",
+      "忧国",
+      "悲剧",
+      "早熟"
+    ],
+    "quotes": [
+      "前事不忘，后事之师。"
+    ]
+  },
+  {
+    "id": "lvbuwei",
+    "name": "吕不韦",
+    "courtesyName": null,
+    "title": "文信侯",
+    "chapter": "lvbuwei",
+    "period": "战国至秦",
+    "lifespan": "约公元前292年 — 公元前235年",
+    "identity": "秦国相国",
+    "description": "卫国濮阳人，原为商人。在赵国结识质子异人，助其回国即位为秦庄襄王，被拜为相国。秦始皇即位后，与嫪毐之乱牵连，被贬蜀地，饮鸩而死。",
+    "traits": [
+      "权谋",
+      "商业头脑",
+      "文化",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weizifu",
+    "name": "卫子夫",
+    "courtesyName": null,
+    "title": "皇后",
+    "chapter": "waiqi",
+    "period": "西汉",
+    "lifespan": "? — 公元前91年",
+    "identity": "汉武帝皇后",
+    "description": "汉武帝第二任皇后，卫青之姐。因巫蛊之祸牵连，自杀身亡。",
+    "traits": [
+      "贤淑",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "doutaihou",
+    "name": "窦太后",
+    "courtesyName": null,
+    "title": "太后",
+    "chapter": "waiqi",
+    "period": "西汉",
+    "lifespan": "? — 公元前135年",
+    "identity": "汉文帝皇后",
+    "description": "汉文帝皇后，汉武帝的祖母。崇尚黄老之学，对西汉前期的政治影响深远。",
+    "traits": [
+      "权谋",
+      "固执"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weiran",
+    "name": "魏冉",
+    "courtesyName": null,
+    "title": "穰侯",
+    "chapter": "ranghou",
+    "period": "战国",
+    "lifespan": "? — 公元前265年",
+    "identity": "秦国相国",
+    "description": "秦宣太后之弟，四次出任秦国相国。举荐白起为将，对秦国强大贡献巨大。后因范雎进言而被罢免。",
+    "traits": [
+      "权谋",
+      "善用人",
+      "贪婪"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qinxuantaihou",
+    "name": "秦宣太后",
+    "courtesyName": null,
+    "title": "太后",
+    "chapter": "ranghou",
+    "period": "战国",
+    "lifespan": "? — 公元前265年",
+    "identity": "秦惠文王妃",
+    "description": "秦惠文王之妃，秦昭襄王之母。与弟魏冉共同执政，是中国历史上第一位称太后的女性。",
+    "traits": [
+      "权谋",
+      "果断",
+      "狠辣"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tianwen",
+    "name": "田文",
+    "courtesyName": null,
+    "title": "孟尝君",
+    "chapter": "mengchangjun",
+    "period": "战国",
+    "lifespan": "? — 公元前279年",
+    "identity": "齐国贵族",
+    "description": "齐国靖郭君之子，战国四公子之一。以养士闻名，门客三千，曾任齐相、魏相。",
+    "traits": [
+      "豪爽",
+      "善用人",
+      "权谋"
+    ],
+    "quotes": [
+      "先生所以辱临弊邑者，将以富贵吾乎？"
+    ]
+  },
+  {
+    "id": "fengxuan",
+    "name": "冯谖",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "mengchangjun",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "孟尝君门客",
+    "description": "孟尝君门客，曾弹铗而歌要求更好的待遇。后为孟尝君到薛地收债，焚券市义，为孟尝君留下退路。",
+    "traits": [
+      "智谋",
+      "远见",
+      "忠诚"
+    ],
+    "quotes": [
+      "长铗归来乎，食无鱼。长铗归来乎，出无车。长铗归来乎，无以为家。",
+      "乃焚其券，民称万岁。"
+    ]
+  },
+  {
+    "id": "zhaosheng",
+    "name": "赵胜",
+    "courtesyName": null,
+    "title": "平原君",
+    "chapter": "pingyuanjun",
+    "period": "战国",
+    "lifespan": "? — 公元前251年",
+    "identity": "赵国贵族",
+    "description": "赵惠文王之弟，战国四公子之一。以养士闻名，毛遂自荐出自其门下。在邯郸之围中坚守三年。",
+    "traits": [
+      "善用人",
+      "礼贤",
+      "优柔"
+    ],
+    "quotes": [
+      "胜虽不才，亦愿以毛遂随行。"
+    ]
+  },
+  {
+    "id": "yuqing",
+    "name": "虞卿",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "pingyuanjun",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "赵国谋士",
+    "description": "赵国谋士，主张合纵抗秦。曾两次拜见赵孝成王，反对割地求和，未被采纳。",
+    "traits": [
+      "谋略",
+      "坚持",
+      "正直"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "huangxie",
+    "name": "黄歇",
+    "courtesyName": null,
+    "title": "春申君",
+    "chapter": "chunshenjun",
+    "period": "战国",
+    "lifespan": "? — 公元前238年",
+    "identity": "楚国相国",
+    "description": "楚国人，战国四公子之一。曾任楚相二十余年，门下食客三千。后被李园设计杀害。",
+    "traits": [
+      "权谋",
+      "善辩",
+      "悲剧"
+    ],
+    "quotes": [
+      "王以春申君为相，二十余年而无大功。"
+    ]
+  },
+  {
+    "id": "liyuan",
+    "name": "李园",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chunshenjun",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "楚国权臣",
+    "description": "楚国权臣，将自己的妹妹献给春申君，再献于楚王。后设计杀害春申君，专楚国政。",
+    "traits": [
+      "权谋",
+      "阴险",
+      "狠毒"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tiandan_char",
+    "name": "田单",
+    "courtesyName": null,
+    "title": "安平君",
+    "chapter": "tiandan",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "齐国将领",
+    "description": "齐国名将，以火牛阵大破燕军，收复齐国七十余城，被封为安平君。",
+    "traits": [
+      "军事天才",
+      "果断",
+      "智谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qixiangwang",
+    "name": "齐襄王",
+    "courtesyName": null,
+    "title": "齐王",
+    "chapter": "tiandan",
+    "period": "战国",
+    "lifespan": "? — 公元前265年",
+    "identity": "齐国君主",
+    "description": "齐国国君，齐湣王之子。在田单收复失地后即位，恢复齐国。",
+    "traits": [
+      "隐忍",
+      "平庸"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "luzhonglian_char",
+    "name": "鲁仲连",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "luzhonglian",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "齐国高士",
+    "description": "齐国人，以义不帝秦闻名。秦国围攻邯郸时，他劝说魏国援赵，拒绝平原君的封赏。",
+    "traits": [
+      "正义",
+      "清高",
+      "辩才"
+    ],
+    "quotes": [
+      "吾与富贵而诎于人，宁贫贱而轻世肆志。"
+    ]
+  },
+  {
+    "id": "zouyang",
+    "name": "邹阳",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "luzhonglian",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "政论家",
+    "description": "西汉政论家，以狱中上书打动梁孝王而闻名。文辞华美，说理透彻。",
+    "traits": [
+      "才华",
+      "辩才",
+      "坚韧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "lishiji",
+    "name": "郦食其",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lisheng_lujia",
+    "period": "秦末",
+    "lifespan": "? — 公元前203年",
+    "identity": "辩士",
+    "description": "刘邦的谋士，以三寸之舌说服齐王田广投降。后因韩信擅自攻齐，被齐王烹杀。",
+    "traits": [
+      "辩才",
+      "果敢",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "lujia",
+    "name": "陆贾",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "lisheng_lujia",
+    "period": "西汉",
+    "lifespan": "约公元前240年 — 公元前170年",
+    "identity": "政论家",
+    "description": "刘邦的谋士，著《新语》劝刘邦重视文治。曾出使南越，说服赵佗归汉。",
+    "traits": [
+      "辩才",
+      "远见",
+      "务实"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhangcang",
+    "name": "张苍",
+    "courtesyName": null,
+    "title": "丞相",
+    "chapter": "zhangchengxiang",
+    "period": "西汉",
+    "lifespan": "公元前256年 — 公元前152年",
+    "identity": "西汉丞相",
+    "description": "原为秦代算学家，后归汉。精通律历，曾任丞相十余年。活到一百余岁。",
+    "traits": [
+      "博学",
+      "长寿",
+      "务实"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liujing",
+    "name": "刘敬",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "liujing_shusuntong",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "谋士",
+    "description": "原名娄敬，刘邦赐姓刘。建议刘邦定都关中、和亲匈奴、迁徙豪强，对汉朝初建贡献巨大。",
+    "traits": [
+      "远见",
+      "务实",
+      "忠诚"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "shusuntong",
+    "name": "叔孙通",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "liujing_shusuntong",
+    "period": "西汉",
+    "lifespan": "? — 公元前188年",
+    "identity": "礼仪学家",
+    "description": "原为秦代博士，后归汉。为汉朝制定礼仪制度，使朝堂秩序井然。",
+    "traits": [
+      "变通",
+      "务实",
+      "博学"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "yuanang",
+    "name": "袁盎",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "yuanang_chaocuo",
+    "period": "西汉",
+    "lifespan": "? — 公元前148年",
+    "identity": "大臣",
+    "description": "西汉大臣，正直敢言。曾谏止文帝宠幸慎夫人，后与晁错不和。",
+    "traits": [
+      "正直",
+      "敢言",
+      "固执"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chaocuo",
+    "name": "晁错",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "yuanang_chaocuo",
+    "period": "西汉",
+    "lifespan": "公元前200年 — 公元前154年",
+    "identity": "政治家",
+    "description": "西汉政治家，主张削藩以加强中央集权。引发七国之乱，被汉景帝处死以平息叛乱。",
+    "traits": [
+      "改革",
+      "激进",
+      "悲剧",
+      "忠诚"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "hanjingdi",
+    "name": "汉景帝",
+    "courtesyName": null,
+    "title": "皇帝",
+    "chapter": "yuanang_chaocuo",
+    "period": "西汉",
+    "lifespan": "公元前188年 — 公元前141年",
+    "identity": "西汉皇帝",
+    "description": "汉文帝之子，西汉第六位皇帝。在位期间平定七国之乱，延续文景之治。",
+    "traits": [
+      "果断",
+      "务实",
+      "冷酷"
+    ],
+    "quotes": [
+      "七国反，欲诛晁错以谢之。",
+      "朕不忍以私害公，然吴楚反，不得不诛。"
+    ]
+  },
+  {
+    "id": "qinmuwang",
+    "name": "秦穆公",
+    "courtesyName": null,
+    "title": "秦伯",
+    "chapter": "qin_benji",
+    "period": "春秋",
+    "lifespan": "? — 公元前621年",
+    "identity": "秦国君主",
+    "description": "秦国国君，春秋五霸之一。任用百里奚、蹇叔等贤臣，国力强盛，称霸西戎。",
+    "traits": [
+      "雄才",
+      "善用人",
+      "远略"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "caishudu",
+    "name": "蔡叔度",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cai",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "蔡国开国君主",
+    "description": "周武王之弟，受封于蔡。后因参与武庚叛乱被流放。",
+    "traits": [
+      "宗室",
+      "叛逆"
+    ],
+    "quotes": [
+      "管叔、蔡叔群疑，武庚作乱，周公讨之。"
+    ]
+  },
+  {
+    "id": "caizhaohou",
+    "name": "蔡昭侯",
+    "courtesyName": null,
+    "title": "蔡侯",
+    "chapter": "cai",
+    "period": "春秋",
+    "lifespan": "? — 公元前491年",
+    "identity": "蔡国君主",
+    "description": "蔡国国君，因不向楚国令尹子常行贿，被楚国扣留三年。后为报私仇，引导吴国攻楚。",
+    "traits": [
+      "刚直",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "caoshuzhenduo",
+    "name": "曹叔振铎",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "cao",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "曹国开国君主",
+    "description": "周武王之弟，受封于曹。曹国是西周重要的诸侯国之一。",
+    "traits": [
+      "宗室",
+      "贤明"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chenhugong",
+    "name": "陈胡公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chenqi",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "陈国开国君主",
+    "description": "舜的后裔，名满。周武王灭商后，寻求舜的后代，封胡公于陈。",
+    "traits": [
+      "贤明",
+      "仁德"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "qidonglougong",
+    "name": "杞东楼公",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chenqi",
+    "period": "西周",
+    "lifespan": "? — ?",
+    "identity": "杞国开国君主",
+    "description": "夏禹的后裔。周武王灭商后，寻求禹的后代，封东楼公于杞。",
+    "traits": [
+      "贤明",
+      "守成"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "dongzhongshu",
+    "name": "董仲舒",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "xiaowu",
+    "period": "西汉",
+    "lifespan": "公元前179年 — 公元前104年",
+    "identity": "思想家",
+    "description": "西汉著名思想家，提出'罢黜百家，独尊儒术'，对汉代及后世政治思想影响深远。",
+    "traits": [
+      "博学",
+      "正统",
+      "影响深远"
+    ],
+    "quotes": [
+      "罢黜百家，独尊儒术。"
+    ]
+  },
+  {
+    "id": "zhouyafu",
+    "name": "周亚夫",
+    "courtesyName": null,
+    "title": "条侯",
+    "chapter": "xiaojing",
+    "period": "西汉",
+    "lifespan": "? — 公元前143年",
+    "identity": "西汉名将",
+    "description": "周勃之子，西汉名将。平定七国之乱时以三个月时间击败吴楚联军，后任丞相。",
+    "traits": [
+      "军事天才",
+      "刚直",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liuwu",
+    "name": "刘武",
+    "courtesyName": null,
+    "title": "梁王",
+    "chapter": "liangxiaowang",
+    "period": "西汉",
+    "lifespan": "? — 公元前144年",
+    "identity": "梁孝王",
+    "description": "汉景帝之弟，窦太后少子。封于梁国，富甲天下，曾险些继承帝位。",
+    "traits": [
+      "骄纵",
+      "富有",
+      "野心"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "jibu",
+    "name": "季布",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jibu_luanbu",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "侠士",
+    "description": "楚国人，以信守承诺闻名。楚汉战争时为项羽部将，多次围困刘邦。刘邦称帝后赦免其罪，任为河东太守。",
+    "traits": [
+      "守信",
+      "侠义",
+      "勇猛"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "luanbu",
+    "name": "栾布",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "jibu_luanbu",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "将领",
+    "description": "梁国人，彭越部下。彭越被杀后，栾布冒死为其收尸并哭祭，刘邦感其忠义而赦免。",
+    "traits": [
+      "忠诚",
+      "勇敢",
+      "重义"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "fengtang_char",
+    "name": "冯唐",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "fengtang",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "大臣",
+    "description": "西汉大臣，以直言敢谏闻名。曾对汉文帝指出朝廷赏罚不公，'冯唐易老，李广难封'成为千古名句。",
+    "traits": [
+      "正直",
+      "敢言",
+      "有才"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "shifen",
+    "name": "石奋",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "wanshi",
+    "period": "西汉",
+    "lifespan": "? — 公元前150年",
+    "identity": "大臣",
+    "description": "赵国人，汉高祖的侍从。以谨小慎微闻名，官至太中大夫。",
+    "traits": [
+      "谨慎",
+      "恭敬",
+      "守法"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "shiqing",
+    "name": "石庆",
+    "courtesyName": null,
+    "title": "丞相",
+    "chapter": "wanshi",
+    "period": "西汉",
+    "lifespan": "? — 公元前103年",
+    "identity": "西汉丞相",
+    "description": "石奋之子，官至丞相。继承父风，以谨慎闻名。",
+    "traits": [
+      "谨慎",
+      "恭敬",
+      "平庸"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tianshu_char",
+    "name": "田叔",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "tianshu",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "大臣",
+    "description": "西汉大臣，以忠义闻名。曾随张敖入京，后为鲁相，以德行教化百姓。",
+    "traits": [
+      "忠义",
+      "正直",
+      "有德"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhangao",
+    "name": "张敖",
+    "courtesyName": null,
+    "title": "赵王",
+    "chapter": "tianshu",
+    "period": "西汉",
+    "lifespan": "? — 公元前182年",
+    "identity": "赵王",
+    "description": "张耳之子，娶鲁元公主为妻。后因部下谋刺刘邦被贬。",
+    "traits": [
+      "软弱",
+      "忠诚"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "bianque",
+    "name": "扁鹊",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "bianque",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "神医",
+    "description": "战国时期神医，发明望闻问切四诊法。因医术高超遭秦太医令嫉妒，被刺杀。",
+    "traits": [
+      "医术高明",
+      "智慧",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chunyuyi",
+    "name": "淳于意",
+    "courtesyName": null,
+    "title": "太仓公",
+    "chapter": "bianque",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "医学家",
+    "description": "西汉医学家，曾任齐国太仓令。是中国历史上第一位有医案的医生，其女缇萦上书救父。",
+    "traits": [
+      "医术高明",
+      "博学",
+      "正直"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liubi",
+    "name": "刘濞",
+    "courtesyName": null,
+    "title": "吴王",
+    "chapter": "wuwangbi",
+    "period": "西汉",
+    "lifespan": "公元前216年 — 公元前154年",
+    "identity": "诸侯王",
+    "description": "汉高祖之侄，封吴王。发动七国之乱，兵败被杀。",
+    "traits": [
+      "野心",
+      "刚愎",
+      "狂妄"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "douying",
+    "name": "窦婴",
+    "courtesyName": null,
+    "title": "魏其侯",
+    "chapter": "weiqi_wuanhou",
+    "period": "西汉",
+    "lifespan": "? — 公元前131年",
+    "identity": "外戚",
+    "description": "窦太后侄子，汉武帝的表叔。曾任大将军、丞相，与田蚡争斗，最终被处死。",
+    "traits": [
+      "刚直",
+      "骄傲",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tianfen",
+    "name": "田蚡",
+    "courtesyName": null,
+    "title": "武安侯",
+    "chapter": "weiqi_wuanhou",
+    "period": "西汉",
+    "lifespan": "? — 公元前131年",
+    "identity": "外戚",
+    "description": "汉武帝舅舅，王太后之弟。曾任丞相，与窦婴争斗，专权跋扈。",
+    "traits": [
+      "贪婪",
+      "专横",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "han_anguo",
+    "name": "韩安国",
+    "courtesyName": "长孺",
+    "title": null,
+    "chapter": "hanchangru",
+    "period": "西汉",
+    "lifespan": "? — 公元前127年",
+    "identity": "大臣",
+    "description": "梁孝王重要谋士，后入朝为御史大夫。主张对匈奴和亲，反对用兵。",
+    "traits": [
+      "谋略",
+      "务实",
+      "圆滑"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "gongsunhong",
+    "name": "公孙弘",
+    "courtesyName": null,
+    "title": "平津侯",
+    "chapter": "pingjinhou",
+    "period": "西汉",
+    "lifespan": "公元前200年 — 公元前121年",
+    "identity": "丞相",
+    "description": "西汉丞相，以布衣拜相，封平津侯。为人圆滑，善于迎合武帝。",
+    "traits": [
+      "圆滑",
+      "善辩",
+      "谨慎"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhufuyan",
+    "name": "主父偃",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "pingjinhou",
+    "period": "西汉",
+    "lifespan": "? — 公元前126年",
+    "identity": "谋士",
+    "description": "西汉谋士，向汉武帝提出推恩令，削弱诸侯势力。后因罪被族诛。",
+    "traits": [
+      "谋略",
+      "激进",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhaotuo",
+    "name": "赵佗",
+    "courtesyName": null,
+    "title": "南越王",
+    "chapter": "nanyue",
+    "period": "秦末汉初",
+    "lifespan": "约公元前240年 — 公元前137年",
+    "identity": "南越国君主",
+    "description": "秦朝将领，秦末乘乱建立南越国，统治岭南地区八十余年。",
+    "traits": [
+      "雄才",
+      "长寿",
+      "务实"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "weiman",
+    "name": "卫满",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "chaoxian",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "朝鲜王",
+    "description": "燕国人，乘秦末之乱进入朝鲜，建立卫氏朝鲜政权。",
+    "traits": [
+      "开拓",
+      "野心"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "simaxiangru",
+    "name": "司马相如",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "xinanyi",
+    "period": "西汉",
+    "lifespan": "公元前179年 — 公元前118年",
+    "identity": "文学家",
+    "description": "西汉著名文学家，以《子虚赋》《上林赋》闻名。曾出使西南夷，为汉武帝开辟西南边疆。",
+    "traits": [
+      "才华",
+      "浪漫",
+      "善辩"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "tangmeng",
+    "name": "唐蒙",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "xinanyi",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "将领",
+    "description": "西汉将领，奉命出使西南夷，开辟夜郎道，为汉武帝经营西南边疆做出贡献。",
+    "traits": [
+      "开拓",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "liuan",
+    "name": "刘安",
+    "courtesyName": null,
+    "title": "淮南王",
+    "chapter": "huainan_hengshan_jishan",
+    "period": "西汉",
+    "lifespan": "公元前179年 — 公元前122年",
+    "identity": "淮南王",
+    "description": "汉高祖之孙，招揽门客编撰《淮南子》。后因谋反被诛。",
+    "traits": [
+      "博学",
+      "野心",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhangtang",
+    "name": "张汤",
+    "courtesyName": null,
+    "title": "御史大夫",
+    "chapter": "lihai_zhichun",
+    "period": "西汉",
+    "lifespan": "? — 公元前115年",
+    "identity": "酷吏",
+    "description": "西汉著名酷吏，以严刑峻法闻名。后遭人陷害自杀。",
+    "traits": [
+      "严酷",
+      "刚直",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhangqian",
+    "name": "张骞",
+    "courtesyName": null,
+    "title": "博望侯",
+    "chapter": "dayuanyoushi",
+    "period": "西汉",
+    "lifespan": "? — 公元前114年",
+    "identity": "外交家",
+    "description": "汉武帝派张骞出使西域，开辟丝绸之路，是中西交流的先驱。",
+    "traits": [
+      "坚毅",
+      "开拓",
+      "勇气"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "guojie",
+    "name": "郭解",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "youyu",
+    "period": "西汉",
+    "lifespan": "? — 公元前127年",
+    "identity": "游侠",
+    "description": "西汉著名游侠，以义气闻名。后被汉武帝下令迁徙，终被族诛。",
+    "traits": [
+      "侠义",
+      "勇猛",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "dengtong",
+    "name": "邓通",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "hongyan",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "宠臣",
+    "description": "汉文帝宠臣，获得铸钱特权，富甲天下。文帝崩后被没收全部财产，饿死街头。",
+    "traits": [
+      "幸运",
+      "悲剧",
+      "无能"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chunyukun",
+    "name": "淳于髡",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shiji_jingzhong",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "齐国学者",
+    "description": "齐国稷下学宫学者，以诙谐善辩闻名。齐威王好隐语，淳于髡以隐语讽谏。",
+    "traits": [
+      "诙谐",
+      "智慧",
+      "善辩"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "youmeng",
+    "name": "优孟",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "shiji_jingzhong",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "楚国优人",
+    "description": "楚国宫廷优人，以诙谐讽谏楚王。'优孟衣冠'成为千古成语。",
+    "traits": [
+      "诙谐",
+      "智慧",
+      "善良"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "simajizhu",
+    "name": "司马季主",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "rizhualie",
+    "period": "西汉",
+    "lifespan": "? — ?",
+    "identity": "占卜者",
+    "description": "西汉著名占卜者，以占卜闻名。",
+    "traits": [
+      "智慧",
+      "神秘"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "baigui",
+    "name": "白圭",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "huozhilie",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "商人",
+    "description": "战国时期著名商人，以'人弃我取，人取我与'的经营策略闻名。",
+    "traits": [
+      "精明",
+      "远见",
+      "果断"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zixia",
+    "name": "子夏",
+    "courtesyName": "商",
+    "title": null,
+    "chapter": "zhonglishu",
+    "period": "春秋",
+    "lifespan": "公元前507年 — ?",
+    "identity": "孔子弟子",
+    "description": "孔子弟子，以文学闻名。后为魏文侯师，是子夏学派的创始人。",
+    "traits": [
+      "博学",
+      "文学",
+      "教育"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "chulizi",
+    "name": "樗里子",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "meigeng",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "秦国大臣",
+    "description": "秦惠文王之弟，足智多谋，人称'智囊'。",
+    "traits": [
+      "智慧",
+      "谋略"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "ganmao",
+    "name": "甘茂",
+    "courtesyName": null,
+    "title": null,
+    "chapter": "meigeng",
+    "period": "战国",
+    "lifespan": "? — ?",
+    "identity": "秦国将领",
+    "description": "秦国将领，善于用兵。后因谗言出奔齐国。",
+    "traits": [
+      "军事才能",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "pengyue",
+    "name": "彭越",
+    "courtesyName": null,
+    "title": "梁王",
+    "chapter": "peng_yue_lie",
+    "period": "秦末汉初",
+    "lifespan": "? — 公元前196年",
+    "identity": "汉初名将",
+    "description": "汉初三大名将之一，以游击战术闻名。助刘邦灭项羽，封梁王。后被吕后以谋反罪名诛杀。",
+    "traits": [
+      "军事天才",
+      "坚忍",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "yingbu",
+    "name": "英布",
+    "courtesyName": null,
+    "title": "淮南王",
+    "chapter": "ying_bu_lie",
+    "period": "秦末汉初",
+    "lifespan": "? — 公元前196年",
+    "identity": "汉初将领",
+    "description": "又称黥布，项羽帐下猛将，后归汉封淮南王。因谋反被杀。",
+    "traits": [
+      "勇猛",
+      "反复",
+      "悲剧"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "simaqian",
+    "name": "司马迁",
+    "courtesyName": null,
+    "title": "太史令",
+    "chapter": "tai_shi_gong",
+    "period": "西汉",
+    "lifespan": "公元前145年 — 公元前86年",
+    "identity": "史学家",
+    "description": "中国最伟大的史学家，撰著《史记》130篇。因替李陵辩护受宫刑，忍辱完成巨著。",
+    "traits": [
+      "毅力",
+      "才华",
+      "正直",
+      "悲剧"
+    ],
+    "quotes": [
+      "人固有一死，或重于泰山，或轻于鸿毛。"
+    ]
+  },
+  {
+    "id": "sanghongyang",
+    "name": "桑弘羊",
+    "courtesyName": null,
+    "title": "御史大夫",
+    "chapter": "pingzhun_shu",
+    "period": "西汉",
+    "lifespan": "公元前152年 — 公元前80年",
+    "identity": "政治家",
+    "description": "汉武帝时期重要财政大臣，推行均输法、平准法、盐铁官营等政策。",
+    "traits": [
+      "精明",
+      "理财",
+      "权谋"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "shaokang",
+    "name": "少康",
+    "courtesyName": null,
+    "title": "夏王",
+    "chapter": "xia",
+    "period": "夏朝",
+    "lifespan": "约公元前1972年 — 约公元前1912年",
+    "identity": "夏朝第六任君主",
+    "description": "夏朝中兴之主。其父相被寒浞所杀，少康历经磨难，凭借旧臣之力，消灭寒浞，恢复夏朝统治，史称少康中兴。",
+    "traits": [
+      "坚韧",
+      "隐忍",
+      "复国"
+    ],
+    "quotes": [
+      "少康中兴，夏道复兴。"
+    ]
+  },
+  {
+    "id": "zhoukangwang",
+    "name": "周康王",
+    "courtesyName": "钊",
+    "title": "周王",
+    "chapter": "zhou",
+    "period": "西周",
+    "lifespan": "约公元前1020年 — 公元前996年",
+    "identity": "西周第三代君主",
+    "description": "周成王之子，继承父业，与成王合称'成康之治'。在位期间天下安宁，刑错四十余年不用。",
+    "traits": [
+      "贤明",
+      "守成",
+      "宽厚"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "zhoupingwang",
+    "name": "周平王",
+    "courtesyName": "宜臼",
+    "title": "东周第一位君主",
+    "chapter": "zhou",
+    "period": "东周",
+    "lifespan": "? — 公元前720年",
+    "identity": "东周建立者",
+    "description": "周幽王之子。犬戎攻杀周幽王后，在诸侯拥立下东迁洛邑，建立东周。东迁后周天子权威急剧衰落，诸侯争霸开始。",
+    "traits": [
+      "弱势",
+      "依赖诸侯"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "huayuan",
+    "name": "华元",
+    "courtesyName": null,
+    "title": "宋国大夫",
+    "chapter": "song",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "宋国执政大夫",
+    "description": "宋国大夫，春秋时期著名的外交家。弭兵之会的倡导者之一，推动晋楚两国达成和平协议。",
+    "traits": [
+      "外交才能",
+      "和平倡导"
+    ],
+    "quotes": []
+  },
+  {
+    "id": "xunshen",
+    "name": "荀罃",
+    "courtesyName": null,
+    "title": "晋国大夫",
+    "chapter": "jin",
+    "period": "春秋",
+    "lifespan": "? — ?",
+    "identity": "晋国大夫",
+    "description": "晋国大夫，弭兵之会的参与者。代表晋国与楚国谈判，促成春秋时期的和平局面。",
+    "traits": [
+      "外交才能",
+      "谋略"
+    ],
+    "quotes": []
+  }
+]

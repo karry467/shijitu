@@ -1,0 +1,3058 @@
+[
+  {
+    "id": "banyuan",
+    "name": "阪泉之战",
+    "chapter": "wudi",
+    "date": "约公元前2675年",
+    "year": -2675,
+    "locationId": "banyuan",
+    "locationName": "阪泉",
+    "description": "黄帝与炎帝在阪泉之野展开大战，最终黄帝获胜，炎帝部落臣服。此战奠定了黄帝在华夏部落联盟中的领导地位。",
+    "characters": [
+      "黄帝"
+    ],
+    "outcome": "黄帝胜，统一华夏部落",
+    "significance": "华夏民族形成的关键战役",
+    "quote": "轩辕乃修德振兵，治五气，艺五种。"
+  },
+  {
+    "id": "zhuolu",
+    "name": "涿鹿之战",
+    "chapter": "wudi",
+    "date": "约公元前2670年",
+    "year": -2670,
+    "locationId": "zhuolu",
+    "locationName": "涿鹿",
+    "description": "黄帝联合炎帝部落，在涿鹿与蚩尤率领的九黎族展开决战。黄帝最终击败蚩尤，统一中原。",
+    "characters": [
+      "黄帝",
+      "颛顼"
+    ],
+    "outcome": "黄帝大胜，蚩尤被杀",
+    "significance": "奠定华夏族在中原的统治地位",
+    "quote": "蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野。"
+  },
+  {
+    "id": "yaoshunshanrang",
+    "name": "尧舜禅让",
+    "chapter": "wudi",
+    "date": "约公元前2287年",
+    "year": -2287,
+    "locationId": "pingyang",
+    "locationName": "平阳",
+    "description": "尧年老时，不以天下私其子丹朱，而是禅让给德才兼备的舜。舜晚年同样禅让给治水有功的大禹。",
+    "characters": [
+      "尧",
+      "舜",
+      "大禹"
+    ],
+    "outcome": "和平传位，天下大治",
+    "significance": "中国古代禅让制度的典范",
+    "quote": "咨！尔舜！天之历数在尔躬。"
+  },
+  {
+    "id": "dayuzhishui",
+    "name": "大禹治水",
+    "chapter": "wudi",
+    "date": "约公元前2100年",
+    "year": -2100,
+    "locationId": "kuaiji",
+    "locationName": "会稽",
+    "description": "大禹继承父亲鲧的治水事业，改堵为疏，疏通九河，划定九州。三过家门而不入，历经十三年终于平息水患。",
+    "characters": [
+      "大禹"
+    ],
+    "outcome": "水患平息，天下安定",
+    "significance": "奠定了夏朝建立的基础",
+    "quote": "予娶涂山，辛壬癸甲，启呱呱而泣，予弗子，惟荒度土功。"
+  },
+  {
+    "id": "xiatuzhi",
+    "name": "涂山之会",
+    "chapter": "xia",
+    "date": "约公元前2070年",
+    "year": -2070,
+    "locationId": "tushan",
+    "locationName": "涂山",
+    "description": "大禹在涂山召集诸侯大会，执玉帛者万国。大会之上，大禹诛杀了迟到的防风氏，确立了权威，标志着夏朝的建立。",
+    "characters": [
+      "大禹"
+    ],
+    "outcome": "大禹确立天下共主地位",
+    "significance": "夏朝建立的标志性事件",
+    "quote": "禹会诸侯于涂山，执玉帛者万国。"
+  },
+  {
+    "id": "xiaqijili",
+    "name": "夏启继位",
+    "chapter": "xia",
+    "date": "约公元前2055年",
+    "year": -2055,
+    "locationId": "yangcheng",
+    "locationName": "阳城",
+    "description": "大禹死后，其子启破坏禅让制，继承王位。有扈氏不服，启率军讨伐，在甘之战中击败有扈氏，确立了世袭制度。",
+    "characters": [
+      "启",
+      "大禹"
+    ],
+    "outcome": "世袭制取代禅让制",
+    "significance": "中国历史上王位世袭制的开端",
+    "quote": "用命赏于祖，不用命戮于社。"
+  },
+  {
+    "id": "mingtiao",
+    "name": "鸣条之战",
+    "chapter": "xia",
+    "date": "约公元前1600年",
+    "year": -1600,
+    "locationId": "mingtiao_loc",
+    "locationName": "鸣条",
+    "description": "商汤率领诸侯联军在鸣条与夏桀决战。夏桀大败，逃奔南巢。商汤建立商朝，夏朝灭亡。",
+    "characters": [
+      "桀",
+      "商汤"
+    ],
+    "outcome": "商汤大胜，夏朝灭亡",
+    "significance": "中国历史上第一次王朝更替",
+    "quote": "有夏多罪，天命殛之。"
+  },
+  {
+    "id": "shaokangzhongxing",
+    "name": "少康中兴",
+    "chapter": "xia",
+    "date": "约公元前1900年",
+    "year": -1900,
+    "locationId": "shaoxing_loc",
+    "locationName": "濮阳",
+    "description": "夏朝中期，后羿代夏，寒浞篡位，夏后相被杀。相之遗腹子少康历经磨难，长大后凭借旧臣之力，消灭寒浞，恢复夏朝统治，史称'少康中兴'。",
+    "characters": [
+      "少康"
+    ],
+    "outcome": "夏朝复兴",
+    "significance": "中国历史上第一次王朝复兴",
+    "quote": "少康中兴，夏道复兴。"
+  },
+  {
+    "id": "shangtangmiexia",
+    "name": "商汤灭夏",
+    "chapter": "yin",
+    "date": "约公元前1600年",
+    "year": -1600,
+    "locationId": "bo",
+    "locationName": "亳",
+    "description": "商汤在伊尹的辅佐下，积蓄力量，逐步剪除夏桀的羽翼。最终在鸣条之战中击败夏桀，建立商朝。",
+    "characters": [
+      "商汤",
+      "伊尹",
+      "桀"
+    ],
+    "outcome": "商朝建立，夏朝灭亡",
+    "significance": "中国历史上第二个王朝的建立",
+    "quote": "惟尹躬暨汤，咸有一德。"
+  },
+  {
+    "id": "pangengqianyin",
+    "name": "盘庚迁殷",
+    "chapter": "yin",
+    "date": "约公元前1300年",
+    "year": -1300,
+    "locationId": "yinxu",
+    "locationName": "殷墟",
+    "description": "商朝第十九位君主盘庚为摆脱政治困境和自然灾害，力排众议，将都城从奄迁至殷。此后商朝中兴，因此商朝又称殷商。",
+    "characters": [
+      "盘庚"
+    ],
+    "outcome": "迁都成功，商朝中兴",
+    "significance": "商朝历史的转折点",
+    "quote": "若涉渊水，予惟往求朕攸济。"
+  },
+  {
+    "id": "muyie",
+    "name": "牧野之战",
+    "chapter": "yin",
+    "date": "公元前1046年",
+    "year": -1046,
+    "locationId": "muye",
+    "locationName": "牧野",
+    "description": "周武王率领诸侯联军在牧野与商纣王决战。商军奴隶阵前倒戈，纣王大败，逃回朝歌自焚而死。商朝灭亡，周朝建立。",
+    "characters": [
+      "纣王",
+      "周武王",
+      "姜太公"
+    ],
+    "outcome": "商朝灭亡，周朝建立",
+    "significance": "中国历史上第三次王朝更替",
+    "quote": "纣有臣亿万，惟亿万心；予有臣三千，惟一心。"
+  },
+  {
+    "id": "zhouxinzifen",
+    "name": "纣王自焚",
+    "chapter": "yin",
+    "date": "公元前1046年",
+    "year": -1046,
+    "locationId": "chaoge",
+    "locationName": "朝歌",
+    "description": "牧野之战大败后，纣王退守朝歌。周军围困，纣王见大势已去，在鹿台自焚而死。商朝五百余年统治宣告结束。",
+    "characters": [
+      "纣王",
+      "妲己"
+    ],
+    "outcome": "纣王身死，商朝灭亡",
+    "significance": "中国历史上著名暴君的末日",
+    "quote": "我生不有命在天乎！"
+  },
+  {
+    "id": "wenwangyanyi",
+    "name": "文王演周易",
+    "chapter": "zhou",
+    "date": "约公元前1050年",
+    "year": -1050,
+    "locationId": "qishan",
+    "locationName": "岐山",
+    "description": "周文王被商纣王囚禁于羑里期间，将伏羲八卦推演为六十四卦，并撰写卦辞，后人称为《周易》。",
+    "characters": [
+      "周文王"
+    ],
+    "outcome": "《周易》成书",
+    "significance": "中华文化最重要的经典之一诞生",
+    "quote": "天行健，君子以自强不息。"
+  },
+  {
+    "id": "wuwangfazhou",
+    "name": "武王伐纣",
+    "chapter": "zhou",
+    "date": "公元前1046年",
+    "year": -1046,
+    "locationId": "muye",
+    "locationName": "牧野",
+    "description": "周武王姬发继位后，在姜太公的辅佐下，率戎车三百乘、虎贲三千人、甲士四万五千人东征伐纣。在牧野誓师，一战灭商。",
+    "characters": [
+      "周武王",
+      "姜太公",
+      "纣王"
+    ],
+    "outcome": "商朝灭亡，周朝建立",
+    "significance": "西周王朝的建立",
+    "quote": "纣有臣亿万，惟亿万心；予有臣三千，惟一心。"
+  },
+  {
+    "id": "zhougongshezheng",
+    "name": "周公摄政",
+    "chapter": "zhou",
+    "date": "公元前1042年",
+    "year": -1042,
+    "locationId": "haojing",
+    "locationName": "镐京",
+    "description": "周武王去世后，成王年幼，周公摄政。平定三监之乱后，周公制礼作乐，建立宗法制度和礼乐制度，奠定了西周统治的基础。",
+    "characters": [
+      "周公",
+      "周武王"
+    ],
+    "outcome": "礼乐制度确立，西周稳固",
+    "significance": "中国古代礼乐文明的开端",
+    "quote": "一沐三捉发，一饭三吐哺。"
+  },
+  {
+    "id": "sanjianzhiluan",
+    "name": "三监之乱",
+    "chapter": "zhou",
+    "date": "公元前1042年",
+    "year": -1042,
+    "locationId": "qishan",
+    "locationName": "岐山",
+    "description": "周武王去世后，其弟管叔鲜、蔡叔度联合纣王之子武庚叛乱，史称三监之乱。周公率军东征，经过三年苦战平定叛乱，诛武庚、管叔，流放蔡叔，稳固了周朝的统治。",
+    "characters": [
+      "周公",
+      "周武王"
+    ],
+    "outcome": "叛乱平定，周朝稳固",
+    "significance": "西周巩固政权的关键战争",
+    "quote": null
+  },
+  {
+    "id": "fenghuo",
+    "name": "烽火戏诸侯",
+    "chapter": "zhou",
+    "date": "公元前771年",
+    "year": -771,
+    "locationId": "lishan",
+    "locationName": "骊山",
+    "description": "周幽王为博褒姒一笑，无故点燃烽火台。诸侯率兵来救，发现被骗。后来犬戎真的入侵，再点烽火无人来救，幽王被杀。",
+    "characters": [
+      "周幽王",
+      "褒姒"
+    ],
+    "outcome": "西周灭亡",
+    "significance": "失信亡国的典型案例",
+    "quote": "昔自夏后氏之衰也，有二神龙止于夏庭。"
+  },
+  {
+    "id": "chengkangzhizhi",
+    "name": "成康之治",
+    "chapter": "zhou",
+    "date": "约公元前1042年 — 前996年",
+    "year": -1020,
+    "locationId": "haojing",
+    "locationName": "镐京",
+    "description": "周成王和周康王在位期间，天下安宁，社会繁荣。周公制礼作乐后，成康二王推行仁政，刑错四十余年不用，是中国古代最太平的时代之一。",
+    "characters": [
+      "周成王",
+      "周康王",
+      "周公"
+    ],
+    "outcome": "天下太平，刑措四十余年不用",
+    "significance": "西周最鼎盛的太平盛世",
+    "quote": "成康之际，天下安宁，刑错四十余年不用。"
+  },
+  {
+    "id": "guorenbaodong",
+    "name": "国人暴动",
+    "chapter": "zhou",
+    "date": "公元前841年",
+    "year": -841,
+    "locationId": "haojing",
+    "locationName": "镐京",
+    "description": "周厉王暴虐无道，压制舆论，禁止国人谈论朝政。国人不堪忍受，发动暴动，围攻王宫，周厉王出逃。周公、召公共同行政，史称'共和行政'。这一年是中国历史有确切纪年的开始。",
+    "characters": [
+      "周公"
+    ],
+    "outcome": "周厉王出逃，共和行政开始",
+    "significance": "中国历史有确切纪年的开始",
+    "quote": "防民之口，甚于防川。"
+  },
+  {
+    "id": "pingwangdongqian",
+    "name": "平王东迁",
+    "chapter": "zhou",
+    "date": "公元前770年",
+    "year": -770,
+    "locationId": "luoyi",
+    "locationName": "洛邑",
+    "description": "犬戎攻杀周幽王后，太子宜臼在诸侯拥立下即位，是为周平王。因镐京残破，平王东迁至洛邑，建立东周。东迁后周天子权威急剧衰落，天子共主的地位名存实亡，诸侯争霸时代开启。",
+    "characters": [
+      "周平王"
+    ],
+    "outcome": "东周建立，周天子权威衰落",
+    "significance": "春秋时代的开端",
+    "quote": "平王东迁，政由方伯。"
+  },
+  {
+    "id": "tongyiliuguo",
+    "name": "统一六国",
+    "chapter": "qinshi",
+    "date": "公元前221年",
+    "year": -221,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦始皇嬴政历经十年征战，先后灭韩、赵、魏、楚、燕、齐六国，完成统一大业。自称始皇帝，建立中国历史上第一个中央集权帝国。",
+    "characters": [
+      "秦始皇",
+      "李斯"
+    ],
+    "outcome": "六国统一，秦朝建立",
+    "significance": "中国大一统帝国的开端",
+    "quote": "朕为始皇帝，后世以计数，二世三世至于万世，传之无穷。"
+  },
+  {
+    "id": "qinmiehan",
+    "name": "秦灭韩",
+    "chapter": "qinshi",
+    "date": "公元前230年",
+    "year": -230,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦国内史腾率军攻韩，韩王安被俘，韩国灭亡。韩国是六国中最弱的一个，也是最先被秦国灭亡的。",
+    "characters": [
+      "秦始皇"
+    ],
+    "outcome": "韩国灭亡",
+    "significance": "秦灭六国的第一步",
+    "quote": null
+  },
+  {
+    "id": "qinmiezhao",
+    "name": "秦灭赵",
+    "chapter": "qinshi",
+    "date": "公元前228年",
+    "year": -228,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦将王翦率军攻赵，赵军大败，赵王迁被俘。公子嘉逃往代地自立为代王，公元前222年被灭。",
+    "characters": [
+      "秦始皇",
+      "王翦"
+    ],
+    "outcome": "赵国灭亡",
+    "significance": "秦灭六国的关键一步",
+    "quote": null
+  },
+  {
+    "id": "qinmiechu",
+    "name": "秦灭楚",
+    "chapter": "qinshi",
+    "date": "公元前223年",
+    "year": -223,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦将王翦率六十万大军伐楚，经年累月，终灭楚国。楚将项燕战死，楚王负刍被俘。",
+    "characters": [
+      "秦始皇",
+      "王翦"
+    ],
+    "outcome": "楚国灭亡",
+    "significance": "灭掉六国中最强大的国家",
+    "quote": null
+  },
+  {
+    "id": "fenshukengru",
+    "name": "焚书坑儒",
+    "chapter": "qinshi",
+    "date": "公元前213年",
+    "year": -213,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦始皇采纳李斯建议，下令焚烧《诗》《书》及百家语，仅保留医药、卜筮、种树之书。次年又因方士求仙失败，坑杀儒生方士四百六十余人。",
+    "characters": [
+      "秦始皇",
+      "李斯"
+    ],
+    "outcome": "思想专制，文化浩劫",
+    "significance": "中国历史上著名的文化浩劫",
+    "quote": "史官非秦记皆烧之。非博士官所职，天下敢有藏诗、书、百家语者，悉诣守、尉杂烧之。"
+  },
+  {
+    "id": "xiuchangcheng",
+    "name": "修筑长城",
+    "chapter": "qinshi",
+    "date": "公元前214年",
+    "year": -214,
+    "locationId": "lintao",
+    "locationName": "临洮",
+    "description": "秦始皇派蒙恬率三十万大军北击匈奴，收复河套地区。为防御匈奴，将秦、赵、燕三国长城连接并加以扩建，形成万里长城。",
+    "characters": [
+      "秦始皇",
+      "蒙恬"
+    ],
+    "outcome": "长城修筑完成",
+    "significance": "世界七大奇迹之一",
+    "quote": "乃使蒙恬北筑长城而守藩篱，却匈奴七百余里。"
+  },
+  {
+    "id": "shadun",
+    "name": "沙丘之变",
+    "chapter": "qinshi",
+    "date": "公元前210年",
+    "year": -210,
+    "locationId": "shajuu",
+    "locationName": "沙丘",
+    "description": "秦始皇在巡游途中病逝于沙丘平台。赵高与李斯合谋篡改遗诏，逼死太子扶苏，立胡亥为二世皇帝，为秦朝速亡埋下祸根。",
+    "characters": [
+      "秦始皇",
+      "赵高",
+      "李斯",
+      "扶苏",
+      "胡亥"
+    ],
+    "outcome": "胡亥篡位，扶苏被杀",
+    "significance": "秦朝由盛转衰的转折点",
+    "quote": "会暑，上辒车臭，乃诏从官令车载一石鲍鱼，以乱其臭。"
+  },
+  {
+    "id": "liubangqibing",
+    "name": "刘邦起兵",
+    "chapter": "gaozu",
+    "date": "公元前209年",
+    "year": -209,
+    "locationId": "peixian",
+    "locationName": "沛县",
+    "description": "刘邦为泗水亭长，押送刑徒赴骊山，途中刑徒多有逃亡。刘邦索性释放所有刑徒，率十余名壮士逃入芒砀山。陈胜吴广起义后，刘邦在沛县响应起兵。",
+    "characters": [
+      "刘邦",
+      "樊哙"
+    ],
+    "outcome": "刘邦起兵反秦",
+    "significance": "汉王朝事业的起点",
+    "quote": "大丈夫当如此也！"
+  },
+  {
+    "id": "yuefasanzhang",
+    "name": "约法三章",
+    "chapter": "gaozu",
+    "date": "公元前206年",
+    "year": -206,
+    "locationId": "bashang",
+    "locationName": "霸上",
+    "description": "刘邦率军先入关中，秦王子婴投降。刘邦与关中父老约法三章：杀人者死，伤人及盗抵罪。废除秦朝苛法，深得民心。",
+    "characters": [
+      "刘邦"
+    ],
+    "outcome": "刘邦深得关中民心",
+    "significance": "刘邦取得民心的关键举措",
+    "quote": "父老苦秦苛法久矣。诽谤者族，偶语者弃市。"
+  },
+  {
+    "id": "chuhanzhengba",
+    "name": "楚汉争霸",
+    "chapter": "gaozu",
+    "date": "公元前206-202年",
+    "year": -206,
+    "locationId": "sishui",
+    "locationName": "汜水",
+    "description": "项羽分封诸侯后，刘邦不满被封为汉王。经过四年战争，刘邦在韩信、张良、萧何的辅佐下，最终击败项羽，统一天下。",
+    "characters": [
+      "刘邦",
+      "项羽",
+      "韩信",
+      "张良",
+      "萧何"
+    ],
+    "outcome": "刘邦胜利，建立汉朝",
+    "significance": "汉朝建立的决定性战争",
+    "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房。"
+  },
+  {
+    "id": "liubangchengdi",
+    "name": "刘邦称帝",
+    "chapter": "gaozu",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "dingtao",
+    "locationName": "定陶",
+    "description": "刘邦击败项羽后，在定陶汜水之阳举行登基大典，定国号为汉，定都长安。是为汉高祖，开创大汉四百年基业。",
+    "characters": [
+      "刘邦",
+      "萧何"
+    ],
+    "outcome": "汉朝建立",
+    "significance": "中国历史上最重要的王朝之一诞生",
+    "quote": "吾以布衣提三尺剑取天下，此非天命乎？"
+  },
+  {
+    "id": "jianchuyixingwang",
+    "name": "剪除异姓王",
+    "chapter": "gaozu",
+    "date": "公元前202-195年",
+    "year": -202,
+    "locationId": "luoyang",
+    "locationName": "洛阳",
+    "description": "刘邦称帝后，为巩固刘氏统治，逐步铲除韩信、彭越、英布等异姓诸侯王。韩信被吕后斩杀于长乐宫，彭越被剁成肉酱。",
+    "characters": [
+      "刘邦",
+      "吕后",
+      "韩信"
+    ],
+    "outcome": "异姓王被铲除",
+    "significance": "巩固了汉朝中央集权",
+    "quote": "狡兔死，走狗烹；高鸟尽，良弓藏。"
+  },
+  {
+    "id": "lvhouchengshi",
+    "name": "吕后称制",
+    "chapter": "lvhou",
+    "date": "公元前188年",
+    "year": -188,
+    "locationId": "weiyanggong",
+    "locationName": "未央宫",
+    "description": "汉惠帝死后，吕后临朝称制，成为中国历史上第一位实际掌握皇权的女性。她大封吕氏子弟为王侯，开启了外戚专权的先例。",
+    "characters": [
+      "吕后"
+    ],
+    "outcome": "吕后独揽大权",
+    "significance": "中国历史上女性掌权的开端",
+    "quote": null
+  },
+  {
+    "id": "renzhizhi",
+    "name": "人彘之祸",
+    "chapter": "lvhou",
+    "date": "公元前195年",
+    "year": -195,
+    "locationId": "zhaodi",
+    "locationName": "赵邸",
+    "description": "吕后因嫉妒戚夫人得宠，将其断手足、去眼、煇耳、饮哑药，置于厕所中，称为'人彘'。又毒杀戚夫人之子赵王如意。",
+    "characters": [
+      "吕后",
+      "刘如意"
+    ],
+    "outcome": "戚夫人母子惨死",
+    "significance": "吕后心狠手辣的象征",
+    "quote": null
+  },
+  {
+    "id": "zhuluzhiluan",
+    "name": "诸吕之乱",
+    "chapter": "lvhou",
+    "date": "公元前180年",
+    "year": -180,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "吕后死后，吕氏家族企图夺取刘氏政权。周勃、陈平等老臣联合刘氏宗室，发动政变，诛灭诸吕，迎立代王刘恒为汉文帝。",
+    "characters": [
+      "吕后",
+      "周勃",
+      "陈平",
+      "刘恒"
+    ],
+    "outcome": "诸吕被诛，汉文帝继位",
+    "significance": "保住了刘氏的天下",
+    "quote": "安刘氏者必勃也。"
+  },
+  {
+    "id": "kongzichushi",
+    "name": "孔子出世",
+    "chapter": "kongzi",
+    "date": "公元前551年",
+    "year": -551,
+    "locationId": "qufu",
+    "locationName": "曲阜",
+    "description": "孔子出生于鲁国陬邑。幼年丧父，家境贫寒。自幼好礼，十五岁志于学。青年时做过委吏、乘田等低级官吏。",
+    "characters": [
+      "孔子"
+    ],
+    "outcome": "至圣先师诞生",
+    "significance": "中国历史上最伟大的思想家诞生",
+    "quote": "吾十有五而志于学。"
+  },
+  {
+    "id": "zhouyoulieguo",
+    "name": "周游列国",
+    "chapter": "kongzi",
+    "date": "公元前497-484年",
+    "year": -497,
+    "locationId": "chencai",
+    "locationName": "陈蔡",
+    "description": "孔子带着弟子周游卫、曹、宋、郑、陈、蔡、楚等国，历时十四年，宣扬仁义之道，希望能得到诸侯的任用以推行政治理想，但终未如愿。",
+    "characters": [
+      "孔子",
+      "颜回",
+      "子路",
+      "子贡"
+    ],
+    "outcome": "未得任用，返回鲁国",
+    "significance": "孔子思想传播的重要途径",
+    "quote": "道不行，乘桴浮于海。"
+  },
+  {
+    "id": "shandingliujing",
+    "name": "删订六经",
+    "chapter": "kongzi",
+    "date": "公元前484-479年",
+    "year": -484,
+    "locationId": "xingtan",
+    "locationName": "杏坛",
+    "description": "孔子晚年回到鲁国，专心整理古代文献，删订《诗》《书》，定《礼》《乐》，序《周易》，作《春秋》，奠定了儒家经典体系。",
+    "characters": [
+      "孔子"
+    ],
+    "outcome": "儒家六经形成",
+    "significance": "中国文化经典的奠基",
+    "quote": "述而不作，信而好古。"
+  },
+  {
+    "id": "kongzishishi",
+    "name": "孔子逝世",
+    "chapter": "kongzi",
+    "date": "公元前479年",
+    "year": -479,
+    "locationId": "qufu",
+    "locationName": "曲阜",
+    "description": "孔子在鲁国曲阜逝世，享年七十三岁。弟子们为其守丧三年，子贡独守六年。孔子思想经由弟子整理传播，影响中国两千余年。",
+    "characters": [
+      "孔子",
+      "颜回",
+      "子贡"
+    ],
+    "outcome": "孔子逝世，思想永存",
+    "significance": "中国历史上最重要的思想家离世",
+    "quote": "太山坏乎！梁柱摧乎！哲人萎乎！"
+  },
+  {
+    "id": "dazexiangyi",
+    "name": "大泽乡起义",
+    "chapter": "cheshe",
+    "date": "公元前209年",
+    "year": -209,
+    "locationId": "dazexiang",
+    "locationName": "大泽乡",
+    "description": "陈胜、吴广被征发戍守渔阳，行至大泽乡遇大雨，道路不通，不能按期到达。按秦法失期当斩，二人遂发动起义，提出'王侯将相宁有种乎'。",
+    "characters": [
+      "陈胜",
+      "吴广"
+    ],
+    "outcome": "起义爆发，天下响应",
+    "significance": "中国历史上第一次大规模农民起义",
+    "quote": "王侯将相宁有种乎！"
+  },
+  {
+    "id": "chenshengchengwang",
+    "name": "陈胜称王",
+    "chapter": "cheshe",
+    "date": "公元前209年",
+    "year": -209,
+    "locationId": "chenxian",
+    "locationName": "陈县",
+    "description": "陈胜攻克陈县后，自立为王，国号张楚。各地纷纷响应，六国旧贵族也乘机复国。陈胜派周文率大军西征，直抵戏亭，距咸阳仅百里。",
+    "characters": [
+      "陈胜",
+      "葛婴"
+    ],
+    "outcome": "张楚政权建立",
+    "significance": "农民起义建立政权的先例",
+    "quote": "且壮士不死即已，死即举大名耳，王侯将相宁有种乎！"
+  },
+  {
+    "id": "qiyishibai",
+    "name": "起义失败",
+    "chapter": "cheshe",
+    "date": "公元前208年",
+    "year": -208,
+    "locationId": "xingyang",
+    "locationName": "荥阳",
+    "description": "秦将章邯率骊山刑徒反击，周文兵败自杀。吴广被部将田臧杀害。章邯攻破陈县，陈胜败退至下城父，被车夫庄贾杀害。",
+    "characters": [
+      "陈胜",
+      "吴广",
+      "田臧"
+    ],
+    "outcome": "陈胜吴广遇害，起义失败",
+    "significance": "首次大规模农民起义的失败教训",
+    "quote": "燕雀安知鸿鹄之志哉！"
+  },
+  {
+    "id": "yishuisongbie",
+    "name": "易水送别",
+    "chapter": "cike",
+    "date": "公元前227年",
+    "year": -227,
+    "locationId": "yishui",
+    "locationName": "易水",
+    "description": "荆轲受命入秦刺杀秦王政，燕太子丹及宾客送至易水之上。高渐离击筑，荆轲和而歌，唱出'风萧萧兮易水寒，壮士一去兮不复还'的千古悲歌。",
+    "characters": [
+      "荆轲",
+      "太子丹",
+      "高渐离"
+    ],
+    "outcome": "荆轲赴秦，众人悲痛送别",
+    "significance": "中国历史上最悲壮的送别场景",
+    "quote": "风萧萧兮易水寒，壮士一去兮不复还！"
+  },
+  {
+    "id": "jingkecihan",
+    "name": "荆轲刺秦王",
+    "chapter": "cike",
+    "date": "公元前227年",
+    "year": -227,
+    "locationId": "xianyanggong",
+    "locationName": "咸阳宫",
+    "description": "荆轲携樊於期首级和督亢地图入秦，在咸阳宫面见秦王。献地图时图穷匕见，荆轲持匕首追击秦王，秦王绕柱而走。最终荆轲被秦王拔剑击杀。",
+    "characters": [
+      "荆轲",
+      "秦始皇",
+      "太子丹"
+    ],
+    "outcome": "行刺失败，荆轲被杀",
+    "significance": "战国末期最惊心动魄的刺杀事件",
+    "quote": "风萧萧兮易水寒，壮士一去兮不复还！"
+  },
+  {
+    "id": "gaojianlijizhu",
+    "name": "高渐离击筑",
+    "chapter": "cike",
+    "date": "公元前221年",
+    "year": -221,
+    "locationId": "xianyanggong",
+    "locationName": "咸阳宫",
+    "description": "荆轲刺秦失败后，高渐离隐姓埋名为人做雇工。后因击筑技艺高超被秦始皇召入宫中。他以筑中灌铅，在演奏时扑击秦始皇，未中，被杀。",
+    "characters": [
+      "高渐离",
+      "秦始皇"
+    ],
+    "outcome": "行刺未遂，高渐离被杀",
+    "significance": "义士为友复仇的悲壮故事",
+    "quote": null
+  },
+  {
+    "id": "zhuangzhuciwangliao",
+    "name": "专诸刺王僚",
+    "chapter": "cike",
+    "date": "公元前515年",
+    "year": -515,
+    "locationId": "wu_guo",
+    "locationName": "吴国",
+    "description": "吴国公子光（即后来的吴王阖闾）欲杀吴王僚自立。伍子胥推荐勇士专诸，专诸将匕首藏于烤鱼腹中，在宴席上趁献鱼之机刺杀吴王僚，专诸当场被杀。",
+    "characters": [
+      "专诸",
+      "吴王僚"
+    ],
+    "outcome": "吴王僚被杀，公子光即位为吴王阖闾",
+    "significance": "鱼肠剑典故的由来",
+    "quote": null
+  },
+  {
+    "id": "wanbi",
+    "name": "完璧归赵",
+    "chapter": "lianpo",
+    "date": "公元前283年",
+    "year": -283,
+    "locationId": "qin",
+    "locationName": "秦国",
+    "description": "秦昭王欲以十五城换赵国的和氏璧。蔺相如携璧入秦，察觉秦王无诚意，巧设计谋将和氏璧完好送回赵国。",
+    "characters": [
+      "蔺相如",
+      "秦昭襄王",
+      "赵惠文王"
+    ],
+    "outcome": "和氏璧完好归还赵国",
+    "significance": "蔺相如智慧勇敢的经典体现",
+    "quote": "城不入，臣请完璧归赵。"
+  },
+  {
+    "id": "miandian",
+    "name": "渑池之会",
+    "chapter": "lianpo",
+    "date": "公元前279年",
+    "year": -279,
+    "locationId": "miandian",
+    "locationName": "渑池",
+    "description": "秦赵两国国君在渑池相会。秦王借酒意羞辱赵王，蔺相如以死相拼，维护了赵国的尊严。回国后拜为上卿，位在廉颇之上。",
+    "characters": [
+      "蔺相如",
+      "廉颇",
+      "赵惠文王",
+      "秦昭襄王"
+    ],
+    "outcome": "赵国尊严得到维护",
+    "significance": "将相和的前奏",
+    "quote": "五步之内，相如请得以颈血溅大王矣！"
+  },
+  {
+    "id": "fujing",
+    "name": "负荆请罪",
+    "chapter": "lianpo",
+    "date": "公元前279年",
+    "year": -279,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "廉颇不满蔺相如位高于己，扬言羞辱。蔺相如以国家大局为重避让。廉颇得知后深受感动，脱去上衣，背负荆条到蔺相如门前请罪。二人结为生死之交。",
+    "characters": [
+      "廉颇",
+      "蔺相如"
+    ],
+    "outcome": "廉颇蔺相如和好，将相团结",
+    "significance": "千古流传的团结典范",
+    "quote": "鄙贱之人，不知将军宽之至此也！"
+  },
+  {
+    "id": "changping",
+    "name": "长平之战",
+    "chapter": "lianpo",
+    "date": "公元前260年",
+    "year": -260,
+    "locationId": "changping",
+    "locationName": "长平",
+    "description": "秦赵两国在长平展开战略决战。赵王中秦反间计，以赵括代替廉颇为将。赵括只会'纸上谈兵'，导致赵军大败，四十万赵军被坑杀。",
+    "characters": [
+      "廉颇",
+      "赵括",
+      "秦昭襄王"
+    ],
+    "outcome": "赵国惨败，四十万大军被坑杀",
+    "significance": "战国历史的转折点，赵国由盛转衰",
+    "quote": "赵括自少时学兵法，言兵事，以天下莫能当。"
+  },
+  {
+    "id": "julu",
+    "name": "巨鹿之战",
+    "chapter": "xiangyu",
+    "date": "公元前207年",
+    "year": -207,
+    "locationId": "julu",
+    "locationName": "巨鹿",
+    "description": "项羽率领楚军渡过漳河，破釜沉舟，以少胜多，大败秦军主力。此战奠定了项羽在各路义军中的领导地位。",
+    "characters": [
+      "项羽",
+      "章邯",
+      "宋义"
+    ],
+    "outcome": "项羽大胜，秦军主力被歼灭",
+    "significance": "秦朝灭亡的决定性战役",
+    "quote": "项羽乃悉引兵渡河，皆沉船，破釜甑，烧庐舍，持三日粮，以示士卒必死，无一还心。"
+  },
+  {
+    "id": "hongmen",
+    "name": "鸿门宴",
+    "chapter": "xiangyu",
+    "date": "公元前206年",
+    "year": -206,
+    "locationId": "hongmen",
+    "locationName": "鸿门",
+    "description": "刘邦先入关中，项羽大怒，欲攻之。刘邦赴鸿门谢罪，范增劝项羽杀刘邦，但项羽犹豫不决。刘邦借故逃脱，范增怒斥'竖子不足与谋'。",
+    "characters": [
+      "项羽",
+      "刘邦",
+      "范增",
+      "张良"
+    ],
+    "outcome": "刘邦逃脱，为日后争霸埋下伏笔",
+    "significance": "楚汉命运的转折点",
+    "quote": "范增数目项王，举所佩玉玦以示之者三，项王默然不应。"
+  },
+  {
+    "id": "fenfeng",
+    "name": "分封诸侯",
+    "chapter": "xiangyu",
+    "date": "公元前206年",
+    "year": -206,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "项羽进入咸阳后，火烧阿房宫，杀死秦王子婴。随后自立为西楚霸王，分封十八路诸侯，将刘邦封为汉王，迁往巴蜀。",
+    "characters": [
+      "项羽",
+      "刘邦"
+    ],
+    "outcome": "项羽称霸，但分封不公引发诸侯不满",
+    "significance": "项羽政治短视的体现",
+    "quote": "项王自立为西楚霸王，王九郡，都彭城。"
+  },
+  {
+    "id": "pengcheng",
+    "name": "彭城之战",
+    "chapter": "xiangyu",
+    "date": "公元前205年",
+    "year": -205,
+    "locationId": "pengcheng",
+    "locationName": "彭城",
+    "description": "刘邦趁项羽北上讨伐齐国之机，率五路诸侯联军攻占彭城。项羽率三万精骑回师，大破刘邦五十六万大军。",
+    "characters": [
+      "项羽",
+      "刘邦"
+    ],
+    "outcome": "项羽以少胜多，刘邦大败",
+    "significance": "项羽军事才能的巅峰之作",
+    "quote": "项王引兵西屠咸阳...烧秦宫室，火三月不灭。"
+  },
+  {
+    "id": "gaixia",
+    "name": "垓下之围",
+    "chapter": "xiangyu",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "gaixia",
+    "locationName": "垓下",
+    "description": "韩信率联军围困项羽于垓下，四面楚歌瓦解楚军士气。项羽夜饮帐中，悲歌'力拔山兮气盖世'，虞姬自刎殉情。",
+    "characters": [
+      "项羽",
+      "虞姬",
+      "韩信"
+    ],
+    "outcome": "楚军崩溃，项羽突围南下",
+    "significance": "楚汉争霸的决战",
+    "quote": "力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！"
+  },
+  {
+    "id": "wujiang",
+    "name": "乌江自刎",
+    "chapter": "xiangyu",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "wujiang",
+    "locationName": "乌江",
+    "description": "项羽突围至乌江边，乌江亭长劝其渡江东山再起。项羽笑曰'天之亡我，非战之罪'，以无颜见江东父老为由拒绝，自刎而死。",
+    "characters": [
+      "项羽"
+    ],
+    "outcome": "项羽身死，楚汉争霸结束",
+    "significance": "一代霸王悲剧落幕",
+    "quote": "天之亡我，非战之罪也。"
+  },
+  {
+    "id": "xiangyu_qibing",
+    "name": "项羽起兵",
+    "chapter": "xiangyu",
+    "date": "公元前209年",
+    "year": -209,
+    "locationId": "kuaiji",
+    "locationName": "会稽",
+    "description": "陈胜吴广起义后，项梁、项羽在会稽杀郡守殷通，率吴中子弟起兵响应。项羽时年二十四岁，身高八尺余，力能扛鼎，才气过人。",
+    "characters": [
+      "项羽",
+      "项梁"
+    ],
+    "outcome": "成功起兵，加入反秦浪潮",
+    "significance": "项羽登上历史舞台的起点",
+    "quote": "彼可取而代也。"
+  },
+  {
+    "id": "xiangliang_zhanshi",
+    "name": "项梁战死",
+    "chapter": "xiangyu",
+    "date": "公元前208年",
+    "year": -208,
+    "locationId": "dingtao",
+    "locationName": "定陶",
+    "description": "项梁在连胜之后轻敌，被秦将章邯夜袭定陶，项梁战死。楚军大震，项羽从此独立领军。",
+    "characters": [
+      "项羽",
+      "项梁",
+      "章邯"
+    ],
+    "outcome": "项梁战死，楚军受挫",
+    "significance": "项羽独立统军的转折点",
+    "quote": null
+  },
+  {
+    "id": "liangpo_shougu",
+    "name": "廉颇守长平",
+    "chapter": "lianpo",
+    "date": "公元前260年",
+    "year": -260,
+    "locationId": "changping",
+    "locationName": "长平",
+    "description": "秦赵长平对峙三年，廉颇采取坚壁清野、以逸待劳的策略，使秦军无法前进。秦军苦于无法突破廉颇的防线。",
+    "characters": [
+      "廉颇",
+      "秦昭襄王"
+    ],
+    "outcome": "廉颇成功守住防线，秦军久攻不下",
+    "significance": "廉颇稳健用兵的体现",
+    "quote": null
+  },
+  {
+    "id": "fujiaozhi",
+    "name": "夫椒之战",
+    "chapter": "wuyue",
+    "date": "公元前494年",
+    "year": -494,
+    "locationId": "gusu_tai",
+    "locationName": "夫椒",
+    "description": "吴王夫差大败越国，勾践被迫退守会稽山，后率残部投降。",
+    "characters": [
+      "勾践",
+      "夫差"
+    ],
+    "outcome": "越国惨败",
+    "significance": "越国由盛转衰的转折点",
+    "quote": null
+  },
+  {
+    "id": "woxinchangdan",
+    "name": "卧薪尝胆",
+    "chapter": "wuyue",
+    "date": "公元前493-前473年",
+    "year": -483,
+    "locationId": "kuaiji_wuyue",
+    "locationName": "会稽山",
+    "description": "勾践回国后，睡柴草、尝苦胆以自励，励精图治二十年，终于使越国富强。",
+    "characters": [
+      "勾践",
+      "范蠡",
+      "文种"
+    ],
+    "outcome": "越国复兴",
+    "significance": "坚忍不拔精神的象征",
+    "quote": "十年生聚，十年教训。"
+  },
+  {
+    "id": "fanliguiyin",
+    "name": "范蠡归隐",
+    "chapter": "wuyue",
+    "date": "公元前473年",
+    "year": -473,
+    "locationId": "wuhu",
+    "locationName": "五湖",
+    "description": "越国灭吴后，范蠡急流勇退，携西施泛舟五湖而去，后经商致富。",
+    "characters": [
+      "范蠡",
+      "西施",
+      "勾践"
+    ],
+    "outcome": "功成身退",
+    "significance": "知进退的智者典范",
+    "quote": "飞鸟尽，良弓藏；狡兔死，走狗烹。"
+  },
+  {
+    "id": "goujianmiewu",
+    "name": "勾践灭吴",
+    "chapter": "wuyue",
+    "date": "公元前473年",
+    "year": -473,
+    "locationId": "gusu",
+    "locationName": "姑苏",
+    "description": "经过多年准备，勾践率军攻破吴国都城姑苏，夫差自刎，吴国灭亡。",
+    "characters": [
+      "勾践",
+      "夫差"
+    ],
+    "outcome": "吴国灭亡",
+    "significance": "春秋最后一位霸主诞生",
+    "quote": null
+  },
+  {
+    "id": "ximulixin",
+    "name": "徙木立信",
+    "chapter": "shangjun",
+    "date": "公元前356年",
+    "year": -356,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "商鞅在秦国国都市南门立三丈之木，宣布谁能搬到北门就赏五十金，以此树立政府威信。",
+    "characters": [
+      "商鞅",
+      "秦孝公"
+    ],
+    "outcome": "百姓信任新法",
+    "significance": "变法成功的第一步",
+    "quote": null
+  },
+  {
+    "id": "shangyangbianfa",
+    "name": "商鞅变法",
+    "chapter": "shangjun",
+    "date": "公元前356-前338年",
+    "year": -347,
+    "locationId": "xianyang",
+    "locationName": "秦国",
+    "description": "商鞅在秦国推行一系列改革：废井田、开阡陌，奖励耕战，实行军功爵制，建立县制，使秦国迅速富强。",
+    "characters": [
+      "商鞅",
+      "秦孝公",
+      "公子虔",
+      "甘龙"
+    ],
+    "outcome": "秦国富强",
+    "significance": "为秦统一六国奠定基础",
+    "quote": "治世不一道，便国不法古。"
+  },
+  {
+    "id": "chelieshangyang",
+    "name": "车裂商鞅",
+    "chapter": "shangjun",
+    "date": "公元前338年",
+    "year": -338,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦孝公去世，太子驷即位（秦惠文王）。公子虔等旧贵族诬告商鞅谋反，商鞅逃亡不成，被处以车裂之刑。",
+    "characters": [
+      "商鞅",
+      "公子虔",
+      "秦孝公"
+    ],
+    "outcome": "商鞅被处死",
+    "significance": "改革者的悲剧命运",
+    "quote": null
+  },
+  {
+    "id": "qiefujiu",
+    "name": "窃符救赵",
+    "chapter": "weigongzi",
+    "date": "公元前257年",
+    "year": -257,
+    "locationId": "yimen",
+    "locationName": "大梁",
+    "description": "秦军围邯郸，信陵君在侯嬴、如姬帮助下窃得兵符，与朱亥一同赴赵，椎杀晋鄙，夺兵权救赵。",
+    "characters": [
+      "信陵君",
+      "侯嬴",
+      "朱亥",
+      "如姬",
+      "魏王",
+      "平原君"
+    ],
+    "outcome": "赵国之围得解",
+    "significance": "信陵君侠义精神的最高体现",
+    "quote": "北乡自刭以送公子。"
+  },
+  {
+    "id": "maosui_zijian",
+    "name": "毛遂自荐",
+    "chapter": "weigongzi",
+    "date": "公元前257年",
+    "year": -257,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "平原君赴楚求救，毛遂自荐随行。在楚国朝堂上按剑而谈，说服楚王合纵抗秦，订立盟约。",
+    "characters": [
+      "平原君",
+      "毛遂"
+    ],
+    "outcome": "楚赵结盟",
+    "significance": "自荐成功的典范",
+    "quote": "毛遂自荐，脱颖而出。"
+  },
+  {
+    "id": "jiuzhaocunwei",
+    "name": "救赵存魏",
+    "chapter": "weigongzi",
+    "date": "公元前257年",
+    "year": -257,
+    "locationId": "yecheng",
+    "locationName": "邺城",
+    "description": "信陵君率八万魏军大破秦军，解邯郸之围，使赵国得以保存，魏国也免受秦国直接威胁。",
+    "characters": [
+      "信陵君",
+      "朱亥"
+    ],
+    "outcome": "秦赵暂时罢兵",
+    "significance": "信陵君威震天下",
+    "quote": null
+  },
+  {
+    "id": "liguangsheshi",
+    "name": "李广射石",
+    "chapter": "liguang",
+    "date": "公元前166年左右",
+    "year": -166,
+    "locationId": "shangjun_loc",
+    "locationName": "上郡",
+    "description": "李广出猎，见草中石，以为是虎而射之，箭入石中。后知道是石头，再射则不能入。",
+    "characters": [
+      "李广"
+    ],
+    "outcome": "箭入石中",
+    "significance": "李广神射的经典故事",
+    "quote": null
+  },
+  {
+    "id": "mobizhizhan",
+    "name": "漠北之战",
+    "chapter": "liguang",
+    "date": "公元前119年",
+    "year": -119,
+    "locationId": "youbeiping",
+    "locationName": "右北平",
+    "description": "汉武帝发动漠北大战，卫青、霍去病分路出击匈奴。李广任前将军，因迷路失期未能参战。",
+    "characters": [
+      "李广",
+      "卫青",
+      "霍去病",
+      "汉武帝"
+    ],
+    "outcome": "汉军大胜",
+    "significance": "决定性战役",
+    "quote": null
+  },
+  {
+    "id": "liguangziwen",
+    "name": "李广自刎",
+    "chapter": "liguang",
+    "date": "公元前119年",
+    "year": -119,
+    "locationId": "youbeiping",
+    "locationName": "右北平",
+    "description": "漠北之战后，李广因迷路失期将被审讯。他对部下说'广结发与匈奴大小七十余战'，不愿受刀笔吏之辱，引刀自刎。",
+    "characters": [
+      "李广",
+      "卫青"
+    ],
+    "outcome": "李广自杀",
+    "significance": "悲剧英雄的结局",
+    "quote": "广结发与匈奴大小七十余战，今幸从大将军出接单于兵，而大将军又徙广部行回远，而又迷失道，岂非天哉！"
+  },
+  {
+    "id": "jiangtaigong",
+    "name": "姜太公钓鱼",
+    "chapter": "qitaigong",
+    "date": "约公元前1128年",
+    "year": -1128,
+    "locationId": "weishui",
+    "locationName": "渭水",
+    "description": "姜子牙在渭水边垂钓，以直钩钓鱼，寓意愿者上钩。周文王出猎遇之，拜为太师。",
+    "characters": [
+      "姜太公",
+      "周文王"
+    ],
+    "outcome": "周文王拜姜子牙为太师",
+    "significance": "周朝兴起的开端",
+    "quote": "姜太公钓鱼，愿者上钩。"
+  },
+  {
+    "id": "zunwangrangyi",
+    "name": "尊王攘夷",
+    "chapter": "qitaigong",
+    "date": "公元前651年",
+    "year": -651,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "齐桓公在管仲辅佐下，以'尊王攘夷'为口号，联合诸侯北击山戎，南伐楚国，成为春秋首霸。",
+    "characters": [
+      "齐桓公",
+      "管仲",
+      "鲍叔牙"
+    ],
+    "outcome": "齐国称霸",
+    "significance": "春秋第一位霸主诞生",
+    "quote": null
+  },
+  {
+    "id": "kuiqiu_zhihui",
+    "name": "葵丘之会",
+    "chapter": "qitaigong",
+    "date": "公元前651年",
+    "year": -651,
+    "locationId": "kuiqiu",
+    "locationName": "葵丘",
+    "description": "齐桓公在葵丘大会诸侯，周天子遣使赐胙，确认其霸主地位。桓公与诸侯订立盟约，规定不得堵塞水源、不得囤积粮食、不得随意废嫡立庶，史称葵丘之会。此为齐桓公霸业的巅峰。",
+    "characters": [
+      "齐桓公",
+      "管仲"
+    ],
+    "outcome": "齐桓公霸业达到巅峰",
+    "significance": "春秋霸主地位的正式确认",
+    "quote": "葵丘之会，诸侯皆至，天子使赐桓公胙。"
+  },
+  {
+    "id": "guanbaozhijiao",
+    "name": "管鲍之交",
+    "chapter": "guanyan",
+    "date": "公元前723年左右",
+    "year": -723,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "管仲与鲍叔牙早年经商，分利时管仲多取，鲍叔牙知其家贫不以为贪。后鲍叔牙向齐桓公力荐管仲为相。",
+    "characters": [
+      "管仲",
+      "鲍叔牙",
+      "齐桓公"
+    ],
+    "outcome": "管仲拜相",
+    "significance": "千古传颂的知己友谊",
+    "quote": "生我者父母，知我者鲍子也。"
+  },
+  {
+    "id": "ertaoshasanshi",
+    "name": "二桃杀三士",
+    "chapter": "guanyan",
+    "date": "公元前500年左右",
+    "year": -500,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "齐景公手下有三勇士：公孙接、田开疆、古冶子。晏婴设计以两个桃子让三人争功，三人相继自杀。",
+    "characters": [
+      "晏婴",
+      "齐景公"
+    ],
+    "outcome": "三士自杀",
+    "significance": "晏婴智慧的体现",
+    "quote": null
+  },
+  {
+    "id": "guanzhong_gaige",
+    "name": "管仲改革",
+    "chapter": "guanyan",
+    "date": "公元前685年左右",
+    "year": -685,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "管仲辅佐齐桓公进行全面改革：实行'相地而衰征'，按土地好坏征税；推行'士农工商'四民分业定居；发展渔盐之利；设军政合一的制度。使齐国经济繁荣、军事强盛，为齐桓公称霸奠定基础。",
+    "characters": [
+      "管仲",
+      "齐桓公"
+    ],
+    "outcome": "齐国富强",
+    "significance": "春秋时期最成功的改革之一",
+    "quote": "仓廪实而知礼节，衣食足而知荣辱。"
+  },
+  {
+    "id": "yishangshoushu",
+    "name": "圯上受书",
+    "chapter": "liuhou",
+    "date": "公元前218年左右",
+    "year": -218,
+    "locationId": "xiapi",
+    "locationName": "下邳",
+    "description": "张良在下邳圯桥遇黄石公。黄石公故意丢鞋让张良拾取，三次约会试探其耐心，最终传授《太公兵法》。",
+    "characters": [
+      "张良",
+      "黄石公"
+    ],
+    "outcome": "张良得兵法",
+    "significance": "张良人生的转折点",
+    "quote": null
+  },
+  {
+    "id": "yunchouweiwo",
+    "name": "运筹帷幄",
+    "chapter": "liuhou",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "刘邦评价张良：'夫运筹策帷帐之中，决胜于千里之外，吾不如子房。'张良以谋略辅佐刘邦战胜项羽、建立汉朝。",
+    "characters": [
+      "张良",
+      "刘邦"
+    ],
+    "outcome": "汉朝建立",
+    "significance": "张良谋略的最高体现",
+    "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房。"
+  },
+  {
+    "id": "kuaxiazhiru",
+    "name": "胯下之辱",
+    "chapter": "huaiyinhou",
+    "date": "公元前210年左右",
+    "year": -210,
+    "locationId": "huaiyin",
+    "locationName": "淮阴",
+    "description": "韩信年轻时穷困潦倒，被市井少年羞辱，逼他从胯下钻过。韩信忍辱负重，后成为一代名将。",
+    "characters": [
+      "韩信"
+    ],
+    "outcome": "韩信忍辱",
+    "significance": "大丈夫的隐忍智慧",
+    "quote": null
+  },
+  {
+    "id": "xiaoyuezhuihanxin",
+    "name": "萧何月下追韩信",
+    "chapter": "huaiyinhou",
+    "date": "公元前206年",
+    "year": -206,
+    "locationId": "nanzheng",
+    "locationName": "南郑",
+    "description": "韩信因不受刘邦重用而逃离。萧何闻讯连夜追赶，向刘邦力荐韩信。刘邦拜韩信为大将，开启楚汉战争新局面。",
+    "characters": [
+      "韩信",
+      "萧何",
+      "刘邦"
+    ],
+    "outcome": "韩信拜大将",
+    "significance": "韩信人生的转折点",
+    "quote": "国士无双。"
+  },
+  {
+    "id": "shimianmaifu",
+    "name": "十面埋伏",
+    "chapter": "huaiyinhou",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "gaixia",
+    "locationName": "垓下",
+    "description": "韩信率汉军在垓下围困项羽，以十面埋伏大破楚军，并命人四面唱起楚歌瓦解楚军士气，最终迫使项羽自刎。",
+    "characters": [
+      "韩信",
+      "项羽",
+      "刘邦"
+    ],
+    "outcome": "项羽自刎",
+    "significance": "楚汉争霸的终结",
+    "quote": null
+  },
+  {
+    "id": "zhougongfuzheng",
+    "name": "周公辅政",
+    "chapter": "lu",
+    "date": "公元前1042年",
+    "year": -1042,
+    "locationId": "luoyi",
+    "locationName": "洛邑",
+    "description": "周武王去世后，成王年幼，周公摄政。他平定三监之乱，东征叛乱，稳定周朝统治。",
+    "characters": [
+      "周公",
+      "周成王"
+    ],
+    "outcome": "周朝稳定",
+    "significance": "奠定周朝基业",
+    "quote": null
+  },
+  {
+    "id": "zhilizuoyue",
+    "name": "制礼作乐",
+    "chapter": "lu",
+    "date": "公元前1042年左右",
+    "year": -1042,
+    "locationId": "qufu",
+    "locationName": "曲阜",
+    "description": "周公在鲁国制定礼乐制度，规范宗法等级、祭祀礼仪、音乐舞蹈等，奠定中华礼乐文明的基础。",
+    "characters": [
+      "周公"
+    ],
+    "outcome": "礼乐制度确立",
+    "significance": "中华礼乐文明的开端",
+    "quote": null
+  },
+  {
+    "id": "caomojiemeng",
+    "name": "曹沫劫盟",
+    "chapter": "lu",
+    "date": "公元前681年",
+    "year": -681,
+    "locationId": "kelu",
+    "locationName": "柯邑",
+    "description": "齐鲁会盟时，鲁国勇士曹沫持匕首劫持齐桓公，逼迫他归还侵占的鲁国土地。齐桓公答应后，曹沫放下匕首，从容归位。",
+    "characters": [
+      "曹沫",
+      "齐桓公",
+      "管仲"
+    ],
+    "outcome": "齐国归还鲁国土地",
+    "significance": "勇士胆识的典范",
+    "quote": null
+  },
+  {
+    "id": "chongerchuwang",
+    "name": "重耳出亡",
+    "chapter": "jin",
+    "date": "公元前655-前636年",
+    "year": -645,
+    "locationId": "jiangyi",
+    "locationName": "绛邑",
+    "description": "晋献公宠爱骊姬，逼死太子申生，重耳被迫流亡。他历经狄、齐、曹、宋、郑、楚、秦等国，历时十九年，最终回国即位。",
+    "characters": [
+      "晋文公",
+      "介子推",
+      "狐偃"
+    ],
+    "outcome": "重耳回国即位",
+    "significance": "晋文公称霸的基础",
+    "quote": null
+  },
+  {
+    "id": "jiezituigeigu",
+    "name": "介子推割股",
+    "chapter": "jin",
+    "date": "公元前655年左右",
+    "year": -655,
+    "locationId": "jieshan",
+    "locationName": "介山",
+    "description": "重耳流亡途中饥饿难耐，介子推割下自己大腿的肉煮汤给重耳吃。重耳感动不已，许诺日后报答。",
+    "characters": [
+      "晋文公",
+      "介子推"
+    ],
+    "outcome": "重耳得以存活",
+    "significance": "忠臣义士的典范",
+    "quote": null
+  },
+  {
+    "id": "chengpozhizhan",
+    "name": "城濮之战",
+    "chapter": "jin",
+    "date": "公元前632年",
+    "year": -632,
+    "locationId": "chengpu",
+    "locationName": "城濮",
+    "description": "晋楚争霸的关键战役。晋文公兑现当年对楚成王的承诺，退避三舍（九十里），然后反击，大败楚军。晋文公由此成为春秋霸主。",
+    "characters": [
+      "晋文公",
+      "狐偃",
+      "楚成王"
+    ],
+    "outcome": "晋国大胜",
+    "significance": "晋文公称霸的决定性战役",
+    "quote": null
+  },
+  {
+    "id": "chonger_chuji",
+    "name": "重耳过楚",
+    "chapter": "jin",
+    "date": "公元前637年",
+    "year": -637,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "晋文公重耳流亡途中经过楚国，楚成王以诸侯之礼相待。楚成王问重耳日后如何报答，重耳答：若日后两军交战，愿退避三舍以报。后来城濮之战中重耳果然兑现诺言。",
+    "characters": [
+      "晋文公",
+      "楚成王"
+    ],
+    "outcome": "重耳得到楚国礼遇",
+    "significance": "退避三舍典故的由来",
+    "quote": "退避三舍，以报楚恩。"
+  },
+  {
+    "id": "sanjiafenjin",
+    "name": "三家分晋",
+    "chapter": "jin",
+    "date": "公元前403年",
+    "year": -403,
+    "locationId": "jiangyi",
+    "locationName": "绛邑",
+    "description": "晋国被韩、赵、魏三家瓜分，周威烈王正式承认三家为诸侯。这一事件标志着春秋结束、战国开始。",
+    "characters": [
+      "赵襄子",
+      "韩康子",
+      "魏桓子"
+    ],
+    "outcome": "晋国灭亡",
+    "significance": "春秋与战国的分界点",
+    "quote": null
+  },
+  {
+    "id": "yimingjingren",
+    "name": "一鸣惊人",
+    "chapter": "chu",
+    "date": "公元前613年",
+    "year": -613,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "楚庄王即位后三年不理朝政，日夜饮酒作乐。有大臣问他：'有鸟止南方之阜，三年不飞不鸣，是何鸟也？'庄王答：'不飞则已，一飞冲天；不鸣则已，一鸣惊人。'随后整顿朝纲，任用孙叔敖，楚国大治。",
+    "characters": [
+      "楚庄王",
+      "孙叔敖"
+    ],
+    "outcome": "楚国大治",
+    "significance": "楚庄王崛起的开端",
+    "quote": "不飞则已，一飞冲天；不鸣则已，一鸣惊人。"
+  },
+  {
+    "id": "wendingzhongyuan",
+    "name": "问鼎中原",
+    "chapter": "chu",
+    "date": "公元前606年",
+    "year": -606,
+    "locationId": "luoyi",
+    "locationName": "洛邑",
+    "description": "楚庄王北伐陆浑之戎，陈兵于周朝边境。周定王派王孙满慰问，楚庄王问周鼎的大小轻重，有夺取天下的野心。王孙满答：'在德不在鼎。'",
+    "characters": [
+      "楚庄王"
+    ],
+    "outcome": "楚庄王撤兵",
+    "significance": "楚国霸权的象征",
+    "quote": null
+  },
+  {
+    "id": "bizhizhan",
+    "name": "邲之战",
+    "chapter": "chu",
+    "date": "公元前597年",
+    "year": -597,
+    "locationId": "bicheng",
+    "locationName": "邲",
+    "description": "楚庄王率军与晋军在邲交战。晋军将领意见不一，指挥混乱。楚军大败晋军，晋军争船渡河，自相践踏。此战楚国击败当时最强诸侯晋国，楚庄王成为春秋霸主。",
+    "characters": [
+      "楚庄王",
+      "楚成王"
+    ],
+    "outcome": "楚军大胜，楚庄王称霸",
+    "significance": "楚庄王正式成为春秋霸主的决定性战役",
+    "quote": "楚军大败晋师于邲，遂称霸。"
+  },
+  {
+    "id": "wuzixubenwu",
+    "name": "伍子胥奔吴",
+    "chapter": "chu",
+    "date": "公元前522年",
+    "year": -522,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "楚平王听信费无忌谗言，杀害伍子胥父兄。伍子胥逃亡吴国，发誓报仇。他辅佐吴王阖闾，最终攻破楚国都城。",
+    "characters": [
+      "伍子胥",
+      "楚平王"
+    ],
+    "outcome": "伍子胥逃亡吴国",
+    "significance": "吴国崛起的转折点",
+    "quote": null
+  },
+  {
+    "id": "quyuantoujiang",
+    "name": "屈原投江",
+    "chapter": "chu",
+    "date": "公元前278年",
+    "year": -278,
+    "locationId": "miluojiang",
+    "locationName": "汨罗江",
+    "description": "秦国大将白起攻破楚国郢都，屈原绝望之际，作《怀沙》赋，抱石自投汨罗江而死。后人每年端午节划龙舟、吃粽子纪念他。",
+    "characters": [
+      "屈原",
+      "楚怀王"
+    ],
+    "outcome": "屈原自杀",
+    "significance": "爱国诗人的悲剧",
+    "quote": "路漫漫其修远兮，吾将上下而求索。"
+  },
+  {
+    "id": "quyuan_liuchun",
+    "name": "屈原流放",
+    "chapter": "chu",
+    "date": "公元前299年",
+    "year": -299,
+    "locationId": "miluojiang",
+    "locationName": "汨罗江",
+    "description": "楚怀王听信上官大夫和南后郑袖的谗言，疏远屈原，将其流放到汉北。屈原虽遭流放，仍心系楚国，写下《离骚》等不朽诗篇，表达对祖国的赤诚忠心和对昏庸政治的悲愤。",
+    "characters": [
+      "屈原",
+      "楚怀王"
+    ],
+    "outcome": "屈原被流放",
+    "significance": "《离骚》等千古名篇的创作背景",
+    "quote": "长太息以掩涕兮，哀民生之多艰。"
+  },
+  {
+    "id": "zhaoshiguer",
+    "name": "赵氏孤儿",
+    "chapter": "zhao",
+    "date": "公元前597年",
+    "year": -597,
+    "locationId": "jinyang",
+    "locationName": "晋阳",
+    "description": "晋国权臣屠岸贾灭赵氏全族。赵朔门客程婴与公孙杵臼合谋，以程婴之子替换赵氏孤儿，公孙杵臼被杀。程婴忍辱抚养赵氏孤儿十五年，最终为赵氏报仇。",
+    "characters": [
+      "程婴",
+      "公孙杵臼",
+      "赵盾",
+      "屠岸贾"
+    ],
+    "outcome": "赵氏复兴",
+    "significance": "忠义精神的千古绝唱",
+    "quote": null
+  },
+  {
+    "id": "hufuqishe",
+    "name": "胡服骑射",
+    "chapter": "zhao",
+    "date": "公元前307年",
+    "year": -307,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "赵武灵王推行改革，废除宽袍大袖的华夏服饰，改穿北方游牧民族短衣紧袖的胡服；废除车战，学习骑马射箭。赵国军事力量大增，灭中山，攘地北至燕代。",
+    "characters": [
+      "赵武灵王"
+    ],
+    "outcome": "赵国军事强盛",
+    "significance": "中国军事改革的重要里程碑",
+    "quote": null
+  },
+  {
+    "id": "jinyang_zhizhan",
+    "name": "晋阳之战",
+    "chapter": "zhao",
+    "date": "公元前453年",
+    "year": -453,
+    "locationId": "jinyang",
+    "locationName": "晋阳",
+    "description": "智伯瑶联合韩、魏围攻赵襄子于晋阳，引汾水灌城。赵襄子暗遣使者说服韩、魏倒戈，三家联合反杀智伯，灭智氏一族。此战奠定了三家分晋的基础。",
+    "characters": [
+      "赵襄子"
+    ],
+    "outcome": "智氏灭亡，三家分晋基础奠定",
+    "significance": "三家分晋的关键战役",
+    "quote": null
+  },
+  {
+    "id": "sunzilianbing",
+    "name": "孙子练兵",
+    "chapter": "sunwuzi",
+    "date": "公元前512年",
+    "year": -512,
+    "locationId": "wu_guo",
+    "locationName": "吴国",
+    "description": "孙武以宫女操练兵法，三令五申后吴王阖闾的两个爱妃仍嬉笑不听，孙武依军法将二人斩首，吴王大惊，从此重用孙武。",
+    "characters": [
+      "孙武",
+      "阖闾"
+    ],
+    "outcome": "孙武被拜为将",
+    "significance": "军法如山的经典故事",
+    "quote": null
+  },
+  {
+    "id": "wuqi_chubianfa",
+    "name": "吴起楚变法",
+    "chapter": "sunwuzi",
+    "date": "公元前382年",
+    "year": -382,
+    "locationId": "chuguo_loc",
+    "locationName": "楚国",
+    "description": "吴起投奔楚国后，被楚悼王任命为令尹，推行变法：废除贵族世袭、裁撤冗官、强兵简政。楚国国力大增，但触怒贵族势力。楚悼王死后，吴起被贵族射杀，变法失败。",
+    "characters": [
+      "吴起"
+    ],
+    "outcome": "楚国一度强盛，但变法最终失败",
+    "significance": "战国变法的重要尝试",
+    "quote": null
+  },
+  {
+    "id": "weiweijiuzhao",
+    "name": "围魏救赵",
+    "chapter": "sunwuzi",
+    "date": "公元前354年",
+    "year": -354,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "魏国围攻赵国都城邯郸，孙膑建议齐军不直救赵，而是攻打魏国都城大梁，迫使魏军回援。在桂陵设伏大败魏军，庞涓被俘。",
+    "characters": [
+      "孙膑",
+      "庞涓"
+    ],
+    "outcome": "赵国之围得解",
+    "significance": "中国军事史上最著名的战略",
+    "quote": null
+  },
+  {
+    "id": "malingzhizhan",
+    "name": "马陵之战",
+    "chapter": "sunwuzi",
+    "date": "公元前342年",
+    "year": -342,
+    "locationId": "maling",
+    "locationName": "马陵",
+    "description": "魏国庞涓率军攻韩，孙膑率齐军救援。孙膑用减灶计诱敌深入，在马陵设伏大败魏军，庞涓兵败自杀。",
+    "characters": [
+      "孙膑",
+      "庞涓"
+    ],
+    "outcome": "魏国大败",
+    "significance": "孙膑复仇之战",
+    "quote": null
+  },
+  {
+    "id": "wangjianneichu",
+    "name": "王翦灭楚",
+    "chapter": "baiqiwangjian",
+    "date": "公元前224年",
+    "year": -224,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "王翦率六十万大军伐楚，楚军败退。王翦以逸待劳，最终攻破楚都寿春，灭楚国。",
+    "characters": [
+      "王翦",
+      "秦始皇"
+    ],
+    "outcome": "楚国灭亡",
+    "significance": "秦灭六国的重要战役",
+    "quote": null
+  },
+  {
+    "id": "yiquezhizhan",
+    "name": "伊阙之战",
+    "chapter": "baiqiwangjian",
+    "date": "公元前293年",
+    "year": -293,
+    "locationId": "yihe_loc",
+    "locationName": "伊阙",
+    "description": "秦将白起以不足十万之兵力，在伊阙大破韩魏联军二十四万，斩首二十四万。此战是白起的成名之战，此后白起位列秦军主将，开始了其无敌的军事生涯。",
+    "characters": [
+      "白起",
+      "秦昭襄王"
+    ],
+    "outcome": "韩魏联军大败，白起成名",
+    "significance": "白起成名之战，秦国东进的重要突破",
+    "quote": null
+  },
+  {
+    "id": "baisui_yingyan",
+    "name": "白起攻鄢郢",
+    "chapter": "baiqiwangjian",
+    "date": "公元前278年",
+    "year": -278,
+    "locationId": "wuhan_loc",
+    "locationName": "鄢郢",
+    "description": "秦将白起率军攻楚，水淹鄢城，死数十万人，又攻陷楚国都城郢都。楚国被迫迁都于陈，国力大衰。此战是战国时期规模最大的攻城战役之一。",
+    "characters": [
+      "白起"
+    ],
+    "outcome": "楚国都城陷落，被迫迁都",
+    "significance": "楚国由强转衰的转折点",
+    "quote": null
+  },
+  {
+    "id": "zhuiciagu",
+    "name": "锥刺股",
+    "chapter": "suqin",
+    "date": "约公元前334年",
+    "year": -334,
+    "locationId": "luoyang",
+    "locationName": "洛阳",
+    "description": "苏秦初次游说失败后，回家刻苦攻读太公阴符经，困倦时用锥子刺自己的大腿保持清醒，最终学成。",
+    "characters": [
+      "苏秦"
+    ],
+    "outcome": "苏秦学成",
+    "significance": "刻苦学习的经典故事",
+    "quote": null
+  },
+  {
+    "id": "liuguohzong",
+    "name": "六国合纵",
+    "chapter": "suqin",
+    "date": "公元前333年",
+    "year": -333,
+    "locationId": "zhaoguo_loc",
+    "locationName": "赵国",
+    "description": "苏秦说服燕、赵、韩、魏、齐、楚六国合纵抗秦，被推为纵约长，身佩六国相印，秦兵十五年不敢出函谷关。",
+    "characters": [
+      "苏秦",
+      "赵肃侯"
+    ],
+    "outcome": "六国合纵成功",
+    "significance": "合纵抗秦的高峰",
+    "quote": null
+  },
+  {
+    "id": "suhuiyou_gu",
+    "name": "苏秦衣锦还乡",
+    "chapter": "suqin",
+    "date": "公元前333年",
+    "year": -333,
+    "locationId": "luoyang",
+    "locationName": "洛阳",
+    "description": "苏秦合纵成功后，衣锦还乡。散金以赏宗族朋友，家人对苏秦前后态度判若两人。苏秦感慨'使我有洛阳二顷田，安能佩六国相印'。",
+    "characters": [
+      "苏秦"
+    ],
+    "outcome": "苏秦衣锦还乡",
+    "significance": "世态炎凉的深刻写照",
+    "quote": "使我有洛阳二顷田，安能佩六国相印！"
+  },
+  {
+    "id": "zhangyi_wang_chu",
+    "name": "张仪欺楚",
+    "chapter": "zhangyi",
+    "date": "公元前313年",
+    "year": -313,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "张仪以六百里商於之地欺骗楚怀王与齐国断交，楚怀王上当后派兵攻秦，结果大败。张仪以此破坏齐楚联盟。",
+    "characters": [
+      "张仪",
+      "楚怀王"
+    ],
+    "outcome": "齐楚联盟瓦解",
+    "significance": "张仪连横的关键一步",
+    "quote": null
+  },
+  {
+    "id": "zhangyilianheng",
+    "name": "张仪连横",
+    "chapter": "zhangyi",
+    "date": "公元前328年",
+    "year": -328,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "张仪以连横之策说服各国与秦国单独结盟，破坏苏秦的合纵联盟。秦惠文王任命张仪为相，连横策略使秦国日益强大。",
+    "characters": [
+      "张仪",
+      "秦惠文王"
+    ],
+    "outcome": "合纵联盟瓦解",
+    "significance": "连横破纵",
+    "quote": null
+  },
+  {
+    "id": "zhangyi_chuxiang",
+    "name": "张仪相秦",
+    "chapter": "zhangyi",
+    "date": "公元前328年",
+    "year": -328,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "张仪初至秦国，以连横之说打动秦惠文王，被任命为相国。此后多次出使各国，以三寸不烂之舌瓦解六国合纵联盟，使秦国在外交上占据主动。",
+    "characters": [
+      "张仪",
+      "秦惠文王"
+    ],
+    "outcome": "张仪拜相",
+    "significance": "纵横家登上政治舞台的标志",
+    "quote": null
+  },
+  {
+    "id": "mengmusanqian",
+    "name": "孟母三迁",
+    "chapter": "mengzi_xunzi",
+    "date": "约公元前365年",
+    "year": -365,
+    "locationId": "zouguo",
+    "locationName": "邹国",
+    "description": "孟子的母亲为了给孟子良好的成长环境，三次搬家：从墓地旁搬到市场旁，又搬到学堂旁。孟子在学堂旁耳濡目染，开始学习礼仪。",
+    "characters": [
+      "孟子"
+    ],
+    "outcome": "孟子受良好教育",
+    "significance": "重视教育环境的经典故事",
+    "quote": null
+  },
+  {
+    "id": "xingshanxingebian",
+    "name": "性善性恶之辩",
+    "chapter": "mengzi_xunzi",
+    "date": "约公元前320年",
+    "year": -320,
+    "locationId": "qiguo_loc",
+    "locationName": "齐国",
+    "description": "孟子主张性善论，认为人皆有恻隐之心；荀子主张性恶论，认为人之性恶其善者伪也。二人围绕人性善恶展开辩论，共同奠定了儒家哲学基础。",
+    "characters": [
+      "孟子",
+      "荀子"
+    ],
+    "outcome": "形成性善性恶两大流派",
+    "significance": "中国哲学史上最重要的人性论辩论",
+    "quote": "人之性恶，其善者伪也。"
+  },
+  {
+    "id": "modushifu",
+    "name": "冒顿弑父",
+    "chapter": "xiongnu",
+    "date": "公元前209年",
+    "year": -209,
+    "locationId": "menggugaoyuan",
+    "locationName": "蒙古高原",
+    "description": "冒顿制作鸣镝（响箭）训练部下，命令凡鸣镝所射之处，部下必射，不射者斩。后冒顿以鸣镝射父头曼单于，部下万箭齐发弑父自立。",
+    "characters": [
+      "冒顿单于",
+      "头曼单于"
+    ],
+    "outcome": "冒顿自立为单于",
+    "significance": "匈奴帝国的建立",
+    "quote": null
+  },
+  {
+    "id": "baidengzhiwei",
+    "name": "白登之围",
+    "chapter": "xiongnu",
+    "date": "公元前200年",
+    "year": -200,
+    "locationId": "baidengshan",
+    "locationName": "白登山",
+    "description": "汉高祖刘邦北击匈奴，被冒顿单于四十万大军围困于白登山七日。后用陈平计策重贿阏氏（单于妻）得以突围。",
+    "characters": [
+      "冒顿单于",
+      "刘邦"
+    ],
+    "outcome": "汉军被困，后侥幸突围",
+    "significance": "汉朝对匈奴和亲的开始",
+    "quote": null
+  },
+  {
+    "id": "jianzhukeshu",
+    "name": "谏逐客书",
+    "chapter": "lisi",
+    "date": "公元前237年",
+    "year": -237,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "秦始皇因间谍事件下令逐客。李斯上《谏逐客书》力谏，以泰山不让土壤故能成其大为喻，说服秦始皇收回逐客令。",
+    "characters": [
+      "李斯",
+      "秦始皇"
+    ],
+    "outcome": "秦始皇收回逐客令",
+    "significance": "中国古代最著名的奏疏之一",
+    "quote": "泰山不让土壤，故能成其大。"
+  },
+  {
+    "id": "shaqiumou",
+    "name": "沙丘之谋",
+    "chapter": "lisi",
+    "date": "公元前210年",
+    "year": -210,
+    "locationId": "shajuu",
+    "locationName": "沙丘",
+    "description": "秦始皇在沙丘病逝，赵高与李斯合谋篡改遗诏，赐死太子扶苏，拥立胡亥为帝。",
+    "characters": [
+      "李斯",
+      "赵高",
+      "秦始皇"
+    ],
+    "outcome": "胡亥即位",
+    "significance": "秦朝灭亡的导火索",
+    "quote": null
+  },
+  {
+    "id": "lisizhisi",
+    "name": "李斯之死",
+    "chapter": "lisi",
+    "date": "公元前208年",
+    "year": -208,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "赵高诬陷李斯谋反，将其下狱。李斯在狱中上书被赵高扣留，最终被腰斩于咸阳市，夷三族。临刑前对儿子说'吾欲与若复牵黄犬俱出上蔡东门逐狡兔，岂可得乎！'",
+    "characters": [
+      "李斯",
+      "赵高"
+    ],
+    "outcome": "李斯被腰斩夷三族",
+    "significance": "秦朝开国功臣的悲剧结局",
+    "quote": "吾欲与若复牵黄犬俱出上蔡东门逐狡兔，岂可得乎！"
+  },
+  {
+    "id": "beijixiongnu",
+    "name": "北击匈奴",
+    "chapter": "mengtian",
+    "date": "公元前215年",
+    "year": -215,
+    "locationId": "shangjun_loc",
+    "locationName": "上郡",
+    "description": "蒙恬率三十万大军北击匈奴，收复河套地区，设置四十四县。",
+    "characters": [
+      "蒙恬",
+      "秦始皇"
+    ],
+    "outcome": "收复河套",
+    "significance": "中原王朝大规模反击匈奴的开端",
+    "quote": null
+  },
+  {
+    "id": "mengtianzhisi",
+    "name": "蒙恬之死",
+    "chapter": "mengtian",
+    "date": "公元前210年",
+    "year": -210,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "赵高矫诏赐死扶苏和蒙恬。蒙恬不信内有阴谋，要求复命，但最终被迫自杀。",
+    "characters": [
+      "蒙恬",
+      "赵高",
+      "扶苏"
+    ],
+    "outcome": "蒙恬自杀",
+    "significance": "秦朝自毁长城",
+    "quote": null
+  },
+  {
+    "id": "likuibianfa",
+    "name": "李悝变法",
+    "chapter": "wei",
+    "date": "公元前403年",
+    "year": -403,
+    "locationId": "weiguo_loc",
+    "locationName": "魏国",
+    "description": "魏文侯任用李悝推行变法，废除世卿世禄制，实行尽地力之教，编制《法经》。魏国因此成为战国初期最强盛的国家。",
+    "characters": [
+      "魏文侯",
+      "李悝"
+    ],
+    "outcome": "魏国富强",
+    "significance": "战国变法的开端",
+    "quote": null
+  },
+  {
+    "id": "guilingzhizhan",
+    "name": "桂陵之战",
+    "chapter": "wei",
+    "date": "公元前353年",
+    "year": -353,
+    "locationId": "guiling",
+    "locationName": "桂陵",
+    "description": "魏国围攻赵国都城邯郸，齐国派田忌、孙膑救援。孙膑以围魏救赵之计，直攻魏国都城大梁，在桂陵设伏大败魏军。",
+    "characters": [
+      "魏惠王",
+      "庞涓",
+      "孙膑"
+    ],
+    "outcome": "魏军大败",
+    "significance": "围魏救赵的经典战例",
+    "quote": null
+  },
+  {
+    "id": "weijun_xihe",
+    "name": "魏国衰落",
+    "chapter": "wei",
+    "date": "公元前342年后",
+    "year": -340,
+    "locationId": "weiguo_loc",
+    "locationName": "魏国",
+    "description": "马陵之战后魏国元气大伤，又在秦国的攻击下不断失利，丧失河西之地。魏国从战国初期的最强盛国家逐渐衰落，迁都大梁后一蹶不振。",
+    "characters": [
+      "魏惠王"
+    ],
+    "outcome": "魏国由盛转衰",
+    "significance": "战国格局的重大变化",
+    "quote": null
+  },
+  {
+    "id": "shenbuhai_bianfa",
+    "name": "申不害变法",
+    "chapter": "han",
+    "date": "公元前355年",
+    "year": -355,
+    "locationId": "hanguo_loc",
+    "locationName": "韩国",
+    "description": "韩昭侯任用申不害为相，推行术治，强调君主驾驭臣下的权术。韩国一度国治兵强，诸侯不来侵伐。",
+    "characters": [
+      "韩昭侯",
+      "申不害"
+    ],
+    "outcome": "韩国强盛",
+    "significance": "法家术治的代表",
+    "quote": null
+  },
+  {
+    "id": "yueyi_poqi",
+    "name": "乐毅破齐",
+    "chapter": "yan",
+    "date": "公元前284年",
+    "year": -284,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "燕昭王任命乐毅为上将军，率燕、秦、韩、赵、魏五国联军大破齐国，连下七十余城，齐国几乎灭亡。",
+    "characters": [
+      "乐毅",
+      "燕昭王",
+      "齐湣王"
+    ],
+    "outcome": "齐国几乎灭亡",
+    "significance": "燕国最辉煌的时刻",
+    "quote": null
+  },
+  {
+    "id": "yuanyang_changpian",
+    "name": "乐毅报燕王书",
+    "chapter": "yueyi",
+    "date": "公元前279年",
+    "year": -279,
+    "locationId": "yanguo",
+    "locationName": "燕国",
+    "description": "燕昭王死后，燕惠王即位，中齐反间计，罢免乐毅。乐毅被迫投奔赵国，上书燕惠王（即著名的《报燕王书》），申明忠心，列举先王之知遇之恩。此信文辞恳切，感人至深。",
+    "characters": [
+      "乐毅",
+      "燕昭王"
+    ],
+    "outcome": "乐毅投赵",
+    "significance": "千古名篇《报燕王书》",
+    "quote": "臣闻古之君子，交绝不出恶声。"
+  },
+  {
+    "id": "tianshidaqi",
+    "name": "田氏代齐",
+    "chapter": "tianqi",
+    "date": "公元前386年",
+    "year": -386,
+    "locationId": "qiguo_loc",
+    "locationName": "齐国",
+    "description": "田氏后代田和正式废齐康公自立，建立田齐。田氏代齐标志着姜姓齐国的终结和田姓齐国的新生。",
+    "characters": [
+      "田和"
+    ],
+    "outcome": "田齐建立",
+    "significance": "政权更替的典型",
+    "quote": null
+  },
+  {
+    "id": "jixiaxuegong",
+    "name": "稷下学宫",
+    "chapter": "tianqi",
+    "date": "公元前4世纪",
+    "year": -350,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "齐威王、齐宣王在临淄稷门设立学宫，招揽天下学者讲学论道。孟子、荀子等名家都曾在此讲学，是中国最早的学术中心。",
+    "characters": [
+      "齐威王",
+      "齐宣王",
+      "孟子",
+      "荀子"
+    ],
+    "outcome": "百家争鸣的中心",
+    "significance": "中国古代学术思想的摇篮",
+    "quote": null
+  },
+  {
+    "id": "taibenbenwu",
+    "name": "太伯奔吴",
+    "chapter": "wutaibo",
+    "date": "约公元前12世纪",
+    "year": -1100,
+    "locationId": "wu_guo",
+    "locationName": "吴国",
+    "description": "周太王长子太伯为让位给弟弟季历，与仲雍奔荆蛮，断发文身，建立吴国。孔子赞其'至德'。",
+    "characters": [
+      "太伯"
+    ],
+    "outcome": "吴国建立",
+    "significance": "谦让精神的典范",
+    "quote": null
+  },
+  {
+    "id": "xugezhizhan",
+    "name": "繻葛之战",
+    "chapter": "zheng",
+    "date": "公元前707年",
+    "year": -707,
+    "locationId": "xuge",
+    "locationName": "繻葛",
+    "description": "郑庄公在繻葛击败周桓王率领的王师，并射中周桓王肩膀。此战使周天子威信扫地，开启了诸侯争霸的时代。",
+    "characters": [
+      "郑庄公"
+    ],
+    "outcome": "郑国大胜",
+    "significance": "诸侯挑战王权的开端",
+    "quote": null
+  },
+  {
+    "id": "zichan_gaige",
+    "name": "子产改革",
+    "chapter": "zheng",
+    "date": "公元前543年",
+    "year": -543,
+    "locationId": "xinzheng",
+    "locationName": "新郑",
+    "description": "子产在郑国推行改革，整顿田制、兴修水利，并将刑法铸于鼎上公开颁布。这是中国历史上第一次公开成文法。",
+    "characters": [
+      "子产"
+    ],
+    "outcome": "郑国大治",
+    "significance": "法治的重要里程碑",
+    "quote": null
+  },
+  {
+    "id": "hongshuizhizhan",
+    "name": "泓水之战",
+    "chapter": "song",
+    "date": "公元前638年",
+    "year": -638,
+    "locationId": "hongshui",
+    "locationName": "泓水",
+    "description": "宋襄公与楚国在泓水交战。宋襄公坚持仁义，不击未阵之敌、不擒二毛，结果宋军大败，襄公重伤而死。",
+    "characters": [
+      "宋襄公"
+    ],
+    "outcome": "宋军大败",
+    "significance": "仁义之辩的经典案例",
+    "quote": null
+  },
+  {
+    "id": "mibing_zhihui",
+    "name": "弭兵之会",
+    "chapter": "song",
+    "date": "公元前546年",
+    "year": -546,
+    "locationId": "songcheng_biping",
+    "locationName": "宋城",
+    "description": "宋国大夫华元和向戌倡导弭兵（和平），召集晋、楚、齐、秦等十四国诸侯在宋国会盟。约定此后各国停止战争，小国同时对晋楚朝贡。弭兵之会结束了晋楚长达百年的争霸战争，带来了近四十年的相对和平。",
+    "characters": [
+      "华元"
+    ],
+    "outcome": "晋楚达成和平协议",
+    "significance": "春秋时期最重要的和平运动",
+    "quote": null
+  },
+  {
+    "id": "yuanjiaojingong",
+    "name": "远交近攻",
+    "chapter": "fanju_caize",
+    "date": "公元前270年",
+    "year": -270,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "范雎向秦昭襄王提出远交近攻之策：与远方的齐国等交好，而进攻邻近的韩魏。这一战略为秦国统一六国指明了方向。",
+    "characters": [
+      "范雎",
+      "秦昭襄王"
+    ],
+    "outcome": "秦国统一战略确立",
+    "significance": "秦国统一六国的关键战略",
+    "quote": null
+  },
+  {
+    "id": "fanju_baixiang",
+    "name": "范雎拜相",
+    "chapter": "fanju_caize",
+    "date": "公元前266年",
+    "year": -266,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "范雎入秦后，以远交近攻之策打动秦昭襄王，被拜为相国，封应侯。他帮助秦国确立了统一六国的战略方针。",
+    "characters": [
+      "范雎",
+      "秦昭襄王"
+    ],
+    "outcome": "范雎拜相",
+    "significance": "秦国统一战略的确立",
+    "quote": null
+  },
+  {
+    "id": "jiayi_bianchangsha",
+    "name": "贾谊贬长沙",
+    "chapter": "quyuan_jiasheng",
+    "date": "公元前177年",
+    "year": -177,
+    "locationId": "changsha",
+    "locationName": "长沙",
+    "description": "贾谊因遭权贵排挤，被汉文帝贬为长沙王太傅。途经湘水时，写下《吊屈原赋》，借凭吊屈原抒发自己的悲愤。",
+    "characters": [
+      "贾谊"
+    ],
+    "outcome": "贾谊贬谪",
+    "significance": "才华横溢却遭贬谪的悲剧",
+    "quote": null
+  },
+  {
+    "id": "lvbuwei_baixiang",
+    "name": "吕不韦拜相",
+    "chapter": "lvbuwei",
+    "date": "公元前249年",
+    "year": -249,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "吕不韦助秦庄襄王即位，被拜为相国，封文信侯。他广招门客，编纂《吕氏春秋》，对秦国文化影响深远。",
+    "characters": [
+      "吕不韦",
+      "秦始皇"
+    ],
+    "outcome": "吕不韦权倾朝野",
+    "significance": "商人从政的典范",
+    "quote": null
+  },
+  {
+    "id": "laoluan",
+    "name": "嫪毐之乱",
+    "chapter": "lvbuwei",
+    "date": "公元前238年",
+    "year": -238,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "嫪毐与秦始皇之母赵姬私通，生二子。后发动叛乱，企图杀害秦始皇。秦始皇平定叛乱，车裂嫪毐，囚太后，吕不韦受牵连被贬。",
+    "characters": [
+      "嫪毐",
+      "吕不韦",
+      "秦始皇"
+    ],
+    "outcome": "嫪毐被车裂",
+    "significance": "秦朝宫廷权力斗争",
+    "quote": null
+  },
+  {
+    "id": "qinmuweng_chengba",
+    "name": "秦穆公称霸",
+    "chapter": "qin_benji",
+    "date": "公元前623年",
+    "year": -623,
+    "locationId": "qin",
+    "locationName": "秦国",
+    "description": "秦穆公任用百里奚、蹇叔等贤臣，国力强盛。击败晋国，称霸西戎，成为春秋五霸之一。",
+    "characters": [
+      "秦穆公"
+    ],
+    "outcome": "秦国崛起",
+    "significance": "秦国称霸的开端",
+    "quote": null
+  },
+  {
+    "id": "qinmuweng_baxirong",
+    "name": "秦穆公霸西戎",
+    "chapter": "qin_benji",
+    "date": "公元前623年",
+    "year": -623,
+    "locationId": "qin",
+    "locationName": "秦国",
+    "description": "秦穆公用由余之谋，出兵征服西戎诸国，'益国十二，开地千里'，成为春秋五霸中唯一称霸西部的诸侯。周天子命其为西戎霸主。",
+    "characters": [
+      "秦穆公"
+    ],
+    "outcome": "秦国称霸西戎，拓地千里",
+    "significance": "秦国成为春秋大国，奠定西部基础",
+    "quote": "益国十二，开地千里，遂霸西戎。"
+  },
+  {
+    "id": "caomo_jieqi",
+    "name": "曹沫劫齐桓公",
+    "chapter": "cao",
+    "date": "公元前681年",
+    "year": -681,
+    "locationId": "keqiu",
+    "locationName": "柯丘",
+    "description": "齐桓公与鲁庄公会盟于柯丘，曹沫持匕首劫持齐桓公，逼迫其归还鲁国失地。齐桓公被迫答应。",
+    "characters": [
+      "曹沫",
+      "齐桓公"
+    ],
+    "outcome": "齐国归还鲁国失地",
+    "significance": "以弱胁强的经典案例",
+    "quote": null
+  },
+  {
+    "id": "weiran_baixiang",
+    "name": "魏冉拜相",
+    "chapter": "ranghou",
+    "date": "公元前300年",
+    "year": -300,
+    "locationId": "xianyang",
+    "locationName": "咸阳",
+    "description": "魏冉因是秦宣太后之弟，四次出任秦国相国。举荐白起为将，为秦国开疆拓土。",
+    "characters": [
+      "魏冉",
+      "秦宣太后"
+    ],
+    "outcome": "魏冉权倾朝野",
+    "significance": "秦国强大的关键人物",
+    "quote": null
+  },
+  {
+    "id": "jiming_goudao",
+    "name": "鸡鸣狗盗",
+    "chapter": "mengchangjun",
+    "date": "公元前299年",
+    "year": -299,
+    "locationId": "qin",
+    "locationName": "秦国",
+    "description": "孟尝君入秦被囚，门客中有善狗盗者偷得狐白裘贿赂秦王宠姬，又有善鸡鸣者学鸡叫骗开函谷关门，孟尝君得以逃脱。",
+    "characters": [
+      "田文"
+    ],
+    "outcome": "孟尝君逃脱",
+    "significance": "用人不拘一格",
+    "quote": null
+  },
+  {
+    "id": "fengxuan_tanjia",
+    "name": "冯谖弹铗",
+    "chapter": "mengchangjun",
+    "date": "公元前300年",
+    "year": -300,
+    "locationId": "xue",
+    "locationName": "薛",
+    "description": "冯谖投奔孟尝君，因待遇不满三次弹铗而歌：'长铗归来乎，食无鱼！'孟尝君一一满足。后冯谖焚券市义，为孟尝君留下退路。",
+    "characters": [
+      "冯谖",
+      "田文"
+    ],
+    "outcome": "冯谖得到重用",
+    "significance": "礼贤下士",
+    "quote": "长铗归来乎，食无鱼！"
+  },
+  {
+    "id": "chunshenjun_jiuzhao",
+    "name": "春申君救赵",
+    "chapter": "chunshenjun",
+    "date": "公元前257年",
+    "year": -257,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "秦军围攻邯郸，春申君率楚军救援，与魏信陵君、赵平原君共同解邯郸之围。",
+    "characters": [
+      "黄歇"
+    ],
+    "outcome": "邯郸解围",
+    "significance": "战国四公子的联合行动",
+    "quote": null
+  },
+  {
+    "id": "huoniuzhen",
+    "name": "火牛阵",
+    "chapter": "tiandan",
+    "date": "公元前279年",
+    "year": -279,
+    "locationId": "jimo",
+    "locationName": "即墨",
+    "description": "燕军围攻即墨，田单收集千余头牛，牛角绑刀、牛尾缚苇灌油，夜间点燃牛尾，牛群冲向燕军。五千壮士随后冲杀，大破燕军，收复七十余城。",
+    "characters": [
+      "田单",
+      "齐襄王"
+    ],
+    "outcome": "齐国收复失地",
+    "significance": "以弱胜强的经典战例",
+    "quote": null
+  },
+  {
+    "id": "yanzhao_wanghuangjintai",
+    "name": "燕昭王黄金台",
+    "chapter": "yan",
+    "date": "公元前312年",
+    "year": -312,
+    "locationId": "ji",
+    "locationName": "蓟",
+    "description": "燕国被齐国大破后，燕昭王即位，决心复仇雪耻。他在蓟城筑黄金台，广招天下贤才。乐毅、邹衍、剧辛等名士纷至沓来，燕国由此复兴。",
+    "characters": [
+      "燕昭王",
+      "乐毅"
+    ],
+    "outcome": "人才汇聚，燕国复兴",
+    "significance": "求贤若渴的典范",
+    "quote": null
+  },
+  {
+    "id": "yibudiqin",
+    "name": "义不帝秦",
+    "chapter": "luzhonglian",
+    "date": "公元前257年",
+    "year": -257,
+    "locationId": "handan",
+    "locationName": "邯郸",
+    "description": "秦国围攻邯郸，魏国欲尊秦为帝以求和。鲁仲连面见魏国使者，以义不帝秦说服魏国援赵，拒绝平原君的封赏。",
+    "characters": [
+      "鲁仲连"
+    ],
+    "outcome": "魏国援赵",
+    "significance": "高士风骨",
+    "quote": null
+  },
+  {
+    "id": "yuzhongshangshu",
+    "name": "狱中上书",
+    "chapter": "luzhonglian",
+    "date": "公元前150年",
+    "year": -150,
+    "locationId": "liangguo",
+    "locationName": "梁国",
+    "description": "邹阳被梁孝王下狱，在狱中上书自辩。书中以大量历史典故说明忠而见疑的道理，打动梁孝王，获释并被重用。",
+    "characters": [
+      "邹阳"
+    ],
+    "outcome": "邹阳获释",
+    "significance": "辩才无碍",
+    "quote": null
+  },
+  {
+    "id": "lisheng_shuoqi",
+    "name": "郦生说齐",
+    "chapter": "lisheng_lujia",
+    "date": "公元前204年",
+    "year": -204,
+    "locationId": "linzi",
+    "locationName": "临淄",
+    "description": "郦食其以三寸之舌说服齐王田广投降，齐国七十余城准备归汉。韩信因嫉妒擅自攻齐，齐王认为被骗，烹杀郦食其。",
+    "characters": [
+      "郦食其",
+      "刘邦"
+    ],
+    "outcome": "郦食其被烹杀",
+    "significance": "辩士的悲剧",
+    "quote": null
+  },
+  {
+    "id": "lujia_xinyu",
+    "name": "陆贾著新语",
+    "chapter": "lisheng_lujia",
+    "date": "公元前196年",
+    "year": -196,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "陆贾常向刘邦称说《诗》《书》，刘邦不耐烦。陆贾说'居马上得之，宁可以马上治之乎？'刘邦醒悟，命陆贾著书论述秦亡汉兴之理，成《新语》十二篇。",
+    "characters": [
+      "陆贾",
+      "刘邦"
+    ],
+    "outcome": "《新语》成书",
+    "significance": "汉朝文治的开端",
+    "quote": "居马上得之，宁可以马上治之乎？"
+  },
+  {
+    "id": "zhangcang_lvli",
+    "name": "张苍定律历",
+    "chapter": "zhangchengxiang",
+    "date": "公元前176年",
+    "year": -176,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "张苍精通律历，任丞相期间主持修订历法，对汉朝的历法制度做出了重要贡献。",
+    "characters": [
+      "张苍",
+      "刘恒"
+    ],
+    "outcome": "汉历修订",
+    "significance": "汉代历法奠基",
+    "quote": null
+  },
+  {
+    "id": "dingdu_guanzhong",
+    "name": "定都关中",
+    "chapter": "liujing_shusuntong",
+    "date": "公元前202年",
+    "year": -202,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "刘敬建议刘邦定都关中而非洛阳，认为关中地势险要、物产丰富，可扼天下之咽喉。张良也赞同此议，刘邦遂定都长安。",
+    "characters": [
+      "刘敬",
+      "刘邦",
+      "张良"
+    ],
+    "outcome": "定都长安",
+    "significance": "汉朝定都的关键决策",
+    "quote": null
+  },
+  {
+    "id": "zhiding_hanli",
+    "name": "制定汉礼",
+    "chapter": "liujing_shusuntong",
+    "date": "公元前200年",
+    "year": -200,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "叔孙通为刘邦制定朝堂礼仪，使群臣朝拜有序。刘邦感叹：'吾乃今日知为皇帝之贵也。'",
+    "characters": [
+      "叔孙通",
+      "刘邦"
+    ],
+    "outcome": "汉朝礼仪制度建立",
+    "significance": "汉朝礼仪的奠基",
+    "quote": "吾乃今日知为皇帝之贵也。"
+  },
+  {
+    "id": "chaocuo_xiaofan",
+    "name": "晁错削藩",
+    "chapter": "yuanang_chaocuo",
+    "date": "公元前155年",
+    "year": -155,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "晁错上书汉景帝，主张削夺诸侯王的封地以加强中央集权。引发七国诸侯不满，以'清君侧'为名发动叛乱。",
+    "characters": [
+      "晁错",
+      "汉景帝"
+    ],
+    "outcome": "七国之乱爆发",
+    "significance": "中央与地方矛盾的激化",
+    "quote": null
+  },
+  {
+    "id": "qiguozhiluan",
+    "name": "七国之乱",
+    "chapter": "yuanang_chaocuo",
+    "date": "公元前154年",
+    "year": -154,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "吴楚等七国诸侯以'诛晁错，清君侧'为名发动叛乱。汉景帝听信袁盎谗言，处死晁错以平息叛乱，但七国仍不退兵。后周亚夫率军平定叛乱。",
+    "characters": [
+      "晁错",
+      "汉景帝",
+      "袁盎"
+    ],
+    "outcome": "晁错被处死，叛乱被平定",
+    "significance": "西汉重大政治危机",
+    "quote": null
+  },
+  {
+    "id": "wenjingzhizhi",
+    "name": "文景之治",
+    "chapter": "xiaowen",
+    "date": "公元前180年",
+    "year": -180,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "汉文帝和汉景帝在位期间，推行轻徭薄赋、与民休息的政策，社会经济恢复发展，国库充盈，史称'文景之治'。",
+    "characters": [
+      "刘恒",
+      "汉景帝"
+    ],
+    "outcome": "社会安定，经济繁荣",
+    "significance": "西汉盛世的基础",
+    "quote": null
+  },
+  {
+    "id": "duzunrushu",
+    "name": "独尊儒术",
+    "chapter": "xiaowu",
+    "date": "公元前134年",
+    "year": -134,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "汉武帝采纳董仲舒建议，罢黜百家，独尊儒术。设立太学，以儒家经典为官方意识形态。",
+    "characters": [
+      "汉武帝",
+      "董仲舒"
+    ],
+    "outcome": "儒学成为正统",
+    "significance": "中国思想史的重大转折",
+    "quote": "罢黜百家，独尊儒术。"
+  },
+  {
+    "id": "yinuoqianjin",
+    "name": "一诺千金",
+    "chapter": "jibu_luanbu",
+    "date": "公元前200年",
+    "year": -200,
+    "locationId": "luoyang",
+    "locationName": "洛阳",
+    "description": "季布以信守承诺闻名，楚地流传'得黄金百斤，不如得季布一诺'。刘邦赦免其罪后，任为河东太守。",
+    "characters": [
+      "季布"
+    ],
+    "outcome": "季布成名",
+    "significance": "诚信的典范",
+    "quote": "得黄金百斤，不如得季布一诺。"
+  },
+  {
+    "id": "fengtang_jianwen",
+    "name": "冯唐谏文帝",
+    "chapter": "fengtang",
+    "date": "公元前166年",
+    "year": -166,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "冯唐对汉文帝指出，朝廷赏罚不公，即使有廉颇、李牧那样的名将也不能用。文帝感悟，任命冯唐为车骑都尉。",
+    "characters": [
+      "冯唐",
+      "刘恒"
+    ],
+    "outcome": "冯唐被重用",
+    "significance": "直言敢谏的典范",
+    "quote": null
+  },
+  {
+    "id": "guanfu_mazuo",
+    "name": "灌夫骂座",
+    "chapter": "weiqi_wuanhou",
+    "date": "公元前131年",
+    "year": -131,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "田蚡娶妻设宴，窦婴带灌夫前往。灌夫因不满田蚡傲慢而醉酒骂座，被田蚡以不敬罪弹劾。窦婴为救灌夫与田蚡争辩，最终二人皆被处死。",
+    "characters": [
+      "窦婴",
+      "田蚡"
+    ],
+    "outcome": "窦婴田蚡两败俱伤",
+    "significance": "外戚争斗的悲剧",
+    "quote": null
+  },
+  {
+    "id": "tuienling",
+    "name": "推恩令",
+    "chapter": "pingjinhou",
+    "date": "公元前127年",
+    "year": -127,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "主父偃向汉武帝建议，允许诸侯王将封地分给所有子弟而非仅嫡长子。诸侯国越分越小，无力对抗中央，加强了中央集权。",
+    "characters": [
+      "主父偃",
+      "汉武帝"
+    ],
+    "outcome": "诸侯势力削弱",
+    "significance": "中央集权的重要措施",
+    "quote": null
+  },
+  {
+    "id": "nanyue_guihan",
+    "name": "南越归汉",
+    "chapter": "nanyue",
+    "date": "公元前111年",
+    "year": -111,
+    "locationId": "panyu",
+    "locationName": "番禺",
+    "description": "汉武帝派路博德、杨仆等率军攻灭南越国，在其地设立南海、苍梧等九郡，岭南正式纳入汉朝版图。",
+    "characters": [
+      "赵佗",
+      "汉武帝"
+    ],
+    "outcome": "南越灭亡，设郡县",
+    "significance": "岭南纳入中国版图",
+    "quote": null
+  },
+  {
+    "id": "chaoxian_shejun",
+    "name": "朝鲜设郡",
+    "chapter": "chaoxian",
+    "date": "公元前108年",
+    "year": -108,
+    "locationId": "chaoxian_loc",
+    "locationName": "朝鲜",
+    "description": "汉武帝派杨仆、荀彘等攻灭卫氏朝鲜，在其地设立乐浪、临屯、玄菟、真番四郡。",
+    "characters": [
+      "卫满",
+      "汉武帝"
+    ],
+    "outcome": "朝鲜设四郡",
+    "significance": "汉朝东北疆域扩展",
+    "quote": null
+  },
+  {
+    "id": "tongxinanyi",
+    "name": "通西南夷",
+    "chapter": "xinanyi",
+    "date": "公元前135年",
+    "year": -135,
+    "locationId": "xinanyi_loc",
+    "locationName": "西南夷",
+    "description": "汉武帝派唐蒙出使夜郎，司马相如出使西南夷各部落，开辟道路，设郡县，将西南地区纳入汉朝版图。",
+    "characters": [
+      "汉武帝",
+      "司马相如",
+      "唐蒙"
+    ],
+    "outcome": "西南夷归附",
+    "significance": "西南边疆开发",
+    "quote": null
+  },
+  {
+    "id": "xiaozhenshou_guanzhong",
+    "name": "萧何镇守关中",
+    "chapter": "xiaochu",
+    "date": "公元前206年",
+    "year": -206,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "刘邦攻入关中后，萧何留守关中，为前线提供后勤保障，是汉朝建立的关键人物。",
+    "characters": [
+      "萧何",
+      "刘邦"
+    ],
+    "outcome": "汉朝后勤稳固",
+    "significance": "汉初三杰的典范",
+    "quote": null
+  },
+  {
+    "id": "xiaoguicaosui",
+    "name": "萧规曹随",
+    "chapter": "caoxiangguo",
+    "date": "公元前193年",
+    "year": -193,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "萧何去世后，曹参继任丞相，以清净无为治国。'萧规曹随'成为千古佳话。",
+    "characters": [
+      "曹参",
+      "萧何"
+    ],
+    "outcome": "汉朝安定",
+    "significance": "无为而治的典范",
+    "quote": null
+  },
+  {
+    "id": "huainanwangmoufan",
+    "name": "淮南王谋反",
+    "chapter": "huainan_hengshan_jishan",
+    "date": "公元前122年",
+    "year": -122,
+    "locationId": "huainan_loc",
+    "locationName": "淮南",
+    "description": "淮南王刘安与衡山王刘赐暗中谋划反叛，事败后刘安自杀，国除为郡。",
+    "characters": [
+      "刘安",
+      "汉武帝"
+    ],
+    "outcome": "淮南国除",
+    "significance": "汉朝削藩的重要事件",
+    "quote": null
+  },
+  {
+    "id": "zhangtang_zhiyu",
+    "name": "张汤治狱",
+    "chapter": "lihai_zhichun",
+    "date": "公元前120年",
+    "year": -120,
+    "locationId": "changan",
+    "locationName": "长安",
+    "description": "张汤任御史大夫时，以严刑峻法审理案件。后遭人陷害自杀。",
+    "characters": [
+      "张汤"
+    ],
+    "outcome": "张汤自杀",
+    "significance": "酷吏政治的代表",
+    "quote": null
+  },
+  {
+    "id": "zhangqian_chushi_xiyu",
+    "name": "张骞出使西域",
+    "chapter": "dayuanyoushi",
+    "date": "公元前138年",
+    "year": -138,
+    "locationId": "dayuan_loc",
+    "locationName": "大宛",
+    "description": "汉武帝派张骞出使西域联络月氏国，被匈奴扣押十三年。张骞历经千辛万苦回到汉朝，开辟了丝绸之路。",
+    "characters": [
+      "张骞",
+      "汉武帝"
+    ],
+    "outcome": "丝绸之路开辟",
+    "significance": "中西交流的里程碑",
+    "quote": null
+  },
+  {
+    "id": "youmeng_yiguan",
+    "name": "优孟衣冠",
+    "chapter": "shiji_jingzhong",
+    "date": "公元前500年",
+    "year": -500,
+    "locationId": "chuguo_loc",
+    "locationName": "楚国",
+    "description": "楚国优人优孟假扮已故令尹孙叔敖，讽谏楚王善待孙叔敖之子。'优孟衣冠'比喻假装古人行事。",
+    "characters": [
+      "优孟",
+      "孙叔敖"
+    ],
+    "outcome": "楚王善待孙叔敖后人",
+    "significance": "诙谐讽谏的典范",
+    "quote": null
+  },
+  {
+    "id": "taozhugong_zhifu",
+    "name": "陶朱公致富",
+    "chapter": "huozhilie",
+    "date": "公元前473年",
+    "year": -473,
+    "locationId": "tao_loc",
+    "locationName": "陶",
+    "description": "范蠡辅佐勾践灭吴后弃官经商，改名陶朱公，以经商才能成为巨富。",
+    "characters": [
+      "范蠡"
+    ],
+    "outcome": "陶朱公富甲天下",
+    "significance": "弃政从商的典范",
+    "quote": null
+  },
+  {
+    "id": "wuzixu_bianshi",
+    "name": "伍子胥鞭尸",
+    "chapter": "wuzilie",
+    "date": "公元前506年",
+    "year": -506,
+    "locationId": "yingdu",
+    "locationName": "郢都",
+    "description": "吴军攻入楚国都城郢，伍子胥挖出楚平王之尸，鞭之三百以报父兄之仇。",
+    "characters": [
+      "伍子胥"
+    ],
+    "outcome": "伍子胥报父仇",
+    "significance": "极端复仇的行为",
+    "quote": null
+  },
+  {
+    "id": "pengyue_zhisi",
+    "name": "彭越之死",
+    "chapter": "peng_yue_lie",
+    "date": "公元前196年",
+    "year": -196,
+    "locationId": "liangguo",
+    "locationName": "梁国",
+    "description": "彭越被吕后以谋反罪名诛杀，夷三族。彭越是被刘邦灭项羽的功臣之一。",
+    "characters": [
+      "刘邦"
+    ],
+    "outcome": "彭越被诛",
+    "significance": "汉初功臣的悲剧",
+    "quote": null
+  },
+  {
+    "id": "yingbu_banhan",
+    "name": "英布叛汉",
+    "chapter": "ying_bu_lie",
+    "date": "公元前196年",
+    "year": -196,
+    "locationId": "huainan_loc",
+    "locationName": "淮南",
+    "description": "英布因恐惧被诛而叛乱，被刘邦亲征击败，死于番阳。",
+    "characters": [
+      "刘邦"
+    ],
+    "outcome": "英布被杀",
+    "significance": "异姓王的覆灭",
+    "quote": null
+  },
+  {
+    "id": "zhengguoqu",
+    "name": "郑国渠",
+    "chapter": "he_shu",
+    "date": "公元前246年",
+    "year": -246,
+    "locationId": "jingshui",
+    "locationName": "泾水",
+    "description": "韩国水工郑国为疲秦计而建议修渠，秦王察觉后仍令其继续施工。渠成后灌溉关中农田，使秦国更加强大。",
+    "characters": [
+      "大禹"
+    ],
+    "outcome": "关中农业大发展",
+    "significance": "古代重大水利工程",
+    "quote": null
+  },
+  {
+    "id": "taishan_fengchan",
+    "name": "泰山封禅",
+    "chapter": "fengshan_shu",
+    "date": "公元前110年",
+    "year": -110,
+    "locationId": "taishan_loc",
+    "locationName": "泰山",
+    "description": "汉武帝到泰山举行封禅大典，祭祀天地。封禅是中国古代帝王最隆重的典礼。",
+    "characters": [
+      "汉武帝"
+    ],
+    "outcome": "封禅大典完成",
+    "significance": "帝王权威的象征",
+    "quote": null
+  }
+]

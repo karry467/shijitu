@@ -1,0 +1,243 @@
+@import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #F8F4EC;
+  --bg2: #F0EAE0;
+  --ink: #2C2416;
+  --muted: #8B7E6A;
+  --rule: #DDD2C0;
+  --accent: #B4462A;
+  --accent2: #5B7B5A;
+  --gold: #C8A24E;
+  --footer-bg: #2C2416;
+}
+
+[data-theme="dark"] {
+  --bg: #1a1814;
+  --bg2: #2a2520;
+  --ink: #E8E0D4;
+  --muted: #A09080;
+  --rule: #3a3530;
+  --accent: #D06045;
+  --accent2: #7BA87A;
+  --gold: #D8B050;
+  --footer-bg: #0d0c0a;
+}
+
+body {
+  font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  transition: background 0.3s, color 0.3s;
+}
+
+.serif { font-family: "Noto Serif SC", "STSong", "SimSun", serif; }
+
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+.nav-link:hover::after { width: 100%; }
+
+.panel {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+
+.stat-card { transition: all 0.3s; }
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(44,36,22,0.1);
+}
+
+/* Card hover utility */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(44,36,22,0.12);
+}
+
+/* Dark mode map overlay */
+.map-dark-filter {
+  transition: filter 0.3s;
+}
+[data-theme="dark"] .map-dark-filter {
+  filter: brightness(0.65) contrast(1.15) saturate(0.85);
+}
+
+/* Loading spinner */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--rule);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Scroll animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Error message component */
+.error-msg {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+}
+.error-msg .error-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+.error-msg .error-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== 微交互细节 ===== */
+
+/* 1. 按钮按压效果 - 阴影内收 */
+button, .btn, a[class*="bg-"], a[class*="bg-["] {
+  transition: all 0.2s ease;
+}
+button:active, .btn:active, a[class*="bg-"]:active, a[class*="bg-["]:active {
+  transform: scale(0.97) translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15) !important;
+}
+
+/* 2. 链接笔触下划线 - nav-link 升级为笔触式 */
+.nav-link::after {
+  height: 2.5px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 3. 卡片纸张纹理 */
+.panel {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* 4. 卷轴展开动效 - 替代 fade-up */
+.scroll-unfold {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-left: 4px solid var(--accent);
+  overflow: hidden;
+}
+.scroll-unfold.visible {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* 5. 竖排文字工具类 */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 2px;
+}
+
+/* 6. 选择框/下拉框交互优化 */
+select {
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+select:hover {
+  border-color: var(--accent);
+}
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(180, 70, 42, 0.15);
+}
+
+/* 7. 标签/胶囊按钮微交互 */
+.tag-pill, .filter-btn {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.tag-pill:hover, .filter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(44,36,22,0.1);
+}
+.tag-pill:active, .filter-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+.tag-pill.active, .filter-btn.active {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+/* 8. 淡入动画 - 用于模态框/弹窗 */
+.modal-enter {
+  animation: modalIn 0.3s ease-out;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* 9. 印章盖下反馈 - 用于收藏等操作 */
+.stamp-feedback {
+  animation: stampPress 0.4s ease;
+}
+@keyframes stampPress {
+  0% { transform: scale(1.3) rotate(-8deg); opacity: 0; }
+  50% { transform: scale(0.95) rotate(-8deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+}
+
+/* 10. Toast 通知 */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Print styles */
+@media print {
+  nav, .e-skip, #entrance, #loading, #themeToggle { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .panel { border: 1px solid #ccc !important; break-inside: avoid; }
+  a { color: #000 !important; text-decoration: none !important; }
+}

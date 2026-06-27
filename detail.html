@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>详情 — 史迹图</title>
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="common.css?v=2" />
+  <style>
+
+
+  .section-title { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+  .card { background: var(--bg); border: 1px solid var(--rule); border-radius: 8px; padding: 1rem; transition: all 0.2s; }
+  .card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .chapter-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 500; border: 1px solid; }
+  .chapter-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .timeline-event { position: relative; padding-left: 1.5rem; border-left: 2px solid var(--rule); }
+  .timeline-event::before { content: ''; position: absolute; left: -5px; top: 0.5rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .timeline-event:last-child { border-left-color: transparent; }
+  .breadcrumb { display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--muted); }
+  .breadcrumb a { color: var(--muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb span { color: var(--ink); }
+  .quote-block { position: relative; padding: 1rem 1.5rem; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent); }
+  .quote-block::before { content: '\201C'; position: absolute; top: -0.3rem; left: 0.5rem; font-size: 2rem; color: var(--accent); opacity: 0.3; font-family: serif; }
+  .stat-card { text-align: center; padding: 0.75rem; }
+  .stat-card .num { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+  .stat-card .label { font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem; }
+  #lifeTimeline { width: 100%; height: 280px; }
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr !important; }
+    .nav-links { display: none; }
+  }
+/* Mobile nav */
+@media (max-width: 767px) {
+  #navLinks { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--rule); padding: 1rem; flex-direction: column; gap: 0.75rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  #navLinks.nav-closed { display: none !important; }
+}
+@media (min-width: 768px) {
+  #navLinks { display: flex !important; }
+}
+</style>
+</head>
+<body class="min-h-screen">
+
+<nav class="bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--rule)] relative sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-xl font-bold serif text-[var(--accent)]">史迹图</span>
+    </a>
+    <!-- 汉堡按钮 -->
+    <button id="menuToggle" class="md:hidden p-2" onclick="document.getElementById('navLinks').classList.toggle('nav-closed')" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="navLinks" class="nav-closed md:flex items-center gap-6 text-sm">
+      <a href="index.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">首页</a>
+      <a href="graph.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">人物关系</a>
+      <a href="timeline.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">事件时间轴</a>
+      <a href="map.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">时空地图</a>
+      <a href="dashboard.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">数据总览</a>
+      <a href="idioms.html" class="nav-link text-[var(--muted)] hover:text-[var(--ink)]">典故探源</a>
+      <button id="themeToggle" class="p-2 rounded-lg hover:bg-[var(--bg2)] transition" title="切换主题">
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        <svg class="theme-toggle-icon w-4 h-4" data-theme="dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-5xl mx-auto px-6 py-8">
+  <div id="breadcrumb" class="breadcrumb mb-4"></div>
+  <div id="content"></div>
+</div>
+
+<script>
+function esc(s) { if (!s) return ''; var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+// Chapter color map (subset for badge styling)
+const chapterColorMap = {
+  wudi:'#B4462A',xia:'#8B4513',shang:'#5B4A9E',zhou:'#6B5B3A',
+  qihuang:'#C8A24E',qinmo:'#4A6741',qianshu:'#3D7B8A',qinshi:'#8B0000',
+  xiangyu:'#6A1B9A',hanxin:'#1565C0',liubang:'#2E7D32',chuhan:'#E65100',
+  xihan:'#B71C1C',gaozu:'#5D4037',hui:'#607D8B',lvhou:'#9C27B0',
+  wenjing:'#FF8F00',wu_di:'#D32F2F',zhao_di:'#455A64',
+  chunqiu:'#2E7D32',wuguo:'#00695C',zhanguo:'#F57F17',
+  lieguo:'#37474F',bailiao:'#FF6F00',renliao:'#00838F',
+  tianguan:'#4E342E',liping:'#1B5E20',liting:'#283593',
+  yuewang:'#004D40',shangjun:'#BF360C',weigongzi:'#7B1FA2',
+  lijiang:'#C62828',weijia:'#0D47A1',qinwang:'#E64A19',
+  bailiqi:'#AD1457',sunwu:'#1A237E',zhanlu:'#33691E',
+  daji:'#795548',quyuan:'#0097A7',lvbuwei:'#827717',
+  hanxinlie:'#1565C0',pengyue:'#F4511E',qingbu:'#6A1B9A',
+  hanfeili:'#37474F',laoli:'#1565C0',simaxiang:'#4A148C',
+  zouxu:'#4527A0',mengchangjun:'#E65100',pingyuanjun:'#1B5E20',
+  chunshenjun:'#006064',weiqiwu:'#6A1B9A',hanzhangru:'#00695C',
+  weijiangjun:'#AD1457',pingjinhou:'#455A64',bianque:'#00838F',
+  wuwanli:'#1565C0',liangan:'#37474F',xunli:'#455A64',
+  xiaohe:'#2E7D32',caoshen:'#1B5E20',huainanwang:'#6A1B9A',
+  chuyi:'#00838F',zibuyi:'#4527A0',weiqiwei:'#7B1FA2',
+  wuzixu:'#455A64',zhongnidi:'#1565C0',chuli:'#0D47A1',
+  qinbenji:'#8B0000',caibenji:'#00695C',caobenji:'#455A64',
+  chenqibenji:'#7B1FA2',waiqibenji:'#9C27B0',ranghou:'#37474F',
+  tiandan:'#2E7D32',luzhonglian:'#1B5E20',lisheng:'#006064',
+  zhangchengxiang:'#455A64',liujingsun:'#7B1FA2',yuanangchao:'#AD1457',
+  xiaowenbenji:'#2E7D32',xiaojingbenji:'#1565C0',xiaowubenji:'#C62828',
+  liangxiaowang:'#455A64',wuzongbenji:'#00838F',sanwangbenji:'#6A1B9A',
+  jibuluan:'#F57F17',fengtang:'#37474F',wanshi:'#455A64',
+  tianshu:'#1B5E20',bianqucanggong:'#00838F',wuwanli_dup:'#AD1457',
+  yingwuqiwangshijia:'#E64A19',hanzhangru_dup:'#00695C',
+  wujiangjunbiaoqi:'#AD1457',pingjinhou_zhuwu:'#455A64',
+  nanyue:'#006064',dongyue:'#455A64',chaoxian:'#7B1FA2',
+  xinanman:'#1B5E20',dawanyuan:'#F57F17',xiahuBenji:'#2E7D32',
+  xiaowubenji_dup:'#C62828',liangxiaowang_dup:'#455A64',
+  wuzongbenji_dup:'#00838F',sanwangbenji_dup:'#6A1B9A',
+  xiao_xiangguo:'#2E7D32',cao_xiangguo:'#1B5E20',
+  huainan_hengshan:'#6A1B9A',xunli_dup:'#455A64',
+  kuliezhuan:'#8B0000',dayuanzhuan:'#F57F17',youxiazhuan:'#E65100',
+  ningxingzhuan:'#7B1FA2',huajizhuan:'#00838F',rizhezhuan:'#37474F',
+  guicezhuan:'#455A64',huozhizhuan:'#2E7D32',
+  wuzixu_dup:'#455A64',zhongnidi_dup:'#1565C0',chuli_dup:'#0D47A1',
+  zhangguo_dup:'#AD1457',hanxinlie_dup:'#1565C0',pengyue_dup:'#F4511E',
+  qingbu_dup:'#6A1B9A',taishigongzixu:'#4A148C',
+  hequ_shu:'#00838F',pingzhun_shu:'#2E7D32',fengshan_shu:'#C62828',
+  weijia_dup:'#0D47A1',qinwang_dup:'#E64A19',bailiqi_dup:'#AD1457',
+  sunwu_dup:'#1A237E',zhanlu_dup:'#33691E',daji_dup:'#795548',
+  quyuan_dup:'#0097A7',lvbuwei_dup:'#827717',
+  qianshu_dup:'#3D7B8A',qinshi_dup:'#8B0000',xiangyu_dup:'#6A1B9A',
+  wuguo_dup:'#00695C',chunqiu_dup:'#2E7D32',zhanguo_dup:'#F57F17',
+  lieguo_dup:'#37474F',bailiao_dup:'#FF6F00',renliao_dup:'#00838F',
+  tianguan_dup:'#4E342E',liping_dup:'#1B5E20',liting_dup:'#283593',
+  qihuang_dup:'#C8A24E',gaozu_dup:'#5D4037',hui_dup:'#607D8B',
+  lvhou_dup:'#9C27B0',wenjing_dup:'#FF8F00',zhao_di_dup:'#455A64',
+  wu_di_dup:'#D32F2F',xiaowenbenji_dup:'#2E7D32',xiaojingbenji_dup:'#1565C0'
+};
+
+let allData = {};
+
+function showError(msg) {
+  document.getElementById('content').innerHTML = '<div class="text-center text-[var(--accent)] py-20"><div class="text-lg font-bold mb-2">加载失败</div><div class="text-sm">' + msg + '</div><button onclick="location.reload()" class="mt-4 px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm">刷新页面</button></div>';
+}
+
+async function loadData() {
+  // Hide default placeholder immediately if valid URL params exist (prevent flash)
+  var params = new URLSearchParams(window.location.search);
+  var type = params.get('type');
+  var id = params.get('id');
+  var name = params.get('name');
+  if ((type && id) || (type === 'idiom' && name)) {
+    var contentEl = document.getElementById('content');
+    if (contentEl) contentEl.innerHTML = '';
+  }
+
+  try {
+    const [characters, events, locations, relationships, chapters, idioms] = await Promise.all([
+      fetch('data/characters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/events.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/locations.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/relationships.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/chapters.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; }),
+      fetch('data/idioms.json').then(function(r) { if (!r.ok) throw new Error('加载失败'); return r.json(); }).catch(function(e) { console.error(e); return []; })
+    ]);
+    allData = { characters, events, locations, relationships, chapters, idioms };
+
+    const params = new URLSearchParams(location.search);
+    const type = params.get('type');
+    const id = params.get('id');
+    const name = params.get('name');
+
+    if (type === 'character' && id) renderCharacter(id);
+    else if (type === 'event' && id) renderEvent(id);
+    else if (type === 'location' && id) renderLocation(id);
+    else if (type === 'idiom' && name) renderIdiom(name);
+    else document.getElementById('content').innerHTML = '<div class="text-center text-[var(--muted)] py-20">请选择要查看的内容</div>';
+  } catch (e) {
+    console.error(e);
+    showError('数据加载失败，请刷新页面重试');
+  }
+}
+
+function getChapterInfo(characterName) {
+  // Find chapter where this character is listed
+  const ch = allData.chapters.find(c => c.characters.includes(characterName));
+  if (!ch) return null;
+  return {
+    id: ch.id,
+    title: ch.title,
+    period: ch.period,
+    color: chapterColorMap[ch.id] || '#888',
+    timeRange: ch.timeRange || ''
+  };
+}
+
+function getCharacterIdioms(name) {
+  return allData.idioms.filter(i => i.characters.includes(name));
+}
+
+function getCharacterEvents(name) {
+  return allData.events.filter(e => e.characters.includes(name));
+}
+
+function getEventChapter(event) {
+  return allData.chapters.find(c => c.events && c.events.includes(event.name));
+}
+
+function buildBreadcrumb(items) {
+  // items: [{label, href?}]
+  let html = items.map((item, idx) => {
+    if (idx === items.length - 1) return `<span>${esc(item.label)}</span>`;
+    return `<a href="${item.href}">${item.label}</a><span style="color:var(--rule)">/</span>`;
+  }).join('');
+  document.getElementById('breadcrumb').innerHTML = html;
+}
+
+function renderLifeTimeline(charName, evs) {
+  if (evs.length === 0) return '';
+
+  // Parse dates to sort
+  const sorted = evs.slice().sort((a, b) => {
+    const ya = parseYear(a.date), yb = parseYear(b.date);
+    return ya - yb;
+  }).slice(0, 15); // Max 15 events
+
+  // Use ECharts for a horizontal timeline
+  const categories = sorted.map(e => e.name);
+  const years = sorted.map(e => parseYear(e.date));
+
+  // Build simple vertical timeline HTML instead (no ECharts dependency to keep it light)
+  let html = '<div class="space-y-4 mt-2">';
+  sorted.forEach((e, i) => {
+    html += `
+      <div class="timeline-event pb-4">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-mono text-[var(--muted)]">${esc(e.date)}</span>
+        </div>
+        <a href="detail.html?type=event&id=${e.id}" class="font-medium hover:text-[var(--accent)] transition">${esc(e.name)}</a>
+        <p class="text-sm text-[var(--muted)] mt-1">${esc(e.description.substring(0, 80))}${e.description.length > 80 ? '...' : ''}</p>
+      </div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+function parseYear(dateStr) {
+  if (!dateStr) return -9999;
+  const m = dateStr.match(/(-?\d+)/);
+  return m ? parseInt(m[1]) : -9999;
+}
+
+function renderCharacter(id) {
+  const c = allData.characters.find(x => x.id === id);
+  if (!c) return;
+
+  const rels = allData.relationships.filter(r => r.source === c.name || r.target === c.name);
+  const evs = getCharacterEvents(c.name);
+  const chapterInfo = getChapterInfo(c.name);
+  const idioms = getCharacterIdioms(c.name);
+
+  // Build stats
+  const stats = [
+    { num: rels.length, label: '人物关系' },
+    { num: evs.length, label: '参与事件' },
+    { num: idioms.length, label: '相关典故' }
+  ];
+
+  buildBreadcrumb([
+    { label: '首页', href: 'index.html' },
+    { label: '人物关系', href: 'graph.html' },
+    { label: c.name }
+  ]);
+
+  document.getElementById('content').innerHTML = `
+    <!-- Hero Section -->
+    <div class="panel p-8 mb-6">
+      <div class="hero-grid" style="display:grid;grid-template-columns:1fr 280px;gap:2rem;">
+        <!-- Left: Main Info -->
+        <div>
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <h1 class="text-3xl font-bold serif">${esc(c.name)}</h1>
+            ${c.courtesyName ? `<span class="text-sm text-[var(--muted)]">字 ${esc(c.courtesyName)}</span>` : ''}
+          </div>
+          ${chapterInfo ? `
+          <div class="mb-4">
+            <span class="chapter-badge" style="color:${chapterInfo.color};border-color:${chapterInfo.color}33;background:${chapterInfo.color}11">
+              <span class="chapter-dot" style="background:${chapterInfo.color}"></span>
+              ${chapterInfo.title}
+            </span>
+            <span class="text-xs text-[var(--muted)] ml-2">${chapterInfo.timeRange}</span>
+          </div>` : ''}
+          <div class="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <div class="section-title">生卒年</div>
+              <p class="text-base">${esc(c.lifespan || '不详')}</p>
+            </div>
+            <div>
+              <div class="section-title">身份</div>
+              <p class="text-base">${esc(c.identity || '不详')}</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="section-title">性格特点</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              ${c.traits.map(t => `<span class="px-3 py-1 rounded-full bg-[var(--bg2)] text-sm">${esc(t)}</span>`).join('')}
+            </div>
+          </div>
+          <div>
+            <div class="section-title">简介</div>
+            <p class="leading-relaxed mt-1 text-base">${esc(c.description)}</p>
+          </div>
+        </div>
+        <!-- Right: Stats & Quick Info -->
+        <div>
+          <div class="grid grid-cols-3 gap-2 mb-4">
+            ${stats.map(s => `<div class="stat-card card"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`).join('')}
+          </div>
+          ${c.quotes.length ? `
+          <div class="quote-block serif mb-4">
+            <p class="italic text-[var(--accent)] text-lg pl-4">"${c.quotes[0]}"</p>
+            ${c.quotes.length > 1 ? `<p class="text-xs text-[var(--muted)] mt-2 pl-4">共 ${c.quotes.length} 条名言</p>` : ''}
+          </div>` : ''}
+          <div class="card">
+            <div class="section-title">所属时期</div>
+            <p class="font-medium">${esc(c.period || '不详')}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Life Timeline -->
+    ${evs.length > 0 ? `
+    <div class="panel p-8 mb-6">
+      <div class="section-title" style="font-size:1rem;">人生大事</div>
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-sm text-[var(--muted)]">按时间排列的关键事件</span>
+        <a href="timeline.html" class="text-sm text-[var(--accent)] hover:underline">查看完整时间轴 →</a>
+      </div>
+      ${renderLifeTimeline(c.name, evs)}
+    </div>` : ''}
+
+    <!-- More Quotes -->
+    ${c.quotes.length > 1 ? `
+    <div class="panel p-8 mb-6">
+      <div class="section-title" style="font-size:1rem;">名言警句</div>
+      <div class="space-y-3 mt-2">
+        ${c.quotes.map(q => `
+          <div class="quote-block serif">
+            <p class="italic text-[var(--accent)] text-lg pl-4">"${esc(q)}"</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>` : ''}
+
+    <!-- Related Idioms -->
+    ${idioms.length > 0 ? `
+    <div class="panel p-8 mb-6">
+      <div class="flex justify-between items-center mb-4">
+        <div class="section-title" style="font-size:1rem;">相关典故</div>
+        <a href="idioms.html" class="text-sm text-[var(--accent)] hover:underline">查看全部典故 →</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-3">
+        ${idioms.map(idiom => `
+          <div class="card cursor-pointer" onclick="location.href='detail.html?type=idiom&name=${encodeURIComponent(idiom.idiom)}'">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="font-semibold serif text-[var(--accent)]">${esc(idiom.idiom)}</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--bg2)]">${esc(idiom.pinyin)}</span>
+            </div>
+            <p class="text-sm text-[var(--muted)]">${esc(idiom.meaning)}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>` : ''}
+
+    <!-- Relationships -->
+    ${rels.length > 0 ? `
+    <div class="panel p-8 mb-6">
+      <div class="flex justify-between items-center mb-4">
+        <div class="section-title" style="font-size:1rem;">人物关系</div>
+        <a href="graph.html" class="text-sm text-[var(--accent)] hover:underline">查看关系图谱 →</a>
+      </div>
+      <div class="space-y-2">
+        ${rels.map(r => {
+          const otherName = r.source === c.name ? r.target : r.source;
+          const other = allData.characters.find(x => x.name === otherName);
+          return `<div class="card flex items-center gap-3">
+            <span class="px-2 py-0.5 rounded text-xs bg-[var(--accent)]/10 text-[var(--accent)] whitespace-nowrap">${esc(r.type)}</span>
+            ${other ? `<a href="detail.html?type=character&id=${other.id}" class="font-medium hover:text-[var(--accent)] transition">${esc(otherName)}</a>` : `<span class="font-medium">${otherName}</span>`}
+            ${r.description ? `<span class="text-sm text-[var(--muted)] truncate">${esc(r.description)}</span>` : ''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>` : ''}
+
+    <!-- Related Events Grid -->
+    ${evs.length > 0 ? `
+    <div class="panel p-8">
+      <div class="flex justify-between items-center mb-4">
+        <div class="section-title" style="font-size:1rem;">参与事件</div>
+        <a href="timeline.html" class="text-sm text-[var(--accent)] hover:underline">查看完整时间轴 →</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-3">
+        ${evs.map(e => {
+          const loc = allData.locations.find(l => l.id === e.locationId);
+          return `<a href="detail.html?type=event&id=${e.id}" class="card hover:border-[var(--accent)] transition">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="font-semibold">${esc(e.name)}</span>
+              <span class="text-xs text-[var(--muted)]">${esc(e.date)}</span>
+            </div>
+            <p class="text-sm text-[var(--muted)]">${e.description.substring(0, 60)}${e.description.length > 60 ? '...' : ''}</p>
+            ${loc ? `<div class="text-xs text-[var(--muted)] mt-2 flex items-center gap-1">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              ${e.locationName}
+            </div>` : ''}
+          </a>`;
+        }).join('')}
+      </div>
+    </div>` : ''}
+  `;
+}
+
+function renderEvent(id) {
+  const e = allData.events.find(x => x.id === id);
+  if (!e) return;
+  const loc = allData.locations.find(l => l.id === e.locationId);
+  const chapterInfo = getEventChapter(e);
+  const relatedChars = e.characters.map(name => allData.characters.find(c => c.name === name)).filter(Boolean);
+  const relatedIdioms = allData.idioms.filter(i => i.relatedEvent === e.name);
+
+  buildBreadcrumb([
+    { label: '首页', href: 'index.html' },
+    { label: '事件时间轴', href: 'timeline.html' },
+    { label: e.name }
+  ]);
+
+  document.getElementById('content').innerHTML = `
+    <div class="panel p-8 mb-6">
+      <div class="hero-grid" style="display:grid;grid-template-columns:1fr 240px;gap:2rem;">
+        <div>
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <h1 class="text-3xl font-bold serif">${esc(e.name)}</h1>
+            <span class="px-3 py-1 rounded-full text-sm bg-[var(--accent2)]/10 text-[var(--accent2)]">${esc(e.date)}</span>
+          </div>
+          ${chapterInfo ? `
+          <div class="mb-4">
+            <span class="chapter-badge" style="color:${chapterColorMap[chapterInfo.id] || '#888'};border-color:${(chapterColorMap[chapterInfo.id] || '#888')}33;background:${(chapterColorMap[chapterInfo.id] || '#888')}11">
+              <span class="chapter-dot" style="background:${chapterColorMap[chapterInfo.id] || '#888'}"></span>
+              ${chapterInfo.title}
+            </span>
+          </div>` : ''}
+          <div class="mb-4">
+            <div class="section-title">事件经过</div>
+            <p class="leading-relaxed mt-1 text-base">${esc(e.description)}</p>
+          </div>
+          <div class="mb-4">
+            <div class="section-title">历史意义</div>
+            <p class="mt-1">${esc(e.significance)}</p>
+          </div>
+        </div>
+        <div>
+          <div class="card mb-3">
+            <div class="section-title">地点</div>
+            <p class="font-medium">${esc(e.locationName || '不详')}</p>
+            ${loc ? `<p class="text-sm text-[var(--muted)]">今${esc(loc.modernName)}</p>` : ''}
+          </div>
+          <div class="card mb-3">
+            <div class="section-title">结果</div>
+            <p class="text-base">${esc(e.outcome || '不详')}</p>
+          </div>
+          ${loc ? `
+          <a href="map.html" class="card block hover:border-[var(--accent)] transition text-center">
+            <svg class="w-5 h-5 mx-auto mb-1 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            <span class="text-sm">在地图中查看</span>
+          </a>` : ''}
+        </div>
+      </div>
+    </div>
+
+    ${e.quote ? `
+    <div class="panel p-8 mb-6">
+      <div class="section-title" style="font-size:1rem;">史记原文</div>
+      <div class="quote-block serif mt-2">
+        <p class="italic text-[var(--accent)] text-lg pl-4">"${esc(e.quote)}"</p>
+      </div>
+    </div>` : ''}
+
+    ${relatedIdioms.length > 0 ? `
+    <div class="panel p-8 mb-6">
+      <div class="section-title" style="font-size:1rem;">衍生典故</div>
+      <div class="grid md:grid-cols-2 gap-3 mt-2">
+        ${relatedIdioms.map(idiom => `
+          <div class="card">
+            <div class="font-semibold serif text-[var(--accent)] mb-1">${esc(idiom.idiom)}</div>
+            <p class="text-sm text-[var(--muted)]">${esc(idiom.meaning)}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>` : ''}
+
+    <div class="panel p-8">
+      <div class="flex justify-between items-center mb-4">
+        <div class="section-title" style="font-size:1rem;">相关人物</div>
+        <a href="graph.html" class="text-sm text-[var(--accent)] hover:underline">查看关系图谱 →</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        ${relatedChars.map(char => `
+          <a href="detail.html?type=character&id=${char.id}" class="card text-center hover:border-[var(--accent)] transition">
+            <div class="text-lg font-bold serif">${esc(char.name)}</div>
+            <div class="text-xs text-[var(--muted)] mt-1">${esc(char.identity || '')}</div>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderLocation(id) {
+  const loc = allData.locations.find(x => x.id === id);
+  if (!loc) return;
+  const evs = allData.events.filter(e => e.locationId === loc.id);
+  const relatedChars = [...new Set(evs.flatMap(e => e.characters))].map(name => allData.characters.find(c => c.name === name)).filter(Boolean);
+
+  buildBreadcrumb([
+    { label: '首页', href: 'index.html' },
+    { label: '时空地图', href: 'map.html' },
+    { label: loc.name }
+  ]);
+
+  document.getElementById('content').innerHTML = `
+    <div class="panel p-8 mb-6">
+      <div class="hero-grid" style="display:grid;grid-template-columns:1fr 240px;gap:2rem;">
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <h1 class="text-3xl font-bold serif">${esc(loc.name)}</h1>
+            <span class="px-3 py-1 rounded-full text-sm bg-[var(--gold)]/10 text-[var(--gold)]">今${esc(loc.modernName)}</span>
+          </div>
+          <div class="mb-4">
+            <div class="section-title">简介</div>
+            <p class="leading-relaxed mt-1 text-base">${esc(loc.description)}</p>
+          </div>
+          <div class="mb-4">
+            <div class="section-title">历史意义</div>
+            <p class="mt-1">${esc(loc.significance)}</p>
+          </div>
+        </div>
+        <div>
+          <div class="card mb-3">
+            <div class="section-title">坐标</div>
+            <p class="font-mono text-sm">${loc.lat}, ${loc.lng}</p>
+          </div>
+          <div class="card mb-3">
+            <div class="section-title">统计数据</div>
+            <div class="grid grid-cols-2 gap-2 mt-1">
+              <div class="stat-card"><div class="num">${evs.length}</div><div class="label">历史事件</div></div>
+              <div class="stat-card"><div class="num">${relatedChars.length}</div><div class="label">相关人物</div></div>
+            </div>
+          </div>
+          <a href="map.html" class="card block hover:border-[var(--accent)] transition text-center">
+            <svg class="w-5 h-5 mx-auto mb-1 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            <span class="text-sm">在地图中查看</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel p-8 mb-6">
+      <div class="section-title" style="font-size:1rem;">相关人物</div>
+      <div class="flex flex-wrap gap-3 mt-2">
+        ${relatedChars.map(char => `
+          <a href="detail.html?type=character&id=${char.id}" class="px-4 py-2 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-sm hover:bg-[var(--accent)]/20 transition font-medium">${esc(char.name)}</a>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="panel p-8">
+      <div class="section-title" style="font-size:1rem;">发生事件</div>
+      <div class="space-y-2 mt-2">
+        ${evs.map(e => `
+          <a href="detail.html?type=event&id=${e.id}" class="card block hover:border-[var(--accent)] transition">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="font-semibold">${esc(e.name)}</span>
+              <span class="text-xs text-[var(--muted)]">${esc(e.date)}</span>
+            </div>
+            <p class="text-sm text-[var(--muted)]">${esc(e.description.substring(0, 80))}${e.description.length > 80 ? '...' : ''}</p>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// Also handle idiom detail view
+function renderIdiom(idiomName) {
+  const idiom = allData.idioms.find(i => i.idiom === idiomName);
+  if (!idiom) return;
+  const relatedChars = idiom.characters.map(name => allData.characters.find(c => c.name === name)).filter(Boolean);
+
+  buildBreadcrumb([
+    { label: '首页', href: 'index.html' },
+    { label: '典故探源', href: 'idioms.html' },
+    { label: idiom.idiom }
+  ]);
+
+  document.getElementById('content').innerHTML = `
+    <div class="panel p-8 mb-6">
+      <div class="flex items-center gap-3 mb-2 flex-wrap">
+        <h1 class="text-3xl font-bold serif text-[var(--accent)]">${idiom.idiom}</h1>
+        <span class="text-sm text-[var(--muted)]">${esc(idiom.pinyin)}</span>
+      </div>
+      <div class="mb-4">
+        <span class="chapter-badge" style="color:var(--gold);border-color:#C8A24E33;background:#C8A24E11">
+          <span class="chapter-dot" style="background:var(--gold)"></span>
+          ${esc(idiom.source)}
+        </span>
+      </div>
+      <div class="mb-4">
+        <div class="section-title">释义</div>
+        <p class="leading-relaxed mt-1 text-base">${esc(idiom.meaning)}</p>
+      </div>
+      <div class="mb-4">
+        <div class="section-title">典故故事</div>
+        <p class="leading-relaxed mt-1 text-base">${esc(idiom.story)}</p>
+      </div>
+      <div class="mb-4">
+        <div class="section-title">现代用法</div>
+        <p class="mt-1">${esc(idiom.modernUsage)}</p>
+      </div>
+      ${idiom.quote ? `
+      <div class="quote-block serif mb-4">
+        <p class="italic text-[var(--accent)] text-lg pl-4">"${esc(idiom.quote)}"</p>
+      </div>` : ''}
+      ${idiom.relatedEvent ? `
+      <a href="detail.html?type=event&id=${allData.events.find(e=>e.name===idiom.relatedEvent)?.id || ''}" class="card inline-block hover:border-[var(--accent)] transition mt-2">
+        <span class="text-sm">相关事件：${esc(idiom.relatedEvent)}</span>
+        <span class="text-xs text-[var(--accent)] ml-1">→</span>
+      </a>` : ''}
+    </div>
+
+    <div class="panel p-8">
+      <div class="section-title" style="font-size:1rem;">相关人物</div>
+      <div class="flex flex-wrap gap-3 mt-2">
+        ${relatedChars.map(char => `
+          <a href="detail.html?type=character&id=${char.id}" class="px-4 py-2 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-sm hover:bg-[var(--accent)]/20 transition font-medium">${esc(char.name)}</a>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// Arrow key navigation for detail page (left/right to browse items)
+document.addEventListener('keydown', function(e) {
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  // Don't trigger when typing in input/select/textarea
+  var tag = e.target.tagName;
+  if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return;
+  // Only allow when data is loaded
+  if (!allData.characters || !allData.characters.length) return;
+
+  var params = new URLSearchParams(location.search);
+  var curType = params.get('type');
+  var curId = params.get('id');
+  var list = [];
+
+  if (curType === 'character' && allData.characters) list = allData.characters;
+  else if (curType === 'event' && allData.events) list = allData.events;
+  else if (curType === 'location' && allData.locations) list = allData.locations;
+  else if (curType === 'idiom' && allData.idioms) list = allData.idioms;
+
+  if (list.length === 0 || !curId) return;
+
+  var idx = list.findIndex(function(item) { return item.id === curId; });
+  if (idx < 0) return;
+
+  if (e.key === 'ArrowLeft' && idx > 0) {
+    e.preventDefault();
+    var prevId = list[idx - 1].id;
+    if (curType === 'idiom') {
+      location.href = 'detail.html?type=' + curType + '&id=' + prevId;
+    } else {
+      location.href = 'detail.html?type=' + curType + '&id=' + prevId;
+    }
+  } else if (e.key === 'ArrowRight' && idx < list.length - 1) {
+    e.preventDefault();
+    var nextId = list[idx + 1].id;
+    if (curType === 'idiom') {
+      location.href = 'detail.html?type=' + curType + '&id=' + nextId;
+    } else {
+      location.href = 'detail.html?type=' + curType + '&id=' + nextId;
+    }
+  }
+});
+
+loadData();
+</script>
+<script src="shortcuts.js"></script>
+<script src="theme.js?v=2"></script>
+<div id="toast" class="toast"></div>
+<script>
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 2000);
+}
+</script>
+</body>
+</html>
