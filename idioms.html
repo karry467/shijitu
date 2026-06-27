@@ -275,7 +275,7 @@ function render(filter) {
         <div><strong class="text-[var(--muted)]">典故</strong><p class="leading-relaxed">${esc(item.story)}</p></div>
         ${item.quote ? `<div class="p-3 bg-[var(--bg2)] rounded-lg border-l-4 border-[var(--accent)]">
           <strong class="text-[var(--muted)] text-xs">史记原文</strong>
-          <p class="italic text-[var(--accent)] mt-1 serif vertical-text" style="max-height:200px;overflow:hidden">"${esc(item.quote)}"</p>
+          <p class="italic text-[var(--accent)] mt-1 serif">"${esc(item.quote)}"</p>
         </div>` : ''}
         <div><strong class="text-[var(--muted)]">现代用法</strong><p class="text-[var(--muted)]">${esc(item.modernUsage)}</p></div>
         ${item.characters.length ? `<div class="flex flex-wrap gap-2 pt-2">
