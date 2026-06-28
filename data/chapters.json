@@ -1850,18 +1850,6 @@
     "timeRange": "公元前100年"
   },
   {
-    "id": "guice_lielie",
-    "title": "龟策列传",
-    "period": "西汉",
-    "summary": "记载占龟的历史与方法，是研究古代占卜术的重要文献。",
-    "characters": [],
-    "events": [],
-    "locations": [
-      "长安"
-    ],
-    "timeRange": "公元前100年"
-  },
-  {
     "id": "huozhilie",
     "title": "货殖列传",
     "period": "西汉",
@@ -1878,17 +1866,6 @@
       "洛阳"
     ],
     "timeRange": "公元前500年 — 公元前100年"
-  },
-  {
-    "id": "sunzi_wuqi",
-    "title": "孙子吴起列传",
-    "period": "春秋战国",
-    "summary": "重点记载吴起的军事才能与改革事迹。吴起曾在鲁国、魏国、楚国为将，在魏国训练出精锐的魏武卒，在楚国主持变法，使楚国国力大增。最终因触犯贵族利益而被害。",
-    "characters": [],
-    "events": [],
-    "locations": [],
-    "timeRange": "公元前512年 — 公元前381年",
-    "mirrorOf": "sunwuzi"
   },
   {
     "id": "wuzilie",
@@ -1929,37 +1906,6 @@
     "timeRange": "公元前500年 — 公元前400年"
   },
   {
-    "id": "shangjunlie",
-    "title": "商君列传",
-    "period": "战国",
-    "summary": "侧重记载商鞅变法的具体措施与实施过程。商鞅在秦孝公支持下推行废井田、开阡陌、实行郡县制、奖励军功等一系列改革，使秦国迅速富强。变法触动了旧贵族利益，秦孝公死后商鞅被车裂处死。",
-    "characters": [],
-    "events": [],
-    "locations": [],
-    "timeRange": "公元前390年 — 公元前338年",
-    "mirrorOf": "shangjun"
-  },
-  {
-    "id": "suqinlie",
-    "title": "苏秦列传",
-    "period": "战国",
-    "summary": "侧重记载苏秦合纵六国的具体游说过程。苏秦以口才纵横捭阖，说服燕、赵、韩、魏、齐、楚六国联合抗秦，身佩六国相印，合纵之势一度令秦国不敢出函谷关。后因各国利益分歧，合纵瓦解，苏秦在齐国被刺杀。",
-    "characters": [],
-    "events": [],
-    "locations": [],
-    "timeRange": "公元前340年 — 公元前284年"
-  },
-  {
-    "id": "zhangyilie",
-    "title": "张仪列传",
-    "period": "战国",
-    "summary": "侧重记载张仪连横策略的具体运用。张仪以连横之策游说各国，拆散合纵联盟，使各国分别与秦结好。他善于利用各国间的矛盾，多次以欺骗手段达到外交目的，为秦国东扩扫清障碍。",
-    "characters": [],
-    "events": [],
-    "locations": [],
-    "timeRange": "公元前340年 — 公元前309年"
-  },
-  {
     "id": "meigeng",
     "title": "樗里子甘茂列传",
     "period": "战国",
@@ -1974,16 +1920,6 @@
       "咸阳"
     ],
     "timeRange": "公元前320年 — 公元前260年"
-  },
-  {
-    "id": "ranghoulielie",
-    "title": "穰侯列传",
-    "period": "战国",
-    "summary": "侧重记载魏冉（穰侯）的军事成就。魏冉是秦昭襄王的舅舅，四次出任秦国丞相，多次率军伐魏、伐齐，尤其在攻伐魏国时屡建战功。权倾一时，后因范雎进言被秦王罢免，逐出咸阳。",
-    "characters": [],
-    "events": [],
-    "locations": [],
-    "timeRange": "公元前300年 — 公元前265年"
   },
   {
     "id": "peng_yue_lie",

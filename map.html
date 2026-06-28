@@ -233,16 +233,10 @@
             <option value="hongyan">佞幸列传</option>
             <option value="shiji_jingzhong">滑稽列传</option>
             <option value="rizhualie">日者列传</option>
-            <option value="guice_lielie">龟策列传</option>
             <option value="huozhilie">货殖列传</option>
-            <option value="sunzi_wuqi">孙子吴起列传-重复</option>
             <option value="wuzilie">伍子胥列传</option>
             <option value="zhonglishu">仲尼弟子列传</option>
-            <option value="shangjunlie">商君列传-重复</option>
-            <option value="suqinlie">苏秦列传-重复</option>
-            <option value="zhangyilie">张仪列传-重复</option>
             <option value="meigeng">樗里子甘茂列传</option>
-            <option value="ranghoulielie">穰侯列传-重复</option>
           </select>
           <label class="flex items-center gap-2 text-sm cursor-pointer">
             <input type="checkbox" id="showRoutes" checked class="accent-[var(--accent)]">
@@ -347,14 +341,9 @@
         <div class="map-legend-item"><span class="legend-dot bg-[#778899]"></span>日者列传</div>
         <div class="map-legend-item"><span class="legend-dot bg-[#BDB76B]"></span>龟策列传</div>
         <div class="map-legend-item"><span class="legend-dot bg-[#DAA520]"></span>货殖列传</div>
-        <div class="map-legend-item"><span class="legend-dot bg-[#8B5A2B]"></span>孙子吴起列传-重复</div>
         <div class="map-legend-item"><span class="legend-dot bg-[#4169E1]"></span>伍子胥列传</div>
         <div class="map-legend-item"><span class="legend-dot bg-[#228B22]"></span>仲尼弟子列传</div>
-        <div class="map-legend-item"><span class="legend-dot bg-[#4A6741]"></span>商君列传-重复</div>
-        <div class="map-legend-item"><span class="legend-dot bg-[#CD853F]"></span>苏秦列传-重复</div>
-        <div class="map-legend-item"><span class="legend-dot bg-[#DAA520]"></span>张仪列传-重复</div>
         <div class="map-legend-item"><span class="legend-dot bg-[#708090]"></span>樗里子甘茂列传</div>
-        <div class="map-legend-item"><span class="legend-dot bg-[#6495ED]"></span>穰侯列传-重复</div>
         </div>
       </div>
     </div>
@@ -429,7 +418,7 @@ function render() {
   routeLayers.forEach(l => map.removeLayer(l));
   routeLayers = [];
 
-  const colorMap = { wudi: '#8B6914', xia: '#B8860B', yin: '#CD7F32', zhou: '#2E8B57', kongzi: '#20B2AA', cike: '#3CB371', lianpo: '#228B22', wuyue: '#8B4513', shangjun: '#4A6741', weigongzi: '#6B4226', qinshi: '#4a4a4a', cheshe: '#696969', xiangyu: '#B4462A', gaozu: '#4169E1', lvhou: '#6A5ACD', liguang: '#4A6FA5', qitaigong: '#2F4F4F', guanyan: '#556B2F', liuhou: '#4682B4', huaiyinhou: '#8B008B', lu: '#8B0000', jin: '#800080', chu: '#006400', zhao: '#FF8C00', sunwuzi: '#8B5A2B', baiqiwangjian: '#A0522D', suqin: '#CD853F', zhangyi: '#DAA520', mengzi_xunzi: '#6B8E23', xiongnu: '#708090', lisi: '#5F9EA0', mengtian: '#008B8B', wei: '#8B4513', han: '#A52A2A', yan: '#483D8B', tianqi: '#008080', wutaibo: '#800000', zheng: '#D2691E', song: '#B22222', wei_kangshu: '#9932CC', fanju_caize: '#6495ED', yueyi: '#DC143C', quyuan_jiasheng: '#1E90FF', lvbuwei: '#FF6347', qin_benji: '#4B0082', cai: '#9400D3', cao: '#FF1493', chenqi: '#00CED1', waiqi: '#FF4500', ranghou: '#7FFFD4', mengchangjun: '#F0E68C', pingyuanjun: '#DDA0DD', chunshenjun: '#98FB98', tiandan: '#F4A460', luzhonglian: '#87CEEB', lisheng_lujia: '#FFB6C1', zhangchengxiang: '#B0C4DE', liujing_shusuntong: '#FFD700', yuanang_chaocuo: '#FF69B4' , xiaowen: '#556B2F', xiaojing: '#8FBC8F', xiaowu: '#CD5C5C', liangxiaowang: '#DEB887', wuzong: '#D2B48C', sanwang: '#BC8F8F', jibu_luanbu: '#778899', fengtang: '#708090', wanshi: '#BDB76B', tianshu: '#8B8378', bianque: '#20B2AA', wuwangbi: '#CD5C5C', weiqi_wuanhou: '#9370DB', hanchangru: '#6B8E23', weijiangjun: '#B22222', pingjinhou: '#A0522D', nanyue: '#2E8B57', dongyue: '#3CB371', chaoxian: '#4682B4', xinanyi: '#5F9EA0', xiaochu: '#2F4F4F', caoxiangguo: '#556B2F', huainan_hengshan_jishan: '#8B008B', qianhouchushu: '#698B22', lihai_zhichun: '#8B0000', dayuanyoushi: '#B8860B', youyu: '#A52A2A', hongyan: '#CD5C5C', shiji_jingzhong: '#20B2AA', rizhualie: '#778899', guice_lielie: '#BDB76B', huozhilie: '#DAA520', sunzi_wuqi: '#8B5A2B', wuzilie: '#4169E1', zhonglishu: '#228B22', shangjunlie: '#4A6741', suqinlie: '#CD853F', zhangyilie: '#DAA520', meigeng: '#708090', ranghoulielie: '#6495ED'
+  const colorMap = { wudi: '#8B6914', xia: '#B8860B', yin: '#CD7F32', zhou: '#2E8B57', kongzi: '#20B2AA', cike: '#3CB371', lianpo: '#228B22', wuyue: '#8B4513', shangjun: '#4A6741', weigongzi: '#6B4226', qinshi: '#4a4a4a', cheshe: '#696969', xiangyu: '#B4462A', gaozu: '#4169E1', lvhou: '#6A5ACD', liguang: '#4A6FA5', qitaigong: '#2F4F4F', guanyan: '#556B2F', liuhou: '#4682B4', huaiyinhou: '#8B008B', lu: '#8B0000', jin: '#800080', chu: '#006400', zhao: '#FF8C00', sunwuzi: '#8B5A2B', baiqiwangjian: '#A0522D', suqin: '#CD853F', zhangyi: '#DAA520', mengzi_xunzi: '#6B8E23', xiongnu: '#708090', lisi: '#5F9EA0', mengtian: '#008B8B', wei: '#8B4513', han: '#A52A2A', yan: '#483D8B', tianqi: '#008080', wutaibo: '#800000', zheng: '#D2691E', song: '#B22222', wei_kangshu: '#9932CC', fanju_caize: '#6495ED', yueyi: '#DC143C', quyuan_jiasheng: '#1E90FF', lvbuwei: '#FF6347', qin_benji: '#4B0082', cai: '#9400D3', cao: '#FF1493', chenqi: '#00CED1', waiqi: '#FF4500', ranghou: '#7FFFD4', mengchangjun: '#F0E68C', pingyuanjun: '#DDA0DD', chunshenjun: '#98FB98', tiandan: '#F4A460', luzhonglian: '#87CEEB', lisheng_lujia: '#FFB6C1', zhangchengxiang: '#B0C4DE', liujing_shusuntong: '#FFD700', yuanang_chaocuo: '#FF69B4' , xiaowen: '#556B2F', xiaojing: '#8FBC8F', xiaowu: '#CD5C5C', liangxiaowang: '#DEB887', wuzong: '#D2B48C', sanwang: '#BC8F8F', jibu_luanbu: '#778899', fengtang: '#708090', wanshi: '#BDB76B', tianshu: '#8B8378', bianque: '#20B2AA', wuwangbi: '#CD5C5C', weiqi_wuanhou: '#9370DB', hanchangru: '#6B8E23', weijiangjun: '#B22222', pingjinhou: '#A0522D', nanyue: '#2E8B57', dongyue: '#3CB371', chaoxian: '#4682B4', xinanyi: '#5F9EA0', xiaochu: '#2F4F4F', caoxiangguo: '#556B2F', huainan_hengshan_jishan: '#8B008B', qianhouchushu: '#698B22', lihai_zhichun: '#8B0000', dayuanyoushi: '#B8860B', youyu: '#A52A2A', hongyan: '#CD5C5C', shiji_jingzhong: '#20B2AA', rizhualie: '#778899', huozhilie: '#DAA520', wuzilie: '#4169E1', zhonglishu: '#228B22', meigeng: '#708090'
 , heiqi_juliang_lie: '#A0522D', mengchang_lie: '#F0E68C', pingyuan_lie: '#DDA0DD', chunshen_lie: '#98FB98', fan_ju_lie: '#6495ED', yueyi_lie: '#DC143C', lian_po_lin_xiangru_lie: '#228B22', tian_dan_lie: '#F4A460', lu_zhonglian_lie: '#87CEEB', li_jia_shu: '#FFB6C1', liang_qi_lie: '#FFD700', quyuan_jiasheng_lie: '#1E90FF', lv_buwei_lie: '#FF6347', ci_ke_lie: '#3CB371', li_silie: '#5F9EA0', meng_tian_lie: '#008B8B', peng_yue_lie: '#8B4513', ying_bu_lie: '#A52A2A', huaiyin_hou_lie: '#8B008B', xin_qi_lie: '#6B4226', yue_wang_goujian_lie: '#8B4513', zheng_shi_lie: '#B0C4DE', yuan_ang_chao_cuo_lie: '#FF69B4', banyuan_lie: '#20B2AA', wu_wang_bi_lie: '#CD5C5C', weiqi_wuanhou_lie: '#9370DB', li_ji_lian_po_lie: '#4A6FA5', huo_zhi_lie: '#DAA520', tai_shi_gong: '#800080', he_shu: '#4682B4', pingzhun_shu: '#2E8B57', fengshan_shu: '#CD7F32'
 };
 
