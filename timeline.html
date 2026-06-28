@@ -458,7 +458,13 @@ function renderChart() {
 
   chart.setOption({
     tooltip: {
-      formatter: p => `${p.data[1]}<br/>${Math.abs(p.data[0])}年${p.data[0] < 0 ? ' BC' : ''}`
+      formatter: p => {
+        const ev = allData.events.find(e => e.name === p.data.value[1]);
+        if (!ev) return `${p.data[1]}<br/>${Math.abs(p.data[0])}年${p.data[0] < 0 ? ' BC' : ''}`;
+        return `<strong style="font-size:14px">${esc(ev.name)}</strong><br/>${esc(ev.date)}${ev.locationName ? ` · ${esc(ev.locationName)}` : ''}` +
+          (ev.description ? `<br/><span style="font-size:12px;display:inline-block;margin-top:4px;max-width:260px">${esc(ev.description.substring(0, 60))}${ev.description.length > 60 ? '...' : ''}</span>` : '') +
+          (ev.significance ? `<br/><span style="font-size:11px;color:#8B7E6A">${esc(ev.significance.substring(0, 50))}${ev.significance.length > 50 ? '...' : ''}</span>` : '');
+      }
     },
     xAxis: {
       type: 'value',

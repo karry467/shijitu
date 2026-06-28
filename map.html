@@ -464,9 +464,9 @@ function render() {
     const events = allData.events.filter(e => e.locationId === loc.id);
     const popup = `
       <div class="min-w-[200px]">
-        <h3 class="font-bold serif text-base mb-1" style="color:${color}">${esc(loc.name)}</h3>
-        <p class="text-xs mb-2" style="color:var(--muted)">今：${esc(loc.modernName)}</p>
+        <h3 class="font-bold serif text-base mb-1" style="color:${color}">${esc(loc.name)}${loc.modernName ? ` <span style="font-size:12px;color:var(--muted)">(${esc(loc.modernName)})</span>` : ''}</h3>
         <p class="text-sm mb-2" style="color:var(--ink)">${esc(loc.description)}</p>
+        ${loc.significance ? `<p style="font-size:11px;color:#666;margin-bottom:8px">历史意义：${esc(loc.significance)}</p>` : ''}
         <div class="text-xs" style="color:var(--muted)">相关事件：</div>
         <div class="space-y-1 mt-1">
           ${events.map(e => `<div class="text-sm font-medium" style="color:var(--ink)">${e.date} · ${e.name}</div>`).join('')}

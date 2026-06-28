@@ -327,7 +327,12 @@ function render() {
       formatter: p => {
         if (p.dataType === 'edge') return `${p.data.source} → ${p.data.target}<br/><strong>${p.data.value}</strong>`;
         const c = chars.find(x => x.name === p.data.name);
-        return `<strong>${c.name}</strong><br/>${c.title || c.identity}<br/>${c.lifespan}`;
+        if (!c) return p.data.name;
+        return `<strong style="font-size:14px">${c.name}</strong>` +
+          (c.title || c.identity ? `<br/><span style="color:#8B7E6A">${c.title || ''} ${c.identity || ''}</span>` : '') +
+          (c.lifespan ? `<br/>${c.lifespan}` : '') +
+          (c.description ? `<br/><span style="font-size:12px;display:inline-block;margin-top:4px;max-width:260px">${c.description.substring(0, 60)}${c.description.length > 60 ? '...' : ''}</span>` : '') +
+          (c.quotes && c.quotes.length ? `<br/><span style="font-size:11px;color:#B4462A;font-style:italic">"${c.quotes[0].substring(0, 30)}${c.quotes[0].length > 30 ? '...' : ''}"</span>` : '');
       }
     },
     legend: { show: false },
@@ -364,7 +369,7 @@ function showDetail(name) {
     <div><strong class="text-[var(--muted)]">身份</strong><p>${esc(c.identity)}</p></div>
     <div><strong class="text-[var(--muted)]">性格特点</strong><div class="flex flex-wrap gap-2 mt-1">${c.traits.map(t => `<span class="px-2 py-0.5 rounded bg-[var(--bg2)] text-xs">${esc(t)}</span>`).join('')}</div></div>
     <div><strong class="text-[var(--muted)]">简介</strong><p class="leading-relaxed mt-1">${esc(c.description)}</p></div>
-    ${c.quotes.length ? `<div><strong class="text-[var(--muted)]">名言</strong><div class="mt-1 space-y-1 italic text-[var(--accent)]">${c.quotes.map(q => `<p>"${esc(q)}"</p>`).join('')}</div></div>` : ''}
+    ${c.quotes.length ? `<div><strong class="text-[var(--muted)]">经典名言 <span class="text-xs">(史记原文)</span></strong><div class="mt-1 space-y-1 italic text-[var(--accent)]">${c.quotes.map(q => `<p>"${esc(q)}"</p>`).join('')}</div></div>` : ''}
     <div><strong class="text-[var(--muted)]">人物关系</strong><div class="mt-1 space-y-1">${rels.map(r => {
       const other = r.source === name ? r.target : r.source;
       return `<div class="flex items-center gap-2"><span class="text-xs px-2 py-0.5 rounded bg-[var(--accent)]/10 text-[var(--accent)]">${esc(r.type)}</span><span>${esc(other)}</span><span class="text-[var(--muted)] text-xs">${esc(r.description)}</span></div>`;
